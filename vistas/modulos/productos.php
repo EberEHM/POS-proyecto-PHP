@@ -230,7 +230,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
                 <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span>
 
-                <input type="number" class="form-control input-lg" name="nuevoPrecioCompra" id="nuevoPrecioCompra" min="0" placeholder="Precio de compra" step="any" required>
+                <input type="number" class="form-control input-lg" name="nuevoPrecioCompra" id="nuevoPrecioCompra"  placeholder="Precio de compra" step="any" min="0.1" required>
                 
               </div>
 
@@ -244,7 +244,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
                     <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
 
-                    <input type="number" class="form-control input-lg" name="nuevoPrecioVenta" id="nuevoPrecioVenta" min="0" placeholder="Precio de venta" step="any" required readonly>
+                    <input type="number" class="form-control input-lg" name="nuevoPrecioVenta" id="nuevoPrecioVenta" min="0.1" placeholder="Precio de venta" step="any" required readonly>
                     <!-- step="any" permite ingresar numeros con punto Decimal en los imput de tipo number xd 18/06/2019 -->
                     
                   </div>
@@ -401,7 +401,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
                 <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span>
 
-                <input type="number" class="form-control input-lg" name="editarPrecioCompra" id="editarPrecioCompra" min="0" step="any" required>
+                <input type="number" class="form-control input-lg" name="editarPrecioCompra" id="editarPrecioCompra" min="0.1" step="any" required>
                 
               </div>
 
@@ -415,7 +415,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
                     <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
 
-                    <input type="number" class="form-control input-lg" name="editarPrecioVenta" id="editarPrecioVenta" min="0" step="any" readonly required>
+                    <input type="number" class="form-control input-lg" name="editarPrecioVenta" id="editarPrecioVenta" min="0.1" step="any" readonly required>
                     <!-- step="any" permite ingresar numeros con punto Decimal en los imput de tipo number xd 18/06/2019 -->
                     
                   </div>

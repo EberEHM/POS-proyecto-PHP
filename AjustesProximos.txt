@@ -12,3 +12,5 @@ con los datos necesarios, el presio del punto de venta con esa funcion aumenta a
 
 
 PRECIO DEL SISTEMA EN RANCHO POBRE 2,000.- como esta sin estas funciones, sin comentarios, y mas simple
+
+-error al sumar decimales en la venta
