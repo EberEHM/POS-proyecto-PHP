@@ -1,7 +1,7 @@
 define([
   'jquery'
 ], function ($) {
-  function InputData (decorated, $element, options) {
+  function InputData (Decorated, $element, options) {
     this._currentData = [];
     this._valueSeparator = options.get('valueSeparator') || ',';
 
@@ -9,13 +9,13 @@ define([
       if (options.get('debug') && console && console.warn) {
         console.warn(
           'Select2: Using a hidden input with Select2 is no longer ' +
-          'supported and may stop working in the future. It is recommended ' +
+          'supported and Mayo  stop working in the future. It is recommended ' +
           'to use a `<select>` element instead.'
         );
       }
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
   InputData.prototype.current = function (_, callback) {

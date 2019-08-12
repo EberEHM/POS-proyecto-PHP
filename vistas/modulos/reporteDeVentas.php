@@ -39,8 +39,20 @@ if($_SESSION["perfil"] != "Administrador"){
           
           <span>
             
-            <i class="fa fa-calendar"></i> Rango de fecha
+            <i class="fa fa-calendar"></i>
+            <?php
 
+                if(isset($_GET["fechaInicial"])){
+
+                  echo $_GET["fechaInicial"]." - ".$_GET["fechaFinal"];
+                
+                }else{
+                 
+                  echo 'Rango de fecha';
+
+                }
+
+              ?>
           </span>
 
             <i class="fa fa-caret-down"></i>
@@ -66,7 +78,7 @@ if($_SESSION["perfil"] != "Administrador"){
 
              ?>
             
-            <button class="btn btn-success" style="margin-top:5px"><i class="fa fa-file-excel-o"> Descargar reporte en Excel </i></button>
+            <button class="btn btn-success" style="margin-top:5px"><i class="fa fa-file-excel-o"> Descargar Excel </i></button>
             </a>
           </div>
 

@@ -26,7 +26,7 @@ if(!Array.isArray) {
   };
 };/**
  * @license wysihtml5x v0.4.15
- * https://github.com/Edicy/wysihtml5
+ * https://github.com/EDecy/wysihtml5
  *
  * Author: Christopher Blum (https://github.com/tiff)
  * Secondary author of extended features: Oliver Pulges (https://github.com/pulges)
@@ -67,7 +67,7 @@ var wysihtml5 = {
  * Copyright 2014, Tim Down
  * Licensed under the MIT license.
  * Version: 1.3alpha.20140804
- * Build date: 4 August 2014
+ * Build date: 4 Agosto 2014
  */
 
 (function(factory, global) {
@@ -96,7 +96,7 @@ var wysihtml5 = {
 
     // Minimal set of methods required for DOM Level 2 Range compliance
     var domRangeMethods = ["setStart", "setStartBefore", "setStartAfter", "setEnd", "setEndBefore",
-        "setEndAfter", "collapse", "selectNode", "selectNodeContents", "compareBoundaryPoints", "deleteContents",
+        "setEndAfter", "collapse", "selectNode", "selectNoDecontents", "compareBoundaryPoints", "deleteContents",
         "extractContents", "cloneContents", "insertNode", "surroundContents", "cloneRange", "toString", "detach"];
 
     var textRangeProperties = ["boundingHeight", "boundingLeft", "boundingTop", "boundingWidth", "htmlText", "text"];
@@ -763,16 +763,16 @@ var wysihtml5 = {
 
         function comparePoints(nodeA, offsetA, nodeB, offsetB) {
             // See http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Comparing
-            var nodeC, root, childA, childB, n;
+            var noDec, root, childA, childB, n;
             if (nodeA == nodeB) {
                 // Case 1: nodes are the same
                 return offsetA === offsetB ? 0 : (offsetA < offsetB) ? -1 : 1;
-            } else if ( (nodeC = getClosestAncestorIn(nodeB, nodeA, true)) ) {
+            } else if ( (noDec = getClosestAncestorIn(nodeB, nodeA, true)) ) {
                 // Case 2: node C (container B or an ancestor) is a child node of A
-                return offsetA <= getNodeIndex(nodeC) ? -1 : 1;
-            } else if ( (nodeC = getClosestAncestorIn(nodeA, nodeB, true)) ) {
+                return offsetA <= getNodeIndex(noDec) ? -1 : 1;
+            } else if ( (noDec = getClosestAncestorIn(nodeA, nodeB, true)) ) {
                 // Case 3: node C (container A or an ancestor) is a child node of B
-                return getNodeIndex(nodeC) < offsetB  ? -1 : 1;
+                return getNodeIndex(noDec) < offsetB  ? -1 : 1;
             } else {
                 root = getCommonAncestor(nodeA, nodeB);
                 if (!root) {
@@ -844,7 +844,7 @@ var wysihtml5 = {
             return node.nodeName;
         }
 
-        function fragmentFromNodeChildren(node) {
+        function fragmentFromNoDechildren(node) {
             var fragment = getDocument(node).createDocumentFragment(), child;
             while ( (child = node.firstChild) ) {
                 fragment.appendChild(child);
@@ -970,7 +970,7 @@ var wysihtml5 = {
             isBrokenNode: isBrokenNode,
             inspectNode: inspectNode,
             getComputedStyleProperty: getComputedStyleProperty,
-            fragmentFromNodeChildren: fragmentFromNodeChildren,
+            fragmentFromNoDechildren: fragmentFromNoDechildren,
             createIterator: createIterator,
             DomPosition: DomPosition
         };
@@ -1374,7 +1374,7 @@ var wysihtml5 = {
 
         /*----------------------------------------------------------------------------------------------------------------*/
 
-        // Test the browser's innerHTML support to decide how to implement createContextualFragment
+        // Test the browser's innerHTML support to Decide how to implement createContextualFragment
         var styleEl = document.createElement("style");
         var htmlParsingConforms = false;
         try {
@@ -1444,7 +1444,7 @@ var wysihtml5 = {
                 // "Let fragment be a new DocumentFragment."
                 // "Append all new children to fragment."
                 // "Return fragment."
-                return dom.fragmentFromNodeChildren(el);
+                return dom.fragmentFromNoDechildren(el);
             } :
 
             // In this case, innerHTML cannot be trusted, so fall back to a simpler, non-conformant implementation that
@@ -1454,7 +1454,7 @@ var wysihtml5 = {
                 var el = doc.createElement("body");
                 el.innerHTML = fragmentStr;
 
-                return dom.fragmentFromNodeChildren(el);
+                return dom.fragmentFromNoDechildren(el);
             };
 
         function splitRangeBoundaries(range, positionsToPreserve) {
@@ -1737,7 +1737,7 @@ var wysihtml5 = {
                 }
             },
 
-            containsNodeContents: function(node) {
+            containsNoDecontents: function(node) {
                 return this.comparePoint(node, 0) >= 0 && this.comparePoint(node, getNodeLength(node)) <= 0;
             },
 
@@ -1756,7 +1756,7 @@ var wysihtml5 = {
                     nodeRange.setEnd(lastTextNode, lastTextNode.length);
                     return this.containsRange(nodeRange);
                 } else {
-                    return this.containsNodeContents(node);
+                    return this.containsNoDecontents(node);
                 }
             },
 
@@ -1783,7 +1783,7 @@ var wysihtml5 = {
                 var doc = getRangeDocument(this);
                 var preSelectionRange = api.createRange(doc);
                 containerNode = containerNode || dom.getBody(doc);
-                preSelectionRange.selectNodeContents(containerNode);
+                preSelectionRange.selectNoDecontents(containerNode);
                 var range = this.intersection(preSelectionRange);
                 var start = 0, end = 0;
                 if (range) {
@@ -2000,7 +2000,7 @@ var wysihtml5 = {
                     }
                 },
 
-                selectNodeContents: function(node) {
+                selectNoDecontents: function(node) {
                     assertNoDocTypeNotationEntityAncestor(node, true);
 
                     boundaryUpdater(this, node, 0, node, getNodeLength(node));
@@ -2345,9 +2345,9 @@ var wysihtml5 = {
 
                 /*--------------------------------------------------------------------------------------------------------*/
 
-                // Always use DOM4-compliant selectNodeContents implementation: it's simpler and less code than testing
+                // Always use DOM4-compliant selectNoDecontents implementation: it's simpler and less code than testing
                 // whether the native implementation can be trusted
-                rangeProto.selectNodeContents = function(node) {
+                rangeProto.selectNoDecontents = function(node) {
                     this.setStartAndEnd(node, 0, dom.getNodeLength(node));
                 };
 
@@ -2356,11 +2356,11 @@ var wysihtml5 = {
                 // Test for and correct WebKit bug that has the behaviour of compareBoundaryPoints round the wrong way for
                 // constants START_TO_END and END_TO_START: https://bugs.webkit.org/show_bug.cgi?id=20738
 
-                range.selectNodeContents(testTextNode);
+                range.selectNoDecontents(testTextNode);
                 range.setEnd(testTextNode, 3);
 
                 var range2 = document.createRange();
-                range2.selectNodeContents(testTextNode);
+                range2.selectNoDecontents(testTextNode);
                 range2.setEnd(testTextNode, 4);
                 range2.setStart(testTextNode, 2);
 
@@ -2515,15 +2515,15 @@ var wysihtml5 = {
                 var comparison, workingComparisonType = isStart ? "StartToStart" : "StartToEnd";
                 var previousNode, nextNode, boundaryPosition, boundaryNode;
                 var start = (startInfo && startInfo.containerElement == containerElement) ? startInfo.nodeIndex : 0;
-                var childNodeCount = containerElement.childNodes.length;
-                var end = childNodeCount;
+                var childNoDecount = containerElement.childNodes.length;
+                var end = childNoDecount;
 
                 // Check end first. Code within the loop assumes that the endth child node of the container is definitely
                 // after the range boundary.
                 var nodeIndex = end;
 
                 while (true) {
-                    if (nodeIndex == childNodeCount) {
+                    if (nodeIndex == childNoDecount) {
                         containerElement.appendChild(workingNode);
                     } else {
                         containerElement.insertBefore(workingNode, containerElement.childNodes[nodeIndex]);
@@ -2813,7 +2813,7 @@ var wysihtml5 = {
         var rangesEqual = DomRange.rangesEqual;
 
 
-        // Utility function to support direction parameters in the API that may be a string ("backward" or "forward") or a
+        // Utility function to support direction parameters in the API that Mayo  be a string ("backward" or "forward") or a
         // Boolean (true for backwards).
         function isDirectionBackward(dir) {
             return (typeof dir == "string") ? /^backward(s)?$/i.test(dir) : !!dir;
@@ -3589,7 +3589,7 @@ var wysihtml5 = {
         selProto.selectAllChildren = function(node) {
             assertNodeInSameDocument(this, node);
             var range = api.createRange(node);
-            range.selectNodeContents(node);
+            range.selectNoDecontents(node);
             this.setSingleRange(range);
         };
 
@@ -3805,7 +3805,7 @@ var wysihtml5 = {
  * Copyright 2014, Tim Down
  * Licensed under the MIT license.
  * Version: 1.3alpha.20140804
- * Build date: 4 August 2014
+ * Build date: 4 Agosto 2014
  */
 (function(factory, global) {
     if (typeof define == "function" && define.amd) {
@@ -6170,7 +6170,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
 
   function _testType(oldNode, definition) {
 
-    var nodeClasses = oldNode.getAttribute("class"),
+    var noDeclasses = oldNode.getAttribute("class"),
         nodeStyles =  oldNode.getAttribute("style"),
         classesLength, s, s_corrected, a, attr, currentClass, styleProp;
 
@@ -6187,11 +6187,11 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
     }
 
     // test for classes, if one found return true
-    if (nodeClasses && definition.classes) {
-      nodeClasses = nodeClasses.replace(/^\s+/g, '').replace(/\s+$/g, '').split(WHITE_SPACE_REG_EXP);
-      classesLength = nodeClasses.length;
+    if (noDeclasses && definition.classes) {
+      noDeclasses = noDeclasses.replace(/^\s+/g, '').replace(/\s+$/g, '').split(WHITE_SPACE_REG_EXP);
+      classesLength = noDeclasses.length;
       for (var i = 0; i < classesLength; i++) {
-        if (definition.classes[nodeClasses[i]]) {
+        if (definition.classes[noDeclasses[i]]) {
           return true;
         }
       }
@@ -7693,7 +7693,7 @@ wysihtml5.dom.isLoadedImage = function (node) {
             return true;
         },
 
-        decreaseCellSpan: function(cell, span) {
+        DecreaseCellSpan: function(cell, span) {
             var nr = parseInt(api.getAttribute(cell.el, span), 10) - 1;
             if (nr >= 1) {
                 cell.el.setAttribute(span, nr);
@@ -7735,7 +7735,7 @@ wysihtml5.dom.isLoadedImage = function (node) {
                     if (allRowspan) {
                         cidx = 0;
                         for (; cidx < cmax; cidx++) {
-                            this.decreaseCellSpan(row[cidx], 'rowspan');
+                            this.DecreaseCellSpan(row[cidx], 'rowspan');
                         }
                     }
                 }
@@ -7884,7 +7884,7 @@ wysihtml5.dom.isLoadedImage = function (node) {
         },
 
         // Removes a cell when removing a row
-        // If is rowspan cell then decreases the rowspan
+        // If is rowspan cell then Decreases the rowspan
         // and moves cell to next row if needed (is first cell of rowspan)
         removeRowCell: function(cell) {
             if (cell.isReal) {
@@ -8580,13 +8580,13 @@ wysihtml5.quirks.ensureProperClearing = (function() {
       upHandler.stop();
       editor.fire("tableselect").fire("tableselect:composer");
       setTimeout(function() {
-        bindSideclick();
+        bindSiDeclick();
       },0);
     }
 
-    function bindSideclick () {
-        var sideClickHandler = dom.observe(editable.ownerDocument, "click", function(event) {
-          sideClickHandler.stop();
+    function bindSiDeclick () {
+        var siDeclickHandler = dom.observe(editable.ownerDocument, "click", function(event) {
+          siDeclickHandler.stop();
           if (dom.getParentElement(event.target, { nodeName: ["TABLE"] }) != select.table) {
               removeCellSelections();
               select.table = null;
@@ -8603,7 +8603,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
         select.table = dom.getParentElement(select.start, { nodeName: ["TABLE"] });
         selectedCells = dom.table.getCellsBetween(select.start, select.end);
         addSelections(selectedCells);
-        bindSideclick();
+        bindSiDeclick();
         editor.fire("tableselect").fire("tableselect:composer");
     }
 
@@ -8737,7 +8737,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
           end_depth = getDepth(common, range.endContainer);
 
       while(!range.canSurroundContents()) {
-        // In the following branches, we cannot just decrement the depth variables because the setStartBefore/setEndAfter may move the start or end of the range more than one level relative to ``common``. So we need to recompute the depth.
+        // In the following branches, we cannot just Decrement the depth variables because the setStartBefore/setEndAfter Mayo  move the start or end of the range more than one level relative to ``common``. So we need to recompute the depth.
         if (start_depth > end_depth) {
             range.setStartBefore(range.startContainer);
             start_depth = getDepth(common, range.startContainer);
@@ -8837,7 +8837,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
       }
 
       if (canHaveHTML) {
-        range.selectNodeContents(node);
+        range.selectNoDecontents(node);
       } else {
         range.selectNode(node);
       }
@@ -8987,7 +8987,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
             pos = range.startOffset,
             lastR = rangy.createRange(this.doc);
 
-        lastR.selectNodeContents(sNode);
+        lastR.selectNoDecontents(sNode);
         lastR.setStart(sNode, pos);
         return lastR;
       }
@@ -9011,7 +9011,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
       if (startNode.nodeType === wysihtml5.TEXT_NODE) {
         return this.isCollapsed() && (startNode.nodeType === wysihtml5.TEXT_NODE && (/^\s*$/).test(startNode.data.substr(0,range.startOffset)));
       } else {
-        r.selectNodeContents(this.getRange().commonAncestorContainer);
+        r.selectNoDecontents(this.getRange().commonAncestorContainer);
         r.collapse(true);
         return (this.isCollapsed() && (r.startContainer === s.anchorNode || r.endContainer === s.anchorNode) && r.startOffset === s.anchorOffset);
       }
@@ -9398,7 +9398,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
 
     _endOffsetForNode: function(node) {
       var range = document.createRange();
-      range.selectNodeContents(node);
+      range.selectNoDecontents(node);
       return range.endOffset;
     },
 
@@ -10098,7 +10098,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
         // Make sure that caret is visible in node by inserting a zero width no breaking space
         try { node.innerHTML = wysihtml5.INVISIBLE_SPACE; } catch(e) {}
       }
-      range.selectNodeContents(node);
+      range.selectNoDecontents(node);
       if (isEmpty && isElement) {
         range.collapse(false);
       } else if (isEmpty) {
@@ -10109,7 +10109,7 @@ wysihtml5.quirks.ensureProperClearing = (function() {
 
     getTextSelectedByRange: function(textNode, range) {
       var textRange = range.cloneRange();
-      textRange.selectNodeContents(textNode);
+      textRange.selectNoDecontents(textNode);
 
       var intersectionRange = textRange.intersection(range);
       var text = intersectionRange ? intersectionRange.toString() : "";
@@ -12193,7 +12193,7 @@ wysihtml5.views.View = Base.extend(
           this.textarea           = this.parent.textarea;
           this.element.innerHTML  = this.textarea.getValue(true, false);
       } else {
-          this.cleanUp(); // cleans contenteditable on initiation as it may contain html
+          this.cleanUp(); // cleans contenteditable on initiation as it Mayo  contain html
       }
 
       // Make sure our selection handler is ready
@@ -12493,7 +12493,7 @@ wysihtml5.views.View = Base.extend(
         "color", "cursor",
         "font-family", "font-size", "font-style", "font-variant", "font-weight",
         "line-height", "letter-spacing",
-        "text-align", "text-decoration", "text-indent", "text-rendering",
+        "text-align", "text-Decoration", "text-indent", "text-rendering",
         "word-break", "word-wrap", "word-spacing"
       ],
       /**
@@ -12756,7 +12756,7 @@ wysihtml5.views.View = Base.extend(
             prevNode.parentNode.removeChild(prevNode);
           } else {
             var range = prevNode.ownerDocument.createRange();
-            range.selectNodeContents(prevNode);
+            range.selectNoDecontents(prevNode);
             range.collapse(false);
             selection.setSelection(range);
           }
@@ -13294,7 +13294,7 @@ wysihtml5.views.View = Base.extend(
         return;
       }
 
-      // Add class name to body, to indicate that the editor is supported
+      // Add class name to body, to inDecate that the editor is supported
       wysihtml5.dom.addClass(document.body, this.config.bodyClassName);
 
       this.composer = new wysihtml5.views.Composer(this, this.editableElement, this.config);
@@ -13999,7 +13999,7 @@ wysihtml5.views.View = Base.extend(
 
               if (!command.dialog.multiselect && wysihtml5.lang.object(state).isArray()) {
                 // Grab first and only object/element in state array, otherwise convert state into boolean
-                // to avoid showing a dialog for multiple selected elements which may have different attributes
+                // to avoid showing a dialog for multiple selected elements which Mayo  have different attributes
                 // eg. when two links with different href are selected, the state will be an array consisting of both link elements
                 // but the dialog interface can only update one
                 state = state.length === 1 ? state[0] : true;

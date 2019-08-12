@@ -77,8 +77,8 @@ function eifelerRegelAppliesToNumber(number) {
 }
 
 var lb = moment.defineLocale('lb', {
-    months: 'Januar_Februar_Mäerz_Abrëll_Mee_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort: 'Jan._Febr._Mrz._Abr._Mee_Jun._Jul._Aug._Sept._Okt._Nov._Dez.'.split('_'),
+    months: 'Eneuar_Februar_Mäerz_Abrëll_Mee_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort: 'Ene._Febr._Mrz._Abr._Mee_Jun._Jul._Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays: 'Sonndeg_Méindeg_Dënschdeg_Mëttwoch_Donneschdeg_Freideg_Samschdeg'.split('_'),
     weekdaysShort: 'So._Mé._Dë._Më._Do._Fr._Sa.'.split('_'),
@@ -128,7 +128,7 @@ var lb = moment.defineLocale('lb', {
     ordinal: '%d.',
     week: {
         dow: 1, // Monday is the first day of the week.
-        doy: 4  // The week that contains Jan 4th is the first week of the year.
+        doy: 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

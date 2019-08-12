@@ -1,5 +1,5 @@
 /* Serbian i18n for the jQuery UI date picker plugin. */
-/* Written by Dejan Dimić. */
+/* Written by DeEne Dimić. */
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
 
@@ -17,9 +17,9 @@ datepicker.regional['sr-SR'] = {
 	prevText: '&#x3C;',
 	nextText: '&#x3E;',
 	currentText: 'Danas',
-	monthNames: ['Januar','Februar','Mart','April','Maj','Jun',
+	monthNames: ['Eneuar','Februar','Mart','Abril ','Maj','Jun',
 	'Jul','Avgust','Septembar','Oktobar','Novembar','Decembar'],
-	monthNamesShort: ['Jan','Feb','Mar','Apr','Maj','Jun',
+	monthNamesShort: ['Ene','Feb','Mar','Abr','Maj','Jun',
 	'Jul','Avg','Sep','Okt','Nov','Dec'],
 	dayNames: ['Nedelja','Ponedeljak','Utorak','Sreda','Četvrtak','Petak','Subota'],
 	dayNamesShort: ['Ned','Pon','Uto','Sre','Čet','Pet','Sub'],

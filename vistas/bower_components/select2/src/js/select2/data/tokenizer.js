@@ -1,24 +1,24 @@
 define([
   'jquery'
 ], function ($) {
-  function Tokenizer (decorated, $element, options) {
+  function Tokenizer (Decorated, $element, options) {
     var tokenizer = options.get('tokenizer');
 
     if (tokenizer !== undefined) {
       this.tokenizer = tokenizer;
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
-  Tokenizer.prototype.bind = function (decorated, container, $container) {
-    decorated.call(this, container, $container);
+  Tokenizer.prototype.bind = function (Decorated, container, $container) {
+    Decorated.call(this, container, $container);
 
     this.$search =  container.dropdown.$search || container.selection.$search ||
       $container.find('.select2-search__field');
   };
 
-  Tokenizer.prototype.query = function (decorated, params, callback) {
+  Tokenizer.prototype.query = function (Decorated, params, callback) {
     var self = this;
 
     function createAndSelect (data) {
@@ -64,7 +64,7 @@ define([
       params.term = tokenData.term;
     }
 
-    decorated.call(this, params, callback);
+    Decorated.call(this, params, callback);
   };
 
   Tokenizer.prototype.tokenizer = function (_, params, options, callback) {

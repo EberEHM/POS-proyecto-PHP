@@ -109,7 +109,7 @@ class ControladorDispositivos {
 									"descripcion" => $_POST['nuevaDescripcion'],
 									"presupuesto" => $_POST['nuevoPrecio'],
 									"recibio" => $_POST['nuevoRecibio'],
-									"fechaAproximada" => $_POST['nuevaFechaEntrega']);
+									"fechaAbroximada" => $_POST['nuevaFechaEntrega']);
 
 						$respuesta= Dispositivos::agregarDispositivo($tabla, $datos);
 
@@ -262,7 +262,7 @@ class ControladorDispositivos {
 									"descripcion" => $_POST['editarDescripcion'],
 									"presupuesto" => $_POST['editarPrecio'],
 									"recibio" => $_POST['editarRecibio'],
-									"fechaAproximada" => $_POST['editarFechaEntrega']);
+									"fechaAbroximada" => $_POST['editarFechaEntrega']);
 
 
 				$respuesta = Dispositivos::editarDispositivo($tabla, $datos);

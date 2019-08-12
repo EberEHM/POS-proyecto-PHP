@@ -1,7 +1,7 @@
 define([
 
 ], function () {
-  function Query (decorated, $element, options) {
+  function Query (Decorated, $element, options) {
     if (options.get('debug') && window.console && console.warn) {
       console.warn(
         'Select2: The `query` option has been deprecated in favor of a ' +
@@ -11,7 +11,7 @@ define([
       );
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
   Query.prototype.query = function (_, params, callback) {

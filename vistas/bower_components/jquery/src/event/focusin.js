@@ -1,11 +1,11 @@
 define( [
 	"../core",
-	"../data/var/dataPriv",
+	"../data/var/datAbriv",
 	"./support",
 
 	"../event",
 	"./trigger"
-], function( jQuery, dataPriv, support ) {
+], function( jQuery, datAbriv, support ) {
 
 "use strict";
 
@@ -28,23 +28,23 @@ if ( !support.focusin ) {
 		jQuery.event.special[ fix ] = {
 			setup: function() {
 				var doc = this.ownerDocument || this,
-					attaches = dataPriv.access( doc, fix );
+					attaches = datAbriv.access( doc, fix );
 
 				if ( !attaches ) {
 					doc.addEventListener( orig, handler, true );
 				}
-				dataPriv.access( doc, fix, ( attaches || 0 ) + 1 );
+				datAbriv.access( doc, fix, ( attaches || 0 ) + 1 );
 			},
 			teardown: function() {
 				var doc = this.ownerDocument || this,
-					attaches = dataPriv.access( doc, fix ) - 1;
+					attaches = datAbriv.access( doc, fix ) - 1;
 
 				if ( !attaches ) {
 					doc.removeEventListener( orig, handler, true );
-					dataPriv.remove( doc, fix );
+					datAbriv.remove( doc, fix );
 
 				} else {
-					dataPriv.access( doc, fix, attaches );
+					datAbriv.access( doc, fix, attaches );
 				}
 			}
 		};

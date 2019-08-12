@@ -67,7 +67,7 @@
 	 * [DataTables.net](href="http://datatables.net).
 	 *
 	 * Note that the `DataTable` object is not a global variable but is aliased
-	 * to `jQuery.fn.DataTable` and `jQuery.fn.dataTable` through which it may
+	 * to `jQuery.fn.DataTable` and `jQuery.fn.dataTable` through which it Mayo 
 	 * be  accessed.
 	 *
 	 *  @class
@@ -1010,7 +1010,7 @@
 				"aLengthMenu",
 				"sPaginationType",
 				"sAjaxSource",
-				"sAjaxDataProp",
+				"sAjaxDatAbrop",
 				"iStateDuration",
 				"sDom",
 				"bSortCellsTop",
@@ -1079,7 +1079,7 @@
 			if ( oLanguage.sUrl )
 			{
 				/* Get the language definitions from a file - because this Ajax call makes the language
-				 * get async to the remainder of this function we use bInitHandedOff to indicate that
+				 * get async to the remainder of this function we use bInitHandedOff to inDecate that
 				 * _fnInitialise will be fired by the returned Ajax handler, rather than the constructor
 				 */
 				$.ajax( {
@@ -1194,7 +1194,7 @@
 				 * @todo For modularisation (1.11) this needs to do into a sort start up handler
 				 */
 			
-				// If aaSorting is not defined, then we use the first indicator in asSorting
+				// If aaSorting is not defined, then we use the first inDecator in asSorting
 				// in case that has been altered, so the default sort reflects that option
 				if ( oInit.aaSorting === undefined ) {
 					var sorting = oSettings.aaSorting;
@@ -1334,7 +1334,7 @@
 	var _api_register; // DataTable.Api.register
 	var _api_registerPlural; // DataTable.Api.registerPlural
 	
-	var _re_dic = {};
+	var _re_Dec = {};
 	var _re_new_lines = /[\r\n]/g;
 	var _re_html = /<.*?>/g;
 	
@@ -1369,19 +1369,19 @@
 	};
 	
 	// Convert from a formatted number with characters other than `.` as the
-	// decimal place, to a Javascript number
-	var _numToDecimal = function ( num, decimalPoint ) {
+	// Decimal place, to a Javascript number
+	var _numToDecimal = function ( num, DecimalPoint ) {
 		// Cache created regular expressions for speed as this function is called often
-		if ( ! _re_dic[ decimalPoint ] ) {
-			_re_dic[ decimalPoint ] = new RegExp( _fnEscapeRegex( decimalPoint ), 'g' );
+		if ( ! _re_Dec[ DecimalPoint ] ) {
+			_re_Dec[ DecimalPoint ] = new RegExp( _fnEscapeRegex( DecimalPoint ), 'g' );
 		}
-		return typeof num === 'string' && decimalPoint !== '.' ?
-			num.replace( /\./g, '' ).replace( _re_dic[ decimalPoint ], '.' ) :
+		return typeof num === 'string' && DecimalPoint !== '.' ?
+			num.replace( /\./g, '' ).replace( _re_Dec[ DecimalPoint ], '.' ) :
 			num;
 	};
 	
 	
-	var _isNumber = function ( d, decimalPoint, formatted ) {
+	var _isNumber = function ( d, DecimalPoint, formatted ) {
 		var strType = typeof d === 'string';
 	
 		// If empty return immediately so there must be a number if it is a
@@ -1391,8 +1391,8 @@
 			return true;
 		}
 	
-		if ( decimalPoint && strType ) {
-			d = _numToDecimal( d, decimalPoint );
+		if ( DecimalPoint && strType ) {
+			d = _numToDecimal( d, DecimalPoint );
 		}
 	
 		if ( formatted && strType ) {
@@ -1409,7 +1409,7 @@
 	};
 	
 	
-	var _htmlNumeric = function ( d, decimalPoint, formatted ) {
+	var _htmlNumeric = function ( d, DecimalPoint, formatted ) {
 		if ( _empty( d ) ) {
 			return true;
 		}
@@ -1417,7 +1417,7 @@
 		var html = _isHtml( d );
 		return ! html ?
 			null :
-			_isNumber( _stripHtml( d ), decimalPoint, formatted ) ?
+			_isNumber( _stripHtml( d ), DecimalPoint, formatted ) ?
 				true :
 				null;
 	};
@@ -1754,9 +1754,9 @@
 			lang.sThousands = lang.sInfoThousands;
 		}
 	
-		var decimal = lang.sDecimal;
-		if ( decimal ) {
-			_addNumericSort( decimal );
+		var Decimal = lang.sDecimal;
+		if ( Decimal ) {
+			_addNumericSort( Decimal );
 		}
 	}
 	
@@ -2015,10 +2015,10 @@
 			// Map camel case parameters to their Hungarian counterparts
 			_fnCamelToHungarian( DataTable.defaults.column, oOptions );
 	
-			/* Backwards compatibility for mDataProp */
-			if ( oOptions.mDataProp !== undefined && !oOptions.mData )
+			/* Backwards compatibility for mDatAbrop */
+			if ( oOptions.mDatAbrop !== undefined && !oOptions.mData )
 			{
-				oOptions.mData = oOptions.mDataProp;
+				oOptions.mData = oOptions.mDatAbrop;
 			}
 	
 			if ( oOptions.sType )
@@ -2073,7 +2073,7 @@
 			return _fnSetObjectDataFn( mDataSrc )( rowData, val, meta );
 		};
 	
-		// Indicate if DataTables should read DOM data as an object or array
+		// InDecate if DataTables should read DOM data as an object or array
 		// Used in _fnGetRowElements
 		if ( typeof mDataSrc !== 'number' ) {
 			oSettings._rowReadObject = true;
@@ -2639,7 +2639,7 @@
 								}
 							}
 	
-							// If a string is given in between the array notation indicators, that
+							// If a string is given in between the array notation inDecators, that
 							// is used to join the strings together, otherwise an array is returned
 							var join = arrayNotation[0].substring(1, arrayNotation[0].length-1);
 							data = (join==="") ? out : out.join(join);
@@ -3371,8 +3371,8 @@
 	function _fnDraw( oSettings )
 	{
 		/* Provide a pre-callback function which can be used to cancel the draw is false is returned */
-		var aPreDraw = _fnCallbackFire( oSettings, 'aoPreDrawCallback', 'preDraw', [oSettings] );
-		if ( $.inArray( false, aPreDraw ) !== -1 )
+		var AbreDraw = _fnCallbackFire( oSettings, 'aoPreDrawCallback', 'preDraw', [oSettings] );
+		if ( $.inArray( false, AbreDraw ) !== -1 )
 		{
 			_fnProcessingDisplay( oSettings, false );
 			return;
@@ -3812,7 +3812,7 @@
 	 *
 	 * @param {object} oSettings dataTables settings object
 	 * @param {array} data Data to send to the server, required by
-	 *     DataTables - may be augmented by developer callbacks
+	 *     DataTables - Mayo  be Agomented by developer callbacks
 	 * @param {function} fn Callback function to run when data is obtained
 	 */
 	function _fnBuildAjax( oSettings, data, fn )
@@ -3987,7 +3987,7 @@
 			features = settings.oFeatures,
 			preSearch = settings.oPreviousSearch,
 			preColSearch = settings.aoPreSearchCols,
-			i, data = [], dataProp, column, columnSearch,
+			i, data = [], datAbrop, column, columnSearch,
 			sort = _fnSortFlatten( settings ),
 			displayStart = settings._iDisplayStart,
 			displayLength = features.bPaginate !== false ?
@@ -4021,10 +4021,10 @@
 		for ( i=0 ; i<columnCount ; i++ ) {
 			column = columns[i];
 			columnSearch = preColSearch[i];
-			dataProp = typeof column.mData=="function" ? 'function' : column.mData ;
+			datAbrop = typeof column.mData=="function" ? 'function' : column.mData ;
 	
 			d.columns.push( {
-				data:       dataProp,
+				data:       datAbrop,
 				name:       column.sName,
 				searchable: column.bSearchable,
 				orderable:  column.bSortable,
@@ -4034,7 +4034,7 @@
 				}
 			} );
 	
-			param( "mDataProp_"+i, dataProp );
+			param( "mDatAbrop_"+i, datAbrop );
 	
 			if ( features.bFilter ) {
 				param( 'sSearch_'+i,     columnSearch.sSearch );
@@ -4063,14 +4063,14 @@
 			param( 'iSortingCols', sort.length );
 		}
 	
-		// If the legacy.ajax parameter is null, then we automatically decide which
+		// If the legacy.ajax parameter is null, then we automatically Decide which
 		// form to use, based on sAjaxSource
 		var legacy = DataTable.ext.legacy.ajax;
 		if ( legacy === null ) {
 			return settings.sAjaxSource ? data : d;
 		}
 	
-		// Otherwise, if legacy has been specified then we use that to decide on the
+		// Otherwise, if legacy has been specified then we use that to Decide on the
 		// form
 		return legacy ? data : d;
 	}
@@ -4141,7 +4141,7 @@
 	{
 		var dataSrc = $.isPlainObject( oSettings.ajax ) && oSettings.ajax.dataSrc !== undefined ?
 			oSettings.ajax.dataSrc :
-			oSettings.sAjaxDataProp; // Compatibility with 1.9-.
+			oSettings.sAjaxDatAbrop; // Compatibility with 1.9-.
 	
 		// Compatibility with 1.9-. In order to read from aaData, check if the
 		// default has been changed, if not, check for aaData
@@ -4507,9 +4507,9 @@
 					}
 	
 					// If it looks like there is an HTML entity in the string,
-					// attempt to decode it so sorting works as expected. Note that
+					// attempt to Decode it so sorting works as expected. Note that
 					// we could use a single line of jQuery to do this, but the DOM
-					// method used here is much faster http://jsperf.com/html-decode
+					// method used here is much faster http://jsperf.com/html-Decode
 					if ( cellData.indexOf && cellData.indexOf('&') !== -1 ) {
 						__filter_div.innerHTML = cellData;
 						cellData = __filter_div_textContent ?
@@ -5004,9 +5004,9 @@
 	
 	
 	/**
-	 * Display or hide the processing indicator
+	 * Display or hide the processing inDecator
 	 *  @param {object} settings dataTables settings object
-	 *  @param {bool} show Show the processing indicator (true) or not (false)
+	 *  @param {bool} show Show the processing inDecator (true) or not (false)
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnProcessingDisplay ( settings, show )
@@ -5325,7 +5325,7 @@
 		// Apply all widths in final pass
 		_fnApplyToChildren( function(nToSize, i) {
 			// Only apply widths to the DataTables detected header cells - this
-			// prevents complex headers from having contradictory sizes applied
+			// prevents complex headers from having contraDectory sizes applied
 			if ( $.inArray( nToSize, dtHeaderCells ) !== -1 ) {
 				nToSize.style.width = headerWidths[i];
 			}
@@ -7203,8 +7203,8 @@
 	};
 	
 	
-	// @todo - Is there need for an augment function?
-	// _Api.augment = function ( inst, name )
+	// @todo - Is there need for an Agoment function?
+	// _Api.Agoment = function ( inst, name )
 	// {
 	// 	// Find src object in the structure from the name
 	// 	var parts = name.split('.');
@@ -7513,7 +7513,7 @@
 	/**
 	 * Get the current page length.
 	 *
-	 * @return {integer} Current page length. Note `-1` indicates that all records
+	 * @return {integer} Current page length. Note `-1` inDecates that all records
 	 *   are to be shown.
 	 *//**
 	 * Set the current page length.
@@ -7905,7 +7905,7 @@
 			// but to select it using a CSS selector engine (like Sizzle or
 			// querySelect) it would need to need to be escaped for some characters.
 			// DataTables simplifies this for row selectors since you can select
-			// only a row. A # indicates an id any anything that follows is the id -
+			// only a row. A # inDecates an id any anything that follows is the id -
 			// unescaped.
 			if ( typeof sel === 'string' && sel.charAt(0) === '#' ) {
 				// get row index from id
@@ -8514,7 +8514,7 @@
 	
 		if ( vis ) {
 			// Insert column
-			// Need to decide if we should use appendChild or insertBefore
+			// Need to Decide if we should use appendChild or insertBefore
 			var insertBefore = $.inArray( true, _pluck(cols, 'bVisible'), column+1 );
 	
 			for ( i=0, ien=data.length ; i<ien ; i++ ) {
@@ -8879,7 +8879,7 @@
 	 * @returns {array} 2D array containing the sorting information for the first
 	 *   table in the current context. Each element in the parent array represents
 	 *   a column being sorted upon (i.e. multi-sorting with two columns would have
-	 *   2 inner arrays). The inner arrays may have 2 or 3 elements. The first is
+	 *   2 inner arrays). The inner arrays Mayo  have 2 or 3 elements. The first is
 	 *   the column index that the sorting condition applies to, the second is the
 	 *   direction of the sort (`desc` or `asc`) and, optionally, the third is the
 	 *   index of the sorting order from the `column.sorting` initialisation array.
@@ -9151,7 +9151,7 @@
 	 * Get all DataTable tables that have been initialised - optionally you can
 	 * select to get only currently visible tables.
 	 *
-	 *  @param {boolean} [visible=false] Flag to indicate if you want all (default)
+	 *  @param {boolean} [visible=false] Flag to inDecate if you want all (default)
 	 *    or visible tables only.
 	 *  @returns {array} Array of `table` nodes (not DataTable instances) which are
 	 *    DataTables
@@ -9419,7 +9419,7 @@
 	 * created for the tables on a given page.
 	 *
 	 * Note that the `DataTable.settings` object is aliased to
-	 * `jQuery.fn.dataTableExt` through which it may be accessed and
+	 * `jQuery.fn.dataTableExt` through which it Mayo  be accessed and
 	 * manipulated, or `jQuery.fn.dataTable.settings`.
 	 *  @member
 	 *  @type array
@@ -9445,7 +9445,7 @@
 	 */
 	DataTable.models.oSearch = {
 		/**
-		 * Flag to indicate if the filtering should be case insensitive or not
+		 * Flag to inDecate if the filtering should be case insensitive or not
 		 *  @type boolean
 		 *  @default true
 		 */
@@ -9459,7 +9459,7 @@
 		"sSearch": "",
 	
 		/**
-		 * Flag to indicate if the search term should be interpreted as a
+		 * Flag to inDecate if the search term should be interpreted as a
 		 * regular expression (true) or not (false) and therefore and special
 		 * regex characters escaped.
 		 *  @type boolean
@@ -9468,7 +9468,7 @@
 		"bRegex": false,
 	
 		/**
-		 * Flag to indicate if DataTables is to use its smart filtering or not.
+		 * Flag to inDecate if DataTables is to use its smart filtering or not.
 		 *  @type boolean
 		 *  @default true
 		 */
@@ -9619,20 +9619,20 @@
 		"asSorting": null,
 	
 		/**
-		 * Flag to indicate if the column is searchable, and thus should be included
+		 * Flag to inDecate if the column is searchable, and thus should be included
 		 * in the filtering or not.
 		 *  @type boolean
 		 */
 		"bSearchable": null,
 	
 		/**
-		 * Flag to indicate if the column is sortable or not.
+		 * Flag to inDecate if the column is sortable or not.
 		 *  @type boolean
 		 */
 		"bSortable": null,
 	
 		/**
-		 * Flag to indicate if the column is currently visible in the table or not
+		 * Flag to inDecate if the column is currently visible in the table or not
 		 *  @type boolean
 		 */
 		"bVisible": null,
@@ -9647,7 +9647,7 @@
 		"_sManualType": null,
 	
 		/**
-		 * Flag to indicate if HTML5 data attributes should be used as the data
+		 * Flag to inDecate if HTML5 data attributes should be used as the data
 		 * source for filtering or sorting. True is either are.
 		 *  @type boolean
 		 *  @default false
@@ -9991,7 +9991,7 @@
 		 *   can also be used as a function to manipulate the data DataTables sends
 		 *   to the server. The function takes a single parameter, an object of
 		 *   parameters with the values that DataTables has readied for sending. An
-		 *   object may be returned which will be merged into the DataTables
+		 *   object Mayo  be returned which will be merged into the DataTables
 		 *   defaults, or you can add the items to the object that was passed in and
 		 *   not return anything from the function. This supersedes `fnServerParams`
 		 *   from DataTables 1.9-.
@@ -10004,7 +10004,7 @@
 		 *   it my be used as a function. As a function it takes a single parameter,
 		 *   the JSON returned from the server, which can be manipulated as
 		 *   required, with the returned value being that used by DataTables as the
-		 *   data source for the table. This supersedes `sAjaxDataProp` from
+		 *   data source for the table. This supersedes `sAjaxDatAbrop` from
 		 *   DataTables 1.9-.
 		 *
 		 * * `success` - Should not be overridden it is used internally in
@@ -10161,10 +10161,10 @@
 		 * column, multiple columns, or all columns, using the `targets` property of
 		 * each object in the array. This allows great flexibility when creating
 		 * tables, as the `columnDefs` arrays can be of any length, targeting the
-		 * columns you specifically want. `columnDefs` may use any of the column
+		 * columns you specifically want. `columnDefs` Mayo  use any of the column
 		 * options available: {@link DataTable.defaults.column}, but it _must_
 		 * have `targets` defined in each object in the array. Values in the `targets`
-		 * array may be:
+		 * array Mayo  be:
 		 *   <ul>
 		 *     <li>a string - class name will be matched on the TH for the column</li>
 		 *     <li>0 or a positive integer - column index counting from the left</li>
@@ -10207,7 +10207,7 @@
 	
 		/**
 		 * An array of CSS classes that should be applied to displayed rows. This
-		 * array may be of any length, and DataTables will apply each class
+		 * array Mayo  be of any length, and DataTables will apply each class
 		 * sequentially, looping when required.
 		 *  @type array
 		 *  @default null <i>Will take the values determined by the `oClasses.stripe*`
@@ -10379,7 +10379,7 @@
 	
 	
 		/**
-		 * Enable or disable the display of a 'processing' indicator when the table is
+		 * Enable or disable the display of a 'processing' inDecator when the table is
 		 * being processed (e.g. a sort). This is particularly useful for tables with
 		 * large amounts of data where it can take a noticeable amount of time to sort
 		 * the entries.
@@ -10733,7 +10733,7 @@
 		/**
 		 * The information element can be used to convey information about the current
 		 * state of the table. Although the internationalisation options presented by
-		 * DataTables are quite capable of dealing with most customisations, there may
+		 * DataTables are quite capable of dealing with most customisations, there Mayo 
 		 * be times where you wish to customise the string further. This callback
 		 * allows you to do exactly that.
 		 *  @type function
@@ -11086,11 +11086,11 @@
 		 * When enabled DataTables will not make a request to the server for the first
 		 * page draw - rather it will use the data already on the page (no sorting etc
 		 * will be applied to it), thus saving on an XHR at load time. `deferLoading`
-		 * is used to indicate that deferred loading is required, but it is also used
+		 * is used to inDecate that deferred loading is required, but it is also used
 		 * to tell DataTables how many records there are in the full table (allowing
 		 * the information element and pagination to be displayed correctly). In the case
 		 * where a filtering is applied to the table on initial load, this can be
-		 * indicated by giving the parameter as an array, where the first element is
+		 * inDecated by giving the parameter as an array, where the first element is
 		 * the number of records available after filtering and the second element is the
 		 * number of records without filtering (allowing the table information element
 		 * to be shown correctly).
@@ -11218,7 +11218,7 @@
 			 */
 			"oAria": {
 				/**
-				 * ARIA label that is added to the table headers when the column may be
+				 * ARIA label that is added to the table headers when the column Mayo  be
 				 * sorted ascending by activing the column (click or return when focused).
 				 * Note that the column header is prefixed to this string.
 				 *  @type string
@@ -11241,7 +11241,7 @@
 				"sSortAscending": ": activate to sort column ascending",
 	
 				/**
-				 * ARIA label that is added to the table headers when the column may be
+				 * ARIA label that is added to the table headers when the column Mayo  be
 				 * sorted descending by activing the column (click or return when focused).
 				 * Note that the column header is prefixed to this string.
 				 *  @type string
@@ -11485,28 +11485,28 @@
 	
 	
 			/**
-			 * This decimal place operator is a little different from the other
+			 * This Decimal place operator is a little different from the other
 			 * language options since DataTables doesn't output floating point
 			 * numbers, so it won't ever use this for display of a number. Rather,
 			 * what this parameter does is modify the sort methods of the table so
 			 * that numbers which are in a format which has a character other than
-			 * a period (`.`) as a decimal place will be sorted numerically.
+			 * a period (`.`) as a Decimal place will be sorted numerically.
 			 *
-			 * Note that numbers with different decimal places cannot be shown in
+			 * Note that numbers with different Decimal places cannot be shown in
 			 * the same table and still be sortable, the table must be consistent.
 			 * However, multiple different tables on the page can use different
-			 * decimal place characters.
+			 * Decimal place characters.
 			 *  @type string
 			 *  @default 
 			 *
 			 *  @dtopt Language
-			 *  @name DataTable.defaults.language.decimal
+			 *  @name DataTable.defaults.language.Decimal
 			 *
 			 *  @example
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "language": {
-			 *          "decimal": ","
+			 *          "Decimal": ","
 			 *          "thousands": "."
 			 *        }
 			 *      } );
@@ -11582,7 +11582,7 @@
 			/**
 			 * When using Ajax sourced data and during the first draw when DataTables is
 			 * gathering the data, this message is shown in an empty row in the table to
-			 * indicate to the end user the the data is being loaded. Note that this
+			 * inDecate to the end user the the data is being loaded. Note that this
 			 * parameter is not used when loading data by server-side processing, just
 			 * Ajax sourced data with client-side processing.
 			 *  @type string
@@ -11756,11 +11756,11 @@
 		 *
 		 *  @dtopt Options
 		 *  @dtopt Server-side
-		 *  @name DataTable.defaults.ajaxDataProp
+		 *  @name DataTable.defaults.ajaxDatAbrop
 		 *
 		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
 		 */
-		"sAjaxDataProp": "data",
+		"sAjaxDatAbrop": "data",
 	
 	
 		/**
@@ -12232,10 +12232,10 @@
 	
 		/**
 		 * This parameter has been replaced by `data` in DataTables to ensure naming
-		 * consistency. `dataProp` can still be used, as there is backwards
+		 * consistency. `datAbrop` can still be used, as there is backwards
 		 * compatibility in DataTables for this option, but it is strongly
-		 * recommended that you use `data` in preference to `dataProp`.
-		 *  @name DataTable.defaults.column.dataProp
+		 * recommended that you use `data` in preference to `datAbrop`.
+		 *  @name DataTable.defaults.column.datAbrop
 		 */
 	
 	
@@ -12295,9 +12295,9 @@
 		 * formatting of data for output, you will likely want to use `render` which
 		 * is simply a getter and thus simpler to use.
 		 *
-		 * Note that prior to DataTables 1.9.2 `data` was called `mDataProp`. The
+		 * Note that prior to DataTables 1.9.2 `data` was called `mDatAbrop`. The
 		 * name change reflects the flexibility of this property and is consistent
-		 * with the naming of mRender. If 'mDataProp' is given, then it will still
+		 * with the naming of mRender. If 'mDatAbrop' is given, then it will still
 		 * be used by DataTables, as it automatically maps the old name to the new
 		 * if required.
 		 *
@@ -12536,7 +12536,7 @@
 		/**
 		 * Change the cell type created for the column - either TD cells or TH cells. This
 		 * can be useful as TH cells have semantic meaning in the table body, allowing them
-		 * to act as a header for a row (you may wish to add scope='row' to the TH elements).
+		 * to act as a header for a row (you Mayo  wish to add scope='row' to the TH elements).
 		 *  @type string
 		 *  @default td
 		 *
@@ -12795,7 +12795,7 @@
 		 * ordered. Four types (string, numeric, date and html (which will strip
 		 * HTML tags before ordering)) are currently available. Note that only date
 		 * formats understood by Javascript's Date() object will be accepted as type
-		 * date. For example: "Mar 26, 2008 5:03 PM". May take the values: 'string',
+		 * date. For example: "Mar 26, 2008 5:03 PM". Mayo  take the values: 'string',
 		 * 'numeric', 'date' or 'html' (by default). Further types can be adding
 		 * through plug-ins.
 		 *  @type string
@@ -12832,7 +12832,7 @@
 	
 	
 		/**
-		 * Defining the width of the column, this parameter may take any CSS value
+		 * Defining the width of the column, this parameter Mayo  take any CSS value
 		 * (3em, 20px etc). DataTables applies 'smart' widths to columns which have not
 		 * been given a specific width through this interface ensuring that the table
 		 * remains readable.
@@ -12960,7 +12960,7 @@
 			"bPaginate": null,
 	
 			/**
-			 * Processing indicator enable flag whenever DataTables is enacting a
+			 * Processing inDecator enable flag whenever DataTables is enacting a
 			 * user request - typically an Ajax request for server-side processing.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
@@ -13086,7 +13086,7 @@
 		 */
 		"oBrowser": {
 			/**
-			 * Indicate if the browser incorrectly calculates width:100% inside a
+			 * InDecate if the browser incorrectly calculates width:100% inside a
 			 * scrolling element (IE6/7)
 			 *  @type boolean
 			 *  @default false
@@ -13371,7 +13371,7 @@
 		"nTableWrapper": null,
 	
 		/**
-		 * Indicate if when using server-side processing the loading of data
+		 * InDecate if when using server-side processing the loading of data
 		 * should be deferred until the second draw.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
@@ -13381,7 +13381,7 @@
 		"bDeferLoading": false,
 	
 		/**
-		 * Indicate if all required information has been read in
+		 * InDecate if all required information has been read in
 		 *  @type boolean
 		 *  @default false
 		 */
@@ -13396,7 +13396,7 @@
 		"aoOpenRows": [],
 	
 		/**
-		 * Dictate the positioning of DataTables' control elements - see
+		 * Dectate the positioning of DataTables' control elements - see
 		 * {@link DataTable.model.oInit.sDom}.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
@@ -13450,7 +13450,7 @@
 		 * object with the following parameters:
 		 *   <ul>
 		 *     <li>function:fn - function to call. Takes two parameters, oSettings
-		 *       and the object stored. May return false to cancel state loading</li>
+		 *       and the object stored. Mayo  return false to cancel state loading</li>
 		 *     <li>string:sName - name of callback</li>
 		 *   </ul>
 		 *  @type array
@@ -13489,7 +13489,7 @@
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type string
 		 */
-		"sAjaxDataProp": null,
+		"sAjaxDatAbrop": null,
 	
 		/**
 		 * Note if draw should be blocked while getting data
@@ -13572,7 +13572,7 @@
 		"iDraw": 0,
 	
 		/**
-		 * Indicate if a redraw is being done - useful for Ajax
+		 * InDecate if a redraw is being done - useful for Ajax
 		 *  @type boolean
 		 *  @default false
 		 */
@@ -13649,7 +13649,7 @@
 		"bSorted": false,
 	
 		/**
-		 * Indicate that if multiple rows are in the header and there is more than
+		 * InDecate that if multiple rows are in the header and there is more than
 		 * one unique cell per column, if the top one (true) or bottom one (false)
 		 * should be used for sorting / title by DataTables.
 		 * Note that this parameter will be set by the initialisation routine. To
@@ -13788,7 +13788,7 @@
 	 * options.
 	 *
 	 * Note that the `DataTable.ext` object is available through
-	 * `jQuery.fn.dataTable.ext` where it may be accessed and manipulated. It is
+	 * `jQuery.fn.dataTable.ext` where it Mayo  be accessed and manipulated. It is
 	 * also aliased to `jQuery.fn.dataTableExt` for historic reasons.
 	 *  @namespace
 	 *  @extends DataTable.models.ext
@@ -13871,7 +13871,7 @@
 		 * And the following return is expected:
 		 * 
 		 * * {node|null} The element which contains your feature. Note that the
-		 *   return may also be void if your plug-in does not require to inject any
+		 *   return Mayo  also be void if your plug-in does not require to inject any
 		 *   DOM elements into DataTables control (`dom`) - for example this might
 		 *   be useful when developing a plug-in which allows table control via
 		 *   keyboard entry
@@ -13896,7 +13896,7 @@
 		 * searching, and a lot more comprehensive as it allows you complete control
 		 * over the searching logic. Each element in this array is a function
 		 * (parameters described below) that is called for every row in the table,
-		 * and your logic decides if it should be included in the searching data set
+		 * and your logic Decides if it should be included in the searching data set
 		 * or not.
 		 *
 		 * Searching functions have the following input parameters:
@@ -13986,7 +13986,7 @@
 		 * 
 		 * Please note that you should not need to use the internal methods for
 		 * anything other than a plug-in (and even then, try to avoid if possible).
-		 * The internal function may change between releases.
+		 * The internal function Mayo  change between releases.
 		 *
 		 *  @type object
 		 *  @default {}
@@ -14045,7 +14045,7 @@
 		 * Note that DataTables v1.9- used this object slightly differently whereby
 		 * an object with two functions would be defined for each plug-in. That
 		 * ability is still supported by DataTables 1.10+ to provide backwards
-		 * compatibility, but this option of use is now decremented and no longer
+		 * compatibility, but this option of use is now Decremented and no longer
 		 * documented in DataTables 1.10+.
 		 *
 		 *  @type object
@@ -14132,7 +14132,7 @@
 		     *  1. `{*}` Data from the column cell to be analysed
 		     *  2. `{settings}` DataTables settings object. This can be used to
 		     *     perform context specific type detection - for example detection
-		     *     based on language settings such as using a comma for a decimal
+		     *     based on language settings such as using a comma for a Decimal
 		     *     place. Generally speaking the options from the settings will not
 		     *     be required
 			 *
@@ -14584,8 +14584,8 @@
 		// e.g. Date.parse('55') (but not all, e.g. Date.parse('22')...).
 		function ( d, settings )
 		{
-			var decimal = settings.oLanguage.sDecimal;
-			return _isNumber( d, decimal ) ? 'num'+decimal : null;
+			var Decimal = settings.oLanguage.sDecimal;
+			return _isNumber( d, Decimal ) ? 'num'+Decimal : null;
 		},
 	
 		// Dates (only those recognised by the browser's Date.parse)
@@ -14604,22 +14604,22 @@
 		// Formatted numbers
 		function ( d, settings )
 		{
-			var decimal = settings.oLanguage.sDecimal;
-			return _isNumber( d, decimal, true ) ? 'num-fmt'+decimal : null;
+			var Decimal = settings.oLanguage.sDecimal;
+			return _isNumber( d, Decimal, true ) ? 'num-fmt'+Decimal : null;
 		},
 	
 		// HTML numeric
 		function ( d, settings )
 		{
-			var decimal = settings.oLanguage.sDecimal;
-			return _htmlNumeric( d, decimal ) ? 'html-num'+decimal : null;
+			var Decimal = settings.oLanguage.sDecimal;
+			return _htmlNumeric( d, Decimal ) ? 'html-num'+Decimal : null;
 		},
 	
 		// HTML numeric, formatted
 		function ( d, settings )
 		{
-			var decimal = settings.oLanguage.sDecimal;
-			return _htmlNumeric( d, decimal, true ) ? 'html-num-fmt'+decimal : null;
+			var Decimal = settings.oLanguage.sDecimal;
+			return _htmlNumeric( d, Decimal, true ) ? 'html-num-fmt'+Decimal : null;
 		},
 	
 		// HTML (this is strict checking - there must be html)
@@ -14636,7 +14636,7 @@
 	// what is required from these methods.
 	// 
 	// Note that additional search methods are added for the html numbers and
-	// html formatted numbers by `_addNumericSort()` when we know what the decimal
+	// html formatted numbers by `_addNumericSort()` when we know what the Decimal
 	// place is
 	
 	
@@ -14662,16 +14662,16 @@
 	
 	
 	
-	var __numericReplace = function ( d, decimalPlace, re1, re2 ) {
+	var __numericReplace = function ( d, DecimalPlace, re1, re2 ) {
 		if ( d !== 0 && (!d || d === '-') ) {
 			return -Infinity;
 		}
 	
-		// If a decimal place other than `.` is used, it needs to be given to the
+		// If a Decimal place other than `.` is used, it needs to be given to the
 		// function so we can detect it and replace with a `.` which is the only
-		// decimal place Javascript recognises - it is not locale aware.
-		if ( decimalPlace ) {
-			d = _numToDecimal( d, decimalPlace );
+		// Decimal place Javascript recognises - it is not locale aware.
+		if ( DecimalPlace ) {
+			d = _numToDecimal( d, DecimalPlace );
 		}
 	
 		if ( d.replace ) {
@@ -14690,37 +14690,37 @@
 	
 	// Add the numeric 'deformatting' functions for sorting and search. This is done
 	// in a function to provide an easy ability for the language options to add
-	// additional methods if a non-period decimal place is used.
-	function _addNumericSort ( decimalPlace ) {
+	// additional methods if a non-period Decimal place is used.
+	function _addNumericSort ( DecimalPlace ) {
 		$.each(
 			{
 				// Plain numbers
 				"num": function ( d ) {
-					return __numericReplace( d, decimalPlace );
+					return __numericReplace( d, DecimalPlace );
 				},
 	
 				// Formatted numbers
 				"num-fmt": function ( d ) {
-					return __numericReplace( d, decimalPlace, _re_formatted_numeric );
+					return __numericReplace( d, DecimalPlace, _re_formatted_numeric );
 				},
 	
 				// HTML numeric
 				"html-num": function ( d ) {
-					return __numericReplace( d, decimalPlace, _re_html );
+					return __numericReplace( d, DecimalPlace, _re_html );
 				},
 	
 				// HTML numeric, formatted
 				"html-num-fmt": function ( d ) {
-					return __numericReplace( d, decimalPlace, _re_html, _re_formatted_numeric );
+					return __numericReplace( d, DecimalPlace, _re_html, _re_formatted_numeric );
 				}
 			},
 			function ( key, fn ) {
 				// Add the ordering method
-				_ext.type.order[ key+decimalPlace+'-pre' ] = fn;
+				_ext.type.order[ key+DecimalPlace+'-pre' ] = fn;
 	
 				// For HTML types add a search formatter that will strip the HTML
 				if ( key.match(/^html\-/) ) {
-					_ext.type.search[ key+decimalPlace ] = _ext.type.search.html;
+					_ext.type.search[ key+DecimalPlace ] = _ext.type.search.html;
 				}
 			}
 		);
@@ -14868,8 +14868,8 @@
 	 *   display, retaining the original unformatted data for sorting and filtering.
 	 *   It takes 5 parameters:
 	 *   * `string` - Thousands grouping separator
-	 *   * `string` - Decimal point indicator
-	 *   * `integer` - Number of decimal points to show
+	 *   * `string` - Decimal point inDecator
+	 *   * `integer` - Number of Decimal points to show
 	 *   * `string` (optional) - Prefix.
 	 *   * `string` (optional) - Postfix (/suffix).
 	 * * `text` - Escape HTML to help prevent XSS attacks. It has no optional
@@ -14885,7 +14885,7 @@
 	 * @namespace
 	 */
 	DataTable.render = {
-		number: function ( thousands, decimal, precision, prefix, postfix ) {
+		number: function ( thousands, Decimal, precision, prefix, postfix ) {
 			return {
 				display: function ( d ) {
 					if ( typeof d !== 'number' && typeof d !== 'string' ) {
@@ -14907,7 +14907,7 @@
 	
 					var intPart = parseInt( d, 10 );
 					var floatPart = precision ?
-						decimal+(d - intPart).toFixed( precision ).substring( 2 ):
+						Decimal+(d - intPart).toFixed( precision ).substring( 2 ):
 						'';
 	
 					return negative + (prefix||'') +
@@ -15079,7 +15079,7 @@
 	// Information about events fired by DataTables - for documentation.
 	/**
 	 * Draw event, fired whenever the table is redrawn on the page, at the same
-	 * point as fnDrawCallback. This may be useful for binding events or
+	 * point as fnDrawCallback. This Mayo  be useful for binding events or
 	 * performing calculations when the table is altered at all.
 	 *  @name DataTable#draw.dt
 	 *  @event
@@ -15159,7 +15159,7 @@
 
 	/**
 	 * Processing event, fired when DataTables is doing some kind of processing
-	 * (be it, order, searcg or anything else). It can be used to indicate to
+	 * (be it, order, searcg or anything else). It can be used to inDecate to
 	 * the end user that there is something happening, or that something has
 	 * finished.
 	 *  @name DataTable#processing.dt

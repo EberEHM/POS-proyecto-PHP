@@ -1,14 +1,14 @@
 define([
 
 ], function (){
-  function MaximumSelectionLength (decorated, $e, options) {
+  function MaximumSelectionLength (Decorated, $e, options) {
     this.maximumSelectionLength = options.get('maximumSelectionLength');
 
-    decorated.call(this, $e, options);
+    Decorated.call(this, $e, options);
   }
 
   MaximumSelectionLength.prototype.query =
-    function (decorated, params, callback) {
+    function (Decorated, params, callback) {
       var self = this;
 
       this.current(function (currentData) {
@@ -23,7 +23,7 @@ define([
           });
           return;
         }
-        decorated.call(self, params, callback);
+        Decorated.call(self, params, callback);
       });
   };
 

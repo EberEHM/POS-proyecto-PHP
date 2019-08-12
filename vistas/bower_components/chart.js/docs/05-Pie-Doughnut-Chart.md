@@ -119,7 +119,7 @@ canvas.onclick = function(evt){
 };
 ```
 
-This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
+This functionality Mayo  be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
 
 #### .update( )
 

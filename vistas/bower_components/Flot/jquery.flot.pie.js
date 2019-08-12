@@ -5,7 +5,7 @@ Licensed under the MIT license.
 
 The plugin assumes that each series has a single data value, and that each
 value is a positive integer or zero.  Negative numbers don't make sense for a
-pie chart, and have unpredictable results.  The values do NOT need to be
+pie chart, and have unpreDectable results.  The values do NOT need to be
 passed in as percentages; the plugin will calculate the total and per-slice
 percentages internally.
 
@@ -27,7 +27,7 @@ The plugin supports these options:
 				left: integer value to move the pie left or right, or 'auto'
 			},
 			stroke: {
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
+				color: any hexiDecimal color value (other formats Mayo  or Mayo  not work, so best to stick with something like '#FFF')
 				width: integer pixel width of the stroke
 			},
 			label: {
@@ -35,14 +35,14 @@ The plugin supports these options:
 				formatter:  a user-defined function that modifies the text/style of the label text
 				radius: 0-1 for percentage of fullsize, or a specified pixel length
 				background: {
-					color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
+					color: any hexiDecimal color value (other formats Mayo  or Mayo  not work, so best to stick with something like '#000')
 					opacity: 0-1
 				},
 				threshold: 0-1 for the percentage value at which to hide labels (if they're too small)
 			},
 			combine: {
 				threshold: 0-1 for the percentage value at which to combine slices (if they're too small)
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#CCC'), if null, the plugin will automatically use the color of the first slice to be combined
+				color: any hexiDecimal color value (other formats Mayo  or Mayo  not work, so best to stick with something like '#CCC'), if null, the plugin will automatically use the color of the first slice to be combined
 				label: any text value of what the combined slice should be labeled
 			}
 			highlight: {
@@ -179,7 +179,7 @@ More detail and specific examples can be found in the included HTML file.
 
 				// Note how we use the original array, rather than creating a
 				// new one; this is more efficient and preserves any extra data
-				// that the user may have stored in higher indexes.
+				// that the user Mayo  have stored in higher indexes.
 
 				if ($.isArray(value) && value.length == 1) {
     				value = value[0];
@@ -310,7 +310,7 @@ More detail and specific examples can be found in the included HTML file.
 				attempts = 0;
 
 			// Keep shrinking the pie's radius until drawPie returns true,
-			// indicating that all the labels fit, or we try too many times.
+			// inDecating that all the labels fit, or we try too many times.
 
 			do {
 				if (attempts > 0) {

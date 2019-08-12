@@ -25,7 +25,7 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 .hljs-annotation,
-.hljs-decorator,
+.hljs-Decorator,
 .hljs-preprocessor,
 .hljs-pragma,
 .hljs-doctype,
@@ -99,7 +99,7 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-phpdoc,
 .hljs-yardoctag,
 .hljs-javadoctag {
-  text-decoration: underline;
+  text-Decoration: underline;
 }
 
 .hljs-variable,

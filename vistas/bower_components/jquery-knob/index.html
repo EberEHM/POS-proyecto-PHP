@@ -64,7 +64,7 @@
                     ,$idir = $("div.idir")
                     ,$ival = $("div.ival")
                     ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
-                    ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+                    ,Decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
                 $("input.infinite").knob(
                                     {
                                     min : 0
@@ -73,7 +73,7 @@
                                     , change : function () {
                                                     if(v > this.cv){
                                                         if(up){
-                                                            decr();
+                                                            Decr();
                                                             up=0;
                                                         }else{up=1;down=0;}
                                                     } else {

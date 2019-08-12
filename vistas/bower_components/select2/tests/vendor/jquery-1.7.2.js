@@ -426,7 +426,7 @@ jQuery.extend({
 			// Remember that the DOM is ready
 			jQuery.isReady = true;
 
-			// If a normal DOM Ready event fired, decrement, and wait if need be
+			// If a normal DOM Ready event fired, Decrement, and wait if need be
 			if ( wait !== true && --jQuery.readyWait > 0 ) {
 				return;
 			}
@@ -466,7 +466,7 @@ jQuery.extend({
 		// If IE event model is used
 		} else if ( document.attachEvent ) {
 			// ensure firing before onload,
-			// maybe late but safe also for iframes
+			// Mayo be late but safe also for iframes
 			document.attachEvent( "onreadystatechange", DOMContentLoaded );
 
 			// A fallback to window.onload, that will always work
@@ -3029,7 +3029,7 @@ jQuery.event = {
 			return;
 		}
 
-		// Once for each type.namespace in types; type may be omitted
+		// Once for each type.namespace in types; type Mayo  be omitted
 		types = jQuery.trim( hoverHack( types || "" ) ).split(" ");
 		for ( t = 0; t < types.length; t++ ) {
 			tns = rtypenamespace.exec( types[t] ) || [];
@@ -3094,7 +3094,7 @@ jQuery.event = {
 	},
 
 	// Events that are safe to short-circuit if no handlers are attached.
-	// Native DOM events should not be added, they may have inline handlers.
+	// Native DOM events should not be added, they Mayo  have inline handlers.
 	customEvent: {
 		"getData": true,
 		"setData": true,
@@ -3313,7 +3313,7 @@ jQuery.event = {
 			handlerQueue.push({ elem: this, matches: handlers.slice( delegateCount ) });
 		}
 
-		// Run delegates first; they may want to stop propagation beneath us
+		// Run delegates first; they Mayo  want to stop propagation beneath us
 		for ( i = 0; i < handlerQueue.length && !event.isPropagationStopped(); i++ ) {
 			matched = handlerQueue[ i ];
 			event.currentTarget = matched.elem;
@@ -3521,7 +3521,7 @@ jQuery.Event = function( src, props ) {
 		this.originalEvent = src;
 		this.type = src.type;
 
-		// Events bubbling up the document may have been marked as prevented
+		// Events bubbling up the document Mayo  have been marked as prevented
 		// by a handler lower down the tree; reflect the correct value.
 		this.isDefaultPrevented = ( src.defaultPrevented || src.returnValue === false ||
 			src.getPreventDefault && src.getPreventDefault() ) ? returnTrue : returnFalse;
@@ -3631,7 +3631,7 @@ if ( !jQuery.support.submitBubbles ) {
 				return false;
 			}
 
-			// Lazy-add a submit handler when a descendant form may potentially be submitted
+			// Lazy-add a submit handler when a descendant form Mayo  potentially be submitted
 			jQuery.event.add( this, "click._submit keypress._submit", function( e ) {
 				// Node name check avoids a VML-related crash in IE (#9807)
 				var elem = e.target,
@@ -4397,31 +4397,31 @@ var Expr = Sizzle.selectors = {
 		},
 
 		"": function(checkSet, part, isXML){
-			var nodeCheck,
+			var noDecheck,
 				doneName = done++,
 				checkFn = dirCheck;
 
 			if ( typeof part === "string" && !rNonWord.test( part ) ) {
 				part = part.toLowerCase();
-				nodeCheck = part;
-				checkFn = dirNodeCheck;
+				noDecheck = part;
+				checkFn = dirNoDecheck;
 			}
 
-			checkFn( "parentNode", part, doneName, checkSet, nodeCheck, isXML );
+			checkFn( "parentNode", part, doneName, checkSet, noDecheck, isXML );
 		},
 
 		"~": function( checkSet, part, isXML ) {
-			var nodeCheck,
+			var noDecheck,
 				doneName = done++,
 				checkFn = dirCheck;
 
 			if ( typeof part === "string" && !rNonWord.test( part ) ) {
 				part = part.toLowerCase();
-				nodeCheck = part;
-				checkFn = dirNodeCheck;
+				noDecheck = part;
+				checkFn = dirNoDecheck;
 			}
 
-			checkFn( "previousSibling", part, doneName, checkSet, nodeCheck, isXML );
+			checkFn( "previousSibling", part, doneName, checkSet, noDecheck, isXML );
 		}
 	},
 
@@ -5257,7 +5257,7 @@ if ( document.querySelectorAll ) {
 	div = null;
 })();
 
-function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML ) {
+function dirNoDecheck( dir, cur, doneName, checkSet, noDecheck, isXML ) {
 	for ( var i = 0, l = checkSet.length; i < l; i++ ) {
 		var elem = checkSet[i];
 
@@ -5290,7 +5290,7 @@ function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML ) {
 	}
 }
 
-function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML ) {
+function dirCheck( dir, cur, doneName, checkSet, noDecheck, isXML ) {
 	for ( var i = 0, l = checkSet.length; i < l; i++ ) {
 		var elem = checkSet[i];
 
@@ -6195,7 +6195,7 @@ jQuery.buildFragment = function( args, nodes, scripts ) {
 	var fragment, cacheable, cacheresults, doc,
 	first = args[ 0 ];
 
-	// nodes may contain either an explicit document object,
+	// nodes Mayo  contain either an explicit document object,
 	// a jQuery collection or context object.
 	// If nodes[0] contains a valid object to assign to doc
 	if ( nodes && nodes[0] ) {
@@ -6418,7 +6418,7 @@ jQuery.extend({
 					// Remove IE's autoinserted <tbody> from table fragments
 					if ( !jQuery.support.tbody ) {
 
-						// String was a <table>, *may* have spurious <tbody>
+						// String was a <table>, *Mayo * have spurious <tbody>
 						var hasBody = rtbody.test(elem),
 							tbody = tag === "table" && !hasBody ?
 								div.firstChild && div.firstChild.childNodes :
@@ -7015,7 +7015,7 @@ var r20 = /%20/g,
 	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = ["*/"] + ["*"];
 
-// #8138, IE may throw an exception when accessing
+// #8138, IE Mayo  throw an exception when accessing
 // a field from window.location if document.domain has been set
 try {
 	ajaxLocation = location.href;
@@ -7449,7 +7449,7 @@ jQuery.extend({
 			};
 
 		// Callback for when everything is done
-		// It is defined here because jslint complains if it is declared
+		// It is defined here because jslint complains if it is Declared
 		// at the end of the function (which would be more logical and readable)
 		function done( status, nativeStatusText, responses, headers ) {
 
@@ -7778,7 +7778,7 @@ function buildParams( prefix, obj, traditional, add ) {
 				// If array item is non-scalar (array or object), encode its
 				// numeric index to resolve deserialization ambiguity issues.
 				// Note that rack (as of 1.0.0) can't currently deserialize
-				// nested arrays properly, and attempting to do so may cause
+				// nested arrays properly, and attempting to do so Mayo  cause
 				// a server error. Possible fixes are to modify rack's
 				// deserialization algorithm or to provide an option or flag
 				// to force array serialization to be shallow.
@@ -8235,7 +8235,7 @@ if ( jQuery.support.ajax ) {
 					} catch( _ ) {}
 
 					// Do send the request
-					// This may raise an exception which is actually
+					// This Mayo  raise an exception which is actually
 					// handled in jQuery.ajax (so no try/catch here)
 					xhr.send( ( s.hasContent && s.data ) || null );
 
@@ -9385,10 +9385,10 @@ window.jQuery = window.$ = jQuery;
 
 // Expose jQuery as an AMD module, but only for AMD loaders that
 // understand the issues with loading multiple versions of jQuery
-// in a page that all might call define(). The loader will indicate
+// in a page that all might call define(). The loader will inDecate
 // they have special allowances for multiple jQuery versions by
 // specifying define.amd.jQuery = true. Register as a named module,
-// since jQuery can be concatenated with other files that may use define,
+// since jQuery can be concatenated with other files that Mayo  use define,
 // but not use a proper concatenation script that understands anonymous
 // AMD modules. A named AMD is safest and most robust way to register.
 // Lowercase jquery is used because AMD module names are derived from

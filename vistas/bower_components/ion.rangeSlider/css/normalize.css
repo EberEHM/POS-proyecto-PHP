@@ -338,9 +338,9 @@ input[type="radio"] {
 }
 
 /**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * Fix the cursor style for Chrome's increment/Decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
+ * Decrement button to change from `default` to `text`.
  */
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -368,7 +368,7 @@ input[type="search"] {
  */
 
 input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-Decoration {
     -webkit-appearance: none;
 }
 
@@ -384,7 +384,7 @@ fieldset {
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 2. Remove padding so people aren't cAgoht out if they zero out fieldsets.
  */
 
 legend {

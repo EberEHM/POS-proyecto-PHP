@@ -66,7 +66,7 @@ CREATE TABLE `dispositivos` (
   `presupuesto` double NOT NULL,
   `recibio` text COLLATE utf8_spanish2_ci NOT NULL,
   `fechaEntrada` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `fechaAproximada` text COLLATE utf8_spanish2_ci NOT NULL,
+  `fechaAbroximada` text COLLATE utf8_spanish2_ci NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
@@ -170,54 +170,54 @@ CREATE TABLE `ventas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
--- Índices para tablas volcadas
+-- ÍnDeces para tablas volcadas
 --
 
 --
--- Indices de la tabla `categorias`
+-- InDeces de la tabla `categorias`
 --
 ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `clientes`
+-- InDeces de la tabla `clientes`
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`idCliente`);
 
 --
--- Indices de la tabla `dispositivos`
+-- InDeces de la tabla `dispositivos`
 --
 ALTER TABLE `dispositivos`
   ADD PRIMARY KEY (`idDispositivo`);
 
 --
--- Indices de la tabla `optimizarproductos`
+-- InDeces de la tabla `optimizarproductos`
 --
 ALTER TABLE `optimizarproductos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `productos`
+-- InDeces de la tabla `productos`
 --
 ALTER TABLE `productos`
   ADD PRIMARY KEY (`idProducto`),
   ADD KEY `idCategoria` (`idCategoria`);
 
 --
--- Indices de la tabla `tiporeparacion`
+-- InDeces de la tabla `tiporeparacion`
 --
 ALTER TABLE `tiporeparacion`
   ADD PRIMARY KEY (`idTipoReparacion`);
 
 --
--- Indices de la tabla `usuarios`
+-- InDeces de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `ventas`
+-- InDeces de la tabla `ventas`
 --
 ALTER TABLE `ventas`
   ADD PRIMARY KEY (`idVenta`),

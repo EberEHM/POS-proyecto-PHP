@@ -161,8 +161,8 @@ $("#example_id").ionRangeSlider();
 | `prefix` | `data-prefix` | `` | string | Set prefix for values. Will be set up right before the number: **$**100 |
 | `postfix` | `data-postfix` | `` | string | Set postfix for values. Will be set up right after the number: 100**k** |
 | `max_postfix` | `data-max-postfix` | `` | string | Special postfix, used only for maximum value. Will be showed after handle will reach maximum right position. For example **0 — 100+** |
-| `decorate_both` | `data-decorate-both` | `true` | boolean | Used for **double** type and only if prefix or postfix was set up. Determine how to decorate close values. For example: **$10k — $100k** or **$10 — 100k** |
-| `values_separator` | `data-decorate-both` | ` - ` | string | Set your own separator for close values. Used for **double** type. Default: **10 — 100**. Or you may set: **10 to 100, 10 + 100, 10 &rarr; 100** etc. |
+| `Decorate_both` | `data-Decorate-both` | `true` | boolean | Used for **double** type and only if prefix or postfix was set up. Determine how to Decorate close values. For example: **$10k — $100k** or **$10 — 100k** |
+| `values_separator` | `data-Decorate-both` | ` - ` | string | Set your own separator for close values. Used for **double** type. Default: **10 — 100**. Or you Mayo  set: **10 to 100, 10 + 100, 10 &rarr; 100** etc. |
 | `input_values_separator` | `data-input-values-separator` | ` ; ` | string | Separator for **double** values in input value property. `<input value="25;42">` |
 | `disable` | `data-disable` | `false` | boolean | Locks slider and makes it inactive. Input is disabled too. Invisible to forms |
 | `block` | `data-blokc` | `false` | boolean | Locks slider and makes it inactive. Input is NOT disabled. Can be send with forms |

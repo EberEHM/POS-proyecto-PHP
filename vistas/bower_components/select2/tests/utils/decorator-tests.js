@@ -31,7 +31,7 @@ test('overridden - constructor', function (assert) {
     return 'A';
   };
 
-  function DecoratorClass (decorated) {
+  function DecoratorClass (Decorated) {
     this.called = true;
   }
 
@@ -96,10 +96,10 @@ test('inherited - method', function (assert) {
     return 'A';
   };
 
-  function DecoratorClass (decorated) {}
+  function DecoratorClass (Decorated) {}
 
-  DecoratorClass.prototype.hello = function (decorated) {
-    return 'B' + decorated.call(this) + 'C';
+  DecoratorClass.prototype.hello = function (Decorated) {
+    return 'B' + Decorated.call(this) + 'C';
   };
 
   var DecoratedClass = Utils.Decorate(BaseClass, DecoratorClass);
@@ -118,10 +118,10 @@ test('inherited - constructor', function (assert) {
     return 'A';
   };
 
-  function DecoratorClass (decorated) {
+  function DecoratorClass (Decorated) {
     this.called = true;
 
-    decorated.call(this);
+    Decorated.call(this);
   }
 
   DecoratorClass.prototype.other = function () {
@@ -146,26 +146,26 @@ test('inherited - three levels', function (assert) {
     return a + 'c';
   };
 
-  function MiddleClass (decorated, testArgument) {
+  function MiddleClass (Decorated, testArgument) {
     this.middleCalled = true;
     this.middleTestArgument = testArgument;
 
-    decorated.call(this, testArgument);
+    Decorated.call(this, testArgument);
   }
 
-  MiddleClass.prototype.test = function (decorated, a) {
-    return decorated.call(this, a + 'b');
+  MiddleClass.prototype.test = function (Decorated, a) {
+    return Decorated.call(this, a + 'b');
   };
 
-  function DecoratorClass (decorated, testArgument) {
-    this.decoratorCalled = true;
-    this.decoratorTestArgument = testArgument;
+  function DecoratorClass (Decorated, testArgument) {
+    this.DecoratorCalled = true;
+    this.DecoratorTestArgument = testArgument;
 
-    decorated.call(this, testArgument);
+    Decorated.call(this, testArgument);
   }
 
-  DecoratorClass.prototype.test = function (decorated, a) {
-    return decorated.call(this, a + 'a');
+  DecoratorClass.prototype.test = function (Decorated, a) {
+    return Decorated.call(this, a + 'a');
   };
 
   var DecoratedClass = Utils.Decorate(
@@ -177,11 +177,11 @@ test('inherited - three levels', function (assert) {
 
   assert.ok(inst.baseCalled, 'The base class contructor was called');
   assert.ok(inst.middleCalled, 'The middle class constructor was called');
-  assert.ok(inst.decoratorCalled, 'The decorator constructor was called');
+  assert.ok(inst.DecoratorCalled, 'The Decorator constructor was called');
 
   assert.strictEqual(inst.baseTestArgument, 'test');
   assert.strictEqual(inst.middleTestArgument, 'test');
-  assert.strictEqual(inst.decoratorTestArgument, 'test');
+  assert.strictEqual(inst.DecoratorTestArgument, 'test');
 
   var out = inst.test('test');
 

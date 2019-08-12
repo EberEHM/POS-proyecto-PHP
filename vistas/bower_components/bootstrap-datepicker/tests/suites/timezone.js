@@ -20,5 +20,5 @@ test('Check title with timezone', function(){
     this.dp.fill();
 
     target = this.picker.find('.datepicker-days .datepicker-switch');
-    equal(target.text(), 'August 2015', 'Title is "August 2015"');
+    equal(target.text(), 'Agosto 2015', 'Title is "Agosto 2015"');
 });

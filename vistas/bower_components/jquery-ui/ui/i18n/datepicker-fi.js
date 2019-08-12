@@ -22,7 +22,7 @@ datepicker.regional['fi'] = {
 	monthNamesShort: ['Tammi','Helmi','Maalis','Huhti','Touko','Kesä',
 	'Heinä','Elo','Syys','Loka','Marras','Joulu'],
 	dayNamesShort: ['Su','Ma','Ti','Ke','To','Pe','La'],
-	dayNames: ['Sunnuntai','Maanantai','Tiistai','Keskiviikko','Torstai','Perjantai','Lauantai'],
+	dayNames: ['Sunnuntai','Maanantai','Tiistai','Keskiviikko','Torstai','PerEnetai','Lauantai'],
 	dayNamesMin: ['Su','Ma','Ti','Ke','To','Pe','La'],
 	weekHeader: 'Vk',
 	dateFormat: 'd.m.yy',

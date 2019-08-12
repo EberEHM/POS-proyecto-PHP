@@ -5,8 +5,8 @@
 import moment from '../moment';
 
 export default moment.defineLocale('af', {
-    months : 'Januarie_Februarie_Maart_April_Mei_Junie_Julie_Augustus_September_Oktober_November_Desember'.split('_'),
-    monthsShort : 'Jan_Feb_Mrt_Apr_Mei_Jun_Jul_Aug_Sep_Okt_Nov_Des'.split('_'),
+    months : 'Eneuarie_Februarie_Maart_Abril _Mei_Junie_Julie_Agostous_Septiembre _Oktober_Noviembre _Desember'.split('_'),
+    monthsShort : 'Ene_Feb_Mrt_Abr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des'.split('_'),
     weekdays : 'Sondag_Maandag_Dinsdag_Woensdag_Donderdag_Vrydag_Saterdag'.split('_'),
     weekdaysShort : 'Son_Maa_Din_Woe_Don_Vry_Sat'.split('_'),
     weekdaysMin : 'So_Ma_Di_Wo_Do_Vr_Sa'.split('_'),
@@ -58,6 +58,6 @@ export default moment.defineLocale('af', {
     },
     week : {
         dow : 1, // Maandag is die eerste dag van die week.
-        doy : 4  // Die week wat die 4de Januarie bevat is die eerste week van die jaar.
+        doy : 4  // Die week wat die 4de Eneuarie bevat is die eerste week van die jaar.
     }
 });

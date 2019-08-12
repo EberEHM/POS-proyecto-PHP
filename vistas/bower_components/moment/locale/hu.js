@@ -45,8 +45,8 @@ function week(isFuture) {
 }
 
 var hu = moment.defineLocale('hu', {
-    months : 'január_február_március_április_május_június_július_augusztus_szeptember_október_november_december'.split('_'),
-    monthsShort : 'jan_feb_márc_ápr_máj_jún_júl_aug_szept_okt_nov_dec'.split('_'),
+    months : 'Eneuár_február_március_április_május_június_július_Agousztus_szeptember_október_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_feb_márc_ápr_máj_jún_júl_Ago_szept_okt_nov_Dec'.split('_'),
     weekdays : 'vasárnap_hétfő_kedd_szerda_csütörtök_péntek_szombat'.split('_'),
     weekdaysShort : 'vas_hét_kedd_sze_csüt_pén_szo'.split('_'),
     weekdaysMin : 'v_h_k_sze_cs_p_szo'.split('_'),
@@ -100,7 +100,7 @@ var hu = moment.defineLocale('hu', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

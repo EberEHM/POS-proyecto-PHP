@@ -351,7 +351,7 @@ function verifyLoggingCallbacks() {
 	// Preserve other handlers
 	var onErrorFnPrev = window.onerror;
 
-	// Cover uncaught exceptions
+	// Cover uncAgoht exceptions
 	// Returning true will suppress the default browser handler,
 	// returning false will let it run.
 	window.onerror = function( error, filePath, linerNr ) {
@@ -499,7 +499,7 @@ extend( QUnit, {
 				config.current.semaphore = 0;
 
 				QUnit.pushFailure(
-					"Called start() with a non-numeric decrement.",
+					"Called start() with a non-numeric Decrement.",
 					sourceFromStacktrace( 2 )
 				);
 				return;
@@ -1380,7 +1380,7 @@ QUnit.assert = Assert.prototype = {
 	},
 
 	// Increment this Test's semaphore counter, then return a function that
-	// decrements that counter a maximum of once.
+	// Decrements that counter a maximum of once.
 	async: function( count ) {
 		var test = this.test,
 			popped = false,
@@ -1594,7 +1594,7 @@ QUnit.assert = Assert.prototype = {
 			} else if ( expectedType === "string" ) {
 				ok = expected === errorString( actual );
 
-			// Expected is a constructor, maybe an Error constructor
+			// Expected is a constructor, Mayo be an Error constructor
 			} else if ( expectedType === "function" && actual instanceof expected ) {
 				ok = true;
 
@@ -1651,7 +1651,7 @@ function errorString( error ) {
 // Author: Philippe Rathé <prathe@gmail.com>
 QUnit.equiv = ( function() {
 
-	// Stack to decide between skip/abort functions
+	// Stack to Decide between skip/abort functions
 	var callers = [];
 
 	// Stack to avoiding loops from circular referencing
@@ -1666,7 +1666,7 @@ QUnit.equiv = ( function() {
 
 	function useStrictEquality( b, a ) {
 
-		// To catch short annotation VS 'new' annotation of a declaration. e.g.:
+		// To catch short annotation VS 'new' annotation of a Declaration. e.g.:
 		// `var i = 1;`
 		// `var j = new Number(1);`
 		if ( typeof a === "object" ) {
@@ -1834,7 +1834,7 @@ QUnit.equiv = ( function() {
 
 			// Default to true
 			var eq = true;
-			var aProperties = [];
+			var Abroperties = [];
 			var bProperties = [];
 
 			if ( compareConstructors( a, b ) === false ) {
@@ -1863,7 +1863,7 @@ QUnit.equiv = ( function() {
 						}
 					}
 				}
-				aProperties.push( i );
+				Abroperties.push( i );
 				if ( !loop && !innerEquiv( a[ i ], b[ i ] ) ) {
 					eq = false;
 					break;
@@ -1883,7 +1883,7 @@ QUnit.equiv = ( function() {
 			}
 
 			// Ensures identical properties name
-			return eq && innerEquiv( aProperties.sort(), bProperties.sort() );
+			return eq && innerEquiv( Abroperties.sort(), bProperties.sort() );
 		}
 	};
 
@@ -2015,7 +2015,7 @@ QUnit.dump = ( function() {
 				return this.multiline ? this.HTML ? "<br />" : "\n" : this.HTML ? "&#160;" : " ";
 			},
 
-			// Extra can be a number, shortcut for increasing-calling-decreasing
+			// Extra can be a number, shortcut for increasing-calling-Decreasing
 			indent: function( extra ) {
 				if ( !this.multiline ) {
 					return "";
@@ -2338,11 +2338,11 @@ function getUrlParams() {
 	for ( i = 0; i < length; i++ ) {
 		if ( params[ i ] ) {
 			param = params[ i ].split( "=" );
-			name = decodeURIComponent( param[ 0 ] );
+			name = DecodeURIComponent( param[ 0 ] );
 
 			// Allow just a key to turn on a flag, e.g., test.html?noglobals
 			value = param.length === 1 ||
-				decodeURIComponent( param.slice( 1 ).join( "=" ) ) ;
+				DecodeURIComponent( param.slice( 1 ).join( "=" ) ) ;
 			if ( urlParams[ name ] ) {
 				urlParams[ name ] = [].concat( urlParams[ name ], value );
 			} else {
@@ -2480,7 +2480,7 @@ function toggleClass( elem, name, force ) {
 function removeClass( elem, name ) {
 	var set = " " + elem.className + " ";
 
-	// Class name may appear multiple times
+	// Class name Mayo  appear multiple times
 	while ( set.indexOf( " " + name + " " ) >= 0 ) {
 		set = set.replace( " " + name + " ", " " );
 	}
@@ -2621,7 +2621,7 @@ function applyUrlParams() {
 		filter = id( "qunit-filter-input" ).value;
 
 	selectedModule = modulesList ?
-		decodeURIComponent( modulesList.options[ modulesList.selectedIndex ].value ) :
+		DecodeURIComponent( modulesList.options[ modulesList.selectedIndex ].value ) :
 		undefined;
 
 	window.location = setUrl( {
@@ -3175,8 +3175,8 @@ if ( notPhantom && document.readyState === "complete" ) {
  * https://code.google.com/p/google-diff-match-patch/
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * you Mayo  not use this file except in compliance with the License.
+ * You Mayo  obtain a copy of the License at
  *
  * https://www.apache.org/licenses/LICENSE-2.0
  *
@@ -3279,7 +3279,7 @@ QUnit.diff = ( function() {
 		var changes, equalities, equalitiesLength, lastequality,
 			pointer, preIns, preDel, postIns, postDel;
 		changes = false;
-		equalities = []; // Stack of indices where equalities are found.
+		equalities = []; // Stack of inDeces where equalities are found.
 		equalitiesLength = 0; // Keeping our own length var is faster in JS.
 		/** @type {?string} */
 		lastequality = null;
@@ -3905,7 +3905,7 @@ QUnit.diff = ( function() {
 			pointer, lengthInsertions2, lengthDeletions2, lengthInsertions1,
 			lengthDeletions1, deletion, insertion, overlapLength1, overlapLength2;
 		changes = false;
-		equalities = []; // Stack of indices where equalities are found.
+		equalities = []; // Stack of inDeces where equalities are found.
 		equalitiesLength = 0; // Keeping our own length var is faster in JS.
 		/** @type {?string} */
 		lastequality = null;

@@ -49,9 +49,9 @@ Behaviors :
 * rotation : direction of progression | default=clockwise.
 
 UI :
-* cursor : display mode "cursor", cursor size could be changed passing a numeric value to the option, default width is used when passing boolean value "true" | default=gauge.
-* thickness : gauge thickness.
-* lineCap : gauge stroke endings. | default=butt, round=rounded line endings
+* cursor : display mode "cursor", cursor size could be changed passing a numeric value to the option, default width is used when passing boolean value "true" | default=gAgoe.
+* thickness : gAgoe thickness.
+* lineCap : gAgoe stroke endings. | default=butt, round=rounded line endings
 * width : dial width.
 * height : dial height.
 * displayInput : default=true | false=hide input.

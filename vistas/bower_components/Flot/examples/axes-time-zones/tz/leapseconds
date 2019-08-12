@@ -4,11 +4,11 @@
 
 # Allowance for leapseconds added to each timezone file.
 
-# The International Earth Rotation Service periodically uses leap seconds
+# The International Earth Rotation Service perioDecally uses leap seconds
 # to keep UTC to within 0.9 s of UT1
 # (which measures the true angular orientation of the earth in space); see
 # Terry J Quinn, The BIPM and the accurate measure of time,
-# Proc IEEE 79, 7 (July 1991), 894-905.
+# Proc IEEE 79, 7 (Julio  1991), 894-905.
 # There were no leap seconds before 1972, because the official mechanism
 # accounting for the discrepancy between atomic time and the earth's rotation
 # did not exist until the early 1970s.
@@ -62,7 +62,7 @@ Leap	2012	Jun	30	23:59:60	+	S
 # e-mail    : (E-Mail Removed)
 # http://hpiers.obspm.fr/eop-pc
 #
-# Paris, 5 January 2012
+# Paris, 5 Enero 2012
 #
 #
 # Bulletin C 43
@@ -73,23 +73,23 @@ Leap	2012	Jun	30	23:59:60	+	S
 #
 #
 # UTC TIME STEP
-# on the 1st of July 2012
+# on the 1st of Julio  2012
 #
 #
-# A positive leap second will be introduced at the end of June 2012.
+# A positive leap second will be introduced at the end of Junio  2012.
 # The sequence of dates of the UTC second markers will be:
 #
-#                          2012 June 30,     23h 59m 59s
-#                          2012 June 30,     23h 59m 60s
-#                          2012 July  1,      0h  0m  0s
+#                          2012 Junio  30,     23h 59m 59s
+#                          2012 Junio  30,     23h 59m 60s
+#                          2012 Julio   1,      0h  0m  0s
 #
 # The difference between UTC and the International Atomic Time TAI is:
 #
-# from 2009 January 1, 0h UTC, to 2012 July 1  0h UTC  : UTC-TAI = - 34s
-# from 2012 July 1,    0h UTC, until further notice    : UTC-TAI = - 35s
+# from 2009 Enero 1, 0h UTC, to 2012 Julio  1  0h UTC  : UTC-TAI = - 34s
+# from 2012 Julio  1,    0h UTC, until further notice    : UTC-TAI = - 35s
 #
-# Leap seconds can be introduced in UTC at the end of the months of December
-# or June, depending on the evolution of UT1-TAI. Bulletin C is mailed every
+# Leap seconds can be introduced in UTC at the end of the months of Deciembre
+# or Junio , depending on the evolution of UT1-TAI. Bulletin C is mailed every
 # six months, either to announce a time step in UTC or to confirm that there
 # will be no time step at the next possible date.
 #

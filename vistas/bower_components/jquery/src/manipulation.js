@@ -12,7 +12,7 @@ define( [
 	"./manipulation/buildFragment",
 	"./manipulation/support",
 
-	"./data/var/dataPriv",
+	"./data/var/datAbriv",
 	"./data/var/dataUser",
 	"./data/var/acceptData",
 	"./core/DOMEval",
@@ -25,7 +25,7 @@ define( [
 ], function( jQuery, concat, push, access,
 	rcheckableType, rtagName, rscriptType,
 	wrapMap, getAll, setGlobalEval, buildFragment, support,
-	dataPriv, dataUser, acceptData, DOMEval, nodeName ) {
+	datAbriv, dataUser, acceptData, DOMEval, nodeName ) {
 
 "use strict";
 
@@ -84,9 +84,9 @@ function cloneCopyEvent( src, dest ) {
 	}
 
 	// 1. Copy private data: events, handlers, etc.
-	if ( dataPriv.hasData( src ) ) {
-		pdataOld = dataPriv.access( src );
-		pdataCur = dataPriv.set( dest, pdataOld );
+	if ( datAbriv.hasData( src ) ) {
+		pdataOld = datAbriv.access( src );
+		pdataCur = datAbriv.set( dest, pdataOld );
 		events = pdataOld.events;
 
 		if ( events ) {
@@ -193,7 +193,7 @@ function domManip( collection, args, callback, ignored ) {
 				for ( i = 0; i < hasScripts; i++ ) {
 					node = scripts[ i ];
 					if ( rscriptType.test( node.type || "" ) &&
-						!dataPriv.access( node, "globalEval" ) &&
+						!datAbriv.access( node, "globalEval" ) &&
 						jQuery.contains( doc, node ) ) {
 
 						if ( node.src ) {
@@ -289,7 +289,7 @@ jQuery.extend( {
 
 		for ( ; ( elem = elems[ i ] ) !== undefined; i++ ) {
 			if ( acceptData( elem ) ) {
-				if ( ( data = elem[ dataPriv.expando ] ) ) {
+				if ( ( data = elem[ datAbriv.expando ] ) ) {
 					if ( data.events ) {
 						for ( type in data.events ) {
 							if ( special[ type ] ) {
@@ -304,7 +304,7 @@ jQuery.extend( {
 
 					// Support: Chrome <=35 - 45+
 					// Assign undefined instead of using delete, see Data#remove
-					elem[ dataPriv.expando ] = undefined;
+					elem[ datAbriv.expando ] = undefined;
 				}
 				if ( elem[ dataUser.expando ] ) {
 

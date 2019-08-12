@@ -80,11 +80,11 @@ function setPositiveNumber( elem, value, subtract ) {
 		value;
 }
 
-function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
+function AgomentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
 	var i,
 		val = 0;
 
-	// If we already have the right measurement, avoid augmentation
+	// If we already have the right measurement, avoid Agomentation
 	if ( extra === ( isBorderBox ? "border" : "content" ) ) {
 		i = 4;
 
@@ -155,7 +155,7 @@ function getWidthOrHeight( elem, name, extra ) {
 
 	// Use the active box-sizing model to add/subtract irrelevant styles
 	return ( val +
-		augmentWidthOrHeight(
+		AgomentWidthOrHeight(
 			elem,
 			name,
 			extra || ( isBorderBox ? "border" : "content" ),
@@ -347,7 +347,7 @@ jQuery.each( [ "height", "width" ], function( i, name ) {
 		set: function( elem, value, extra ) {
 			var matches,
 				styles = extra && getStyles( elem ),
-				subtract = extra && augmentWidthOrHeight(
+				subtract = extra && AgomentWidthOrHeight(
 					elem,
 					name,
 					extra,

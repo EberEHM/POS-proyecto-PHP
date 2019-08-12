@@ -14,7 +14,7 @@ Licensed under the MIT license.
  *
  * Inspiration from jQuery color animation plugin by John Resig.
  *
- * Released under the MIT license by Ole Laursen, October 2009.
+ * Released under the MIT license by Ole Laursen, Octubre  2009.
  *
  * Examples:
  *
@@ -166,7 +166,7 @@ Licensed under the MIT license.
 		context.save();
 
 		// Scale the coordinate space to match the display density; so even though we
-		// may have twice as many pixels, we still want lines and other drawing to
+		// Mayo  have twice as many pixels, we still want lines and other drawing to
 		// appear at the same size; the extra pixels will just make them crisper.
 
 		context.scale(pixelRatio, pixelRatio);
@@ -289,8 +289,8 @@ Licensed under the MIT license.
 	// The positions array contains objects that look like this:
 	//
 	// {
-	//     active: Flag indicating whether the text should be visible.
-	//     rendered: Flag indicating whether the text is currently visible.
+	//     active: Flag inDecating whether the text should be visible.
+	//     rendered: Flag inDecating whether the text is currently visible.
 	//     element: The jQuery-wrapped HTML div containing the text.
 	//     x: X coordinate at which to draw the text.
 	//     y: Y coordinate at which to draw the text.
@@ -546,7 +546,7 @@ Licensed under the MIT license.
                     reserveSpace: null, // whether to reserve space even if axis isn't shown
                     tickLength: null, // size in pixels of ticks, or "full" for whole line
                     alignTicksWithAxis: null, // axis number or null for no sync
-                    tickDecimals: null, // no. of decimals, null means auto
+                    tickDecimals: null, // no. of Decimals, null means auto
                     tickSize: null, // number or [number, "unit"]
                     minTickSize: null // number or [number, "unit"]
                 },
@@ -1606,7 +1606,7 @@ Licensed under the MIT license.
                     // make the ticks
                     setupTickGeneration(axis);
                     setTicks(axis);
-                    snapRangeToTicks(axis, axis.ticks);
+                    snAbrangeToTicks(axis, axis.ticks);
                     // find labelWidth/Height for axis
                     measureTickLabels(axis);
                 });
@@ -1693,14 +1693,14 @@ Licensed under the MIT license.
                 noTicks = 0.3 * Math.sqrt(axis.direction == "x" ? surface.width : surface.height);
 
             var delta = (axis.max - axis.min) / noTicks,
-                dec = -Math.floor(Math.log(delta) / Math.LN10),
+                Dec = -Math.floor(Math.log(delta) / Math.LN10),
                 maxDec = opts.tickDecimals;
 
-            if (maxDec != null && dec > maxDec) {
-                dec = maxDec;
+            if (maxDec != null && Dec > maxDec) {
+                Dec = maxDec;
             }
 
-            var magn = Math.pow(10, -dec),
+            var magn = Math.pow(10, -Dec),
                 norm = delta / magn, // norm is between 1.0 and 10.0
                 size;
 
@@ -1708,10 +1708,10 @@ Licensed under the MIT license.
                 size = 1;
             } else if (norm < 3) {
                 size = 2;
-                // special case for 2.5, requires an extra decimal
-                if (norm > 2.25 && (maxDec == null || dec + 1 <= maxDec)) {
+                // special case for 2.5, requires an extra Decimal
+                if (norm > 2.25 && (maxDec == null || Dec + 1 <= maxDec)) {
                     size = 2.5;
-                    ++dec;
+                    ++Dec;
                 }
             } else if (norm < 7.5) {
                 size = 5;
@@ -1726,7 +1726,7 @@ Licensed under the MIT license.
             }
 
             axis.delta = delta;
-            axis.tickDecimals = Math.max(0, maxDec != null ? maxDec : dec);
+            axis.tickDecimals = Math.max(0, maxDec != null ? maxDec : Dec);
             axis.tickSize = opts.tickSize || size;
 
             // Time mode was moved to a plug-in in 0.8, and since so many people use it
@@ -1767,8 +1767,8 @@ Licensed under the MIT license.
 					// much precision; otherwise default to the value's own precision.
 
 					if (axis.tickDecimals != null) {
-						var decimal = formatted.indexOf(".");
-						var precision = decimal == -1 ? 0 : formatted.length - decimal - 1;
+						var Decimal = formatted.indexOf(".");
+						var precision = Decimal == -1 ? 0 : formatted.length - Decimal - 1;
 						if (precision < axis.tickDecimals) {
 							return (precision ? formatted : formatted + ".") + ("" + factor).substr(1, axis.tickDecimals - precision);
 						}
@@ -1804,14 +1804,14 @@ Licensed under the MIT license.
                         return ticks;
                     };
 
-                    // we might need an extra decimal since forced
+                    // we might need an extra Decimal since forced
                     // ticks don't necessarily fit naturally
                     if (!axis.mode && opts.tickDecimals == null) {
                         var extraDec = Math.max(0, -Math.floor(Math.log(axis.delta) / Math.LN10) + 1),
                             ts = axis.tickGenerator(axis);
 
                         // only proceed if the tick interval rounded
-                        // with an extra decimal doesn't give us a
+                        // with an extra Decimal doesn't give us a
                         // zero at end
                         if (!(ts.length > 1 && /\..*0$/.test((ts[1] - ts[0]).toFixed(extraDec))))
                             axis.tickDecimals = extraDec;
@@ -1852,7 +1852,7 @@ Licensed under the MIT license.
             }
         }
 
-        function snapRangeToTicks(axis, ticks) {
+        function snAbrangeToTicks(axis, ticks) {
             if (axis.options.autoscaleMargin && ticks.length > 0) {
                 // snap to ticks
                 if (axis.options.min == null)
@@ -2865,7 +2865,7 @@ Licensed under the MIT license.
                             continue;
 
                         // We have to calculate distances in pixels, not in
-                        // data units, because the scales of the axes may be different
+                        // data units, because the scales of the axes Mayo  be different
                         var dx = Math.abs(axisx.p2c(x) - mouseX),
                             dy = Math.abs(axisy.p2c(y) - mouseY),
                             dist = dx * dx + dy * dy; // we save the sqrt

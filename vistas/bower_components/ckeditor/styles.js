@@ -19,7 +19,7 @@ CKEDITOR.stylesSet.add( 'default', [
 	/* Block styles */
 
 	// These styles are already available in the "Format" drop-down list ("format" plugin),
-	// so they are not needed here by default. You may enable them to avoid
+	// so they are not needed here by default. You Mayo  enable them to avoid
 	// placing the "Format" combo in the toolbar, maintaining the same features.
 	/*
 	{ name: 'Paragraph',		element: 'p' },
@@ -47,7 +47,7 @@ CKEDITOR.stylesSet.add( 'default', [
 
 	/* Inline styles */
 
-	// These are core styles available as toolbar buttons. You may opt enabling
+	// These are core styles available as toolbar buttons. You Mayo  opt enabling
 	// some of them in the Styles drop-down list, removing them from the toolbar.
 	// (This requires the "stylescombo" plugin.)
 	/*

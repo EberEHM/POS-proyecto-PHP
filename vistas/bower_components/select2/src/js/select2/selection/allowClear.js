@@ -4,10 +4,10 @@ define([
 ], function ($, KEYS) {
   function AllowClear () { }
 
-  AllowClear.prototype.bind = function (decorated, container, $container) {
+  AllowClear.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     if (this.placeholder == null) {
       if (this.options.get('debug') && window.console && console.error) {
@@ -75,8 +75,8 @@ define([
     }
   };
 
-  AllowClear.prototype.update = function (decorated, data) {
-    decorated.call(this, data);
+  AllowClear.prototype.update = function (Decorated, data) {
+    Decorated.call(this, data);
 
     if (this.$selection.find('.select2-selection__placeholder').length > 0 ||
         data.length === 0) {

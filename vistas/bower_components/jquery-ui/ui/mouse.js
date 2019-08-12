@@ -72,7 +72,7 @@ return $.widget("ui.mouse", {
 
 		this._mouseMoved = false;
 
-		// we may have missed mouseup (out of window)
+		// we Mayo  have missed mouseup (out of window)
 		(this._mouseStarted && this._mouseUp(event));
 
 		this._mouseDownEvent = event;
@@ -101,7 +101,7 @@ return $.widget("ui.mouse", {
 			}
 		}
 
-		// Click event may never have fired (Gecko & Opera)
+		// Click event Mayo  never have fired (Gecko & Opera)
 		if (true === $.data(event.target, this.widgetName + ".preventClickEvent")) {
 			$.removeData(event.target, this.widgetName + ".preventClickEvent");
 		}

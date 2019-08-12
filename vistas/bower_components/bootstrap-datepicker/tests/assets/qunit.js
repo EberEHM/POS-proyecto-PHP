@@ -505,9 +505,9 @@ var config = {
 	if ( params[ 0 ] ) {
 		for ( var i = 0; i < length; i++ ) {
 			current = params[ i ].split( "=" );
-			current[ 0 ] = decodeURIComponent( current[ 0 ] );
+			current[ 0 ] = DecodeURIComponent( current[ 0 ] );
 			// allow just a key to turn on a flag, e.g., test.html?noglobals
-			current[ 1 ] = current[ 1 ] ? decodeURIComponent( current[ 1 ] ) : true;
+			current[ 1 ] = current[ 1 ] ? DecodeURIComponent( current[ 1 ] ) : true;
 			urlParams[ current[ 0 ] ] = current[ 1 ];
 		}
 	}
@@ -1096,7 +1096,7 @@ function runLoggingCallbacks(key, scope, args) {
 QUnit.equiv = (function() {
 
 	var innerEquiv; // the real equiv function
-	var callers = []; // stack to decide between skip/abort functions
+	var callers = []; // stack to Decide between skip/abort functions
 	var parents = []; // stack to avoiding loops from circular referencing
 
 	// Call the o related callback with the given arguments.
@@ -1121,7 +1121,7 @@ QUnit.equiv = (function() {
 		function useStrictEquality(b, a) {
 			if (b instanceof a.constructor || a instanceof b.constructor) {
 				// to catch short annotaion VS 'new' annotation of a
-				// declaration
+				// Declaration
 				// e.g. var i = 1;
 				// var j = new Number(1);
 				return a == b;
@@ -1199,7 +1199,7 @@ QUnit.equiv = (function() {
 			"object" : function(b, a) {
 				var i, j, loop;
 				var eq = true; // unless we can proove it
-				var aProperties = [], bProperties = []; // collection of
+				var Abroperties = [], bProperties = []; // collection of
 														// strings
 
 				// comparing constructors is more strict than using
@@ -1228,7 +1228,7 @@ QUnit.equiv = (function() {
 							loop = true;
 						}
 					}
-					aProperties.push(i); // collect a's properties
+					Abroperties.push(i); // collect a's properties
 
 					if (!loop && !innerEquiv(a[i], b[i])) {
 						eq = false;
@@ -1244,7 +1244,7 @@ QUnit.equiv = (function() {
 				}
 
 				// Ensures identical properties name
-				return eq && innerEquiv(aProperties.sort(), bProperties.sort());
+				return eq && innerEquiv(Abroperties.sort(), bProperties.sort());
 			}
 		};
 	}());
@@ -1367,7 +1367,7 @@ QUnit.jsDump = (function() {
 		separator: function() {
 			return this.multiline ?	this.HTML ? '<br />' : '\n' : this.HTML ? '&nbsp;' : ' ';
 		},
-		indent: function( extra ) {// extra can be a number, shortcut for increasing-calling-decreasing
+		indent: function( extra ) {// extra can be a number, shortcut for increasing-calling-Decreasing
 			if ( !this.multiline ) {
 				return '';
 			}

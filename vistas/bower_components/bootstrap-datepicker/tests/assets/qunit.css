@@ -45,7 +45,7 @@
 }
 
 #qunit-header a {
-	text-decoration: none;
+	text-Decoration: none;
 	color: #c2ccd1;
 }
 
@@ -99,7 +99,7 @@
 #qunit-tests li a {
 	padding: 0.5em;
 	color: #c2ccd1;
-	text-decoration: none;
+	text-Decoration: none;
 }
 #qunit-tests li a:hover,
 #qunit-tests li a:focus {
@@ -145,13 +145,13 @@
 #qunit-tests del {
 	background-color: #e0f2be;
 	color: #374e0c;
-	text-decoration: none;
+	text-Decoration: none;
 }
 
 #qunit-tests ins {
 	background-color: #ffcaca;
 	color: #500;
-	text-decoration: none;
+	text-Decoration: none;
 }
 
 /*** Test Counts */

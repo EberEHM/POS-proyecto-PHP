@@ -6,7 +6,7 @@ anchor: advanced-usage
 
 ### Prototype methods
 
-For each chart, there are a set of global prototype methods on the shared `ChartType` which you may find useful. These are available on all charts created with Chart.js, but for the examples, let's use a line chart we've made.
+For each chart, there are a set of global prototype methods on the shared `ChartType` which you Mayo  find useful. These are available on all charts created with Chart.js, but for the examples, let's use a line chart we've made.
 
 ```javascript
 // For example:

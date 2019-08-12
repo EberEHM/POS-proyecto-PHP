@@ -33,31 +33,31 @@ class ControladorVentas{
 				Actualizar las compras del cliente, reducir el stock y aumentar las ventas de los productos
 		=============================================*/
 
-		$listaProductos = json_decode($_POST["listaProductos"], true);
+		$listAbroductos = json_Decode($_POST["listAbroductos"], true);
 
 		$totalProductosComprados = array();
 
-		foreach ($listaProductos as $key => $value) {
+		foreach ($listAbroductos as $key => $value) {
 
 			   array_push($totalProductosComprados, $value["cantidad"]);//va contando loa productos que compra un cliente
 				
-			   $tablaProductos = "productos";
+			   $tablAbroductos = "productos";
 
 			    $item = "idProducto";
 			    $valor = $value["idProducto"];
 			    $orden = null;
 
-			    $traerProducto = Productos::mostrarProductos($tablaProductos, $item, $valor, $orden);
+			    $traerProducto = Productos::mostrarProductos($tablAbroductos, $item, $valor, $orden);
 
 				$item1a = "ventas";
 				$valor1a = $value["cantidad"] + $traerProducto["ventas"]; //se suman las ventas realizadas del producto xd
 
-			    $nuevasVentas = Productos::actualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
+			    $nuevasVentas = Productos::actualizarProducto($tablAbroductos, $item1a, $valor1a, $valor);
 
 				$item1b = "stock";
 				$valor1b = $value["stock"];
 
-				$nuevoStock = Productos::actualizarProducto($tablaProductos, $item1b, $valor1b, $valor);
+				$nuevoStock = Productos::actualizarProducto($tablAbroductos, $item1b, $valor1b, $valor);
 
 			}
 		
@@ -69,7 +69,7 @@ class ControladorVentas{
 			$traerCliente = Clientes::mostrarClientes($tablaClientes, $item, $valor);
 
 			$item1a = "compras";
-			$valor1a = array_sum($totalProductosComprados) + $traerCliente["compras"];//suma todos los indices del array, de esta forma suma todas las compras del cliente
+			$valor1a = array_sum($totalProductosComprados) + $traerCliente["compras"];//suma todos los inDeces del array, de esta forma suma todas las compras del cliente
 
 			$comprasCliente = Clientes::actualizarCliente($tablaClientes, $item1a, $valor1a, $valor);
 
@@ -92,7 +92,7 @@ class ControladorVentas{
 			$datos = array("idUsuario"=>$_POST["idVendedor"],
 						   "idCliente"=>$_POST["seleccionarCliente"],
 						   "codigoFactura"=>$_POST["nuevaVenta"],
-						   "productos"=>$_POST["listaProductos"],
+						   "productos"=>$_POST["listAbroductos"],
 						   "impuesto"=>$_POST["nuevoPrecioImpuesto"],
 						   "neto"=>$_POST["nuevoPrecioNeto"],
 						   "total"=>$_POST["totalVenta"],
@@ -156,7 +156,7 @@ class ControladorVentas{
 
 				// $printer -> feed(1); //Alimentamos el papel 1 vez*/
 
-				// foreach ($listaProductos as $key => $value) {
+				// foreach ($listAbroductos as $key => $value) {
 
 				// 	$printer->setJustification(Printer::JUSTIFY_LEFT);
 
@@ -242,20 +242,20 @@ class ControladorVentas{
 			/*=============================================
 			REVISAR SI VIENEN PRODUCTOS EDITADOS
 		=============================================*/
-			if ($_POST["listaProductos"] == "") {
+			if ($_POST["listAbroductos"] == "") {
 
-				$listaProductos = $traerVenta["productos"];
+				$listAbroductos = $traerVenta["productos"];
 				$cambioProducto= false;
 
 			}else{
 
-				$listaProductos = $_POST["listaProductos"];
+				$listAbroductos = $_POST["listAbroductos"];
 				$cambioProducto= true;
 			}
 
 			if ($cambioProducto) {
 			
-			$productos = json_decode($traerVenta["productos"], true);
+			$productos = json_Decode($traerVenta["productos"], true);
 
 			$totalProductosComprados = array();
 
@@ -263,24 +263,24 @@ class ControladorVentas{
 
 				array_push($totalProductosComprados, $value["cantidad"]);//va contando loa productos que compra un cliente
 
-				$tablaProductos = "productos";
+				$tablAbroductos = "productos";
 
 				$item = "idProducto";
 			    $valor = $value["idProducto"];
 			    $orden=null;
 
-			    $traerProducto = Productos::mostrarProductos($tablaProductos, $item, $valor,$orden);
+			    $traerProducto = Productos::mostrarProductos($tablAbroductos, $item, $valor,$orden);
 
 			    $item1a = "ventas";
 				$valor1a = $traerProducto["ventas"] - $value["cantidad"]; //se suman las ventas realizadas del producto xd
 
-				$nuevasVentas = Productos::actualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
+				$nuevasVentas = Productos::actualizarProducto($tablAbroductos, $item1a, $valor1a, $valor);
 
 
 			    $item1b = "stock";
 				$valor1b = $value["cantidad"] + $traerProducto["stock"];
 
-				$nuevoStock = Productos::actualizarProducto($tablaProductos, $item1b, $valor1b, $valor);
+				$nuevoStock = Productos::actualizarProducto($tablAbroductos, $item1b, $valor1b, $valor);
 
 			}
 
@@ -292,38 +292,38 @@ class ControladorVentas{
 				$traerCliente = Clientes::mostrarClientes($tablaClientes, $itemCliente, $valorCliente);
 
 				$item1a = "compras";
-				$valor1a = $traerCliente["compras"] - array_sum($totalProductosComprados);//suma todos los indices del array, de esta forma suma todas las compras del cliente
+				$valor1a = $traerCliente["compras"] - array_sum($totalProductosComprados);//suma todos los inDeces del array, de esta forma suma todas las compras del cliente
 				$comprasCliente = Clientes::actualizarCliente($tablaClientes, $item1a, $valor1a, $valorCliente);
 
 		/*=============================================
 				Actualizar las compras del cliente, reducir el stock y aumentar las ventas de los productos
 		=============================================*/
 
-		$listaProductos2 = json_decode($listaProductos, true);
+		$listAbroductos2 = json_Decode($listAbroductos, true);
 
 		$totalProductosComprados2 = array();
 
-		foreach ($listaProductos2 as $key => $value) {
+		foreach ($listAbroductos2 as $key => $value) {
 
 			   array_push($totalProductosComprados2, $value["cantidad"]);//va contando loa productos que compra un cliente
 				
-			   $tablaProductos2 = "productos";
+			   $tablAbroductos2 = "productos";
 
 			    $item2 = "idProducto";
 			    $valor2 = $value["idProducto"];
 			    $orden = "idProducto";
 
-			    $traerProducto2 = Productos::mostrarProductos($tablaProductos2, $item2, $valor2, $orden);
+			    $traerProducto2 = Productos::mostrarProductos($tablAbroductos2, $item2, $valor2, $orden);
 
 				$item1a2 = "ventas";
 				$valor1a2 = $value["cantidad"] + $traerProducto2["ventas"]; //se suman las ventas realizadas del producto xd
 
-			    $nuevasVentas2 = Productos::actualizarProducto($tablaProductos2, $item1a2, $valor1a2, $valor2);
+			    $nuevasVentas2 = Productos::actualizarProducto($tablAbroductos2, $item1a2, $valor1a2, $valor2);
 
 				$item1b2 = "stock";
 				$valor1b2 = $value["stock"];
 
-				$nuevoStock2 = Productos::actualizarProducto($tablaProductos2, $item1b2, $valor1b2, $valor2);
+				$nuevoStock2 = Productos::actualizarProducto($tablAbroductos2, $item1b2, $valor1b2, $valor2);
 
 			}
 		
@@ -335,7 +335,7 @@ class ControladorVentas{
 			$traerCliente2 = Clientes::mostrarClientes($tablaClientes2, $item2, $valor2);
 
 			$item1a2 = "compras";
-			$valor1a2 = array_sum($totalProductosComprados2) + $traerCliente2["compras"];//suma todos los indices del array, de esta forma suma todas las compras del cliente
+			$valor1a2 = array_sum($totalProductosComprados2) + $traerCliente2["compras"];//suma todos los inDeces del array, de esta forma suma todas las compras del cliente
 
 			$comprasCliente2 = Clientes::actualizarCliente($tablaClientes2, $item1a2, $valor1a2, $valor2);
 
@@ -349,7 +349,7 @@ class ControladorVentas{
 			$datos = array("idUsuario"=>$_POST["idVendedor"],
 						   "idCliente"=>$_POST["seleccionarCliente"],
 						   "codigoFactura"=>$_POST["editarVenta"],
-						   "productos"=>$listaProductos,
+						   "productos"=>$listAbroductos,
 						   "impuesto"=>$_POST["nuevoPrecioImpuesto"],
 						   "neto"=>$_POST["nuevoPrecioNeto"],
 						   "total"=>$_POST["totalVenta"],
@@ -400,7 +400,7 @@ class ControladorVentas{
 
 			$traerVenta = Ventas::mostrarVentas($tabla, $item, $datos);
 
-			$productos = json_decode($traerVenta["productos"], true);
+			$productos = json_Decode($traerVenta["productos"], true);
 
 			$totalProductosComprados = array();
 
@@ -408,23 +408,23 @@ class ControladorVentas{
 
 				array_push($totalProductosComprados, $value["cantidad"]);//va contando loa productos que compra un cliente
 
-				$tablaProductos = "productos";
+				$tablAbroductos = "productos";
 
 				$item = "idProducto";
 			    $valor = $value["idProducto"];
 			   	$orden=null;
-			    $traerProducto = Productos::mostrarProductos($tablaProductos, $item, $valor,$orden);
+			    $traerProducto = Productos::mostrarProductos($tablAbroductos, $item, $valor,$orden);
 
 			    $item1a = "ventas";
 				$valor1a = $traerProducto["ventas"] - $value["cantidad"]; //se suman las ventas realizadas del producto xd
 
-				$nuevasVentas = Productos::actualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
+				$nuevasVentas = Productos::actualizarProducto($tablAbroductos, $item1a, $valor1a, $valor);
 
 
 			    $item1b = "stock";
 				$valor1b = $value["cantidad"] + $traerProducto["stock"];
 
-				$nuevoStock = Productos::actualizarProducto($tablaProductos, $item1b, $valor1b, $valor);
+				$nuevoStock = Productos::actualizarProducto($tablAbroductos, $item1b, $valor1b, $valor);
 
 			}
 
@@ -436,7 +436,7 @@ class ControladorVentas{
 				$traerCliente = Clientes::mostrarClientes($tablaClientes, $itemCliente, $valorCliente);
 
 				$item1a = "compras";
-				$valor1a = $traerCliente["compras"] - array_sum($totalProductosComprados);//suma todos los indices del array, de esta forma suma todas las compras del cliente
+				$valor1a = $traerCliente["compras"] - array_sum($totalProductosComprados);//suma todos los inDeces del array, de esta forma suma todas las compras del cliente
 				$comprasCliente = Clientes::actualizarCliente($tablaClientes, $item1a, $valor1a, $valorCliente);
 
 			//ELIMINAR LA VENTA
@@ -525,7 +525,7 @@ class ControladorVentas{
 			header('Content-Disposition:; filename="'.$Name.'"');
 			header("Content-Transfer-Encoding: binary");
 
-			echo utf8_decode("<table border='0'> 
+			echo utf8_Decode("<table border='0'> 
 
 					<tr> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO VENTA</td> 
@@ -545,28 +545,28 @@ class ControladorVentas{
 				$cliente = ControladorClientes::ctrMostrarClientes("idCliente", $item["idCliente"]);
 				$vendedor = ControladorUsuarios::ctrMostrarUsuarios("id", $item["idUsuario"]);
 
-			 echo utf8_decode("<tr>
+			 echo utf8_Decode("<tr>
 			 			<td style='border:1px solid #eee;'>".$item["codigoFactura"]."</td> 
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$vendedor["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>");
 
-			 	$productos =  json_decode($item["productos"], true);
+			 	$productos =  json_Decode($item["productos"], true);
 
 			 	foreach ($productos as $key => $valueProductos) {
 			 			
-			 			echo utf8_decode($valueProductos["cantidad"]."<br>");
+			 			echo utf8_Decode($valueProductos["cantidad"]."<br>");
 			 		}
 
-			 	echo utf8_decode("</td><td style='border:1px solid #eee;'>");	
+			 	echo utf8_Decode("</td><td style='border:1px solid #eee;'>");	
 
 		 		foreach ($productos as $key => $valueProductos) {
 			 			
-		 			echo utf8_decode($valueProductos["descripcion"]."<br>");
+		 			echo utf8_Decode($valueProductos["descripcion"]."<br>");
 		 		
 		 		}
 
-		 		echo utf8_decode("</td>
+		 		echo utf8_Decode("</td>
 					<td style='border:1px solid #eee;'>$ ".number_format($item["impuesto"],2)."</td>
 					<td style='border:1px solid #eee;'>$ ".number_format($item["neto"],2)."</td>	
 					<td style='border:1px solid #eee;'>$ ".number_format($item["total"],2)."</td>

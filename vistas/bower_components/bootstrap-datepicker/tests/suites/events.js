@@ -38,7 +38,7 @@ module('Events', {
     }
 });
 
-test('Selecting a year from decade view triggers changeYear', function(){
+test('Selecting a year from Decade view triggers changeYear', function(){
     var target,
         triggered = 0;
 
@@ -127,7 +127,7 @@ test('Selecting a month from year view triggers changeMonth', function(){
     datesEqual(this.dp.viewDate, UTCDate(2011, 2, 31));
     datesEqual(this.dp.dates[0], UTCDate(2011, 2, 31));
 
-    target = this.picker.find('.datepicker-months tbody span:contains(Apr)');
+    target = this.picker.find('.datepicker-months tbody span:contains(Abr)');
     target.click();
     equal(this.dp.viewMode, 0);
     // Only viewDate modified
@@ -380,7 +380,7 @@ test('Selecting date from previous month triggers changeMonth', function() {
     equal(triggered, 1);
 });
 
-test('Selecting date from previous month in january triggers changeMonth/changeYear', function() {
+test('Selecting date from previous month in Enero triggers changeMonth/changeYear', function() {
     var target,
         triggeredM = 0,
         triggeredY = 0;
@@ -421,7 +421,7 @@ test('Selecting date from next month triggers changeMonth', function() {
     equal(triggered, 1);
 });
 
-test('Selecting date from next month in december triggers changeMonth/changeYear', function() {
+test('Selecting date from next month in Deciembre triggers changeMonth/changeYear', function() {
     var target,
         triggeredM = 0,
         triggeredY = 0;
@@ -468,13 +468,13 @@ test('Changing view mode triggers changeViewMode', function () {
   equal(triggered, 2);
   equal(viewMode, 2);
 
-  // change from years to decade
+  // change from years to Decade
   this.picker.find('.datepicker-years .datepicker-switch').click();
   equal(triggered, 3);
   equal(viewMode, 3);
 
-  // change from decades to centuries
-  this.picker.find('.datepicker-decades .datepicker-switch').click();
+  // change from Decades to centuries
+  this.picker.find('.datepicker-Decades .datepicker-switch').click();
   equal(triggered, 4);
   equal(viewMode, 4);
 

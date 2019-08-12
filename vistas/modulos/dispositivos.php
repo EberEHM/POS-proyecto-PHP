@@ -102,7 +102,7 @@ if($_SESSION["perfil"] == "Almacen"){
                 <td>'.$value["presupuesto"].'</td> 
                 <td>'.$value["recibio"].'</td>
                 <td>'.$value["fechaEntrada"].'</td>
-                <td>'.$value["fechaAproximada"].'</td>';
+                <td>'.$value["fechaAbroximada"].'</td>';
 
                 if($value["estado"] != 0){
 
@@ -311,7 +311,7 @@ if($_SESSION["perfil"] == "Almacen"){
 
               <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
 
-              <input type="number" class="form-control input-lg" name="nuevoPrecio" placeholder="Ingresa el precio aproximado. (Asignado por el técnico)." required>
+              <input type="number" class="form-control input-lg" name="nuevoPrecio" placeholder="Ingresa el precio Abroximado. (Asignado por el técnico)." required>
               
             </div>
             
@@ -528,7 +528,7 @@ if($_SESSION["perfil"] == "Almacen"){
 
               <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
 
-              <input type="number" class="form-control input-lg" name="editarPrecio" id="editarPrecio" placeholder="Ingresa el precio aproximado. (Asignado por el técnico)." required>
+              <input type="number" class="form-control input-lg" name="editarPrecio" id="editarPrecio" placeholder="Ingresa el precio Abroximado. (Asignado por el técnico)." required>
               
             </div>
             

@@ -4,7 +4,7 @@
  */
 ;(function($){
 	$.fn.datepicker.dates['fi'] = {
-		days: ["sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"],
+		days: ["sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perEnetai", "lauantai"],
 		daysShort: ["sun", "maa", "tii", "kes", "tor", "per", "lau"],
 		daysMin: ["su", "ma", "ti", "ke", "to", "pe", "la"],
 		months: ["tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kesäkuu", "heinäkuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu"],

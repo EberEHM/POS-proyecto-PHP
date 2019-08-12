@@ -161,12 +161,12 @@
         return !isNaN(parseFloat(num)) && isFinite(num);
     };
 
-    formatNumber = function (num, prec, groupsize, groupsep, decsep) {
+    formatNumber = function (num, prec, groupsize, groupsep, Decsep) {
         var p, i;
         num = (prec === false ? parseFloat(num).toString() : num.toFixed(prec)).split('');
         p = (p = $.inArray('.', num)) < 0 ? num.length : p;
         if (p < num.length) {
-            num[p] = decsep;
+            num[p] = Decsep;
         }
         for (i = p - groupsize; i > 0; i -= groupsize) {
             num.splice(i, 0, groupsep);

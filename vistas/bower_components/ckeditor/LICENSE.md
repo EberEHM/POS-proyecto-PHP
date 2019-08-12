@@ -19,10 +19,10 @@ choice:
    http://www.mozilla.org/MPL/MPL-1.1.html
    (See Appendix C)
 
-You are not required to, but if you want to explicitly declare the
+You are not required to, but if you want to explicitly Declare the
 license you have chosen to be bound to when using, reproducing,
 modifying and distributing this software, just include a text file
-titled "legal.txt" in your version of this software, indicating your
+titled "legal.txt" in your version of this software, inDecating your
 license choice. In any case, your choice will not restrict any
 recipient of your version of this software to use, reproduce, modify
 and distribute this software under any of the above licenses.
@@ -30,7 +30,7 @@ and distribute this software under any of the above licenses.
 Sources of Intellectual Property Included in CKEditor
 -----------------------------------------------------
 
-Where not otherwise indicated, all CKEditor content is authored by
+Where not otherwise inDecated, all CKEditor content is authored by
 CKSource engineers and consists of CKSource-owned intellectual
 property. In some specific instances, CKEditor will incorporate work
 done by developers outside of CKSource with their express permission.
@@ -69,7 +69,7 @@ Appendix A: The GPL License
 
 ```
 GNU GENERAL PUBLIC LICENSE
-Version 2, June 1991
+Version 2, Junio  1991
 
  Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
@@ -130,7 +130,7 @@ GNU GENERAL PUBLIC LICENSE
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. This License applies to any program or other work which contains
-a notice placed by the copyright holder saying it may be distributed
+a notice placed by the copyright holder saying it Mayo  be distributed
 under the terms of this General Public License.  The "Program", below,
 refers to any such program or work, and a "work based on the Program"
 means either the Program or any derivative work under copyright law:
@@ -146,7 +146,7 @@ is covered only if its contents constitute a work based on the
 Program (independent of having been made by running the Program).
 Whether that is true depends on what the Program does.
 
-  1. You may copy and distribute verbatim copies of the Program's
+  1. You Mayo  copy and distribute verbatim copies of the Program's
 source code as you receive it, in any medium, provided that you
 conspicuously and appropriately publish on each copy an appropriate
 copyright notice and disclaimer of warranty; keep intact all the
@@ -154,10 +154,10 @@ notices that refer to this License and to the absence of any warranty;
 and give any other recipients of the Program a copy of this License
 along with the Program.
 
-You may charge a fee for the physical act of transferring a copy, and
-you may at your option offer warranty protection in exchange for a fee.
+You Mayo  charge a fee for the physical act of transferring a copy, and
+you Mayo  at your option offer warranty protection in exchange for a fee.
 
-  2. You may modify your copy or copies of the Program or any portion
+  2. You Mayo  modify your copy or copies of the Program or any portion
 of it, thus forming a work based on the Program, and copy and
 distribute such modifications or work under the terms of Section 1
 above, provided that you also meet all of these conditions:
@@ -175,7 +175,7 @@ above, provided that you also meet all of these conditions:
     interactive use in the most ordinary way, to print or display an
     announcement including an appropriate copyright notice and a
     notice that there is no warranty (or else, saying that you provide
-    a warranty) and that users may redistribute the program under
+    a warranty) and that users Mayo  redistribute the program under
     these conditions, and telling the user how to view a copy of this
     License.  (Exception: if the Program itself is interactive but
     does not normally print such an announcement, your work based on
@@ -201,7 +201,7 @@ with the Program (or with a work based on the Program) on a volume of
 a storage or distribution medium does not bring the other work under
 the scope of this License.
 
-  3. You may copy and distribute the Program (or a work based on it,
+  3. You Mayo  copy and distribute the Program (or a work based on it,
 under Section 2) in object code or executable form under the terms of
 Sections 1 and 2 above provided that you also do one of the following:
 
@@ -239,7 +239,7 @@ access to copy the source code from the same place counts as
 distribution of the source code, even though third parties are not
 compelled to copy the source along with the object code.
 
-  4. You may not copy, modify, sublicense, or distribute the Program
+  4. You Mayo  not copy, modify, sublicense, or distribute the Program
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
 void, and will automatically terminate your rights under this License.
@@ -252,14 +252,14 @@ signed it.  However, nothing else grants you permission to modify or
 distribute the Program or its derivative works.  These actions are
 prohibited by law if you do not accept this License.  Therefore, by
 modifying or distributing the Program (or any work based on the
-Program), you indicate your acceptance of this License to do so, and
+Program), you inDecate your acceptance of this License to do so, and
 all its terms and conditions for copying, distributing or modifying
 the Program or works based on it.
 
   6. Each time you redistribute the Program (or any work based on the
 Program), the recipient automatically receives a license from the
 original licensor to copy, distribute or modify the Program subject to
-these terms and conditions.  You may not impose any further
+these terms and conditions.  You Mayo  not impose any further
 restrictions on the recipients' exercise of the rights granted herein.
 You are not responsible for enforcing compliance by third parties to
 this License.
@@ -267,11 +267,11 @@ this License.
   7. If, as a consequence of a court judgment or allegation of patent
 infringement or for any other reason (not limited to patent issues),
 conditions are imposed on you (whether by court order, agreement or
-otherwise) that contradict the conditions of this License, they do not
+otherwise) that contraDect the conditions of this License, they do not
 excuse you from the conditions of this License.  If you cannot
 distribute so as to satisfy simultaneously your obligations under this
 License and any other pertinent obligations, then as a consequence you
-may not distribute the Program at all.  For example, if a patent
+Mayo  not distribute the Program at all.  For example, if a patent
 license would not permit royalty-free redistribution of the Program by
 all those who receive copies directly or indirectly through you, then
 the only way you could satisfy both it and this License would be to
@@ -289,7 +289,7 @@ integrity of the free software distribution system, which is
 implemented by public license practices.  Many people have made
 generous contributions to the wide range of software distributed
 through that system in reliance on consistent application of that
-system; it is up to the author/donor to decide if he or she is willing
+system; it is up to the author/donor to Decide if he or she is willing
 to distribute software through any other system and a licensee cannot
 impose that choice.
 
@@ -299,14 +299,14 @@ be a consequence of the rest of this License.
   8. If the distribution and/or use of the Program is restricted in
 certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
-may add an explicit geographical distribution limitation excluding
+Mayo  add an explicit geographical distribution limitation excluding
 those countries, so that distribution is permitted only in or among
 countries not thus excluded.  In such case, this License incorporates
 the limitation as if written in the body of this License.
 
-  9. The Free Software Foundation may publish revised and/or new versions
+  9. The Free Software Foundation Mayo  publish revised and/or new versions
 of the General Public License from time to time.  Such new versions will
-be similar in spirit to the present version, but may differ in detail to
+be similar in spirit to the present version, but Mayo  differ in detail to
 address new problems or concerns.
 
 Each version is given a distinguishing version number.  If the Program
@@ -314,14 +314,14 @@ specifies a version number of this License which applies to it and "any
 later version", you have the option of following the terms and conditions
 either of that version or of any later version published by the Free
 Software Foundation.  If the Program does not specify a version number of
-this License, you may choose any version ever published by the Free Software
+this License, you Mayo  choose any version ever published by the Free Software
 Foundation.
 
   10. If you wish to incorporate parts of the Program into other free
 programs whose distribution conditions are different, write to the author
 to ask for permission.  For software which is copyrighted by the Free
 Software Foundation, write to the Free Software Foundation; we sometimes
-make exceptions for this.  Our decision will be guided by the two goals
+make exceptions for this.  Our Decision will be guided by the two goals
 of preserving the free status of all derivatives of our free software and
 of promoting the sharing and reuse of software generally.
 
@@ -338,7 +338,7 @@ PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
 REPAIR OR CORRECTION.
 
   12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
-WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO Mayo  MODIFY AND/OR
 REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
 INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
 OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
@@ -355,7 +355,7 @@ Appendix B: The LGPL License
 
 ```
 GNU LESSER GENERAL PUBLIC LICENSE
-Version 2.1, February 1999
+Version 2.1, Febrero  1999
 
  Copyright (C) 1991, 1999 Free Software Foundation, Inc.
      59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -375,7 +375,7 @@ free software-to make sure the software is free for all its users.
 
   This license, the Lesser General Public License, applies to some
 specially designated software packages-typically libraries-of the
-Free Software Foundation and other authors who decide to use it.  You
+Free Software Foundation and other authors who Decide to use it.  You
 can use it too, but we suggest you first think carefully about whether
 this license or the ordinary General Public License is the better
 strategy to use in any particular case, based on the explanations below.
@@ -442,7 +442,7 @@ are the reason we use the ordinary General Public License for many
 libraries.  However, the Lesser license provides advantages in certain
 special circumstances.
 
-  For example, on rare occasions, there may be a special need to
+  For example, on rare occasions, there Mayo  be a special need to
 encourage the widest possible use of a certain library, so that it becomes
 a de-facto standard.  To achieve this, non-free programs must be
 allowed to use the library.  A more frequent case is that a free
@@ -473,7 +473,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. This License Agreement applies to any software library or other
 program which contains a notice placed by the copyright holder or
-other authorized party saying it may be distributed under the terms of
+other authorized party saying it Mayo  be distributed under the terms of
 this Lesser General Public License (also called "this License").
 Each licensee is addressed as "you".
 
@@ -503,7 +503,7 @@ on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
 
-  1. You may copy and distribute verbatim copies of the Library's
+  1. You Mayo  copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
 appropriate copyright notice and disclaimer of warranty; keep intact
@@ -511,11 +511,11 @@ all the notices that refer to this License and to the absence of any
 warranty; and distribute a copy of this License along with the
 Library.
 
-  You may charge a fee for the physical act of transferring a copy,
-and you may at your option offer warranty protection in exchange for a
+  You Mayo  charge a fee for the physical act of transferring a copy,
+and you Mayo  at your option offer warranty protection in exchange for a
 fee.
 
-  2. You may modify your copy or copies of the Library or any portion
+  2. You Mayo  modify your copy or copies of the Library or any portion
 of it, thus forming a work based on the Library, and copy and
 distribute such modifications or work under the terms of Section 1
 above, provided that you also meet all of these conditions:
@@ -564,7 +564,7 @@ with the Library (or with a work based on the Library) on a volume of
 a storage or distribution medium does not bring the other work under
 the scope of this License.
 
-  3. You may opt to apply the terms of the ordinary GNU General Public
+  3. You Mayo  opt to apply the terms of the ordinary GNU General Public
 License instead of this License to a given copy of the Library.  To do
 this, you must alter all the notices that refer to this License, so
 that they refer to the ordinary GNU General Public License, version 2,
@@ -580,7 +580,7 @@ subsequent copies and derivative works made from that copy.
   This option is useful when you wish to copy part of the code of
 the Library into a program that is not a library.
 
-  4. You may copy and distribute the Library (or a portion or
+  4. You Mayo  copy and distribute the Library (or a portion or
 derivative of it, under Section 2) in object code or executable form
 under the terms of Sections 1 and 2 above provided that you accompany
 it with the complete corresponding machine-readable source code, which
@@ -606,7 +606,7 @@ library".  The executable is therefore covered by this License.
 Section 6 states terms for distribution of such executables.
 
   When a "work that uses the Library" uses material from a header file
-that is part of the Library, the object code for the work may be a
+that is part of the Library, the object code for the work Mayo  be a
 derivative work of the Library even though the source code is not.
 Whether this is true is especially significant if the work can be
 linked without the Library, or if the work is itself a library.  The
@@ -619,12 +619,12 @@ file is unrestricted, regardless of whether it is legally a derivative
 work.  (Executables containing this object code plus portions of the
 Library will still fall under Section 6.)
 
-  Otherwise, if the work is a derivative of the Library, you may
+  Otherwise, if the work is a derivative of the Library, you Mayo 
 distribute the object code for the work under the terms of Section 6.
 Any executables containing that work also fall under Section 6,
 whether or not they are linked directly with the Library itself.
 
-  6. As an exception to the Sections above, you may also combine or
+  6. As an exception to the Sections above, you Mayo  also combine or
 link a "work that uses the Library" with the Library to produce a
 work containing portions of the Library, and distribute that work
 under terms of your choice, provided that the terms permit
@@ -680,13 +680,13 @@ components (compiler, kernel, and so on) of the operating system on
 which the executable runs, unless that component itself accompanies
 the executable.
 
-  It may happen that this requirement contradicts the license
+  It Mayo  happen that this requirement contraDects the license
 restrictions of other proprietary libraries that do not normally
-accompany the operating system.  Such a contradiction means you cannot
+accompany the operating system.  Such a contraDection means you cannot
 use both them and the Library together in an executable that you
 distribute.
 
-  7. You may place library facilities that are a work based on the
+  7. You Mayo  place library facilities that are a work based on the
 Library side-by-side in a single library together with other library
 facilities not covered by this License, and distribute such a combined
 library, provided that the separate distribution of the work based on
@@ -702,7 +702,7 @@ permitted, and provided that you do these two things:
     that part of it is a work based on the Library, and explaining
     where to find the accompanying uncombined form of the same work.
 
-  8. You may not copy, modify, sublicense, link with, or distribute
+  8. You Mayo  not copy, modify, sublicense, link with, or distribute
 the Library except as expressly provided under this License.  Any
 attempt otherwise to copy, modify, sublicense, link with, or
 distribute the Library is void, and will automatically terminate your
@@ -715,14 +715,14 @@ signed it.  However, nothing else grants you permission to modify or
 distribute the Library or its derivative works.  These actions are
 prohibited by law if you do not accept this License.  Therefore, by
 modifying or distributing the Library (or any work based on the
-Library), you indicate your acceptance of this License to do so, and
+Library), you inDecate your acceptance of this License to do so, and
 all its terms and conditions for copying, distributing or modifying
 the Library or works based on it.
 
   10. Each time you redistribute the Library (or any work based on the
 Library), the recipient automatically receives a license from the
 original licensor to copy, distribute, link with or modify the Library
-subject to these terms and conditions.  You may not impose any further
+subject to these terms and conditions.  You Mayo  not impose any further
 restrictions on the recipients' exercise of the rights granted herein.
 You are not responsible for enforcing compliance by third parties with
 this License.
@@ -730,11 +730,11 @@ this License.
   11. If, as a consequence of a court judgment or allegation of patent
 infringement or for any other reason (not limited to patent issues),
 conditions are imposed on you (whether by court order, agreement or
-otherwise) that contradict the conditions of this License, they do not
+otherwise) that contraDect the conditions of this License, they do not
 excuse you from the conditions of this License.  If you cannot
 distribute so as to satisfy simultaneously your obligations under this
 License and any other pertinent obligations, then as a consequence you
-may not distribute the Library at all.  For example, if a patent
+Mayo  not distribute the Library at all.  For example, if a patent
 license would not permit royalty-free redistribution of the Library by
 all those who receive copies directly or indirectly through you, then
 the only way you could satisfy both it and this License would be to
@@ -751,7 +751,7 @@ integrity of the free software distribution system which is
 implemented by public license practices.  Many people have made
 generous contributions to the wide range of software distributed
 through that system in reliance on consistent application of that
-system; it is up to the author/donor to decide if he or she is willing
+system; it is up to the author/donor to Decide if he or she is willing
 to distribute software through any other system and a licensee cannot
 impose that choice.
 
@@ -760,23 +760,23 @@ be a consequence of the rest of this License.
 
   12. If the distribution and/or use of the Library is restricted in
 certain countries either by patents or by copyrighted interfaces, the
-original copyright holder who places the Library under this License may add
+original copyright holder who places the Library under this License Mayo  add
 an explicit geographical distribution limitation excluding those countries,
 so that distribution is permitted only in or among countries not thus
 excluded.  In such case, this License incorporates the limitation as if
 written in the body of this License.
 
-  13. The Free Software Foundation may publish revised and/or new
+  13. The Free Software Foundation Mayo  publish revised and/or new
 versions of the Lesser General Public License from time to time.
 Such new versions will be similar in spirit to the present version,
-but may differ in detail to address new problems or concerns.
+but Mayo  differ in detail to address new problems or concerns.
 
 Each version is given a distinguishing version number.  If the Library
 specifies a version number of this License which applies to it and
 "any later version", you have the option of following the terms and
 conditions either of that version or of any later version published by
 the Free Software Foundation.  If the Library does not specify a
-license version number, you may choose any version ever published by
+license version number, you Mayo  choose any version ever published by
 the Free Software Foundation.
 
   14. If you wish to incorporate parts of the Library into other free
@@ -784,7 +784,7 @@ programs whose distribution conditions are incompatible with these,
 write to the author to ask for permission.  For software which is
 copyrighted by the Free Software Foundation, write to the Free
 Software Foundation; we sometimes make exceptions for this.  Our
-decision will be guided by the two goals of preserving the free status
+Decision will be guided by the two goals of preserving the free status
 of all derivatives of our free software and of promoting the sharing
 and reuse of software generally.
 
@@ -801,7 +801,7 @@ LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME
 THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
   16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
-WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO Mayo  MODIFY
 AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU
 FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
 CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
@@ -883,7 +883,7 @@ Version 1.1
      differential comparisons against either the Original Code or another
      well known, available Covered Code of the Contributor's choice. The
      Source Code can be in a compressed or archival form, provided the
-     appropriate decompression or de-archiving software is widely available
+     appropriate Decompression or de-archiving software is widely available
      for no charge.
 
      1.12. "You" (or "Your")  means an individual or a legal entity
@@ -963,13 +963,13 @@ Version 1.1
      3.1. Application of License.
      The Modifications which You create or to which You contribute are
      governed by the terms of this License, including without limitation
-     Section 2.2. The Source Code version of Covered Code may be
+     Section 2.2. The Source Code version of Covered Code Mayo  be
      distributed only under the terms of this License or a future version
      of this License released under Section 6.1, and You must include a
      copy of this License with every copy of the Source Code You
-     distribute. You may not offer or impose any terms on any Source Code
+     distribute. You Mayo  not offer or impose any terms on any Source Code
      version that alters or restricts the applicable version of this
-     License or the recipients' rights hereunder. However, You may include
+     License or the recipients' rights hereunder. However, You Mayo  include
      an additional document offering the additional rights described in
      Section 3.5.
 
@@ -1031,13 +1031,13 @@ Version 1.1
      Code file due to its structure, then You must include such notice in a
      location (such as a relevant directory) where a user would be likely
      to look for such a notice.  If You created one or more Modification(s)
-     You may add your name as a Contributor to the notice described in
+     You Mayo  add your name as a Contributor to the notice described in
      Exhibit A.  You must also duplicate this License in any documentation
      for the Source Code where You describe recipients' rights or ownership
-     rights relating to Covered Code.  You may choose to offer, and to
+     rights relating to Covered Code.  You Mayo  choose to offer, and to
      charge a fee for, warranty, support, indemnity or liability
      obligations to one or more recipients of Covered Code. However, You
-     may do so only on Your own behalf, and not on behalf of the Initial
+     Mayo  do so only on Your own behalf, and not on behalf of the Initial
      Developer or any Contributor. You must make it absolutely clear than
      any such warranty, support, indemnity or liability obligation is
      offered by You alone, and You hereby agree to indemnify the Initial
@@ -1046,7 +1046,7 @@ Version 1.1
      support, indemnity or liability terms You offer.
 
      3.6. Distribution of Executable Versions.
-     You may distribute Covered Code in Executable form only if the
+     You Mayo  distribute Covered Code in Executable form only if the
      requirements of Section 3.1-3.5 have been met for that Covered Code,
      and if You include a notice stating that the Source Code version of
      the Covered Code is available under the terms of this License,
@@ -1054,8 +1054,8 @@ Version 1.1
      obligations of Section 3.2. The notice must be conspicuously included
      in any notice in an Executable version, related documentation or
      collateral in which You describe recipients' rights relating to the
-     Covered Code. You may distribute the Executable version of Covered
-     Code or ownership rights under a license of Your choice, which may
+     Covered Code. You Mayo  distribute the Executable version of Covered
+     Code or ownership rights under a license of Your choice, which Mayo 
      contain terms different from this License, provided that You are in
      compliance with the terms of this License and that the license for the
      Executable version does not attempt to limit or alter the recipient's
@@ -1069,7 +1069,7 @@ Version 1.1
      terms You offer.
 
      3.7. Larger Works.
-     You may create a Larger Work by combining Covered Code with other code
+     You Mayo  create a Larger Work by combining Covered Code with other code
      not governed by the terms of this License and distribute the Larger
      Work as a single product. In such a case, You must make sure the
      requirements of this License are fulfilled for the Covered Code.
@@ -1078,7 +1078,7 @@ Version 1.1
 
      If it is impossible for You to comply with any of the terms of this
      License with respect to some or all of the Covered Code due to
-     statute, judicial order, or regulation then You must: (a) comply with
+     statute, juDecial order, or regulation then You must: (a) comply with
      the terms of this License to the maximum extent possible; and (b)
      describe the limitations and the code they affect. Such description
      must be included in the LEGAL file described in Section 3.4 and must
@@ -1095,20 +1095,20 @@ Version 1.1
 6. Versions of the License.
 
      6.1. New Versions.
-     Netscape Communications Corporation ("Netscape") may publish revised
+     Netscape Communications Corporation ("Netscape") Mayo  publish revised
      and/or new versions of the License from time to time. Each version
      will be given a distinguishing version number.
 
      6.2. Effect of New Versions.
      Once Covered Code has been published under a particular version of the
-     License, You may always continue to use it under the terms of that
-     version. You may also choose to use such Covered Code under the terms
+     License, You Mayo  always continue to use it under the terms of that
+     version. You Mayo  also choose to use such Covered Code under the terms
      of any subsequent version of the License published by Netscape. No one
      other than Netscape has the right to modify the terms applicable to
      Covered Code created under this License.
 
      6.3. Derivative Works.
-     If You create or use a modified version of this License (which you may
+     If You create or use a modified version of this License (which you Mayo 
      only do in order to apply it to code which is not already Covered Code
      governed by this License), You must (a) rename Your license so that
      the phrases "Mozilla", "MOZILLAPL", "MOZPL", "Netscape",
@@ -1145,7 +1145,7 @@ Version 1.1
      shall survive.
 
      8.2.  If You initiate litigation by asserting a patent infringement
-     claim (excluding declatory judgment actions) against Initial Developer
+     claim (excluding Declatory judgment actions) against Initial Developer
      or a Contributor (the Initial Developer or Contributor against whom
      You file such action is referred to as "Participant")  alleging that:
 
@@ -1198,9 +1198,9 @@ Version 1.1
      INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF
      LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY
      RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW
-     PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE
+     PROHIBITS SUCH LIMITATION. SOME JURISDecTIONS DO NOT ALLOW THE
      EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO
-     THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+     THIS EXCLUSION AND LIMITATION Mayo  NOT APPLY TO YOU.
 
 10. U.S. GOVERNMENT END USERS.
 
@@ -1208,7 +1208,7 @@ Version 1.1
      48 C.F.R. 2.101 (Oct. 1995), consisting of "commercial computer
      software" and "commercial computer software documentation," as such
      terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48
-     C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995),
+     C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (Junio  1995),
      all U.S. Government End Users acquire Covered Code with only those
      rights set forth herein.
 
@@ -1223,7 +1223,7 @@ Version 1.1
      With respect to disputes in which at least one party is a citizen of,
      or an entity chartered or registered to do business in the United
      States of America, any litigation relating to this License shall be
-     subject to the jurisdiction of the Federal Courts of the Northern
+     subject to the jurisDection of the Federal Courts of the Northern
      District of California, with venue lying in Santa Clara County,
      California, with the losing party responsible for costs, including
      without limitation, court costs and reasonable attorneys' fees and
@@ -1244,7 +1244,7 @@ Version 1.1
 
 13. MULTIPLE-LICENSED CODE.
 
-     Initial Developer may designate portions of the Covered Code as
+     Initial Developer Mayo  designate portions of the Covered Code as
      "Multiple-Licensed".  "Multiple-Licensed" means that the Initial
      Developer permits you to utilize portions of the Covered Code under
      Your choice of the NPL or the alternative licenses, if any, specified
@@ -1253,8 +1253,8 @@ Version 1.1
 EXHIBIT A -Mozilla Public License.
 
      ``The contents of this file are subject to the Mozilla Public License
-     Version 1.1 (the "License"); you may not use this file except in
-     compliance with the License. You may obtain a copy of the License at
+     Version 1.1 (the "License"); you Mayo  not use this file except in
+     compliance with the License. You Mayo  obtain a copy of the License at
      http://www.mozilla.org/MPL/
 
      Software distributed under the License is distributed on an "AS IS"
@@ -1270,18 +1270,18 @@ EXHIBIT A -Mozilla Public License.
 
      Contributor(s): ______________________________________.
 
-     Alternatively, the contents of this file may be used under the terms
+     Alternatively, the contents of this file Mayo  be used under the terms
      of the _____ license (the  "[___] License"), in which case the
      provisions of [______] License are applicable instead of those
      above.  If you wish to allow use of your version of this file only
      under the terms of the [____] License and not to allow others to use
-     your version of this file under the MPL, indicate your decision by
+     your version of this file under the MPL, inDecate your Decision by
      deleting  the provisions above and replace  them with the notice and
      other provisions required by the [___] License.  If you do not delete
-     the provisions above, a recipient may use your version of this file
+     the provisions above, a recipient Mayo  use your version of this file
      under either the MPL or the [___] License."
 
-     [NOTE: The text of this Exhibit A may differ slightly from the text of
+     [NOTE: The text of this Exhibit A Mayo  differ slightly from the text of
      the notices in the Source Code files of the Original Code. You should
      use the text of this Exhibit A rather than the text found in the
      Original Code Source Code for Your Modifications.]
@@ -1316,14 +1316,14 @@ Appendix E: The SIL Open Font License Version 1.1
 ---------------------------------------------
 
 ```
-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+SIL OPEN FONT LICENSE Version 1.1 - 26 Febrero  2007
 -----------------------------------------------------------
 
 PREAMBLE
 The goals of the Open Font License (OFL) are to stimulate worldwide
 development of collaborative font projects, to support the font creation
 efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
+open framework in which fonts Mayo  be shared and improved in partnership
 with others.
 
 The OFL allows the licensed fonts to be used, studied, modified and
@@ -1337,7 +1337,7 @@ to any document created using the fonts or their derivatives.
 
 DEFINITIONS
 "Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
+Holder(s) under this license and clearly marked as such. This Mayo 
 include source files, build scripts and documentation.
 
 "Reserved Font Name" refers to any names specified as such after the
@@ -1361,16 +1361,16 @@ redistribute, and sell modified and unmodified copies of the Font
 Software, subject to the following conditions:
 
 1) Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.
+in Original or Modified Versions, Mayo  be sold by itself.
 
-2) Original or Modified Versions of the Font Software may be bundled,
+2) Original or Modified Versions of the Font Software Mayo  be bundled,
 redistributed and/or sold with any software, provided that each copy
 contains the above copyright notice and this license. These can be
 included either as stand-alone text files, human-readable headers or
 in the appropriate machine-readable metadata fields within text or
 binary files as long as those fields can be easily viewed by the user.
 
-3) No Modified Version of the Font Software may use the Reserved Font
+3) No Modified Version of the Font Software Mayo  use the Reserved Font
 Name(s) unless explicit written permission is granted by the corresponding
 Copyright Holder. This restriction only applies to the primary font name as
 presented to the users.
@@ -1413,7 +1413,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+3. Neither the name of the copyright holder nor the names of its contributors Mayo  be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```

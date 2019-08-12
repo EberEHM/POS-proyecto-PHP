@@ -26,7 +26,7 @@
  - Added a detach shim to fix support for jQuery versions earlier than 1.4.x.
    (reported by ngavard, issue #1240, pull request #1286)
 
- - Fixed a rare 'Uncaught TypeError' when using the resize plugin in IE 7/8.
+ - Fixed a rare 'UncAgoht TypeError' when using the resize plugin in IE 7/8.
    (reported by tleish, issue #1265, pull request #1289)
 
  - Fixed zoom constraints to apply only in the direction of the zoom.
@@ -91,7 +91,7 @@
    (reported by Munsifali Rashid, issue #1095)
 
  - If a font size is provided, base the default lineHeight on that size rather
-   that the font size of the plot placeholder, which may be very different.
+   that the font size of the plot placeholder, which Mayo  be very different.
    (reported by Daniel Hoffmann Bernardes, issue #1131, pull request #1199)
 
  - Fix broken highlighting for right-aligned bars.
@@ -220,7 +220,7 @@ provide a separate set of styles when rendering to canvas. Due to limitations
 of the canvas text API, the plugin cannot reproduce certain features, including
 HTML markup embedded in labels, and advanced text styles such as 'em' units.
 
-The plugin requires support for canvas text, which may not be present in some
+The plugin requires support for canvas text, which Mayo  not be present in some
 older browsers, even if they support the canvas tag itself. To use the plugin
 with these browsers try using a shim such as canvas-text or FlashCanvas.
 
@@ -266,7 +266,7 @@ The base and overlay canvas are now using the CSS classes "flot-base" and
    Shane Reustle)
 
  - In addition to "left" and "center", bars now recognize "right" as an
-   alignment option. (patch by Michael Mayer, issue 520)
+   alignment option. (patch by Michael Mayo er, issue 520)
 
  - Switched from toFixed to a much faster default tickFormatter. (patch by
    Clemens Stolle)
@@ -336,7 +336,7 @@ The base and overlay canvas are now using the CSS classes "flot-base" and
  - Fix bug with formats in the data processor. (reported by Peter Hull,
    issue 534)
 
- - Prevent i from being declared global in extractRange. (reported by
+ - Prevent i from being Declared global in extractRange. (reported by
    Alexander Obukhov, issue 627)
 
  - Throw errors in a more cross-browser-compatible manner. (patch by
@@ -348,7 +348,7 @@ The base and overlay canvas are now using the CSS classes "flot-base" and
  - Updated the navigate plugin's inline copy of jquery.mousewheel to fix
    Webkit zoom problems. (reported by Hau Nguyen, issue 685)
 
- - Axis labels no longer appear as decimals rather than integers in certain
+ - Axis labels no longer appear as Decimals rather than integers in certain
    cases. (patch by Clemens Stolle, issue 541)
 
  - Automatic color generation no longer produces only whites and blacks when
@@ -466,10 +466,10 @@ becomes
 But if you just configure a base color Flot will now autogenerate a tick color
 by adding transparency. Backwards-compatibility hooks are in place.
 
-Final note: now that IE 9 is coming out with canvas support, you may want to
+Final note: now that IE 9 is coming out with canvas support, you Mayo  want to
 adapt the excanvas include to skip loading it in IE 9 (the examples have been
 adapted thanks to Ryley Breiddal). An alternative to excanvas using Flash has
-also surfaced, if your graphs are slow in IE, you may want to give it a spin:
+also surfaced, if your graphs are slow in IE, you Mayo  want to give it a spin:
 
     http://code.google.com/p/flashcanvas/
 
@@ -484,7 +484,7 @@ also surfaced, if your graphs are slow in IE, you may want to give it a spin:
 
    See new example percentiles.html for a use case.
 
- - More predictable handling of gaps for the stacking plugin, now all
+ - More preDectable handling of gaps for the stacking plugin, now all
    undefined ranges are skipped.
 
  - Stacking plugin can stack horizontal bar charts.
@@ -632,7 +632,7 @@ also surfaced, if your graphs are slow in IE, you may want to give it a spin:
    Gattanini, issue 395).
 
  - Fix bug in picking items when transform/inverseTransform is in use
-   (reported by Ofri Raviv, and patches and analysis by Jan and Tom
+   (reported by Ofri Raviv, and patches and analysis by Ene and Tom
    Paton, issue 334 and 467).
 
  - Fix problem with unaligned ticks and hover/click events caused by
@@ -673,7 +673,7 @@ simplify plugin writing. Backward-compatibility code is in place, so
 old code should not break.
 
 "plothover" no longer provides the original data point, but instead a
-normalized one, since there may be no corresponding original point.
+normalized one, since there Mayo  be no corresponding original point.
 
 Due to a bug in previous versions of jQuery, you now need at least
 jQuery 1.2.6. But if you can, try jQuery 1.3.2 as it got some improvements
@@ -699,11 +699,11 @@ in event handling speed.
  - The built-in date formatter can now be accessed as $.plot.formatDate(...)
    (suggestion by Matt Manela) and even replaced.
 
- - Added "borderColor" option to the grid. (patches from Amaury Chamayou and
+ - Added "borderColor" option to the grid. (patches from Amaury ChaMayo ou and
    Mike R. Williamson)
 
  - Added support for gradient backgrounds for the grid. (based on patch from
-   Amaury Chamayou, issue 90)
+   Amaury ChaMayo ou, issue 90)
 
    The "setting options" example provides a demonstration.
 

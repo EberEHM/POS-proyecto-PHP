@@ -33,7 +33,7 @@ define(function () {
       return message;
     },
     loadingMore: function () {
-      return 'Kraunama daugiau rezultatų…';
+      return 'Kraunama dAgoiau rezultatų…';
     },
     maximumSelected: function (args) {
       var message = 'Jūs galite pasirinkti tik ' + args.maximum + ' element';

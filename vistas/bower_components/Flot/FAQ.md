@@ -6,7 +6,7 @@ Flot will happily draw everything you send to it so the answer
 depends on the browser. The excanvas emulation used for IE (built with
 VML) makes IE by far the slowest browser so be sure to test with that
 if IE users are in your target group (for large plots in IE, you can
-also check out Flashcanvas which may be faster).
+also check out Flashcanvas which Mayo  be faster).
 
 1000 points is not a problem, but as soon as you start having more
 points than the pixel width, you should probably start thinking about
@@ -49,7 +49,7 @@ jQuery(something) instead of $(something). As a convenience, you can
 put in a DOM element for the graph placeholder where the examples and
 the API documentation are using jQuery objects.
 
-Depending on how you include jQuery, you may have to add one line of
+Depending on how you include jQuery, you Mayo  have to add one line of
 code to prevent jQuery from overwriting functions from the other
 libraries, see the documentation in jQuery ("Using jQuery with other
 libraries") for details.

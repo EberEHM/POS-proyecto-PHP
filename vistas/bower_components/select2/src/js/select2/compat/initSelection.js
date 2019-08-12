@@ -1,7 +1,7 @@
 define([
   'jquery'
 ], function ($) {
-  function InitSelection (decorated, $element, options) {
+  function InitSelection (Decorated, $element, options) {
     if (options.get('debug') && window.console && console.warn) {
       console.warn(
         'Select2: The `initSelection` option has been deprecated in favor' +
@@ -15,14 +15,14 @@ define([
     this.initSelection = options.get('initSelection');
     this._isInitialized = false;
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
-  InitSelection.prototype.current = function (decorated, callback) {
+  InitSelection.prototype.current = function (Decorated, callback) {
     var self = this;
 
     if (this._isInitialized) {
-      decorated.call(this, callback);
+      Decorated.call(this, callback);
 
       return;
     }

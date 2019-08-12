@@ -850,7 +850,7 @@ addParseToken(['MMM', 'MMMM'], function (input, array, config, token) {
 // LOCALES
 
 var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;
-var defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_');
+var defaultLocaleMonths = 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_');
 function localeMonths (m, format) {
     if (!m) {
         return isArray(this._months) ? this._months :
@@ -860,7 +860,7 @@ function localeMonths (m, format) {
         this._months[(this._months.isFormat || MONTHS_IN_FORMAT).test(format) ? 'format' : 'standalone'][m.month()];
 }
 
-var defaultLocaleMonthsShort = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_');
+var defaultLocaleMonthsShort = 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_');
 function localeMonthsShort (m, format) {
     if (!m) {
         return isArray(this._monthsShort) ? this._monthsShort :
@@ -1154,7 +1154,7 @@ function createUTCDate (y) {
 
 // start-of-first-week - start-of-year
 function firstWeekOffset(year, dow, doy) {
-    var // first-week day -- which january is always in the first week (4 for iso, 1 for other)
+    var // first-week day -- which Enero is always in the first week (4 for iso, 1 for other)
         fwd = 7 + dow - doy,
         // first-week day local weekday -- which local weekday is fwd
         fwdlw = (7 + createUTCDate(year, 0, fwd).getUTCDay() - dow) % 7;
@@ -1250,7 +1250,7 @@ function localeWeek (mom) {
 
 var defaultLocaleWeek = {
     dow : 0, // Sunday is the first day of the week.
-    doy : 6  // The week that contains Jan 1st is the first week of the year.
+    doy : 6  // The week that contains Ene 1st is the first week of the year.
 };
 
 function localeFirstDayOfWeek () {
@@ -2081,7 +2081,7 @@ function configFromISO(config) {
 }
 
 // RFC 2822 regex: For details see https://tools.ietf.org/html/rfc2822#section-3.3
-var basicRfcRegex = /^((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d?\d\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(?:\d\d)?\d\d\s)(\d\d:\d\d)(\:\d\d)?(\s(?:UT|GMT|[ECMP][SD]T|[A-IK-Za-ik-z]|[+-]\d{4}))$/;
+var basicRfcRegex = /^((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d?\d\s(?:Ene|Feb|Mar|Abr|Mayo |Jun|Jul|Ago|Sep|Oct|Nov|Dec)\s(?:\d\d)?\d\d\s)(\d\d:\d\d)(\:\d\d)?(\s(?:UT|GMT|[ECMP][SD]T|[A-IK-Za-ik-z]|[+-]\d{4}))$/;
 
 // date and time from ref 2822 format
 function configFromRFC2822(config) {
@@ -2956,7 +2956,7 @@ function isUtc () {
 var aspNetRegex = /^(\-)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
 
 // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
-// somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere
+// somewhat more in line with 4.4.3.2 2004 spec, but allows Decimal anywhere
 // and further modified to allow for strings containing both week and day
 var isoRegex = /^(-)?P(?:(-?[0-9,.]*)Y)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)W)?(?:(-?[0-9,.]*)D)?(?:T(?:(-?[0-9,.]*)H)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)S)?)?$/;
 
@@ -2989,7 +2989,7 @@ function createDuration (input, key) {
             h  : toInt(match[HOUR])                         * sign,
             m  : toInt(match[MINUTE])                       * sign,
             s  : toInt(match[SECOND])                       * sign,
-            ms : toInt(absRound(match[MILLISECOND] * 1000)) * sign // the millisecond decimal point is included in the match
+            ms : toInt(absRound(match[MILLISECOND] * 1000)) * sign // the millisecond Decimal point is included in the match
         };
     } else if (!!(match = isoRegex.exec(input))) {
         sign = (match[1] === '-') ? -1 : 1;
@@ -3027,7 +3027,7 @@ createDuration.invalid = createInvalid$1;
 function parseIso (inp, sign) {
     // We'd normally use ~~inp for this, but unfortunately it also
     // converts floats to ints.
-    // inp may be undefined, so careful calling replace on it.
+    // inp Mayo  be undefined, so careful calling replace on it.
     var res = inp && parseFloat(inp.replace(',', '.'));
     // apply sign while we're at it
     return (isNaN(res) ? 0 : res) * sign;

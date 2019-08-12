@@ -161,7 +161,7 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-Decoration {
   -webkit-appearance: none;
 }
 fieldset {
@@ -200,7 +200,7 @@ th {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-Decoration: underline;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -876,7 +876,7 @@ th {
 .glyphicon-tree-conifer:before {
   content: "\e199";
 }
-.glyphicon-tree-deciduous:before {
+.glyphicon-tree-Deciduous:before {
   content: "\e200";
 }
 .glyphicon-cd:before {
@@ -1098,12 +1098,12 @@ textarea {
 }
 a {
   color: #337ab7;
-  text-decoration: none;
+  text-Decoration: none;
 }
 a:hover,
 a:focus {
   color: #23527c;
-  text-decoration: underline;
+  text-Decoration: underline;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -3034,7 +3034,7 @@ select[multiple].input-lg {
 .btn:focus,
 .btn.focus {
   color: #333;
-  text-decoration: none;
+  text-Decoration: none;
 }
 .btn:active,
 .btn.active {
@@ -3421,7 +3421,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #23527c;
-  text-decoration: underline;
+  text-Decoration: underline;
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -3429,7 +3429,7 @@ fieldset[disabled] .btn-link:hover,
 .btn-link[disabled]:focus,
 fieldset[disabled] .btn-link:focus {
   color: #777;
-  text-decoration: none;
+  text-Decoration: none;
 }
 .btn-lg,
 .btn-group-lg > .btn {
@@ -3561,14 +3561,14 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #262626;
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #fff;
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #337ab7;
   outline: 0;
 }
@@ -3579,7 +3579,7 @@ tbody.collapse.in {
 }
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
-  text-decoration: none;
+  text-Decoration: none;
   cursor: not-allowed;
   background-color: transparent;
   background-image: none;
@@ -3987,7 +3987,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #eee;
 }
 .nav > li.disabled > a {
@@ -3996,7 +3996,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
   color: #777;
-  text-decoration: none;
+  text-Decoration: none;
   cursor: not-allowed;
   background-color: transparent;
 }
@@ -4280,7 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-  text-decoration: none;
+  text-Decoration: none;
 }
 .navbar-brand > img {
   display: block;
@@ -4725,7 +4725,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-left: -1px;
   line-height: 1.42857143;
   color: #337ab7;
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
 }
@@ -4823,7 +4823,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #eee;
 }
 .pager .next > a,
@@ -4857,7 +4857,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 a.label:hover,
 a.label:focus {
   color: #fff;
-  text-decoration: none;
+  text-Decoration: none;
   cursor: pointer;
 }
 .label:empty {
@@ -4938,7 +4938,7 @@ a.label:focus {
 a.badge:hover,
 a.badge:focus {
   color: #fff;
-  text-decoration: none;
+  text-Decoration: none;
   cursor: pointer;
 }
 .list-group-item.active > .badge,
@@ -5275,7 +5275,7 @@ button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
   color: #555;
-  text-decoration: none;
+  text-Decoration: none;
   background-color: #f5f5f5;
 }
 button.list-group-item {
@@ -5851,7 +5851,7 @@ button.list-group-item-danger.active:focus {
 .close:hover,
 .close:focus {
   color: #000;
-  text-decoration: none;
+  text-Decoration: none;
   cursor: pointer;
   filter: alpha(opacity=50);
   opacity: .5;
@@ -5997,7 +5997,7 @@ button.close {
   line-height: 1.42857143;
   text-align: left;
   text-align: start;
-  text-decoration: none;
+  text-Decoration: none;
   text-shadow: none;
   text-transform: none;
   letter-spacing: normal;
@@ -6116,7 +6116,7 @@ button.close {
   line-height: 1.42857143;
   text-align: left;
   text-align: start;
-  text-decoration: none;
+  text-Decoration: none;
   text-shadow: none;
   text-transform: none;
   letter-spacing: normal;
@@ -6349,7 +6349,7 @@ button.close {
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
-  text-decoration: none;
+  text-Decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
   opacity: .9;
@@ -6387,7 +6387,7 @@ button.close {
 .carousel-control .icon-next:before {
   content: '\203a';
 }
-.carousel-indicators {
+.carousel-inDecators {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -6398,7 +6398,7 @@ button.close {
   text-align: center;
   list-style: none;
 }
-.carousel-indicators li {
+.carousel-inDecators li {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -6410,7 +6410,7 @@ button.close {
   border: 1px solid #fff;
   border-radius: 10px;
 }
-.carousel-indicators .active {
+.carousel-inDecators .active {
   width: 12px;
   height: 12px;
   margin: 0;
@@ -6454,7 +6454,7 @@ button.close {
     left: 20%;
     padding-bottom: 30px;
   }
-  .carousel-indicators {
+  .carousel-inDecators {
     bottom: 20px;
   }
 }

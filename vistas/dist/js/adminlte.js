@@ -156,7 +156,7 @@ throw new Error('AdminLTE requires jQuery')
     collapseTrigger: '[data-widget="collapse"]',
     removeTrigger  : '[data-widget="remove"]',
     collapseIcon   : 'fa-minus',
-    expandIcon     : 'fa-plus',
+    expanDecon     : 'fa-plus',
     removeIcon     : 'fa-times'
   }
 
@@ -200,14 +200,14 @@ throw new Error('AdminLTE requires jQuery')
   BoxWidget.prototype.expand = function () {
     var expandedEvent = $.Event(Event.expanded)
     var collapseIcon  = this.options.collapseIcon
-    var expandIcon    = this.options.expandIcon
+    var expanDecon    = this.options.expanDecon
 
     $(this.element).removeClass(ClassName.collapsed)
 
     $(this.element)
       .find(Selector.tools)
-      .find('.' + expandIcon)
-      .removeClass(expandIcon)
+      .find('.' + expanDecon)
+      .removeClass(expanDecon)
       .addClass(collapseIcon)
 
     $(this.element).find(Selector.body + ', ' + Selector.footer)
@@ -219,13 +219,13 @@ throw new Error('AdminLTE requires jQuery')
   BoxWidget.prototype.collapse = function () {
     var collapsedEvent = $.Event(Event.collapsed)
     var collapseIcon   = this.options.collapseIcon
-    var expandIcon     = this.options.expandIcon
+    var expanDecon     = this.options.expanDecon
 
     $(this.element)
       .find(Selector.tools)
       .find('.' + collapseIcon)
       .removeClass(collapseIcon)
-      .addClass(expandIcon)
+      .addClass(expanDecon)
 
     $(this.element).find(Selector.body + ', ' + Selector.footer)
       .slideUp(this.options.animationSpeed, function () {

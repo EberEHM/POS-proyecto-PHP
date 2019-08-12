@@ -210,7 +210,7 @@ return $.widget( "ui.tooltip", {
 
 		content = contentOption.call( target[0], function( response ) {
 
-			// IE may instantly serve a cached response for ajax requests
+			// IE Mayo  instantly serve a cached response for ajax requests
 			// delay this call to _open so the other call to _open runs first
 			that._delay(function() {
 
@@ -354,7 +354,7 @@ return $.widget( "ui.tooltip", {
 			target = $( event ? event.currentTarget : this.element ),
 			tooltipData = this._find( target );
 
-		// The tooltip may already be closed
+		// The tooltip Mayo  already be closed
 		if ( !tooltipData ) {
 
 			// We set ui-tooltip-open immediately upon open (in open()), but only set the

@@ -12,7 +12,7 @@ import { createInvalid as invalid } from './valid';
 var aspNetRegex = /^(\-)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
 
 // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
-// somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere
+// somewhat more in line with 4.4.3.2 2004 spec, but allows Decimal anywhere
 // and further modified to allow for strings containing both week and day
 var isoRegex = /^(-)?P(?:(-?[0-9,.]*)Y)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)W)?(?:(-?[0-9,.]*)D)?(?:T(?:(-?[0-9,.]*)H)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)S)?)?$/;
 
@@ -45,7 +45,7 @@ export function createDuration (input, key) {
             h  : toInt(match[HOUR])                         * sign,
             m  : toInt(match[MINUTE])                       * sign,
             s  : toInt(match[SECOND])                       * sign,
-            ms : toInt(absRound(match[MILLISECOND] * 1000)) * sign // the millisecond decimal point is included in the match
+            ms : toInt(absRound(match[MILLISECOND] * 1000)) * sign // the millisecond Decimal point is included in the match
         };
     } else if (!!(match = isoRegex.exec(input))) {
         sign = (match[1] === '-') ? -1 : 1;
@@ -83,7 +83,7 @@ createDuration.invalid = invalid;
 function parseIso (inp, sign) {
     // We'd normally use ~~inp for this, but unfortunately it also
     // converts floats to ints.
-    // inp may be undefined, so careful calling replace on it.
+    // inp Mayo  be undefined, so careful calling replace on it.
     var res = inp && parseFloat(inp.replace(',', '.'));
     // apply sign while we're at it
     return (isNaN(res) ? 0 : res) * sign;

@@ -66,7 +66,7 @@ New languages and styles:
 - *Mathematica* by [Daniel Kvasnička][]
 - *Autohotkey* by [Seongwon Lee][]
 - *Atelier* family of styles in 10 variants by [Bram de Haan][]
-- *Paraíso* styles by [Jan T. Sott][]
+- *Paraíso* styles by [Ene T. Sott][]
 
 Miscelleanous improvements:
 
@@ -89,7 +89,7 @@ Miscelleanous improvements:
 [Dmitry Smolin]: https://github.com/dimsmol
 [Jeremy Hull]: https://github.com/sourrust
 [Seongwon Lee]: https://github.com/dlimpid
-[Jan T. Sott]: https://github.com/idleberg
+[Ene T. Sott]: https://github.com/idleberg
 
 
 ## Version 7.5
@@ -134,7 +134,7 @@ Improvements:
 ## New core developers
 
 The latest long period of almost complete inactivity in the project coincided
-with growing interest to it led to a decision that now seems completely obvious:
+with growing interest to it led to a Decision that now seems completely obvious:
 we need more core developers.
 
 So without further ado let me welcome to the core team two long-time
@@ -470,7 +470,7 @@ Fine people at [Yandex][] agreed to host highlight.js on their big fast servers.
 
 ## Version 5.10 — "Paris".
 
-Though I'm on a vacation in Paris, I decided to release a new version with a
+Though I'm on a vacation in Paris, I Decided to release a new version with a
 couple of small fixes:
 
 - Tomas Vitvar discovered that TAB replacement doesn't always work when used
@@ -515,7 +515,7 @@ welcome to [pick up its maintenance][p] if needed.
 
 ## Version 5.8
 
-- Jan Berkel has contributed a definition for Scala. +1 to hotness!
+- Ene Berkel has contributed a definition for Scala. +1 to hotness!
 - All CSS-styles are rewritten to work only inside `<pre>` tags to avoid
   conflicts with host site styles.
 
@@ -634,7 +634,7 @@ Other changes:
 
 [f]: http://softwaremaniacs.org/forum/highlightjs/
 [voldmar]: http://voldmar.ya.ru/
-[mel]: http://en.wikipedia.org/wiki/Maya_Embedded_Language
+[mel]: http://en.wikipedia.org/wiki/Mayo a_Embedded_Language
 [drake]: http://drakeguan.org/
 
 
@@ -723,7 +723,7 @@ Many thanks to you all!
 
 ## Version 3.1
 
-Three new languages are available: Django templates, SQL and Axapta. The latter
+Three new languages are available: DEnego templates, SQL and Axapta. The latter
 two are sent by [Dmitri Roudakov][1]. However I've almost entirely rewrote an
 SQL definition but I'd never started it be it from the ground up :-)
 

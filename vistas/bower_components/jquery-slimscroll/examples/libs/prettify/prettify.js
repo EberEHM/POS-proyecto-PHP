@@ -1,8 +1,8 @@
 // Copyright (C) 2006 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
+// you Mayo  not use this file except in compliance with the License.
+// You Mayo  obtain a copy of the License at
 //
 //      http://www.apache.org/licenses/LICENSE-2.0
 //
@@ -34,7 +34,7 @@
  *    {@code class=prettyprint.}
  *    You can also use the (html deprecated) {@code <xmp>} tag, but the pretty
  *    printer needs to do more substantial DOM manipulations to support that, so
- *    some css styles may not be preserved.
+ *    some css styles Mayo  not be preserved.
  * </ol>
  * That's it.  I wanted to keep the API as simple as possible, so there's no
  * need to specify which language the code is in, but if you wish, you can add
@@ -52,7 +52,7 @@
  * @requires console
  */
 
-// JSLint declarations
+// JSLint Declarations
 /*global console, document, navigator, setTimeout, window */
 
 /**
@@ -73,7 +73,7 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
   var COMMON_KEYWORDS = [C_KEYWORDS,"catch,class,delete,false,import," +
       "new,operator,private,protected,public,this,throw,true,try,typeof"];
   var CPP_KEYWORDS = [COMMON_KEYWORDS,"alignof,align_union,asm,axiom,bool," +
-      "concept,concept_map,const_cast,constexpr,decltype," +
+      "concept,concept_map,const_cast,constexpr,Decltype," +
       "dynamic_cast,explicit,export,friend,inline,late_check," +
       "mutable,namespace,nullptr,reinterpret_cast,static_assert,static_cast," +
       "template,typeid,typename,using,virtual,where"];
@@ -82,7 +82,7 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
       "instanceof,null,native,package,strictfp,super,synchronized,throws," +
       "transient"];
   var CSHARP_KEYWORDS = [JAVA_KEYWORDS,
-      "as,base,by,checked,decimal,delegate,descending,dynamic,event," +
+      "as,base,by,checked,Decimal,delegate,descending,dynamic,event," +
       "fixed,foreach,from,group,implicit,in,interface,internal,into,is,lock," +
       "object,out,override,orderby,params,partial,readonly,ref,sbyte,sealed," +
       "stackalloc,string,select,uint,ulong,unchecked,unsafe,ushort,var"];
@@ -153,10 +153,10 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
    */
   var PR_TAG = 'tag';
   /**
-   * token style for a markup declaration such as a DOCTYPE.
+   * token style for a markup Declaration such as a DOCTYPE.
    * @const
    */
-  var PR_DECLARATION = 'dec';
+  var PR_DecLARATION = 'Dec';
   /**
    * token style for embedded source.
    * @const
@@ -174,7 +174,7 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
   var PR_ATTRIB_VALUE = 'atv';
 
   /**
-   * A class that indicates a section of markup that is not code, e.g. to allow
+   * A class that inDecates a section of markup that is not code, e.g. to allow
    * embedding of line numbers within code listings.
    * @const
    */
@@ -204,10 +204,10 @@ window['PR_SHOULD_USE_CONTINUATION'] = true;
 var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&&=|&=|\\(|\\*|\\*=|\\+=|\\,|\\-=|\\->|\\/|\\/=|:|::|\\;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\@|\\[|\\^|\\^=|\\^\\^|\\^\\^=|\\{|\\||\\|=|\\|\\||\\|\\|=|\\~|break|case|continue|delete|do|else|finally|instanceof|return|throw|try|typeof)\\s*';
 
 // CAVEAT: this does not properly handle the case where a regular
-// expression immediately follows another since a regular expression may
+// expression immediately follows another since a regular expression Mayo 
 // have flags for case-sensitivity and the like.  Having regexp tokens
 // adjacent is not valid in any language I'm aware of, so I'm punting.
-// TODO: maybe style special characters inside a regexp as punctuation.
+// TODO: Mayo be style special characters inside a regexp as punctuation.
 
 
   /**
@@ -244,7 +244,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       'r': 0xd
     };
   
-    function decodeEscape(charsetPart) {
+    function DecodeEscape(charsetPart) {
       var cc0 = charsetPart.charCodeAt(0);
       if (cc0 !== 92 /* \\ */) {
         return cc0;
@@ -292,10 +292,10 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         if (/\\[bdsw]/i.test(p)) {  // Don't muck with named groups.
           groups.push(p);
         } else {
-          var start = decodeEscape(p);
+          var start = DecodeEscape(p);
           var end;
           if (i + 2 < n && '-' === charsetParts[i + 1]) {
-            end = decodeEscape(charsetParts[i + 2]);
+            end = DecodeEscape(charsetParts[i + 2]);
             i += 2;
           } else {
             end = start;
@@ -377,9 +377,9 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           // groups are 1-indexed, so max group index is count of '('
           ++groupIndex;
         } else if ('\\' === p.charAt(0)) {
-          var decimalValue = +p.substring(1);
-          if (decimalValue && decimalValue <= groupIndex) {
-            capturedGroups[decimalValue] = -1;
+          var DecimalValue = +p.substring(1);
+          if (DecimalValue && DecimalValue <= groupIndex) {
+            capturedGroups[DecimalValue] = -1;
           }
         }
       }
@@ -399,8 +399,8 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
             parts[i] = '(?:';
           }
         } else if ('\\' === p.charAt(0)) {
-          var decimalValue = +p.substring(1);
-          if (decimalValue && decimalValue <= groupIndex) {
+          var DecimalValue = +p.substring(1);
+          if (DecimalValue && DecimalValue <= groupIndex) {
             parts[i] = '\\' + capturedGroups[groupIndex];
           }
         }
@@ -482,7 +482,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
    *
    * <p>
    * The {@code} spans array is an array of pairs.  Even elements are the start
-   * indices of substrings, and odd elements are the text nodes (or BR elements)
+   * inDeces of substrings, and odd elements are the text nodes (or BR elements)
    * that contain the text for those substrings.
    * Substrings continue until the next index or the end of the source.
    * </p>
@@ -550,9 +550,9 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
 
   /**
    * Apply the given language handler to sourceCode and add the resulting
-   * decorations to out.
+   * Decorations to out.
    * @param {number} basePos the index of sourceCode within the chunk of source
-   *    whose decorations are already present on out.
+   *    whose Decorations are already present on out.
    */
   function appendDecorations(basePos, sourceCode, langHandler, out) {
     if (!sourceCode) { return; }
@@ -561,7 +561,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       basePos: basePos
     };
     langHandler(job);
-    out.push.apply(out, job.decorations);
+    out.push.apply(out, job.Decorations);
   }
 
   var notWs = /\S/;
@@ -592,7 +592,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
 
   /** Given triples of [style, pattern, context] returns a lexing function,
     * The lexing function interprets the patterns to find token boundaries and
-    * returns a decoration list of the form
+    * returns a Decoration list of the form
     * [index_0, style_0, index_1, style_1, ..., index_n, style_n]
     * where index_n is an index into the sourceCode, and style_n is a style
     * constant like PR_PLAIN.  index_n-1 <= index_n, and style_n-1 applies to
@@ -607,15 +607,15 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     * E.g., if style is 'lang-lisp', and group 1 contains the text
     * '(hello (world))', then that portion of the token will be passed to the
     * registered lisp handler for formatting.
-    * The text before and after group 1 will be restyled using this decorator
-    * so decorators should take care that this doesn't result in infinite
+    * The text before and after group 1 will be restyled using this Decorator
+    * so Decorators should take care that this doesn't result in infinite
     * recursion.  For example, the HTML lexer rule for SCRIPT elements looks
-    * something like ['lang-js', /<[s]cript>(.+?)<\/script>/].  This may match
-    * '<script>foo()<\/script>', which would cause the current decorator to
+    * something like ['lang-js', /<[s]cript>(.+?)<\/script>/].  This Mayo  match
+    * '<script>foo()<\/script>', which would cause the current Decorator to
     * be called with '<script>' which would not match the same rule since
     * group 1 must not be empty, so it would be instead styled as PR_TAG by
     * the generic tag rule.  The handler registered for the 'js' extension would
-    * then be called with 'foo()', and finally, the current decorator would
+    * then be called with 'foo()', and finally, the current Decorator would
     * be called with '<\/script>' which would not match the original rule and
     * so the generic tag rule would identify it as a tag.
     *
@@ -631,10 +631,10 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     * @param {Array} shortcutStylePatterns patterns that always start with
     *   a known character.  Must have a shortcut string.
     * @param {Array} fallthroughStylePatterns patterns that will be tried in
-    *   order if the shortcut ones fail.  May have shortcuts.
+    *   order if the shortcut ones fail.  Mayo  have shortcuts.
     *
     * @return {function (Object)} a
-    *   function that takes source code and returns a list of decorations.
+    *   function that takes source code and returns a list of Decorations.
     */
   function createSimpleLexer(shortcutStylePatterns, fallthroughStylePatterns) {
     var shortcuts = {};
@@ -665,7 +665,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     var nPatterns = fallthroughStylePatterns.length;
 
     /**
-     * Lexes job.sourceCode and produces an output array job.decorations of
+     * Lexes job.sourceCode and produces an output array job.Decorations of
      * style classes preceded by the position at which they start in
      * job.sourceCode in order.
      *
@@ -675,14 +675,14 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
      *        sourceCode.
      * }</pre>
      */
-    var decorate = function (job) {
+    var Decorate = function (job) {
       var sourceCode = job.sourceCode, basePos = job.basePos;
       /** Even entries are positions in source in ascending order.  Odd enties
         * are style markers (e.g., PR_COMMENT) that run from that position until
         * the end.
         * @type {Array.<number|string>}
         */
-      var decorations = [basePos, PR_PLAIN];
+      var Decorations = [basePos, PR_PLAIN];
       var pos = 0;  // index into sourceCode
       var tokens = sourceCode.match(tokenizer) || [];
       var styleCache = {};
@@ -728,7 +728,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         pos += token.length;
 
         if (!isEmbedded) {
-          decorations.push(basePos + tokenStart, style);
+          Decorations.push(basePos + tokenStart, style);
         } else {  // Treat group 1 as an embedded block of source code.
           var embeddedSource = match[1];
           var embeddedSourceStart = token.indexOf(embeddedSource);
@@ -745,39 +745,39 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           appendDecorations(
               basePos + tokenStart,
               token.substring(0, embeddedSourceStart),
-              decorate, decorations);
+              Decorate, Decorations);
           // Decorate the embedded source
           appendDecorations(
               basePos + tokenStart + embeddedSourceStart,
               embeddedSource,
               langHandlerForExtension(lang, embeddedSource),
-              decorations);
+              Decorations);
           // Decorate the right of the embedded section
           appendDecorations(
               basePos + tokenStart + embeddedSourceEnd,
               token.substring(embeddedSourceEnd),
-              decorate, decorations);
+              Decorate, Decorations);
         }
       }
-      job.decorations = decorations;
+      job.Decorations = Decorations;
     };
-    return decorate;
+    return Decorate;
   }
 
-  /** returns a function that produces a list of decorations from source text.
+  /** returns a function that produces a list of Decorations from source text.
     *
     * This code treats ", ', and ` as string delimiters, and \ as a string
     * escape.  It does not recognize perl's qq() style strings.
     * It has no special handling for double delimiter escapes as in basic, or
     * the tripled delimiters used in python, but should work on those regardless
-    * although in those cases a single string literal may be broken up into
+    * although in those cases a single string literal Mayo  be broken up into
     * multiple adjacent string literals.
     *
     * It recognizes C, C++, and shell style comments.
     *
     * @param {Object} options a set of optional parameters.
     * @return {function (Object)} a function that examines the source code
-    *     in the input job and builds the decoration list.
+    *     in the input job and builds the Decoration list.
     */
   function sourceDecorator(options) {
     var shortcutStylePatterns = [], fallthroughStylePatterns = [];
@@ -810,7 +810,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           shortcutStylePatterns.push(
               [PR_COMMENT, /^#(?:##(?:[^#]|#(?!##))*(?:###|$)|.*)/, null, '#']);
         } else {
-          // Stop C preprocessor declarations at an unclosed open comment
+          // Stop C preprocessor Declarations at an unclosed open comment
           shortcutStylePatterns.push(
               [PR_COMMENT, /^#(?:(?:define|elif|else|endif|error|ifdef|include|ifndef|line|pragma|undef|warning)\b|[^\r\n]*)/,
                null, '#']);
@@ -875,7 +875,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
              '^(?:'
              // A hex number
              + '0x[a-f0-9]+'
-             // or an octal or decimal number,
+             // or an octal or Decimal number,
              + '|(?:\\d(?:_\\d+)*\\d*(?:\\.\\d*)?|\\.\\d\\+)'
              // possibly in scientific notation
              + '(?:e[+\\-]?\\d+)?'
@@ -890,7 +890,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     return createSimpleLexer(shortcutStylePatterns, fallthroughStylePatterns);
   }
 
-  var decorateSource = sourceDecorator({
+  var DecorateSource = sourceDecorator({
         'keywords': ALL_KEYWORDS,
         'hashComments': true,
         'cStyleComments': true,
@@ -1023,7 +1023,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       walk(listItems[i]);
     }
   
-    // Make sure numeric indices show correctly.
+    // Make sure numeric inDeces show correctly.
     if (opt_startLineNum === (opt_startLineNum|0)) {
       listItems[0].setAttribute('value', opt_startLineNum);
     }
@@ -1048,13 +1048,13 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
 
   /**
    * Breaks {@code job.sourceCode} around style boundaries in
-   * {@code job.decorations} and modifies {@code job.sourceNode} in place.
+   * {@code job.Decorations} and modifies {@code job.sourceNode} in place.
    * @param {Object} job like <pre>{
    *    sourceCode: {string} source as plain text,
-   *    spans: {Array.<number|Node>} alternating span start indices into source
+   *    spans: {Array.<number|Node>} alternating span start inDeces into source
    *       and the text node or element (e.g. {@code <BR>}) corresponding to that
    *       span.
-   *    decorations: {Array.<number|string} an array of style classes preceded
+   *    Decorations: {Array.<number|string} an array of style classes preceded
    *       by the position at which they start in job.sourceCode in order
    * }</pre>
    * @private
@@ -1073,57 +1073,57 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     // Index into spans after the last span which ends at or before sourceIndex.
     var spanIndex = 0;
   
-    var decorations = job.decorations;
-    var nDecorations = decorations.length;
-    // Index into decorations after the last decoration which ends at or before
+    var Decorations = job.Decorations;
+    var nDecorations = Decorations.length;
+    // Index into Decorations after the last Decoration which ends at or before
     // sourceIndex.
-    var decorationIndex = 0;
+    var DecorationIndex = 0;
   
-    // Remove all zero-length decorations.
-    decorations[nDecorations] = sourceLength;
-    var decPos, i;
-    for (i = decPos = 0; i < nDecorations;) {
-      if (decorations[i] !== decorations[i + 2]) {
-        decorations[decPos++] = decorations[i++];
-        decorations[decPos++] = decorations[i++];
+    // Remove all zero-length Decorations.
+    Decorations[nDecorations] = sourceLength;
+    var DecPos, i;
+    for (i = DecPos = 0; i < nDecorations;) {
+      if (Decorations[i] !== Decorations[i + 2]) {
+        Decorations[DecPos++] = Decorations[i++];
+        Decorations[DecPos++] = Decorations[i++];
       } else {
         i += 2;
       }
     }
-    nDecorations = decPos;
+    nDecorations = DecPos;
   
-    // Simplify decorations.
-    for (i = decPos = 0; i < nDecorations;) {
-      var startPos = decorations[i];
-      // Conflate all adjacent decorations that use the same style.
-      var startDec = decorations[i + 1];
+    // Simplify Decorations.
+    for (i = DecPos = 0; i < nDecorations;) {
+      var startPos = Decorations[i];
+      // Conflate all adjacent Decorations that use the same style.
+      var startDec = Decorations[i + 1];
       var end = i + 2;
-      while (end + 2 <= nDecorations && decorations[end + 1] === startDec) {
+      while (end + 2 <= nDecorations && Decorations[end + 1] === startDec) {
         end += 2;
       }
-      decorations[decPos++] = startPos;
-      decorations[decPos++] = startDec;
+      Decorations[DecPos++] = startPos;
+      Decorations[DecPos++] = startDec;
       i = end;
     }
   
-    nDecorations = decorations.length = decPos;
+    nDecorations = Decorations.length = DecPos;
   
-    var decoration = null;
+    var Decoration = null;
     while (spanIndex < nSpans) {
       var spanStart = spans[spanIndex];
       var spanEnd = spans[spanIndex + 2] || sourceLength;
   
-      var decStart = decorations[decorationIndex];
-      var decEnd = decorations[decorationIndex + 2] || sourceLength;
+      var DecStart = Decorations[DecorationIndex];
+      var DecEnd = Decorations[DecorationIndex + 2] || sourceLength;
   
-      var end = Math.min(spanEnd, decEnd);
+      var end = Math.min(spanEnd, DecEnd);
   
       var textNode = spans[spanIndex + 1];
       var styledText;
       if (textNode.nodeType !== 1  // Don't muck with <BR>s or <LI>s
           // Don't introduce spans around empty text nodes.
           && (styledText = source.substring(sourceIndex, end))) {
-        // This may seem bizarre, and it is.  Emitting LF on IE causes the
+        // This Mayo  seem bizarre, and it is.  Emitting LF on IE causes the
         // code to display with spaces instead of line breaks.
         // Emitting Windows standard issue linebreaks (CRLF) causes a blank
         // space to appear at the beginning of every line but the first.
@@ -1132,7 +1132,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         textNode.nodeValue = styledText;
         var document = textNode.ownerDocument;
         var span = document.createElement('SPAN');
-        span.className = decorations[decorationIndex + 1];
+        span.className = Decorations[DecorationIndex + 1];
         var parentNode = textNode.parentNode;
         parentNode.replaceChild(span, textNode);
         span.appendChild(textNode);
@@ -1149,8 +1149,8 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       if (sourceIndex >= spanEnd) {
         spanIndex += 2;
       }
-      if (sourceIndex >= decEnd) {
-        decorationIndex += 2;
+      if (sourceIndex >= DecEnd) {
+        DecorationIndex += 2;
       }
     }
   }
@@ -1160,16 +1160,16 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
   var langHandlerRegistry = {};
   /** Register a language handler for the given file extensions.
     * @param {function (Object)} handler a function from source code to a list
-    *      of decorations.  Takes a single argument job which describes the
+    *      of Decorations.  Takes a single argument job which describes the
     *      state of the computation.   The single parameter has the form
     *      {@code {
     *        sourceCode: {string} as plain text.
-    *        decorations: {Array.<number|string>} an array of style classes
+    *        Decorations: {Array.<number|string>} an array of style classes
     *                     preceded by the position at which they start in
     *                     job.sourceCode in order.
     *                     The language handler should assigned this field.
     *        basePos: {int} the position of source in the larger source chunk.
-    *                 All positions in the output decorations array are relative
+    *                 All positions in the output Decorations array are relative
     *                 to the larger source chunk.
     *      } }
     * @param {Array.<string>} fileExtensions
@@ -1194,13 +1194,13 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     }
     return langHandlerRegistry[extension];
   }
-  registerLangHandler(decorateSource, ['default-code']);
+  registerLangHandler(DecorateSource, ['default-code']);
   registerLangHandler(
       createSimpleLexer(
           [],
           [
            [PR_PLAIN,       /^[^<?]+/],
-           [PR_DECLARATION, /^<!\w[^>]*(?:>|$)/],
+           [PR_DecLARATION, /^<!\w[^>]*(?:>|$)/],
            [PR_COMMENT,     /^<\!--[\s\S]*?(?:-\->|$)/],
            // Unescaped content in an unknown language
            ['lang-',        /^<\?([\s\S]+?)(?:\?>|$)/],
@@ -1308,7 +1308,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       // Apply the appropriate language handler
       langHandlerForExtension(opt_langExtension, source)(job);
 
-      // Integrate the decorations and tags back into the source code,
+      // Integrate the Decorations and tags back into the source code,
       // modifying the sourceNode in place.
       recombineTagsAndDecorations(job);
     } catch (e) {
@@ -1463,7 +1463,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
         'PR_ATTRIB_NAME': PR_ATTRIB_NAME,
         'PR_ATTRIB_VALUE': PR_ATTRIB_VALUE,
         'PR_COMMENT': PR_COMMENT,
-        'PR_DECLARATION': PR_DECLARATION,
+        'PR_DecLARATION': PR_DecLARATION,
         'PR_KEYWORD': PR_KEYWORD,
         'PR_LITERAL': PR_LITERAL,
         'PR_NOCODE': PR_NOCODE,

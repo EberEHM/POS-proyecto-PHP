@@ -26,8 +26,8 @@ FAR Style (c) MajestiC <majestic2k@gmail.com>
 .ruby .hljs-symbol .hljs-string,
 .hljs-built_in,
 .sql .hljs-aggregate,
-.django .hljs-template_tag,
-.django .hljs-variable,
+.dEnego .hljs-template_tag,
+.dEnego .hljs-variable,
 .smalltalk .hljs-class,
 .hljs-addition,
 .apache .hljs-tag,
@@ -78,8 +78,8 @@ FAR Style (c) MajestiC <majestic2k@gmail.com>
   color: #0F0;
 }
 
-.python .hljs-decorator,
-.django .hljs-filter .hljs-argument,
+.python .hljs-Decorator,
+.dEnego .hljs-filter .hljs-argument,
 .smalltalk .hljs-localvars,
 .smalltalk .hljs-array,
 .hljs-attr_selector,

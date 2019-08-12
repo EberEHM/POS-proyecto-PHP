@@ -10,8 +10,8 @@
 //! author : Werner Mollentze : https://github.com/wernerm
 
 moment.defineLocale('af', {
-    months : 'Januarie_Februarie_Maart_April_Mei_Junie_Julie_Augustus_September_Oktober_November_Desember'.split('_'),
-    monthsShort : 'Jan_Feb_Mrt_Apr_Mei_Jun_Jul_Aug_Sep_Okt_Nov_Des'.split('_'),
+    months : 'Eneuarie_Februarie_Maart_Abril _Mei_Junie_Julie_Agostous_Septiembre _Oktober_Noviembre _Desember'.split('_'),
+    monthsShort : 'Ene_Feb_Mrt_Abr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des'.split('_'),
     weekdays : 'Sondag_Maandag_Dinsdag_Woensdag_Donderdag_Vrydag_Saterdag'.split('_'),
     weekdaysShort : 'Son_Maa_Din_Woe_Don_Vry_Sat'.split('_'),
     weekdaysMin : 'So_Ma_Di_Wo_Do_Vr_Sa'.split('_'),
@@ -63,7 +63,7 @@ moment.defineLocale('af', {
     },
     week : {
         dow : 1, // Maandag is die eerste dag van die week.
-        doy : 4  // Die week wat die 4de Januarie bevat is die eerste week van die jaar.
+        doy : 4  // Die week wat die 4de Eneuarie bevat is die eerste week van die jaar.
     }
 });
 
@@ -111,7 +111,7 @@ moment.defineLocale('ar-dz', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 4  // The week that contains Jan 1st is the first week of the year.
+        doy : 4  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -159,7 +159,7 @@ moment.defineLocale('ar-kw', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -274,7 +274,7 @@ moment.defineLocale('ar-ly', {
     },
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -323,7 +323,7 @@ moment.defineLocale('ar-ma', {
     },
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -417,7 +417,7 @@ moment.defineLocale('ar-sa', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -465,7 +465,7 @@ moment.defineLocale('ar-tn', {
     },
     week: {
         dow: 1, // Monday is the first day of the week.
-        doy: 4 // The week that contains Jan 4th is the first week of the year.
+        doy: 4 // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -596,12 +596,12 @@ moment.defineLocale('ar', {
     },
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
-//! locale : Azerbaijani [az]
+//! locale : AzerbaiEnei [az]
 //! author : topchiyev : https://github.com/topchiyev
 
 var suffixes = {
@@ -626,8 +626,8 @@ var suffixes = {
 };
 
 moment.defineLocale('az', {
-    months : 'yanvar_fevral_mart_aprel_may_iyun_iyul_avqust_sentyabr_oktyabr_noyabr_dekabr'.split('_'),
-    monthsShort : 'yan_fev_mar_apr_may_iyn_iyl_avq_sen_okt_noy_dek'.split('_'),
+    months : 'yanvar_fevral_mart_Abrel_Mayo _iyun_iyul_avqust_sentyabr_oktyabr_noyabr_dekabr'.split('_'),
+    monthsShort : 'yan_fev_mar_Abr_Mayo _iyn_iyl_avq_sen_okt_noy_dek'.split('_'),
     weekdays : 'Bazar_Bazar ertəsi_Çərşənbə axşamı_Çərşənbə_Cümə axşamı_Cümə_Şənbə'.split('_'),
     weekdaysShort : 'Baz_BzE_ÇAx_Çər_CAx_Cüm_Şən'.split('_'),
     weekdaysMin : 'Bz_BE_ÇA_Çə_CA_Cü_Şə'.split('_'),
@@ -690,7 +690,7 @@ moment.defineLocale('az', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -813,7 +813,7 @@ moment.defineLocale('be', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -892,7 +892,7 @@ moment.defineLocale('bg', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -1000,7 +1000,7 @@ moment.defineLocale('bn', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -1108,7 +1108,7 @@ moment.defineLocale('bo', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -1205,14 +1205,14 @@ moment.defineLocale('br', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Bosnian [bs]
 //! author : Nedim Cholich : https://github.com/frontyard
-//! based on (hr) translation by Bojan Marković
+//! based on (hr) translation by BoEne Marković
 
 function translate(number, withoutSuffix, key) {
     var result = number + ' ';
@@ -1268,8 +1268,8 @@ function translate(number, withoutSuffix, key) {
 }
 
 moment.defineLocale('bs', {
-    months : 'januar_februar_mart_april_maj_juni_juli_august_septembar_oktobar_novembar_decembar'.split('_'),
-    monthsShort : 'jan._feb._mar._apr._maj._jun._jul._aug._sep._okt._nov._dec.'.split('_'),
+    months : 'Eneuar_februar_mart_Abril _maj_juni_juli_Agosto_septembar_oktobar_novembar_Decembar'.split('_'),
+    monthsShort : 'Ene._feb._mar._Abr._maj._jun._jul._Ago._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota'.split('_'),
     weekdaysShort : 'ned._pon._uto._sri._čet._pet._sub.'.split('_'),
@@ -1337,7 +1337,7 @@ moment.defineLocale('bs', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -1414,7 +1414,7 @@ moment.defineLocale('ca', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1486,7 +1486,7 @@ moment.defineLocale('cs', {
     monthsParse : (function (months, monthsShort) {
         var i, _monthsParse = [];
         for (i = 0; i < 12; i++) {
-            // use custom parser to solve problem with July (červenec)
+            // use custom parser to solve problem with Julio  (červenec)
             _monthsParse[i] = new RegExp('^' + months[i] + '$|^' + monthsShort[i] + '$', 'i');
         }
         return _monthsParse;
@@ -1575,7 +1575,7 @@ moment.defineLocale('cs', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1627,7 +1627,7 @@ moment.defineLocale('cv', {
     ordinal : '%d-мӗш',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -1697,7 +1697,7 @@ moment.defineLocale('cy', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1706,8 +1706,8 @@ moment.defineLocale('cy', {
 //! author : Ulrik Nielsen : https://github.com/mrbase
 
 moment.defineLocale('da', {
-    months : 'januar_februar_marts_april_maj_juni_juli_august_september_oktober_november_december'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+    months : 'Eneuar_februar_marts_Abril _maj_juni_juli_Agosto_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maj_jun_jul_Ago_sep_okt_nov_Dec'.split('_'),
     weekdays : 'søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag'.split('_'),
     weekdaysShort : 'søn_man_tir_ons_tor_fre_lør'.split('_'),
     weekdaysMin : 'sø_ma_ti_on_to_fr_lø'.split('_'),
@@ -1746,7 +1746,7 @@ moment.defineLocale('da', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1772,8 +1772,8 @@ function processRelativeTime(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('de-at', {
-    months : 'Jänner_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort : 'Jän._Febr._Mrz._Apr._Mai_Jun._Jul._Aug._Sept._Okt._Nov._Dez.'.split('_'),
+    months : 'Jänner_Februar_März_Abril _Mai_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort : 'Jän._Febr._Mrz._Abr._Mai_Jun._Jul._Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
     weekdaysShort : 'So._Mo._Di._Mi._Do._Fr._Sa.'.split('_'),
@@ -1814,7 +1814,7 @@ moment.defineLocale('de-at', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1839,8 +1839,8 @@ function processRelativeTime$1(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('de-ch', {
-    months : 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort : 'Jan._Febr._März_April_Mai_Juni_Juli_Aug._Sept._Okt._Nov._Dez.'.split('_'),
+    months : 'Eneuar_Februar_März_Abril _Mai_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort : 'Ene._Febr._März_Abril _Mai_Juni_Juli_Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
     weekdaysShort : 'So_Mo_Di_Mi_Do_Fr_Sa'.split('_'),
@@ -1881,7 +1881,7 @@ moment.defineLocale('de-ch', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -1906,8 +1906,8 @@ function processRelativeTime$2(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('de', {
-    months : 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort : 'Jan._Febr._Mrz._Apr._Mai_Jun._Jul._Aug._Sept._Okt._Nov._Dez.'.split('_'),
+    months : 'Eneuar_Februar_März_Abril _Mai_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort : 'Ene._Febr._Mrz._Abr._Mai_Jun._Jul._Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
     weekdaysShort : 'So._Mo._Di._Mi._Do._Fr._Sa.'.split('_'),
@@ -1948,7 +1948,7 @@ moment.defineLocale('de', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2037,7 +2037,7 @@ moment.defineLocale('dv', {
     },
     week : {
         dow : 7,  // Sunday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -2126,7 +2126,7 @@ moment.defineLocale('el', {
     ordinal: '%dη',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4st is the first week of the year.
+        doy : 4  // The week that contains Ene 4st is the first week of the year.
     }
 });
 
@@ -2135,8 +2135,8 @@ moment.defineLocale('el', {
 //! author : Jared Morse : https://github.com/jarcoal
 
 moment.defineLocale('en-au', {
-    months : 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+    months : 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_'),
     weekdays : 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
     weekdaysShort : 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
     weekdaysMin : 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
@@ -2182,7 +2182,7 @@ moment.defineLocale('en-au', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2191,8 +2191,8 @@ moment.defineLocale('en-au', {
 //! author : Jonathan Abourbih : https://github.com/jonbca
 
 moment.defineLocale('en-ca', {
-    months : 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+    months : 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_'),
     weekdays : 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
     weekdaysShort : 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
     weekdaysMin : 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
@@ -2243,8 +2243,8 @@ moment.defineLocale('en-ca', {
 //! author : Chris Gedrim : https://github.com/chrisgedrim
 
 moment.defineLocale('en-gb', {
-    months : 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+    months : 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_'),
     weekdays : 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
     weekdaysShort : 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
     weekdaysMin : 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
@@ -2290,7 +2290,7 @@ moment.defineLocale('en-gb', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2299,8 +2299,8 @@ moment.defineLocale('en-gb', {
 //! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 moment.defineLocale('en-ie', {
-    months : 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+    months : 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_'),
     weekdays : 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
     weekdaysShort : 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
     weekdaysMin : 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
@@ -2346,7 +2346,7 @@ moment.defineLocale('en-ie', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2355,8 +2355,8 @@ moment.defineLocale('en-ie', {
 //! author : Luke McGregor : https://github.com/lukemcgregor
 
 moment.defineLocale('en-nz', {
-    months : 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+    months : 'Enero_Febrero _Marzo _Abril _Mayo _Junio _Julio _Agosto_Septiembre _Octubre _Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mayo _Jun_Jul_Ago_Sep_Oct_Nov_Dec'.split('_'),
     weekdays : 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
     weekdaysShort : 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
     weekdaysMin : 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
@@ -2402,7 +2402,7 @@ moment.defineLocale('en-nz', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2413,8 +2413,8 @@ moment.defineLocale('en-nz', {
 //! comment : miestasmia corrected the translation by colindean
 
 moment.defineLocale('eo', {
-    months : 'januaro_februaro_marto_aprilo_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_decembro'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maj_jun_jul_aŭg_sep_okt_nov_dec'.split('_'),
+    months : 'Eneuaro_februaro_marto_Abril o_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_Decembro'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maj_jun_jul_aŭg_sep_okt_nov_Dec'.split('_'),
     weekdays : 'dimanĉo_lundo_mardo_merkredo_ĵaŭdo_vendredo_sabato'.split('_'),
     weekdaysShort : 'dim_lun_mard_merk_ĵaŭ_ven_sab'.split('_'),
     weekdaysMin : 'di_lu_ma_me_ĵa_ve_sa'.split('_'),
@@ -2464,18 +2464,18 @@ moment.defineLocale('eo', {
     ordinal : '%da',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Spanish (Dominican Republic) [es-do]
 
-var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_');
-var monthsShort$1 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+var monthsShortDot = 'ene._feb._mar._abr._Mayo ._jun._jul._ago._sep._oct._nov._Dec.'.split('_');
+var monthsShort$1 = 'ene_feb_mar_abr_Mayo _jun_jul_ago_sep_oct_nov_Dec'.split('_');
 
 moment.defineLocale('es-do', {
-    months : 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+    months : 'enero_febrero_marzo_abril_Mayo o_junio_julio_agosto_septiembre_octubre_noviembre_Deciembre'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortDot;
@@ -2535,7 +2535,7 @@ moment.defineLocale('es-do', {
     ordinal : '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2543,11 +2543,11 @@ moment.defineLocale('es-do', {
 //! locale : Spanish [es]
 //! author : Julio Napurí : https://github.com/julionc
 
-var monthsShortDot$1 = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_');
-var monthsShort$2 = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+var monthsShortDot$1 = 'ene._feb._mar._abr._Mayo ._jun._jul._ago._sep._oct._nov._Dec.'.split('_');
+var monthsShort$2 = 'ene_feb_mar_abr_Mayo _jun_jul_ago_sep_oct_nov_Dec'.split('_');
 
 moment.defineLocale('es', {
-    months : 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+    months : 'enero_febrero_marzo_abril_Mayo o_junio_julio_agosto_septiembre_octubre_noviembre_Deciembre'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortDot$1;
@@ -2607,7 +2607,7 @@ moment.defineLocale('es', {
     ordinal : '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2636,8 +2636,8 @@ function processRelativeTime$3(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('et', {
-    months        : 'jaanuar_veebruar_märts_aprill_mai_juuni_juuli_august_september_oktoober_november_detsember'.split('_'),
-    monthsShort   : 'jaan_veebr_märts_apr_mai_juuni_juuli_aug_sept_okt_nov_dets'.split('_'),
+    months        : 'jaanuar_veebruar_märts_Abril l_mai_juuni_juuli_Agosto_Septiembre _oktoober_Noviembre _detsember'.split('_'),
+    monthsShort   : 'jaan_veebr_märts_Abr_mai_juuni_juuli_Ago_sept_okt_nov_dets'.split('_'),
     weekdays      : 'pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev'.split('_'),
     weekdaysShort : 'P_E_T_K_N_R_L'.split('_'),
     weekdaysMin   : 'P_E_T_K_N_R_L'.split('_'),
@@ -2676,7 +2676,7 @@ moment.defineLocale('et', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2731,7 +2731,7 @@ moment.defineLocale('eu', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -2827,7 +2827,7 @@ moment.defineLocale('fa', {
     ordinal : '%dم',
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12 // The week that contains Jan 1st is the first week of the year.
+        doy : 12 // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -2881,7 +2881,7 @@ function verbalNumber(number, isFuture) {
 moment.defineLocale('fi', {
     months : 'tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kesäkuu_heinäkuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu'.split('_'),
     monthsShort : 'tammi_helmi_maalis_huhti_touko_kesä_heinä_elo_syys_loka_marras_joulu'.split('_'),
-    weekdays : 'sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai'.split('_'),
+    weekdays : 'sunnuntai_maanantai_tiistai_keskiviikko_torstai_perEnetai_lauantai'.split('_'),
     weekdaysShort : 'su_ma_ti_ke_to_pe_la'.split('_'),
     weekdaysMin : 'su_ma_ti_ke_to_pe_la'.split('_'),
     longDateFormat : {
@@ -2923,7 +2923,7 @@ moment.defineLocale('fi', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2932,8 +2932,8 @@ moment.defineLocale('fi', {
 //! author : Ragnar Johannesen : https://github.com/ragnar123
 
 moment.defineLocale('fo', {
-    months : 'januar_februar_mars_apríl_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_'),
+    months : 'Eneuar_februar_mars_Abríl_mai_juni_juli_Agosto_Septiembre _oktober_Noviembre _desember'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_mai_jun_jul_Ago_sep_okt_nov_des'.split('_'),
     weekdays : 'sunnudagur_mánadagur_týsdagur_mikudagur_hósdagur_fríggjadagur_leygardagur'.split('_'),
     weekdaysShort : 'sun_mán_týs_mik_hós_frí_ley'.split('_'),
     weekdaysMin : 'su_má_tý_mi_hó_fr_le'.split('_'),
@@ -2972,7 +2972,7 @@ moment.defineLocale('fo', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -2981,8 +2981,8 @@ moment.defineLocale('fo', {
 //! author : Jonathan Abourbih : https://github.com/jonbca
 
 moment.defineLocale('fr-ca', {
-    months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
-    monthsShort : 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
+    months : 'Enevier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+    monthsShort : 'Enev._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
     monthsParseExact : true,
     weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
     weekdaysShort : 'dim._lun._mar._mer._jeu._ven._sam.'.split('_'),
@@ -3044,8 +3044,8 @@ moment.defineLocale('fr-ca', {
 //! author : Gaspard Bucher : https://github.com/gaspard
 
 moment.defineLocale('fr-ch', {
-    months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
-    monthsShort : 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
+    months : 'Enevier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+    monthsShort : 'Enev._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
     monthsParseExact : true,
     weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
     weekdaysShort : 'dim._lun._mar._mer._jeu._ven._sam.'.split('_'),
@@ -3102,7 +3102,7 @@ moment.defineLocale('fr-ch', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3111,8 +3111,8 @@ moment.defineLocale('fr-ch', {
 //! author : John Fischer : https://github.com/jfroffice
 
 moment.defineLocale('fr', {
-    months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
-    monthsShort : 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
+    months : 'Enevier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
+    monthsShort : 'Enev._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
     monthsParseExact : true,
     weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
     weekdaysShort : 'dim._lun._mar._mer._jeu._ven._sam.'.split('_'),
@@ -3174,7 +3174,7 @@ moment.defineLocale('fr', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3182,11 +3182,11 @@ moment.defineLocale('fr', {
 //! locale : Frisian [fy]
 //! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
-var monthsShortWithDots = 'jan._feb._mrt._apr._mai_jun._jul._aug._sep._okt._nov._des.'.split('_');
-var monthsShortWithoutDots = 'jan_feb_mrt_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_');
+var monthsShortWithDots = 'Ene._feb._mrt._Abr._mai_jun._jul._Ago._sep._okt._nov._des.'.split('_');
+var monthsShortWithoutDots = 'Ene_feb_mrt_Abr_mai_jun_jul_Ago_sep_okt_nov_des'.split('_');
 
 moment.defineLocale('fy', {
-    months : 'jannewaris_febrewaris_maart_april_maaie_juny_july_augustus_septimber_oktober_novimber_desimber'.split('_'),
+    months : 'Enenewaris_febrewaris_maart_Abril _maaie_juny_Julio _Agostous_septimber_oktober_novimber_desimber'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortWithDots;
@@ -3238,7 +3238,7 @@ moment.defineLocale('fy', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3252,9 +3252,9 @@ var months$4 = [
 
 var monthsShort$3 = ['Faoi', 'Gear', 'Màrt', 'Gibl', 'Cèit', 'Ògmh', 'Iuch', 'Lùn', 'Sult', 'Dàmh', 'Samh', 'Dùbh'];
 
-var weekdays$1 = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Diciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
+var weekdays$1 = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Deciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
 
-var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dic', 'Dia', 'Dih', 'Dis'];
+var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dec', 'Dia', 'Dih', 'Dis'];
 
 var weekdaysMin = ['Dò', 'Lu', 'Mà', 'Ci', 'Ar', 'Ha', 'Sa'];
 
@@ -3303,7 +3303,7 @@ moment.defineLocale('gd', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3312,8 +3312,8 @@ moment.defineLocale('gd', {
 //! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 moment.defineLocale('gl', {
-    months : 'xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_decembro'.split('_'),
-    monthsShort : 'xan._feb._mar._abr._mai._xuñ._xul._ago._set._out._nov._dec.'.split('_'),
+    months : 'xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_Decembro'.split('_'),
+    monthsShort : 'xan._feb._mar._abr._mai._xuñ._xul._ago._set._out._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'domingo_luns_martes_mércores_xoves_venres_sábado'.split('_'),
     weekdaysShort : 'dom._lun._mar._mér._xov._ven._sáb.'.split('_'),
@@ -3369,7 +3369,7 @@ moment.defineLocale('gl', {
     ordinal : '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3395,8 +3395,8 @@ function processRelativeTime$4(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('gom-latn', {
-    months : 'Janer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
-    monthsShort : 'Jan._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.'.split('_'),
+    months : 'Eneer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
+    monthsShort : 'Ene._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Aitar_Somar_Mongllar_Budvar_Brestar_Sukrar_Son\'var'.split('_'),
     weekdaysShort : 'Ait._Som._Mon._Bud._Bre._Suk._Son.'.split('_'),
@@ -3452,7 +3452,7 @@ moment.defineLocale('gom-latn', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     },
     meridiemParse: /rati|sokalli|donparam|sanje/,
     meridiemHour : function (hour, meridiem) {
@@ -3574,7 +3574,7 @@ moment.defineLocale('he', {
 
 //! moment.js locale configuration
 //! locale : Hindi [hi]
-//! author : Mayank Singhal : https://github.com/mayanksinghal
+//! author : Mayo ank Singhal : https://github.com/Mayo anksinghal
 
 var symbolMap$6 = {
     '1': '१',
@@ -3681,13 +3681,13 @@ moment.defineLocale('hi', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Croatian [hr]
-//! author : Bojan Marković : https://github.com/bmarkovic
+//! author : BoEne Marković : https://github.com/bmarkovic
 
 function translate$3(number, withoutSuffix, key) {
     var result = number + ' ';
@@ -3745,7 +3745,7 @@ function translate$3(number, withoutSuffix, key) {
 moment.defineLocale('hr', {
     months : {
         format: 'siječnja_veljače_ožujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca'.split('_'),
-        standalone: 'siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac'.split('_')
+        standalone: 'siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_ruEne_listopad_studeni_prosinac'.split('_')
     },
     monthsShort : 'sij._velj._ožu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.'.split('_'),
     monthsParseExact: true,
@@ -3815,7 +3815,7 @@ moment.defineLocale('hr', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -3858,8 +3858,8 @@ function week(isFuture) {
 }
 
 moment.defineLocale('hu', {
-    months : 'január_február_március_április_május_június_július_augusztus_szeptember_október_november_december'.split('_'),
-    monthsShort : 'jan_feb_márc_ápr_máj_jún_júl_aug_szept_okt_nov_dec'.split('_'),
+    months : 'Eneuár_február_március_április_május_június_július_Agousztus_szeptember_október_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_feb_márc_ápr_máj_jún_júl_Ago_szept_okt_nov_Dec'.split('_'),
     weekdays : 'vasárnap_hétfő_kedd_szerda_csütörtök_péntek_szombat'.split('_'),
     weekdaysShort : 'vas_hét_kedd_sze_csüt_pén_szo'.split('_'),
     weekdaysMin : 'v_h_k_sze_cs_p_szo'.split('_'),
@@ -3913,7 +3913,7 @@ moment.defineLocale('hu', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -3997,7 +3997,7 @@ moment.defineLocale('hy-am', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -4007,8 +4007,8 @@ moment.defineLocale('hy-am', {
 //! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 moment.defineLocale('id', {
-    months : 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Ags_Sep_Okt_Nov_Des'.split('_'),
+    months : 'Eneuari_Februari_Maret_Abril _Mei_Juni_Juli_Agustus_Septiembre _Oktober_Noviembre _Desember'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mei_Jun_Jul_Ags_Sep_Okt_Nov_Des'.split('_'),
     weekdays : 'Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu'.split('_'),
     weekdaysShort : 'Min_Sen_Sel_Rab_Kam_Jum_Sab'.split('_'),
     weekdaysMin : 'Mg_Sn_Sl_Rb_Km_Jm_Sb'.split('_'),
@@ -4069,12 +4069,12 @@ moment.defineLocale('id', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
-//! locale : Icelandic [is]
+//! locale : IcelanDec [is]
 //! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 function plural$2(n) {
@@ -4145,9 +4145,9 @@ function translate$5(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('is', {
-    months : 'janúar_febrúar_mars_apríl_maí_júní_júlí_ágúst_september_október_nóvember_desember'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maí_jún_júl_ágú_sep_okt_nóv_des'.split('_'),
-    weekdays : 'sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_laugardagur'.split('_'),
+    months : 'Eneúar_febrúar_mars_Abríl_maí_júní_júlí_ágúst_Septiembre _október_nóvember_desember'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maí_jún_júl_ágú_sep_okt_nóv_des'.split('_'),
+    weekdays : 'sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_lAgoardagur'.split('_'),
     weekdaysShort : 'sun_mán_þri_mið_fim_fös_lau'.split('_'),
     weekdaysMin : 'Su_Má_Þr_Mi_Fi_Fö_La'.split('_'),
     longDateFormat : {
@@ -4185,7 +4185,7 @@ moment.defineLocale('is', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -4195,8 +4195,8 @@ moment.defineLocale('is', {
 //! author: Mattia Larentis: https://github.com/nostalgiaz
 
 moment.defineLocale('it', {
-    months : 'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),
-    monthsShort : 'gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic'.split('_'),
+    months : 'gennaio_febbraio_marzo_Abril e_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_Decembre'.split('_'),
+    monthsShort : 'gen_feb_mar_Abr_mag_giu_lug_ago_set_ott_nov_Dec'.split('_'),
     weekdays : 'domenica_lunedì_martedì_mercoledì_giovedì_venerdì_sabato'.split('_'),
     weekdaysShort : 'dom_lun_mar_mer_gio_ven_sab'.split('_'),
     weekdaysMin : 'do_lu_ma_me_gi_ve_sa'.split('_'),
@@ -4244,7 +4244,7 @@ moment.defineLocale('it', {
     ordinal: '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -4323,8 +4323,8 @@ moment.defineLocale('ja', {
 //! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 moment.defineLocale('jv', {
-    months : 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_Nopember_Desember'.split('_'),
-    monthsShort : 'Jan_Feb_Mar_Apr_Mei_Jun_Jul_Ags_Sep_Okt_Nop_Des'.split('_'),
+    months : 'Eneuari_Februari_Maret_Abril _Mei_Juni_Juli_Agustus_Septiembre _Oktober_Nopember_Desember'.split('_'),
+    monthsShort : 'Ene_Feb_Mar_Abr_Mei_Jun_Jul_Ags_Sep_Okt_Nop_Des'.split('_'),
     weekdays : 'Minggu_Senen_Seloso_Rebu_Kemis_Jemuwah_Septu'.split('_'),
     weekdaysShort : 'Min_Sen_Sel_Reb_Kem_Jem_Sep'.split('_'),
     weekdaysMin : 'Mg_Sn_Sl_Rb_Km_Jm_Sp'.split('_'),
@@ -4362,7 +4362,7 @@ moment.defineLocale('jv', {
     },
     calendar : {
         sameDay : '[Dinten puniko pukul] LT',
-        nextDay : '[Mbenjang pukul] LT',
+        nextDay : '[MbenEneg pukul] LT',
         nextWeek : 'dddd [pukul] LT',
         lastDay : '[Kala wingi pukul] LT',
         lastWeek : 'dddd [kepengker pukul] LT',
@@ -4385,13 +4385,13 @@ moment.defineLocale('jv', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Georgian [ka]
-//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
+//! author : Irakli Eneiashvili : https://github.com/irakli-Eneiashvili
 
 moment.defineLocale('ka', {
     months : {
@@ -4539,7 +4539,7 @@ moment.defineLocale('kk', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -4586,7 +4586,7 @@ moment.defineLocale('km', {
     },
     week: {
         dow: 1, // Monday is the first day of the week.
-        doy: 4 // The week that contains Jan 4th is the first week of the year.
+        doy: 4 // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -4701,7 +4701,7 @@ moment.defineLocale('kn', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -4836,7 +4836,7 @@ moment.defineLocale('ky', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -4911,8 +4911,8 @@ function eifelerRegelAppliesToNumber(number) {
 }
 
 moment.defineLocale('lb', {
-    months: 'Januar_Februar_Mäerz_Abrëll_Mee_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort: 'Jan._Febr._Mrz._Abr._Mee_Jun._Jul._Aug._Sept._Okt._Nov._Dez.'.split('_'),
+    months: 'Eneuar_Februar_Mäerz_Abrëll_Mee_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort: 'Ene._Febr._Mrz._Abr._Mee_Jun._Jul._Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays: 'Sonndeg_Méindeg_Dënschdeg_Mëttwoch_Donneschdeg_Freideg_Samschdeg'.split('_'),
     weekdaysShort: 'So._Mé._Dë._Më._Do._Fr._Sa.'.split('_'),
@@ -4962,7 +4962,7 @@ moment.defineLocale('lb', {
     ordinal: '%d.',
     week: {
         dow: 1, // Monday is the first day of the week.
-        doy: 4  // The week that contains Jan 4th is the first week of the year.
+        doy: 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -5027,7 +5027,7 @@ moment.defineLocale('lo', {
 
 //! moment.js locale configuration
 //! locale : Lithuanian [lt]
-//! author : Mindaugas Mozūras : https://github.com/mmozuras
+//! author : MindAgoas Mozūras : https://github.com/mmozuras
 
 var units = {
     'm' : 'minutė_minutės_minutę',
@@ -5127,14 +5127,14 @@ moment.defineLocale('lt', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Latvian [lv]
 //! author : Kristaps Karlsons : https://github.com/skakri
-//! author : Jānis Elmeris : https://github.com/JanisE
+//! author : Jānis Elmeris : https://github.com/EneisE
 
 var units$1 = {
     'm': 'minūtes_minūtēm_minūte_minūtes'.split('_'),
@@ -5172,8 +5172,8 @@ function relativeSeconds(number, withoutSuffix) {
 }
 
 moment.defineLocale('lv', {
-    months : 'janvāris_februāris_marts_aprīlis_maijs_jūnijs_jūlijs_augusts_septembris_oktobris_novembris_decembris'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_mai_jūn_jūl_aug_sep_okt_nov_dec'.split('_'),
+    months : 'Enevāris_februāris_marts_Abrīlis_maijs_jūnijs_jūlijs_Agostos_septembris_oktobris_novembris_Decembris'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_mai_jūn_jūl_Ago_sep_okt_nov_Dec'.split('_'),
     weekdays : 'svētdiena_pirmdiena_otrdiena_trešdiena_ceturtdiena_piektdiena_sestdiena'.split('_'),
     weekdaysShort : 'Sv_P_O_T_C_Pk_S'.split('_'),
     weekdaysMin : 'Sv_P_O_T_C_Pk_S'.split('_'),
@@ -5213,7 +5213,7 @@ moment.defineLocale('lv', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -5245,8 +5245,8 @@ var translator = {
 };
 
 moment.defineLocale('me', {
-    months: 'januar_februar_mart_april_maj_jun_jul_avgust_septembar_oktobar_novembar_decembar'.split('_'),
-    monthsShort: 'jan._feb._mar._apr._maj_jun_jul_avg._sep._okt._nov._dec.'.split('_'),
+    months: 'Eneuar_februar_mart_Abril _maj_jun_jul_avgust_septembar_oktobar_novembar_Decembar'.split('_'),
+    monthsShort: 'Ene._feb._mar._Abr._maj_jun_jul_avg._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact : true,
     weekdays: 'nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota'.split('_'),
     weekdaysShort: 'ned._pon._uto._sri._čet._pet._sub.'.split('_'),
@@ -5313,7 +5313,7 @@ moment.defineLocale('me', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5366,7 +5366,7 @@ moment.defineLocale('mi', {
     ordinal: '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -5445,7 +5445,7 @@ moment.defineLocale('mk', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5663,7 +5663,7 @@ moment.defineLocale('mr', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5673,8 +5673,8 @@ moment.defineLocale('mr', {
 //! author : Weldan Jamili : https://github.com/weldan
 
 moment.defineLocale('ms-my', {
-    months : 'Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember'.split('_'),
-    monthsShort : 'Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis'.split('_'),
+    months : 'Eneuari_Februari_Mac_Abril _Mei_Jun_Julai_Ogos_Septiembre _Oktober_Noviembre _Disember'.split('_'),
+    monthsShort : 'Ene_Feb_Mac_Abr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis'.split('_'),
     weekdays : 'Ahad_Isnin_Selasa_Rabu_Khamis_Jumaat_Sabtu'.split('_'),
     weekdaysShort : 'Ahd_Isn_Sel_Rab_Kha_Jum_Sab'.split('_'),
     weekdaysMin : 'Ah_Is_Sl_Rb_Km_Jm_Sb'.split('_'),
@@ -5735,7 +5735,7 @@ moment.defineLocale('ms-my', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5744,8 +5744,8 @@ moment.defineLocale('ms-my', {
 //! author : Weldan Jamili : https://github.com/weldan
 
 moment.defineLocale('ms', {
-    months : 'Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember'.split('_'),
-    monthsShort : 'Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis'.split('_'),
+    months : 'Eneuari_Februari_Mac_Abril _Mei_Jun_Julai_Ogos_Septiembre _Oktober_Noviembre _Disember'.split('_'),
+    monthsShort : 'Ene_Feb_Mac_Abr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis'.split('_'),
     weekdays : 'Ahad_Isnin_Selasa_Rabu_Khamis_Jumaat_Sabtu'.split('_'),
     weekdaysShort : 'Ahd_Isn_Sel_Rab_Kha_Jum_Sab'.split('_'),
     weekdaysMin : 'Ah_Is_Sl_Rb_Km_Jm_Sb'.split('_'),
@@ -5806,7 +5806,7 @@ moment.defineLocale('ms', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5891,7 +5891,7 @@ moment.defineLocale('my', {
     },
     week: {
         dow: 1, // Monday is the first day of the week.
-        doy: 4 // The week that contains Jan 1st is the first week of the year.
+        doy: 4 // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -5901,8 +5901,8 @@ moment.defineLocale('my', {
 //!           Sigurd Gartmann : https://github.com/sigurdga
 
 moment.defineLocale('nb', {
-    months : 'januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-    monthsShort : 'jan._feb._mars_april_mai_juni_juli_aug._sep._okt._nov._des.'.split('_'),
+    months : 'Eneuar_februar_mars_Abril _mai_juni_juli_Agosto_Septiembre _oktober_Noviembre _desember'.split('_'),
+    monthsShort : 'Ene._feb._mars_Abril _mai_juni_juli_Ago._sep._okt._nov._des.'.split('_'),
     monthsParseExact : true,
     weekdays : 'søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag'.split('_'),
     weekdaysShort : 'sø._ma._ti._on._to._fr._lø.'.split('_'),
@@ -5943,7 +5943,7 @@ moment.defineLocale('nb', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6055,7 +6055,7 @@ moment.defineLocale('ne', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -6064,14 +6064,14 @@ moment.defineLocale('ne', {
 //! author : Joris Röling : https://github.com/jorisroling
 //! author : Jacob Middag : https://github.com/middagj
 
-var monthsShortWithDots$1 = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_');
-var monthsShortWithoutDots$1 = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+var monthsShortWithDots$1 = 'Ene._feb._mrt._Abr._mei_jun._jul._Ago._sep._okt._nov._Dec.'.split('_');
+var monthsShortWithoutDots$1 = 'Ene_feb_mrt_Abr_mei_jun_jul_Ago_sep_okt_nov_Dec'.split('_');
 
-var monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-var monthsRegex = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+var monthsParse = [/^Ene/i, /^feb/i, /^maart|mrt.?$/i, /^Abr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^Ago/i, /^sep/i, /^okt/i, /^nov/i, /^Dec/i];
+var monthsRegex = /^(Eneuari|februari|maart|Abril |mei|Abril |ju[nl]i|Agostous|Septiembre |oktober|Noviembre |Deciembre|Ene\.?|feb\.?|mrt\.?|Abr\.?|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i;
 
 moment.defineLocale('nl-be', {
-    months : 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
+    months : 'Eneuari_februari_maart_Abril _mei_juni_juli_Agostous_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortWithDots$1;
@@ -6084,8 +6084,8 @@ moment.defineLocale('nl-be', {
 
     monthsRegex: monthsRegex,
     monthsShortRegex: monthsRegex,
-    monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
-    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+    monthsStrictRegex: /^(Eneuari|februari|maart|mei|ju[nl]i|Abril |Agostous|Septiembre |oktober|Noviembre |Deciembre)/i,
+    monthsShortStrictRegex: /^(Ene\.?|feb\.?|mrt\.?|Abr\.?|mei|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i,
 
     monthsParse : monthsParse,
     longMonthsParse : monthsParse,
@@ -6132,7 +6132,7 @@ moment.defineLocale('nl-be', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6141,14 +6141,14 @@ moment.defineLocale('nl-be', {
 //! author : Joris Röling : https://github.com/jorisroling
 //! author : Jacob Middag : https://github.com/middagj
 
-var monthsShortWithDots$2 = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_');
-var monthsShortWithoutDots$2 = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+var monthsShortWithDots$2 = 'Ene._feb._mrt._Abr._mei_jun._jul._Ago._sep._okt._nov._Dec.'.split('_');
+var monthsShortWithoutDots$2 = 'Ene_feb_mrt_Abr_mei_jun_jul_Ago_sep_okt_nov_Dec'.split('_');
 
-var monthsParse$1 = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-var monthsRegex$1 = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+var monthsParse$1 = [/^Ene/i, /^feb/i, /^maart|mrt.?$/i, /^Abr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^Ago/i, /^sep/i, /^okt/i, /^nov/i, /^Dec/i];
+var monthsRegex$1 = /^(Eneuari|februari|maart|Abril |mei|Abril |ju[nl]i|Agostous|Septiembre |oktober|Noviembre |Deciembre|Ene\.?|feb\.?|mrt\.?|Abr\.?|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i;
 
 moment.defineLocale('nl', {
-    months : 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
+    months : 'Eneuari_februari_maart_Abril _mei_juni_juli_Agostous_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortWithDots$2;
@@ -6161,8 +6161,8 @@ moment.defineLocale('nl', {
 
     monthsRegex: monthsRegex$1,
     monthsShortRegex: monthsRegex$1,
-    monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
-    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+    monthsStrictRegex: /^(Eneuari|februari|maart|mei|ju[nl]i|Abril |Agostous|Septiembre |oktober|Noviembre |Deciembre)/i,
+    monthsShortStrictRegex: /^(Ene\.?|feb\.?|mrt\.?|Abr\.?|mei|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i,
 
     monthsParse : monthsParse$1,
     longMonthsParse : monthsParse$1,
@@ -6209,7 +6209,7 @@ moment.defineLocale('nl', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6218,8 +6218,8 @@ moment.defineLocale('nl', {
 //! author : https://github.com/mechuwind
 
 moment.defineLocale('nn', {
-    months : 'januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_'),
+    months : 'Eneuar_februar_mars_Abril _mai_juni_juli_Agosto_Septiembre _oktober_Noviembre _desember'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_mai_jun_jul_Ago_sep_okt_nov_des'.split('_'),
     weekdays : 'sundag_måndag_tysdag_onsdag_torsdag_fredag_laurdag'.split('_'),
     weekdaysShort : 'sun_mån_tys_ons_tor_fre_lau'.split('_'),
     weekdaysMin : 'su_må_ty_on_to_fr_lø'.split('_'),
@@ -6258,7 +6258,7 @@ moment.defineLocale('nn', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6371,7 +6371,7 @@ moment.defineLocale('pa-in', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -6467,7 +6467,7 @@ moment.defineLocale('pl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6476,8 +6476,8 @@ moment.defineLocale('pl', {
 //! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 moment.defineLocale('pt-br', {
-    months : 'Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
-    monthsShort : 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
+    months : 'Eneeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
+    monthsShort : 'Ene_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
     weekdays : 'Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado'.split('_'),
     weekdaysShort : 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb'.split('_'),
     weekdaysMin : 'Do_2ª_3ª_4ª_5ª_6ª_Sá'.split('_'),
@@ -6526,8 +6526,8 @@ moment.defineLocale('pt-br', {
 //! author : Jefferson : https://github.com/jalex79
 
 moment.defineLocale('pt', {
-    months : 'Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
-    monthsShort : 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
+    months : 'Eneeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
+    monthsShort : 'Ene_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
     weekdays : 'Domingo_Segunda-Feira_Terça-Feira_Quarta-Feira_Quinta-Feira_Sexta-Feira_Sábado'.split('_'),
     weekdaysShort : 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb'.split('_'),
     weekdaysMin : 'Do_2ª_3ª_4ª_5ª_6ª_Sá'.split('_'),
@@ -6571,7 +6571,7 @@ moment.defineLocale('pt', {
     ordinal : '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6596,8 +6596,8 @@ function relativeTimeWithPlural$2(number, withoutSuffix, key) {
 }
 
 moment.defineLocale('ro', {
-    months : 'ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie'.split('_'),
-    monthsShort : 'ian._febr._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.'.split('_'),
+    months : 'ianuarie_februarie_martie_Abril ie_mai_iunie_iulie_Agosto_septembrie_octombrie_noiembrie_Decembrie'.split('_'),
+    monthsShort : 'ian._febr._mart._Abr._mai_iun._iul._Ago._sept._oct._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'duminică_luni_marți_miercuri_joi_vineri_sâmbătă'.split('_'),
     weekdaysShort : 'Dum_Lun_Mar_Mie_Joi_Vin_Sâm'.split('_'),
@@ -6635,7 +6635,7 @@ moment.defineLocale('ro', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -6807,7 +6807,7 @@ moment.defineLocale('ru', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -6894,7 +6894,7 @@ moment.defineLocale('sd', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -6944,7 +6944,7 @@ moment.defineLocale('se', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -7013,8 +7013,8 @@ moment.defineLocale('si', {
 //! author : Martin Minka : https://github.com/k2s
 //! based on work of petrbela : https://github.com/petrbela
 
-var months$6 = 'január_február_marec_apríl_máj_jún_júl_august_september_október_november_december'.split('_');
-var monthsShort$4 = 'jan_feb_mar_apr_máj_jún_júl_aug_sep_okt_nov_dec'.split('_');
+var months$6 = 'Eneuár_február_marec_Abríl_máj_jún_júl_Agosto_Septiembre _október_Noviembre _Deciembre'.split('_');
+var monthsShort$4 = 'Ene_feb_mar_Abr_máj_jún_júl_Ago_sep_okt_nov_Dec'.split('_');
 function plural$5(n) {
     return (n > 1) && (n < 5);
 }
@@ -7143,7 +7143,7 @@ moment.defineLocale('sk', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -7223,8 +7223,8 @@ function processRelativeTime$6(number, withoutSuffix, key, isFuture) {
 }
 
 moment.defineLocale('sl', {
-    months : 'januar_februar_marec_april_maj_junij_julij_avgust_september_oktober_november_december'.split('_'),
-    monthsShort : 'jan._feb._mar._apr._maj._jun._jul._avg._sep._okt._nov._dec.'.split('_'),
+    months : 'Eneuar_februar_marec_Abril _maj_junij_julij_avgust_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene._feb._mar._Abr._maj._jun._jul._avg._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'nedelja_ponedeljek_torek_sreda_četrtek_petek_sobota'.split('_'),
     weekdaysShort : 'ned._pon._tor._sre._čet._pet._sob.'.split('_'),
@@ -7294,7 +7294,7 @@ moment.defineLocale('sl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -7305,8 +7305,8 @@ moment.defineLocale('sl', {
 //! author : Oerd Cukalla : https://github.com/oerd
 
 moment.defineLocale('sq', {
-    months : 'Janar_Shkurt_Mars_Prill_Maj_Qershor_Korrik_Gusht_Shtator_Tetor_Nëntor_Dhjetor'.split('_'),
-    monthsShort : 'Jan_Shk_Mar_Pri_Maj_Qer_Kor_Gus_Sht_Tet_Nën_Dhj'.split('_'),
+    months : 'Enear_Shkurt_Mars_Prill_Maj_Qershor_Korrik_Gusht_Shtator_Tetor_Nëntor_Dhjetor'.split('_'),
+    monthsShort : 'Ene_Shk_Mar_Pri_Maj_Qer_Kor_Gus_Sht_Tet_Nën_Dhj'.split('_'),
     weekdays : 'E Diel_E Hënë_E Martë_E Mërkurë_E Enjte_E Premte_E Shtunë'.split('_'),
     weekdaysShort : 'Die_Hën_Mar_Mër_Enj_Pre_Sht'.split('_'),
     weekdaysMin : 'D_H_Ma_Më_E_P_Sh'.split('_'),
@@ -7353,13 +7353,13 @@ moment.defineLocale('sq', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Serbian Cyrillic [sr-cyrl]
-//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
+//! author : Milan Eneačković<milanEneackovic@gmail.com> : https://github.com/milan-j
 
 var translator$1 = {
     words: { //Different grammatical cases
@@ -7452,13 +7452,13 @@ moment.defineLocale('sr-cyrl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
 //! moment.js locale configuration
 //! locale : Serbian [sr]
-//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
+//! author : Milan Eneačković<milanEneackovic@gmail.com> : https://github.com/milan-j
 
 var translator$2 = {
     words: { //Different grammatical cases
@@ -7484,8 +7484,8 @@ var translator$2 = {
 };
 
 moment.defineLocale('sr', {
-    months: 'januar_februar_mart_april_maj_jun_jul_avgust_septembar_oktobar_novembar_decembar'.split('_'),
-    monthsShort: 'jan._feb._mar._apr._maj_jun_jul_avg._sep._okt._nov._dec.'.split('_'),
+    months: 'Eneuar_februar_mart_Abril _maj_jun_jul_avgust_septembar_oktobar_novembar_Decembar'.split('_'),
+    monthsShort: 'Ene._feb._mar._Abr._maj_jun_jul_avg._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays: 'nedelja_ponedeljak_utorak_sreda_četvrtak_petak_subota'.split('_'),
     weekdaysShort: 'ned._pon._uto._sre._čet._pet._sub.'.split('_'),
@@ -7551,7 +7551,7 @@ moment.defineLocale('sr', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -7629,7 +7629,7 @@ moment.defineLocale('ss', {
     ordinal : '%d',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -7638,8 +7638,8 @@ moment.defineLocale('ss', {
 //! author : Jens Alm : https://github.com/ulmus
 
 moment.defineLocale('sv', {
-    months : 'januari_februari_mars_april_maj_juni_juli_augusti_september_oktober_november_december'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+    months : 'Eneuari_februari_mars_Abril _maj_juni_juli_Agostoi_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maj_jun_jul_Ago_sep_okt_nov_Dec'.split('_'),
     weekdays : 'söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag'.split('_'),
     weekdaysShort : 'sön_mån_tis_ons_tor_fre_lör'.split('_'),
     weekdaysMin : 'sö_må_ti_on_to_fr_lö'.split('_'),
@@ -7687,7 +7687,7 @@ moment.defineLocale('sv', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -7696,8 +7696,8 @@ moment.defineLocale('sv', {
 //! author : Fahad Kassim : https://github.com/fadsel
 
 moment.defineLocale('sw', {
-    months : 'Januari_Februari_Machi_Aprili_Mei_Juni_Julai_Agosti_Septemba_Oktoba_Novemba_Desemba'.split('_'),
-    monthsShort : 'Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des'.split('_'),
+    months : 'Eneuari_Februari_Machi_Abril i_Mei_Juni_Julai_Agosti_Septemba_Oktoba_Novemba_Desemba'.split('_'),
+    monthsShort : 'Ene_Feb_Mac_Abr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des'.split('_'),
     weekdays : 'Jumapili_Jumatatu_Jumanne_Jumatano_Alhamisi_Ijumaa_Jumamosi'.split('_'),
     weekdaysShort : 'Jpl_Jtat_Jnne_Jtan_Alh_Ijm_Jmos'.split('_'),
     weekdaysMin : 'J2_J3_J4_J5_Al_Ij_J1'.split('_'),
@@ -7714,7 +7714,7 @@ moment.defineLocale('sw', {
         sameDay : '[leo saa] LT',
         nextDay : '[kesho saa] LT',
         nextWeek : '[wiki ijayo] dddd [saat] LT',
-        lastDay : '[jana] LT',
+        lastDay : '[Enea] LT',
         lastWeek : '[wiki iliyopita] dddd [saat] LT',
         sameElse : 'L'
     },
@@ -7735,7 +7735,7 @@ moment.defineLocale('sw', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -7854,7 +7854,7 @@ moment.defineLocale('ta', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -7932,7 +7932,7 @@ moment.defineLocale('te', {
     },
     week : {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 1st is the first week of the year.
+        doy : 6  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -7942,8 +7942,8 @@ moment.defineLocale('te', {
 //! author : Onorio De J. Afonso : https://github.com/marobo
 
 moment.defineLocale('tet', {
-    months : 'Janeiru_Fevereiru_Marsu_Abril_Maiu_Juniu_Juliu_Augustu_Setembru_Outubru_Novembru_Dezembru'.split('_'),
-    monthsShort : 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Aug_Set_Out_Nov_Dez'.split('_'),
+    months : 'Eneeiru_Fevereiru_Marsu_Abril_Maiu_Juniu_Juliu_Agostou_Setembru_Outubru_Novembru_Dezembru'.split('_'),
+    monthsShort : 'Ene_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
     weekdays : 'Domingu_Segunda_Tersa_Kuarta_Kinta_Sexta_Sabadu'.split('_'),
     weekdaysShort : 'Dom_Seg_Ters_Kua_Kint_Sext_Sab'.split('_'),
     weekdaysMin : 'Do_Seg_Te_Ku_Ki_Sex_Sa'.split('_'),
@@ -7989,7 +7989,7 @@ moment.defineLocale('tet', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8054,8 +8054,8 @@ moment.defineLocale('th', {
 //! author : Dan Hagman : https://github.com/hagmandan
 
 moment.defineLocale('tl-ph', {
-    months : 'Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre'.split('_'),
-    monthsShort : 'Ene_Peb_Mar_Abr_May_Hun_Hul_Ago_Set_Okt_Nob_Dis'.split('_'),
+    months : 'Enero_Pebrero_Marso_Abril_Mayo o_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre'.split('_'),
+    monthsShort : 'Ene_Peb_Mar_Abr_Mayo _Hun_Hul_Ago_Set_Okt_Nob_Dis'.split('_'),
     weekdays : 'Linggo_Lunes_Martes_Miyerkules_Huwebes_Biyernes_Sabado'.split('_'),
     weekdaysShort : 'Lin_Lun_Mar_Miy_Huw_Biy_Sab'.split('_'),
     weekdaysMin : 'Li_Lu_Ma_Mi_Hu_Bi_Sab'.split('_'),
@@ -8096,7 +8096,7 @@ moment.defineLocale('tl-ph', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8205,7 +8205,7 @@ moment.defineLocale('tlh', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8236,8 +8236,8 @@ var suffixes$3 = {
 };
 
 moment.defineLocale('tr', {
-    months : 'Ocak_Şubat_Mart_Nisan_Mayıs_Haziran_Temmuz_Ağustos_Eylül_Ekim_Kasım_Aralık'.split('_'),
-    monthsShort : 'Oca_Şub_Mar_Nis_May_Haz_Tem_Ağu_Eyl_Eki_Kas_Ara'.split('_'),
+    months : 'Ocak_Şubat_Mart_Nisan_Mayo ıs_Haziran_Temmuz_Ağustos_Eylül_Ekim_Kasım_Aralık'.split('_'),
+    monthsShort : 'Oca_Şub_Mar_Nis_Mayo _Haz_Tem_Ağu_Eyl_Eki_Kas_Ara'.split('_'),
     weekdays : 'Pazar_Pazartesi_Salı_Çarşamba_Perşembe_Cuma_Cumartesi'.split('_'),
     weekdaysShort : 'Paz_Pts_Sal_Çar_Per_Cum_Cts'.split('_'),
     weekdaysMin : 'Pz_Pt_Sa_Ça_Pe_Cu_Ct'.split('_'),
@@ -8284,7 +8284,7 @@ moment.defineLocale('tr', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -8293,11 +8293,11 @@ moment.defineLocale('tr', {
 //! author : Robin van der Vliet : https://github.com/robin0van0der0v
 //! author : Iustì Canun
 
-// After the year there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
-// This is currently too difficult (maybe even impossible) to add.
+// After the year there should be a slash and the amount of years since Deciembre 26, 1979 in Roman numerals.
+// This is currently too difficult (Mayo be even impossible) to add.
 moment.defineLocale('tzl', {
-    months : 'Januar_Fevraglh_Març_Avrïu_Mai_Gün_Julia_Guscht_Setemvar_Listopäts_Noemvar_Zecemvar'.split('_'),
-    monthsShort : 'Jan_Fev_Mar_Avr_Mai_Gün_Jul_Gus_Set_Lis_Noe_Zec'.split('_'),
+    months : 'Eneuar_Fevraglh_Març_Avrïu_Mai_Gün_Julia_Guscht_Setemvar_Listopäts_Noemvar_Zecemvar'.split('_'),
+    monthsShort : 'Ene_Fev_Mar_Avr_Mai_Gün_Jul_Gus_Set_Lis_Noe_Zec'.split('_'),
     weekdays : 'Súladi_Lúneçi_Maitzi_Márcuri_Xhúadi_Viénerçi_Sáturi'.split('_'),
     weekdaysShort : 'Súl_Lún_Mai_Már_Xhú_Vié_Sát'.split('_'),
     weekdaysMin : 'Sú_Lú_Ma_Má_Xh_Vi_Sá'.split('_'),
@@ -8347,7 +8347,7 @@ moment.defineLocale('tzl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8373,8 +8373,8 @@ function processRelativeTime$7(number, withoutSuffix, key, isFuture) {
 //! author : Abdel Said : https://github.com/abdelsaid
 
 moment.defineLocale('tzm-latn', {
-    months : 'innayr_brˤayrˤ_marˤsˤ_ibrir_mayyw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir'.split('_'),
-    monthsShort : 'innayr_brˤayrˤ_marˤsˤ_ibrir_mayyw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir'.split('_'),
+    months : 'innayr_brˤayrˤ_marˤsˤ_ibrir_Mayo yw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir'.split('_'),
+    monthsShort : 'innayr_brˤayrˤ_marˤsˤ_ibrir_Mayo yw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir'.split('_'),
     weekdays : 'asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas'.split('_'),
     weekdaysShort : 'asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas'.split('_'),
     weekdaysMin : 'asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas'.split('_'),
@@ -8411,7 +8411,7 @@ moment.defineLocale('tzm-latn', {
     },
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -8458,7 +8458,7 @@ moment.defineLocale('tzm', {
     },
     week : {
         dow : 6, // Saturday is the first day of the week.
-        doy : 12  // The week that contains Jan 1st is the first week of the year.
+        doy : 12  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -8598,7 +8598,7 @@ moment.defineLocale('uk', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -8686,7 +8686,7 @@ moment.defineLocale('ur', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8695,8 +8695,8 @@ moment.defineLocale('ur', {
 //! author : Rasulbek Mirzayev : github.com/Rasulbeeek
 
 moment.defineLocale('uz-latn', {
-    months : 'Yanvar_Fevral_Mart_Aprel_May_Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr'.split('_'),
-    monthsShort : 'Yan_Fev_Mar_Apr_May_Iyun_Iyul_Avg_Sen_Okt_Noy_Dek'.split('_'),
+    months : 'Yanvar_Fevral_Mart_Abrel_Mayo _Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr'.split('_'),
+    monthsShort : 'Yan_Fev_Mar_Abr_Mayo _Iyun_Iyul_Avg_Sen_Okt_Noy_Dek'.split('_'),
     weekdays : 'Yakshanba_Dushanba_Seshanba_Chorshanba_Payshanba_Juma_Shanba'.split('_'),
     weekdaysShort : 'Yak_Dush_Sesh_Chor_Pay_Jum_Shan'.split('_'),
     weekdaysMin : 'Ya_Du_Se_Cho_Pa_Ju_Sha'.split('_'),
@@ -8733,7 +8733,7 @@ moment.defineLocale('uz-latn', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 
@@ -8780,7 +8780,7 @@ moment.defineLocale('uz', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 4th is the first week of the year.
+        doy : 7  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8848,7 +8848,7 @@ moment.defineLocale('vi', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8905,7 +8905,7 @@ moment.defineLocale('x-pseudo', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -8954,7 +8954,7 @@ moment.defineLocale('yo', {
     ordinal : 'ọjọ́ %d',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4 // The week that contains Jan 4th is the first week of the year.
+        doy : 4 // The week that contains Ene 4th is the first week of the year.
     }
 });
 
@@ -9054,7 +9054,7 @@ moment.defineLocale('zh-cn', {
     week : {
         // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

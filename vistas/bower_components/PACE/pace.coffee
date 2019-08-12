@@ -46,7 +46,7 @@ defaultOptions =
     # using the element monitor?
     checkInterval: 100
 
-    # What elements should we wait for before deciding the page is fully loaded (not required)
+    # What elements should we wait for before Deciding the page is fully loaded (not required)
     selectors: ['body']
 
   eventLag:
@@ -55,7 +55,7 @@ defaultOptions =
     # how many samples we need before we consider a low number to mean completion.
     minSamples: 10
 
-    # How many samples should we average to decide what the current lag is?
+    # How many samples should we average to Decide what the current lag is?
     sampleCount: 3
 
     # Above how many ms of lag is the CPU considered busy?
@@ -736,7 +736,7 @@ Pace.start = (_options) ->
     bar.render()
   catch NoTargetError
 
-  # It's usually possible to render a bit before the document declares itself ready
+  # It's usually possible to render a bit before the document Declares itself ready
   if not document.querySelector('.pace')
     setTimeout Pace.start, 50
   else

@@ -14,7 +14,7 @@ CARGAR LA TABLA DINÁMICA DE PRODUCTOS
 // })
 var perfilOculto = $("#perfilOculto").val();
  
-$('.tablaProductos').DataTable( {
+$('.tablAbroductos').DataTable( {
     "ajax": "ajax/datatable-productos.ajax.php?perfilOculto="+perfilOculto,
     "deferRender": true,
 	"retrieve": true,
@@ -242,7 +242,7 @@ $(".nuevaImagen").change(function(){
             EDITAR PRODUCTO
 =============================================*/
 
-$(".tablaProductos tbody").on("click", "button.btnEditarProducto", function(){
+$(".tablAbroductos tbody").on("click", "button.btnEditarProducto", function(){
 
 	var idPro = $(this).attr("idPro");
 	
@@ -309,7 +309,7 @@ $(".tablaProductos tbody").on("click", "button.btnEditarProducto", function(){
 			ELIMINAR PRODUCTO
 =============================================*/
 
-$(".tablaProductos tbody").on("click", "button.btnEliminarProducto", function(){
+$(".tablAbroductos tbody").on("click", "button.btnEliminarProducto", function(){
 
 	var idPro = $(this).attr("idPro");
 	var codigo = $(this).attr("codigo");
@@ -357,26 +357,7 @@ $(document).on("click", ".btnActivarOptimizacion", function(){
       contentType: false,
       processData: false,
       success: function(respuesta){
-
-        if(window.matchMedia("(max-width:767px)").matches){
-    
-           swal({
-            title: "La optimizacion ha sido actualizada",
-            type: "success",
-            confirmButtonText: "¡Cerrar!"
-          }).then(function(result) {
-            
-              if (result.value) {
-        
-              window.location = "productos";
-
-
-            }
-
-          });
-
-
-    }
+      	
       }
 
     })

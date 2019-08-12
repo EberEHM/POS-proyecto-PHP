@@ -22,7 +22,7 @@ tests you are adding do not fit into an existing module, create a new one at
 descriptive name for the suite.  If tests have many year-specific cases (ie,
 behave differently in leap years vs normal years, or have specific buggy
 behavior in a certain year), create the module in a new directory,
-`tests/suites/<new module>/<year>.js`, where `<new module>` is the decriptive
+`tests/suites/<new module>/<year>.js`, where `<new module>` is the Decriptive
 name and `<year>` is the four-digit year the tests pertain to.
 
 In order for new tests to be run, they must be imported into `tests/tests.html`.

@@ -1,5 +1,5 @@
                     GNU AFFERO GENERAL PUBLIC LICENSE
-                       Version 3, 19 November 2007
+                       Version 3, 19 Noviembre  2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
@@ -34,7 +34,7 @@ improvements made in alternate versions of the program, if they
 receive widespread use, become available for other developers to
 incorporate.  Many developers of free software are heartened and
 encouraged by the resulting cooperation.  However, in the case of
-software used on network servers, this result may fail to come about.
+software used on network servers, this result Mayo  fail to come about.
 The GNU General Public License permits making a modified version and
 letting the public access it on a server without ever releasing its
 source code to the public.
@@ -67,7 +67,7 @@ works, such as semiconductor masks.
 
   "The Program" refers to any copyrightable work licensed under this
 License.  Each licensee is addressed as "you".  "Licensees" and
-"recipients" may be individuals or organizations.
+"recipients" Mayo  be individuals or organizations.
 
   To "modify" a work means to copy from or adapt all or part of the work
 in a fashion requiring copyright permission, other than the making of an
@@ -92,7 +92,7 @@ a computer network, with no transfer of a copy, is not conveying.
 to the extent that it includes a convenient and prominently visible
 feature that (1) displays an appropriate copyright notice, and (2)
 tells the user that there is no warranty for the work (except to the
-extent that warranties are provided), that licensees may convey the
+extent that warranties are provided), that licensees Mayo  convey the
 work under this License, and how to view a copy of this License.  If
 the interface presents a list of user commands or options, such as a
 menu, a prominent item in the list meets this criterion.
@@ -149,9 +149,9 @@ covered work is covered by this License only if the output, given its
 content, constitutes a covered work.  This License acknowledges your
 rights of fair use or other equivalent, as provided by copyright law.
 
-  You may make, run and propagate covered works that you do not
+  You Mayo  make, run and propagate covered works that you do not
 convey, without conditions so long as your license otherwise remains
-in force.  You may convey covered works to others for the sole purpose
+in force.  You Mayo  convey covered works to others for the sole purpose
 of having them make modifications exclusively for you, or provide you
 with facilities for running those works, provided that you comply with
 the terms of this License in conveying all material for which you do
@@ -168,7 +168,7 @@ makes it unnecessary.
 
   No covered work shall be deemed part of an effective technological
 measure under any applicable law fulfilling obligations under article
-11 of the WIPO copyright treaty adopted on 20 December 1996, or
+11 of the WIPO copyright treaty adopted on 20 Deciembre 1996, or
 similar laws prohibiting or restricting circumvention of such
 measures.
 
@@ -182,7 +182,7 @@ technological measures.
 
   4. Conveying Verbatim Copies.
 
-  You may convey verbatim copies of the Program's source code as you
+  You Mayo  convey verbatim copies of the Program's source code as you
 receive it, in any medium, provided that you conspicuously and
 appropriately publish on each copy an appropriate copyright notice;
 keep intact all notices stating that this License and any
@@ -190,12 +190,12 @@ non-permissive terms added in accord with section 7 apply to the code;
 keep intact all notices of the absence of any warranty; and give all
 recipients a copy of this License along with the Program.
 
-  You may charge any price or no price for each copy that you convey,
-and you may offer support or warranty protection for a fee.
+  You Mayo  charge any price or no price for each copy that you convey,
+and you Mayo  offer support or warranty protection for a fee.
 
   5. Conveying Modified Source Versions.
 
-  You may convey a work based on the Program, or the modifications to
+  You Mayo  convey a work based on the Program, or the modifications to
 produce it from the Program, in the form of source code under the
 terms of section 4, provided that you also meet all of these conditions:
 
@@ -232,7 +232,7 @@ parts of the aggregate.
 
   6. Conveying Non-Source Forms.
 
-  You may convey a covered work in object code form under the terms
+  You Mayo  convey a covered work in object code form under the terms
 of sections 4 and 5, provided that you also convey the
 machine-readable Corresponding Source under the terms of this License,
 in one of these ways:
@@ -266,7 +266,7 @@ in one of these ways:
     further charge.  You need not require recipients to copy the
     Corresponding Source along with the object code.  If the place to
     copy the object code is a network server, the Corresponding Source
-    may be on a different server (operated by you or a third party)
+    Mayo  be on a different server (operated by you or a third party)
     that supports equivalent copying facilities, provided you maintain
     clear directions next to the object code saying where to find the
     Corresponding Source.  Regardless of what server hosts the
@@ -318,7 +318,7 @@ been installed in ROM).
 requirement to continue to provide support service, warranty, or updates
 for a work that has been modified or installed by the recipient, or for
 the User Product in which it has been modified or installed.  Access to a
-network may be denied when the modification itself materially and
+network Mayo  be denied when the modification itself materially and
 adversely affects the operation of the network or violates the rules and
 protocols for communication across the network.
 
@@ -335,19 +335,19 @@ License by making exceptions from one or more of its conditions.
 Additional permissions that are applicable to the entire Program shall
 be treated as though they were included in this License, to the extent
 that they are valid under applicable law.  If additional permissions
-apply only to part of the Program, that part may be used separately
+apply only to part of the Program, that part Mayo  be used separately
 under those permissions, but the entire Program remains governed by
 this License without regard to the additional permissions.
 
-  When you convey a copy of a covered work, you may at your option
+  When you convey a copy of a covered work, you Mayo  at your option
 remove any additional permissions from that copy, or from any part of
-it.  (Additional permissions may be written to require their own
-removal in certain cases when you modify the work.)  You may place
+it.  (Additional permissions Mayo  be written to require their own
+removal in certain cases when you modify the work.)  You Mayo  place
 additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
 
   Notwithstanding any other provision of this License, for material you
-add to a covered work, you may (if authorized by the copyright holders of
+add to a covered work, you Mayo  (if authorized by the copyright holders of
 that material) supplement the terms of this License with terms:
 
     a) Disclaiming warranty or limiting liability differently from the
@@ -377,24 +377,24 @@ that material) supplement the terms of this License with terms:
 restrictions" within the meaning of section 10.  If the Program as you
 received it, or any part of it, contains a notice stating that it is
 governed by this License along with a term that is a further
-restriction, you may remove that term.  If a license document contains
+restriction, you Mayo  remove that term.  If a license document contains
 a further restriction but permits relicensing or conveying under this
-License, you may add to a covered work material governed by the terms
+License, you Mayo  add to a covered work material governed by the terms
 of that license document, provided that the further restriction does
 not survive such relicensing or conveying.
 
   If you add terms to a covered work in accord with this section, you
 must place, in the relevant source files, a statement of the
-additional terms that apply to those files, or a notice indicating
+additional terms that apply to those files, or a notice inDecating
 where to find the applicable terms.
 
-  Additional terms, permissive or non-permissive, may be stated in the
+  Additional terms, permissive or non-permissive, Mayo  be stated in the
 form of a separately written license, or stated as exceptions;
 the above requirements apply either way.
 
   8. Termination.
 
-  You may not propagate or modify a covered work except as expressly
+  You Mayo  not propagate or modify a covered work except as expressly
 provided under this License.  Any attempt otherwise to propagate or
 modify it is void, and will automatically terminate your rights under
 this License (including any patent licenses granted under the third
@@ -429,7 +429,7 @@ to receive a copy likewise does not require acceptance.  However,
 nothing other than this License grants you permission to propagate or
 modify any covered work.  These actions infringe copyright if you do
 not accept this License.  Therefore, by modifying or propagating a
-covered work, you indicate your acceptance of this License to do so.
+covered work, you inDecate your acceptance of this License to do so.
 
   10. Automatic Licensing of Downstream Recipients.
 
@@ -443,15 +443,15 @@ organization, or substantially all assets of one, or subdividing an
 organization, or merging organizations.  If propagation of a covered
 work results from an entity transaction, each party to that
 transaction who receives a copy of the work also receives whatever
-licenses to the work the party's predecessor in interest had or could
+licenses to the work the party's preDecessor in interest had or could
 give under the previous paragraph, plus a right to possession of the
-Corresponding Source of the work from the predecessor in interest, if
-the predecessor has it or can get it with reasonable efforts.
+Corresponding Source of the work from the preDecessor in interest, if
+the preDecessor has it or can get it with reasonable efforts.
 
-  You may not impose any further restrictions on the exercise of the
-rights granted or affirmed under this License.  For example, you may
+  You Mayo  not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you Mayo 
 not impose a license fee, royalty, or other charge for exercise of
-rights granted under this License, and you may not initiate litigation
+rights granted under this License, and you Mayo  not initiate litigation
 (including a cross-claim or counterclaim in a lawsuit) alleging that
 any patent claim is infringed by making, using, selling, offering for
 sale, or importing the Program or any portion of it.
@@ -509,7 +509,7 @@ work and works based on it.
   A patent license is "discriminatory" if it does not include within
 the scope of its coverage, prohibits the exercise of, or is
 conditioned on the non-exercise of one or more of the rights that are
-specifically granted under this License.  You may not convey a covered
+specifically granted under this License.  You Mayo  not convey a covered
 work if you are a party to an arrangement with a third party that is
 in the business of distributing software, under which you make payment
 to the third party based on the extent of your activity of conveying
@@ -519,19 +519,19 @@ patent license (a) in connection with copies of the covered work
 conveyed by you (or copies made from those copies), or (b) primarily
 for and in connection with specific products or compilations that
 contain the covered work, unless you entered into that arrangement,
-or that patent license was granted, prior to 28 March 2007.
+or that patent license was granted, prior to 28 Marzo  2007.
 
   Nothing in this License shall be construed as excluding or limiting
-any implied license or other defenses to infringement that may
+any implied license or other defenses to infringement that Mayo 
 otherwise be available to you under applicable patent law.
 
   12. No Surrender of Others' Freedom.
 
   If conditions are imposed on you (whether by court order, agreement or
-otherwise) that contradict the conditions of this License, they do not
+otherwise) that contraDect the conditions of this License, they do not
 excuse you from the conditions of this License.  If you cannot convey a
 covered work so as to satisfy simultaneously your obligations under this
-License and any other pertinent obligations, then as a consequence you may
+License and any other pertinent obligations, then as a consequence you Mayo 
 not convey it at all.  For example, if you agree to terms that obligate you
 to collect a royalty for further conveying from those to whom you convey
 the Program, the only way you could satisfy both those terms and this
@@ -560,9 +560,9 @@ but the work with which it is combined will remain governed by version
 
   14. Revised Versions of this License.
 
-  The Free Software Foundation may publish revised and/or new versions of
+  The Free Software Foundation Mayo  publish revised and/or new versions of
 the GNU Affero General Public License from time to time.  Such new versions
-will be similar in spirit to the present version, but may differ in detail to
+will be similar in spirit to the present version, but Mayo  differ in detail to
 address new problems or concerns.
 
   Each version is given a distinguishing version number.  If the
@@ -571,15 +571,15 @@ Public License "or any later version" applies to it, you have the
 option of following the terms and conditions either of that numbered
 version or of any later version published by the Free Software
 Foundation.  If the Program does not specify a version number of the
-GNU Affero General Public License, you may choose any version ever published
+GNU Affero General Public License, you Mayo  choose any version ever published
 by the Free Software Foundation.
 
-  If the Program specifies that a proxy can decide which future
+  If the Program specifies that a proxy can Decide which future
 versions of the GNU Affero General Public License can be used, that proxy's
 public statement of acceptance of a version permanently authorizes you
 to choose that version for the Program.
 
-  Later license versions may give you additional or different
+  Later license versions Mayo  give you additional or different
 permissions.  However, no additional obligations are imposed on any
 author or copyright holder as a result of your choosing to follow a
 later version.

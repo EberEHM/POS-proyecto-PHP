@@ -142,9 +142,9 @@ if($_SESSION["perfil"] != "Administrador"){
             
                   <?php 
 
-                    $listaProducto = json_decode($venta["productos"], true);
+                    $listAbroducto = json_Decode($venta["productos"], true);
 
-                    foreach ($listaProducto as $key => $value) {
+                    foreach ($listAbroducto as $key => $value) {
 
                       $item = "idProducto";
                       $valor = $value["idProducto"];
@@ -193,7 +193,7 @@ if($_SESSION["perfil"] != "Administrador"){
 
                 </div>
 
-                <input type="hidden" id="listaProductos" name="listaProductos">
+                <input type="hidden" id="listAbroductos" name="listAbroductos">
                 <!--=====================================
                 BOTÓN PARA AGREGAR PRODUCTO
                 ======================================-->

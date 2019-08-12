@@ -26,7 +26,7 @@
 *     * Redistributions in binary form must reproduce the above copyright notice,
 *       this list of conditions and the following disclaimer in the documentation
 *       and/or other materials provided with the distribution.
-*     * Neither the name of Splunk Inc nor the names of its contributors may
+*     * Neither the name of Splunk Inc nor the names of its contributors Mayo 
 *       be used to endorse or promote products derived from this software without
 *       specific prior written permission.
 *
@@ -112,7 +112,7 @@
 *       (eg. to map -1 to "Lost", 0 to "Draw", and 1 to "Win")
 *   numberFormatter - Optional callback for formatting numbers in tooltips
 *   numberDigitGroupSep - Character to use for group separator in numbers "1,234" - Defaults to ","
-*   numberDecimalMark - Character to use for the decimal point when formatting numbers - Defaults to "."
+*   numberDecimalMark - Character to use for the Decimal point when formatting numbers - Defaults to "."
 *   numberDigitGroupCount - Number of digits between group separator - Defaults to 3
 *
 * There are 7 types of sparkline, selected by supplying a "type" option of 'line' (default),

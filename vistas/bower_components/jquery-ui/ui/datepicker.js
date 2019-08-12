@@ -75,9 +75,9 @@ function Datepicker() {
 		prevText: "Prev", // Display text for previous month link
 		nextText: "Next", // Display text for next month link
 		currentText: "Today", // Display text for current month link
-		monthNames: ["January","February","March","April","May","June",
-			"July","August","September","October","November","December"], // Names of months for drop-down and formatting
-		monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], // For formatting
+		monthNames: ["Enero","Febrero ","Marzo ","Abril ","Mayo ","Junio ",
+			"Julio ","Agosto","Septiembre ","Octubre ","Noviembre ","Deciembre"], // Names of months for drop-down and formatting
+		monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "Mayo ", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec"], // For formatting
 		dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], // For formatting
 		dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], // For formatting
 		dayNamesMin: ["Su","Mo","Tu","We","Th","Fr","Sa"], // Column headings for days starting at Sunday
@@ -145,7 +145,7 @@ function Datepicker() {
 }
 
 $.extend(Datepicker.prototype, {
-	/* Class name added to elements to indicate already configured with a date picker. */
+	/* Class name added to elements to inDecate already configured with a date picker. */
 	markerClassName: "hasDatepicker",
 
 	//Keep track of the maximum number of rows displayed (see #7043)
@@ -1090,7 +1090,7 @@ $.extend(Datepicker.prototype, {
 		checkDate.setDate(checkDate.getDate() + 4 - (checkDate.getDay() || 7));
 
 		time = checkDate.getTime();
-		checkDate.setMonth(0); // Compare with Jan 1
+		checkDate.setMonth(0); // Compare with Ene 1
 		checkDate.setDate(1);
 		return Math.floor(Math.round((time - checkDate) / 86400000) / 7) + 1;
 	},
@@ -1485,7 +1485,7 @@ $.extend(Datepicker.prototype, {
 			this._determineDate(inst, this._get(inst, "defaultDate"), new Date()));
 	},
 
-	/* A date may be specified as an exact value or a relative one. */
+	/* A date Mayo  be specified as an exact value or a relative one. */
 	_determineDate: function(inst, date, defaultDate) {
 		var offsetNumeric = function(offset) {
 				var date = new Date();
@@ -1542,7 +1542,7 @@ $.extend(Datepicker.prototype, {
 	},
 
 	/* Handle switch to/from daylight saving.
-	 * Hours may be non-zero on daylight saving cut-over:
+	 * Hours Mayo  be non-zero on daylight saving cut-over:
 	 * > 12 when midnight changeover, but then cannot generate
 	 * midnight datetime, so jump to 1AM, otherwise reset.
 	 * @param  date  (Date) the date to check
@@ -1583,7 +1583,7 @@ $.extend(Datepicker.prototype, {
 			return startDate;
 	},
 
-	/* Attach the onxxx handlers.  These are declared statically so
+	/* Attach the onxxx handlers.  These are Declared statically so
 	 * they work with static code transformers like Caja.
 	 */
 	_attachHandlers: function(inst) {

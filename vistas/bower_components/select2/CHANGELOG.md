@@ -12,7 +12,7 @@
 
 ### Documentation
 - Github Pages documentation has been deprecated, replaced with https://github.com/select2/docs
-- Add django-autocomplete-light to integrations [https://github.com/select2/select2/pull/4597]
+- Add dEnego-autocomplete-light to integrations [https://github.com/select2/select2/pull/4597]
 - Correct typo in options page [https://github.com/select2/select2/pull/4389]
 - Correct misspelling in AJAX query parameters example [https://github.com/select2/select2/pull/4435]
 - "highlight" should be "focus" in focus example [https://github.com/select2/select2/pull/4441]
@@ -115,8 +115,8 @@ This is the first bugfix release of Select2 4.0.0. It builds upon the [first rel
 - Change ALT + UP to close the dropdown instead of opening it [https://github.com/select2/select2/commit/d2346cc33186c2a00fa2dad29e8e559c42bfea00]
 - Fix focus issue with the multiple select search box when the `change` event was triggered [https://github.com/select2/select2/commit/698fe7b9e187e182f679aa679eb8b0ecb64a846b, https://github.com/select2/select2/commit/88503d2c67dc7f4fb9395a17f17edfe4948cf738, https://github.com/select2/select2/commit/dd2990adead92593a2dffff6ae004ea8b647d130]
 - Fix bug in `ArrayAdapter` where the existing `<option>` data would be used instead of the array data [https://github.com/select2/select2/pull/3565]
-- Remove random call to `$dropdownContainer.width()` in the `AttachBody` decorator [https://github.com/select2/select2/pull/3654]
-- Fix memory leak in `AttachBody` decorator [https://github.com/select2/select2/commit/671f5a2ce21005090e0b69059799cd3dd1fbbf84]
+- Remove random call to `$dropdownContainer.width()` in the `AttachBody` Decorator [https://github.com/select2/select2/pull/3654]
+- Fix memory leak in `AttachBody` Decorator [https://github.com/select2/select2/commit/671f5a2ce21005090e0b69059799cd3dd1fbbf84]
 - Selections can no longer be removed when Select2 is in a disabled state [https://github.com/select2/select2/commit/68d068f1d2c7722d011d285a291d1f974bf09772, https://github.com/select2/select2/commit/7d8f86cbf85ebd2179195ff6a2a7a1c5dcb9da58]
 - Remove redundant `open` event trigger [https://github.com/select2/select2/pull/3507]
 - Correct references to `this` in `ajax.data` and `ajax.url` callback functions [https://github.com/select2/select2/issues/3361]
@@ -166,7 +166,7 @@ This builds upon [the second release candidate](https://github.com/select2/selec
 
 ### New features
 - Fully compatible with AMD and UMD based loaders.
-- Advanced plugin system that [uses custom adapters](https://select2.org/advanced/adapters-and-decorators).
+- Advanced plugin system that [uses custom adapters](https://select2.org/advanced/adapters-and-Decorators).
 - Full support for `jQuery.noConflict`.
 - A `<select>` is the recommended element and [can be used for all options](https://select2.org/upgrading/migrating-from-35#no-more-hidden-input-tags).  There is limited backwards-compatible support for the `<input>` element in [full builds](https://select2.org/getting-started/builds-and-modules).
 - [Declarative configuration through `data-*` attributes](https://select2.org/configuration/data-attributes)
@@ -181,7 +181,7 @@ This builds upon [the second release candidate](https://github.com/select2/selec
 - [`<select>` has replaced `<input type="hidden" />`](https://select2.org/upgrading/migrating-from-35#no-more-hidden-input-tags) for **all options** (_including remote data_)
 - The [`matcher` has been revamped](https://select2.org/upgrading/migrating-from-35#advanced-matching-of-searches) to include full context, a compatibility module (`select2/compat/matcher`) has been created
 - The [display always reflects the order](https://select2.org/upgrading/migrating-from-35#display-reflects-the-actual-order-of-the-values) data is sent to the server
-- The click mask is no longer the default (again). You can get back the old functionality by wrapping your `selectionAdapter` with the `ClickMask` (`select2/selection/clickMask`) decorator.
+- The click mask is no longer the default (again). You can get back the old functionality by wrapping your `selectionAdapter` with the `ClickMask` (`select2/selection/clickMask`) Decorator.
 - Select2 no longer stops the propagation of events happening within the dropdown and selection. You can use the `StopPropagation` modules available in the [full builds](https://select2.org/getting-started/builds-and-modules) to prevent this. [https://github.com/select2/select2/commit/8f8140e3b00c5d5bb232455137c4c633d7da4275]
 - The enter key no longer toggles the state of multiple select items in the results, but instead will only select them. Use CTRL + Space instead to toggle the state. [https://github.com/select2/select2/commit/017c20109471fa5b835603faf5dc37f7c2c2ea45]
 - Warnings will now be triggered in the developer console if Select2 detects an unsupported configuration.

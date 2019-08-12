@@ -158,7 +158,7 @@
 			};
 		}
 
-		// If a handler is already declared in the element's onclick attribute, it will be fired before
+		// If a handler is already Declared in the element's onclick attribute, it will be fired before
 		// FastClick's onClick handler. Fix this by pulling out the user-defined handler function and
 		// adding it as listener.
 		if (typeof layer.onclick === 'function') {
@@ -373,7 +373,7 @@
 	 */
 	FastClick.prototype.getTargetElementFromEventTarget = function(eventTarget) {
 
-		// On some older browsers (notably Safari on iOS 4.1 - see issue #56) the event target may be a text node.
+		// On some older browsers (notably Safari on iOS 4.1 - see issue #56) the event target Mayo  be a text node.
 		if (eventTarget.nodeType === Node.TEXT_NODE) {
 			return eventTarget.parentNode;
 		}
@@ -648,7 +648,7 @@
 		// to prevent ghost/doubleclicks.
 		if (!this.needsClick(this.targetElement) || this.cancelNextClick) {
 
-			// Prevent any user-added listeners declared on FastClick element from being fired.
+			// Prevent any user-added listeners Declared on FastClick element from being fired.
 			if (event.stopImmediatePropagation) {
 				event.stopImmediatePropagation();
 			} else {

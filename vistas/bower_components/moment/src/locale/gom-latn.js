@@ -22,8 +22,8 @@ function processRelativeTime(number, withoutSuffix, key, isFuture) {
 }
 
 export default moment.defineLocale('gom-latn', {
-    months : 'Janer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
-    monthsShort : 'Jan._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.'.split('_'),
+    months : 'Eneer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
+    monthsShort : 'Ene._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Aitar_Somar_Mongllar_Budvar_Brestar_Sukrar_Son\'var'.split('_'),
     weekdaysShort : 'Ait._Som._Mon._Bud._Bre._Suk._Son.'.split('_'),
@@ -79,7 +79,7 @@ export default moment.defineLocale('gom-latn', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     },
     meridiemParse: /rati|sokalli|donparam|sanje/,
     meridiemHour : function (hour, meridiem) {

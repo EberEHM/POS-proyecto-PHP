@@ -21,8 +21,8 @@ function relativeTimeWithPlural(number, withoutSuffix, key) {
 }
 
 export default moment.defineLocale('ro', {
-    months : 'ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie'.split('_'),
-    monthsShort : 'ian._febr._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.'.split('_'),
+    months : 'ianuarie_februarie_martie_Abril ie_mai_iunie_iulie_Agosto_septembrie_octombrie_noiembrie_Decembrie'.split('_'),
+    monthsShort : 'ian._febr._mart._Abr._mai_iun._iul._Ago._sept._oct._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'duminică_luni_marți_miercuri_joi_vineri_sâmbătă'.split('_'),
     weekdaysShort : 'Dum_Lun_Mar_Mie_Joi_Vin_Sâm'.split('_'),
@@ -60,7 +60,7 @@ export default moment.defineLocale('ro', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 

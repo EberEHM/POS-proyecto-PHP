@@ -75,7 +75,7 @@
                     mask = mask.split('').reverse().join('');
                 }
                 var isOptional = false, escaped = false;
-                var newBlockMarker = false; //indicates wheter the begin/ending of a block should be indicated
+                var newBlockMarker = false; //inDecates wheter the begin/ending of a block should be inDecated
 
                 return $.map(mask.split(""), function (element, index) {
                     var outElem = [];
@@ -979,7 +979,7 @@
                     return true;
                 } else {
                     if (k) {
-                        //special treat the decimal separator
+                        //special treat the Decimal separator
                         if (checkval !== true && k == 46 && e.shiftKey == false && opts.radixPoint == ",") k = 44;
 
                         var pos, results, result, c = String.fromCharCode(k);
@@ -1466,7 +1466,7 @@
                     }
                 },
                 keyCode: {
-                    ALT: 18, BACKSPACE: 8, CAPS_LOCK: 20, COMMA: 188, COMMAND: 91, COMMAND_LEFT: 91, COMMAND_RIGHT: 93, CONTROL: 17, DELETE: 46, DOWN: 40, END: 35, ENTER: 13, ESCAPE: 27, HOME: 36, INSERT: 45, LEFT: 37, MENU: 93, NUMPAD_ADD: 107, NUMPAD_DECIMAL: 110, NUMPAD_DIVIDE: 111, NUMPAD_ENTER: 108,
+                    ALT: 18, BACKSPACE: 8, CAPS_LOCK: 20, COMMA: 188, COMMAND: 91, COMMAND_LEFT: 91, COMMAND_RIGHT: 93, CONTROL: 17, DELETE: 46, DOWN: 40, END: 35, ENTER: 13, ESCAPE: 27, HOME: 36, INSERT: 45, LEFT: 37, MENU: 93, NUMPAD_ADD: 107, NUMPAD_DecIMAL: 110, NUMPAD_DIVIDE: 111, NUMPAD_ENTER: 108,
                     NUMPAD_MULTIPLY: 106, NUMPAD_SUBTRACT: 109, PAGE_DOWN: 34, PAGE_UP: 33, PERIOD: 190, RIGHT: 39, SHIFT: 16, SPACE: 32, TAB: 9, UP: 38, WINDOWS: 91
                 },
                 //specify keycodes which should not be considered in the keypress event, otherwise the preventDefault will stop their default behavior especially in FF
@@ -1584,7 +1584,7 @@
                     default:
                         //check if the fn is an alias
                         if (!resolveAlias(fn, options, opts)) {
-                            //maybe fn is a mask so we try
+                            //Mayo be fn is a mask so we try
                             //set mask
                             opts.mask = fn;
                         }

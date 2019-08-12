@@ -15,7 +15,7 @@
 # with the year the law takes effect and uncomment the "##" lines.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-## Rule	Twilite	XXXX	max	-	Apr	Sun>=1	2:00	1:00	D
+## Rule	Twilite	XXXX	max	-	Abr	Sun>=1	2:00	1:00	D
 ## Rule	Twilite	XXXX	max	uspres	Oct	lastSun	2:00	1:00	PE
 ## Rule	Twilite	XXXX	max	uspres	Nov	Sun>=7	2:00	0	S
 ## Rule	Twilite	XXXX	max	nonpres	Oct	lastSun	2:00	0	S

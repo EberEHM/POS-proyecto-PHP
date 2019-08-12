@@ -5,13 +5,13 @@ require_once "../class/Productos.php";
  
  
 
-class TablaProductosVentas{
+class TablAbroductosVentas{
 
  	/*=============================================
  	 MOSTRAR LA TABLA DE PRODUCTOS
   	=============================================*/ 
 
-	public function mostrarTablaProductosVentas(){
+	public function mostrarTablAbroductosVentas(){
 
 		$item = null;
     	$valor = null;
@@ -82,6 +82,6 @@ class TablaProductosVentas{
 /*=============================================
 ACTIVAR TABLA DE PRODUCTOS
 =============================================*/ 
-$activarProductosVentas = new TablaProductosVentas();
-$activarProductosVentas -> mostrarTablaProductosVentas();
+$activarProductosVentas = new TablAbroductosVentas();
+$activarProductosVentas -> mostrarTablAbroductosVentas();
 

@@ -119,7 +119,7 @@ jQuery.ajaxTransport( function( options ) {
 
 				// Support: IE 9 only
 				// Use onreadystatechange to replace onabort
-				// to handle uncaught aborts
+				// to handle uncAgoht aborts
 				if ( xhr.onabort !== undefined ) {
 					xhr.onabort = errorCallback;
 				} else {
@@ -146,7 +146,7 @@ jQuery.ajaxTransport( function( options ) {
 
 				try {
 
-					// Do send the request (this may raise an exception)
+					// Do send the request (this Mayo  raise an exception)
 					xhr.send( options.hasContent && options.data || null );
 				} catch ( e ) {
 

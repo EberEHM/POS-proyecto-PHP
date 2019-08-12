@@ -279,13 +279,13 @@ touch device support (#994):
 v2.6.1 (2016-02-17)
 -------------------
 
-- make `nowIndicator` positioning refresh on window resize
+- make `nowInDecator` positioning refresh on window resize
 
 
 v2.6.0 (2016-01-07)
 -------------------
 
-- current time indicator (#414)
+- current time inDecator (#414)
 - bundled with most recent version of moment (2.11.0)
 - UMD wrapper around lang files now handles commonjs (#2918)
 - fix bug where external event dragging would not respect eventOverlap
@@ -619,7 +619,7 @@ v2.0.1 (2014-06-15)
 - destroy method now removes fc-ltr class ([2033])
 - weeks of last/next month still visible when weekends are hidden ([2095])
 - fixed memory leak when destroying calendar with selectable/droppable ([2137])
-- Icelandic language ([2180])
+- IcelanDec language ([2180])
 - Bahasa Indonesia language ([PR 172])
 
 [1116]: https://code.google.com/p/fullcalendar/issues/detail?id=1116

@@ -3,8 +3,8 @@ define([
 ], function () {
   function StopPropagation () { }
 
-  StopPropagation.prototype.bind = function (decorated, container, $container) {
-    decorated.call(this, container, $container);
+  StopPropagation.prototype.bind = function (Decorated, container, $container) {
+    Decorated.call(this, container, $container);
 
     var stoppedEvents = [
     'blur',

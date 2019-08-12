@@ -1,6 +1,6 @@
 //! moment.js locale configuration
 //! locale : Serbian [sr]
-//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
+//! author : Milan Eneačković<milanEneackovic@gmail.com> : https://github.com/milan-j
 
 import moment from '../moment';
 
@@ -28,8 +28,8 @@ var translator = {
 };
 
 export default moment.defineLocale('sr', {
-    months: 'januar_februar_mart_april_maj_jun_jul_avgust_septembar_oktobar_novembar_decembar'.split('_'),
-    monthsShort: 'jan._feb._mar._apr._maj_jun_jul_avg._sep._okt._nov._dec.'.split('_'),
+    months: 'Eneuar_februar_mart_Abril _maj_jun_jul_avgust_septembar_oktobar_novembar_Decembar'.split('_'),
+    monthsShort: 'Ene._feb._mar._Abr._maj_jun_jul_avg._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays: 'nedelja_ponedeljak_utorak_sreda_četvrtak_petak_subota'.split('_'),
     weekdaysShort: 'ned._pon._uto._sre._čet._pet._sub.'.split('_'),
@@ -95,6 +95,6 @@ export default moment.defineLocale('sr', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });

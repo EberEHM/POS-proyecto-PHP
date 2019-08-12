@@ -810,7 +810,7 @@
                     if (maxDate && calendar[row][col].isAfter(maxDate, 'day'))
                         classes.push('off', 'disabled');
 
-                    //don't allow selection of date if a custom function decides it's invalid
+                    //don't allow selection of date if a custom function Decides it's invalid
                     if (this.isInvalidDate(calendar[row][col]))
                         classes.push('off', 'disabled');
 
@@ -1098,17 +1098,17 @@
             if (this.isShowing) return;
 
             // Create a click proxy that is private to this instance of datepicker, for unbinding
-            this._outsideClickProxy = $.proxy(function(e) { this.outsideClick(e); }, this);
+            this._outsiDeclickProxy = $.proxy(function(e) { this.outsiDeclick(e); }, this);
 
             // Bind global datepicker mousedown for hiding and
             $(document)
-              .on('mousedown.daterangepicker', this._outsideClickProxy)
+              .on('mousedown.daterangepicker', this._outsiDeclickProxy)
               // also support mobile devices
-              .on('touchend.daterangepicker', this._outsideClickProxy)
+              .on('touchend.daterangepicker', this._outsiDeclickProxy)
               // also explicitly play nice with Bootstrap dropdowns, which stopPropagation when clicking them
-              .on('click.daterangepicker', '[data-toggle=dropdown]', this._outsideClickProxy)
+              .on('click.daterangepicker', '[data-toggle=dropdown]', this._outsiDeclickProxy)
               // and also close when focus changes to outside the picker (eg. tabbing between controls)
-              .on('focusin.daterangepicker', this._outsideClickProxy);
+              .on('focusin.daterangepicker', this._outsiDeclickProxy);
 
             // Reposition the picker if the window is resized while it's open
             $(window).on('resize.daterangepicker', $.proxy(function(e) { this.move(e); }, this));
@@ -1155,7 +1155,7 @@
             }
         },
 
-        outsideClick: function(e) {
+        outsiDeclick: function(e) {
             var target = $(e.target);
             // if the page is clicked anywhere except within the daterangerpicker/button
             // itself then call this.hide()
@@ -1167,7 +1167,7 @@
                 target.closest('.calendar-table').length
                 ) return;
             this.hide();
-            this.element.trigger('outsideClick.daterangepicker', this);
+            this.element.trigger('outsiDeclick.daterangepicker', this);
         },
 
         showCalendars: function() {
@@ -1176,9 +1176,9 @@
             this.element.trigger('showCalendar.daterangepicker', this);
         },
 
-        hideCalendars: function() {
+        hiDecalendars: function() {
             this.container.removeClass('show-calendar');
-            this.element.trigger('hideCalendar.daterangepicker', this);
+            this.element.trigger('hiDecalendar.daterangepicker', this);
         },
 
         hoverRange: function(e) {
@@ -1215,7 +1215,7 @@
                 }
 
                 if (!this.alwaysShowCalendars)
-                    this.hideCalendars();
+                    this.hiDecalendars();
                 this.clickApply();
             }
         },

@@ -52,7 +52,7 @@
                 mask: "+32(60)##-##-##",
                 cc: "BE",
                 cd: "Belgium",
-                city: "Chimay"
+                city: "ChiMayo "
             }, {
                 mask: "+32(83)##-##-##",
                 cc: "BE",

@@ -99,13 +99,13 @@ And more locale, build and typescript improvements
 Also some locale and typescript improvements
 
 ### 2.14.1
-- Release July 20, 2016
+- Release Julio  20, 2016
 * [#3280](https://github.com/moment/moment/pull/3280) Fix typescript definitions
 
 
 ### 2.14.0 [See full changelog](https://gist.github.com/ichernev/812e79ac36a7829a22598fe964bfc18a)
 
-- Release July 20, 2016
+- Release Julio  20, 2016
 
 ## New Features
 * [#3233](https://github.com/moment/moment/pull/3233) Introduce month.isFormat for format/standalone discovery
@@ -130,7 +130,7 @@ Also some locale and typescript improvements
 Plus es-do locale and locale bugfixes
 
 ### 2.13.0 [See full changelog](https://gist.github.com/ichernev/0132fcf5b61f7fc140b0bb0090480d49)
-- Release April 18, 2016
+- Release Abril  18, 2016
 
 ## Enhancements:
 * [#2982](https://github.com/moment/moment/pull/2982) Add 'date' as alias to 'day' for startOf() and endOf().
@@ -153,7 +153,7 @@ Plus 3 new locales and locale fixes.
 
 ### 2.12.0 [See full changelog](https://gist.github.com/ichernev/6e5bfdf8d6522fc4ac73)
 
-- Release March 7, 2016
+- Release Marzo  7, 2016
 
 ## Enhancements:
 * [#2932](https://github.com/moment/moment/pull/2932) List loaded locales
@@ -161,7 +161,7 @@ Plus 3 new locales and locale fixes.
 * [#2774](https://github.com/moment/moment/pull/2774) Implement locale inheritance and locale updating
 
 ## Bugfixes:
-* [#2970](https://github.com/moment/moment/pull/2970) change add subtract to handle decimal values by rounding
+* [#2970](https://github.com/moment/moment/pull/2970) change add subtract to handle Decimal values by rounding
 * [#2887](https://github.com/moment/moment/pull/2887) Fix toJSON casting of invalid moment
 * [#2897](https://github.com/moment/moment/pull/2897) parse string arguments for month() correctly, closes #2884
 * [#2946](https://github.com/moment/moment/pull/2946) Fix usage suggestions for min and max
@@ -173,13 +173,13 @@ And more
 
 ### 2.11.2 (Fix ReDoS attack vector)
 
-- Release February 7, 2016
+- Release Febrero  7, 2016
 
 * [#2939](https://github.com/moment/moment/pull/2939) use full-string match to speed up aspnet regex match
 
 ### 2.11.1 [See full changelog](https://gist.github.com/ichernev/8ec3ee25b749b4cff3c2)
 
-- Release January 9, 2016
+- Release Enero 9, 2016
 
 ## Bugfixes:
 * [#2881](https://github.com/moment/moment/pull/2881) Revert "Merge pull request #2746 from mbad0la:develop" Sep->Sept
@@ -192,13 +192,13 @@ And more
 
 ### 2.11.0 [See full changelog](https://gist.github.com/ichernev/6594bc29719dde6b2f66)
 
-- Release January 4, 2016
+- Release Enero 4, 2016
 
 * [#2624](https://github.com/moment/moment/pull/2624) Proper handling of invalid moments
 * [#2634](https://github.com/moment/moment/pull/2634) Fix strict month parsing issue in cs,ru,sk
 * [#2735](https://github.com/moment/moment/pull/2735) Reset the locale back to 'en' after defining all locales in min/locales.js
 * [#2702](https://github.com/moment/moment/pull/2702) Week rework
-* [#2746](https://github.com/moment/moment/pull/2746) Changed September Abbreviation to "Sept" in locale-specific english
+* [#2746](https://github.com/moment/moment/pull/2746) Changed Septiembre  Abbreviation to "Sept" in locale-specific english
   files and default locale file
 * [#2646](https://github.com/moment/moment/pull/2646) Fix [#2645](https://github.com/moment/moment/pull/2645) - invalid dates pre-1970
 
@@ -216,14 +216,14 @@ And more
 
 ### 2.10.6
 
-- Release July 28, 2015
+- Release Julio  28, 2015
 
 [#2515](https://github.com/moment/moment/pull/2515) Fix regression introduced
 in `2.10.5` related to `moment.ISO_8601` parsing.
 
 ### 2.10.5 [See full changelog](https://gist.github.com/ichernev/6ec13ac7efc396da44b2)
 
-- Release July 26, 2015
+- Release Julio  26, 2015
 
 Important changes:
 * [#2357](https://github.com/moment/moment/pull/2357) Improve unit bubbling for ISO dates
@@ -238,7 +238,7 @@ Important changes:
 
 ### 2.10.3 [See full changelog](https://gist.github.com/ichernev/f264b9bed5b00f8b1b7f)
 
-- Release May 13, 2015
+- Release Mayo  13, 2015
 
 * add `moment.fn.to` and `moment.fn.toNow` (similar to `from` and `fromNow`)
 * new locales (Sinhalese (si), Montenegrin (me), Javanese (ja))
@@ -246,7 +246,7 @@ Important changes:
 
 ### 2.10.2
 
-- Release April 9, 2015
+- Release Abril  9, 2015
 
 * fixed moment-with-locales in browser env caused by esperanto change
 
@@ -260,7 +260,7 @@ Ported code to es6 modules.
 
 ### 2.9.0 [See full changelog](https://gist.github.com/ichernev/0c9a9b49951111a27ce7)
 
-- Release January 8, 2015
+- Release Enero 8, 2015
 
 languages:
 * [2104](https://github.com/moment/moment/issues/2104) Frisian (fy) language file with unit test
@@ -283,7 +283,7 @@ Some bugfixes and language improvements -- [full changelog](https://gist.github.
 
 ### 2.8.4 [See full changelog](https://gist.github.com/ichernev/a4fcb0a46d74e4b9b996)
 
-- Release November 19, 2014
+- Release Noviembre  19, 2014
 
 Features:
 
@@ -297,7 +297,7 @@ Some bugfixes and language improvements -- [full changelog](https://gist.github.
 
 ### 2.8.3
 
-- Release September 5, 2014
+- Release Septiembre  5, 2014
 
 Bugfixes:
 
@@ -315,7 +315,7 @@ Bugfixes:
 
 ### 2.8.2
 
-- Release August 22, 2014
+- Release Agosto 22, 2014
 
 Minor bugfixes:
 
@@ -329,13 +329,13 @@ Minor bugfixes:
 
 ### 2.8.1
 
-- Release August 1, 2014
+- Release Agosto 1, 2014
 
 * bugfix [#1813](https://github.com/moment/moment/issues/1813): fix moment().lang([key]) incompatibility
 
 ### 2.8.0 [See changelog](https://gist.github.com/ichernev/ac3899324a5fa6c8c9b4)
 
-- Release July 31, 2014
+- Release Julio  31, 2014
 
 * incompatible changes
     * [#1761](https://github.com/moment/moment/issues/1761): moments created without a language are no longer following the global language, in case it changes. Only newly created moments take the global language by default. In case you're affected by this, wait, comment on [#1797](https://github.com/moment/moment/issues/1797) and wait for a proper reimplementation
@@ -357,12 +357,12 @@ Minor bugfixes:
 
 ### 2.7.0 [See changelog](https://gist.github.com/ichernev/b0a3d456d5a84c9901d7)
 
-- Release June 12, 2014
+- Release Junio  12, 2014
 
 * new languages
 
   * [#1678](https://github.com/moment/moment/issues/1678) Bengali (bn)
-  * [#1628](https://github.com/moment/moment/issues/1628) Azerbaijani (az)
+  * [#1628](https://github.com/moment/moment/issues/1628) AzerbaiEnei (az)
   * [#1633](https://github.com/moment/moment/issues/1633) Arabic, Saudi Arabia (ar-sa)
   * [#1648](https://github.com/moment/moment/issues/1648) Austrian German (de-at)
 
@@ -379,7 +379,7 @@ Minor bugfixes:
 
 ### 2.6.0 [See changelog](https://gist.github.com/ichernev/10544682)
 
-- Release April 12 , 2014
+- Release Abril  12 , 2014
 
 * languages
   * [#1529](https://github.com/moment/moment/issues/1529) Serbian-Cyrillic (sr-cyr)
@@ -400,7 +400,7 @@ Minor bugfixes:
 
 ### 2.5.1
 
-- Release January 22, 2014
+- Release Enero 22, 2014
 
 * languages
   * [#1392](https://github.com/moment/moment/issues/1392) Armenian (hy-am)
@@ -574,7 +574,7 @@ Various bugfixes.
 
 ### 1.6.0 [See discussion](https://github.com/timrwood/moment/pull/268)
 
-- Release Apr 26, 2012
+- Release Abr 26, 2012
 
 Added Durations.
 
@@ -616,7 +616,7 @@ Various bugfixes.
 
 ### 1.3.0 [See milestone](https://github.com/timrwood/moment/issues?milestone=7&state=closed)
 
-- Release Jan 5, 2012
+- Release Ene 5, 2012
 
 Added support for parsing month names in the current language.
 
@@ -715,19 +715,19 @@ Exposed customization options through the `_date.relativeTime`, `_date.weekdays`
 
 ### 0.4.1
 
-- Release May 9, 2011
+- Release Mayo  9, 2011
 
 Added date input formats for input strings.
 
 ### 0.4.0
 
-- Release May 9, 2011
+- Release Mayo  9, 2011
 
 Added underscore.date to npm. Removed dependencies on underscore.
 
 ### 0.3.2
 
-- Release Apr 9, 2011
+- Release Abr 9, 2011
 
 Added `'z'` and `'zz'` to `_.date().format()`. Cleaned up some redundant code to trim off some bytes.
 

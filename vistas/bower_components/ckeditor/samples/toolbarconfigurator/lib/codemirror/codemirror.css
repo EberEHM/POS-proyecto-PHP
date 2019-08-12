@@ -83,7 +83,7 @@
 /* Can style cursor different in overwrite (non-insert) mode */
 div.CodeMirror-overwrite div.CodeMirror-cursor {}
 
-.cm-tab { display: inline-block; text-decoration: inherit; }
+.cm-tab { display: inline-block; text-Decoration: inherit; }
 
 .CodeMirror-ruler {
   border-left: 1px solid #ccc;
@@ -120,8 +120,8 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {}
 .cm-positive {color: #292;}
 .cm-header, .cm-strong {font-weight: bold;}
 .cm-em {font-style: italic;}
-.cm-link {text-decoration: underline;}
-.cm-strikethrough {text-decoration: line-through;}
+.cm-link {text-Decoration: underline;}
+.cm-strikethrough {text-Decoration: line-through;}
 
 .cm-s-default .cm-error {color: #f00;}
 .cm-invalidchar {color: #f00;}

@@ -2,18 +2,18 @@ define([
   'jquery',
   '../utils'
 ], function ($, Utils) {
-  function AttachBody (decorated, $element, options) {
+  function AttachBody (Decorated, $element, options) {
     this.$dropdownParent = options.get('dropdownParent') || $(document.body);
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
-  AttachBody.prototype.bind = function (decorated, container, $container) {
+  AttachBody.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
     var setupResultsEvents = false;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('open', function () {
       self._showDropdown();
@@ -44,13 +44,13 @@ define([
     });
   };
 
-  AttachBody.prototype.destroy = function (decorated) {
-    decorated.call(this);
+  AttachBody.prototype.destroy = function (Decorated) {
+    Decorated.call(this);
 
     this.$dropdownContainer.remove();
   };
 
-  AttachBody.prototype.position = function (decorated, $dropdown, $container) {
+  AttachBody.prototype.position = function (Decorated, $dropdown, $container) {
     // Clone all of the container classes
     $dropdown.attr('class', $container.attr('class'));
 
@@ -65,10 +65,10 @@ define([
     this.$container = $container;
   };
 
-  AttachBody.prototype.render = function (decorated) {
+  AttachBody.prototype.render = function (Decorated) {
     var $container = $('<span></span>');
 
-    var $dropdown = decorated.call(this);
+    var $dropdown = Decorated.call(this);
     $container.append($dropdown);
 
     this.$dropdownContainer = $container;
@@ -76,12 +76,12 @@ define([
     return $container;
   };
 
-  AttachBody.prototype._hideDropdown = function (decorated) {
+  AttachBody.prototype._hideDropdown = function (Decorated) {
     this.$dropdownContainer.detach();
   };
 
   AttachBody.prototype._attachPositioningHandler =
-      function (decorated, container) {
+      function (Decorated, container) {
     var self = this;
 
     var scrollEvent = 'scroll.select2.' + container.id;
@@ -109,7 +109,7 @@ define([
   };
 
   AttachBody.prototype._detachPositioningHandler =
-      function (decorated, container) {
+      function (Decorated, container) {
     var scrollEvent = 'scroll.select2.' + container.id;
     var resizeEvent = 'resize.select2.' + container.id;
     var orientationEvent = 'orientationchange.select2.' + container.id;
@@ -211,7 +211,7 @@ define([
     this.$dropdown.css(css);
   };
 
-  AttachBody.prototype._showDropdown = function (decorated) {
+  AttachBody.prototype._showDropdown = function (Decorated) {
     this.$dropdownContainer.appendTo(this.$dropdownParent);
 
     this._positionDropdown();

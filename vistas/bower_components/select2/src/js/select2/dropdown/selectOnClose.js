@@ -3,10 +3,10 @@ define([
 ], function () {
   function SelectOnClose () { }
 
-  SelectOnClose.prototype.bind = function (decorated, container, $container) {
+  SelectOnClose.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('close', function (params) {
       self._handleSelectOnClose(params);

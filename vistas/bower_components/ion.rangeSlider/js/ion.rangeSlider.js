@@ -316,7 +316,7 @@
             prefix: "",
             postfix: "",
             max_postfix: "",
-            decorate_both: true,
+            Decorate_both: true,
             values_separator: " — ",
 
             input_values_separator: ";",
@@ -384,7 +384,7 @@
             prefix: $inp.data("prefix"),
             postfix: $inp.data("postfix"),
             max_postfix: $inp.data("maxPostfix"),
-            decorate_both: $inp.data("decorateBoth"),
+            Decorate_both: $inp.data("DecorateBoth"),
             values_separator: $inp.data("valuesSeparator"),
 
             input_values_separator: $inp.data("inputValuesSeparator"),
@@ -947,8 +947,8 @@
             }
 
             if (this.options.values.length) {
-                this.$cache.min.html(this.decorate(this.options.p_values[this.options.min]));
-                this.$cache.max.html(this.decorate(this.options.p_values[this.options.max]));
+                this.$cache.min.html(this.Decorate(this.options.p_values[this.options.min]));
+                this.$cache.max.html(this.Decorate(this.options.p_values[this.options.max]));
             } else {
                 var min_pretty = this._prettify(this.options.min);
                 var max_pretty = this._prettify(this.options.max);
@@ -956,8 +956,8 @@
                 this.result.min_pretty = min_pretty;
                 this.result.max_pretty = max_pretty;
 
-                this.$cache.min.html(this.decorate(min_pretty, this.options.min));
-                this.$cache.max.html(this.decorate(max_pretty, this.options.max));
+                this.$cache.min.html(this.Decorate(min_pretty, this.options.min));
+                this.$cache.max.html(this.Decorate(max_pretty, this.options.max));
             }
 
             this.labels.w_min = this.$cache.min.outerWidth(false);
@@ -1463,12 +1463,12 @@
             if (this.options.type === "single") {
 
                 if (values_num) {
-                    text_single = this.decorate(p_values[this.result.from]);
+                    text_single = this.Decorate(p_values[this.result.from]);
                     this.$cache.single.html(text_single);
                 } else {
                     from_pretty = this._prettify(this.result.from);
 
-                    text_single = this.decorate(from_pretty, this.result.from);
+                    text_single = this.Decorate(from_pretty, this.result.from);
                     this.$cache.single.html(text_single);
                 }
 
@@ -1490,15 +1490,15 @@
 
                 if (values_num) {
 
-                    if (this.options.decorate_both) {
-                        text_single = this.decorate(p_values[this.result.from]);
+                    if (this.options.Decorate_both) {
+                        text_single = this.Decorate(p_values[this.result.from]);
                         text_single += this.options.values_separator;
-                        text_single += this.decorate(p_values[this.result.to]);
+                        text_single += this.Decorate(p_values[this.result.to]);
                     } else {
-                        text_single = this.decorate(p_values[this.result.from] + this.options.values_separator + p_values[this.result.to]);
+                        text_single = this.Decorate(p_values[this.result.from] + this.options.values_separator + p_values[this.result.to]);
                     }
-                    text_from = this.decorate(p_values[this.result.from]);
-                    text_to = this.decorate(p_values[this.result.to]);
+                    text_from = this.Decorate(p_values[this.result.from]);
+                    text_to = this.Decorate(p_values[this.result.to]);
 
                     this.$cache.single.html(text_single);
                     this.$cache.from.html(text_from);
@@ -1508,15 +1508,15 @@
                     from_pretty = this._prettify(this.result.from);
                     to_pretty = this._prettify(this.result.to);
 
-                    if (this.options.decorate_both) {
-                        text_single = this.decorate(from_pretty, this.result.from);
+                    if (this.options.Decorate_both) {
+                        text_single = this.Decorate(from_pretty, this.result.from);
                         text_single += this.options.values_separator;
-                        text_single += this.decorate(to_pretty, this.result.to);
+                        text_single += this.Decorate(to_pretty, this.result.to);
                     } else {
-                        text_single = this.decorate(from_pretty + this.options.values_separator + to_pretty, this.result.to);
+                        text_single = this.Decorate(from_pretty + this.options.values_separator + to_pretty, this.result.to);
                     }
-                    text_from = this.decorate(from_pretty, this.result.from);
-                    text_to = this.decorate(to_pretty, this.result.to);
+                    text_from = this.Decorate(from_pretty, this.result.from);
+                    text_to = this.Decorate(to_pretty, this.result.to);
 
                     this.$cache.single.html(text_single);
                     this.$cache.from.html(text_from);
@@ -1764,10 +1764,10 @@
         convertToValue: function (percent) {
             var min = this.options.min,
                 max = this.options.max,
-                min_decimals = min.toString().split(".")[1],
-                max_decimals = max.toString().split(".")[1],
+                min_Decimals = min.toString().split(".")[1],
+                max_Decimals = max.toString().split(".")[1],
                 min_length, max_length,
-                avg_decimals = 0,
+                avg_Decimals = 0,
                 abs = 0;
 
             if (percent === 0) {
@@ -1778,22 +1778,22 @@
             }
 
 
-            if (min_decimals) {
-                min_length = min_decimals.length;
-                avg_decimals = min_length;
+            if (min_Decimals) {
+                min_length = min_Decimals.length;
+                avg_Decimals = min_length;
             }
-            if (max_decimals) {
-                max_length = max_decimals.length;
-                avg_decimals = max_length;
+            if (max_Decimals) {
+                max_length = max_Decimals.length;
+                avg_Decimals = max_length;
             }
             if (min_length && max_length) {
-                avg_decimals = (min_length >= max_length) ? min_length : max_length;
+                avg_Decimals = (min_length >= max_length) ? min_length : max_length;
             }
 
             if (min < 0) {
                 abs = Math.abs(min);
-                min = +(min + abs).toFixed(avg_decimals);
-                max = +(max + abs).toFixed(avg_decimals);
+                min = +(min + abs).toFixed(avg_Decimals);
+                max = +(max + abs).toFixed(avg_Decimals);
             }
 
             var number = ((max - min) / 100 * percent) + min,
@@ -2103,35 +2103,35 @@
             }
         },
 
-        decorate: function (num, original) {
-            var decorated = "",
+        Decorate: function (num, original) {
+            var Decorated = "",
                 o = this.options;
 
             if (o.prefix) {
-                decorated += o.prefix;
+                Decorated += o.prefix;
             }
 
-            decorated += num;
+            Decorated += num;
 
             if (o.max_postfix) {
                 if (o.values.length && num === o.p_values[o.max]) {
-                    decorated += o.max_postfix;
+                    Decorated += o.max_postfix;
                     if (o.postfix) {
-                        decorated += " ";
+                        Decorated += " ";
                     }
                 } else if (original === o.max) {
-                    decorated += o.max_postfix;
+                    Decorated += o.max_postfix;
                     if (o.postfix) {
-                        decorated += " ";
+                        Decorated += " ";
                     }
                 }
             }
 
             if (o.postfix) {
-                decorated += o.postfix;
+                Decorated += o.postfix;
             }
 
-            return decorated;
+            return Decorated;
         },
 
         updateFrom: function () {

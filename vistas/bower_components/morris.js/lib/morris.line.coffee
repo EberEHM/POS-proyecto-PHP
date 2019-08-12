@@ -361,7 +361,7 @@ secondsSpecHelper = (interval) ->
   incr: (d) -> d.setUTCSeconds(d.getUTCSeconds() + interval)
 
 Morris.LABEL_SPECS =
-  "decade":
+  "Decade":
     span: 172800000000 # 10 * 365 * 24 * 60 * 60 * 1000
     start: (d) -> new Date(d.getFullYear() - d.getFullYear() % 10, 0, 1)
     fmt: (d) -> "#{d.getFullYear()}"
@@ -399,7 +399,7 @@ Morris.LABEL_SPECS =
   "second": secondsSpecHelper(1)
 
 Morris.AUTO_LABEL_ORDER = [
-  "decade", "year", "month", "week", "day", "hour",
+  "Decade", "year", "month", "week", "day", "hour",
   "30min", "15min", "10min", "5min", "minute",
   "30sec", "15sec", "10sec", "5sec", "second"
 ]

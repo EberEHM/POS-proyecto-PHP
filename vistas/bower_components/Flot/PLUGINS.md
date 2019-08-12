@@ -90,7 +90,7 @@ This simple plugin illustrates a couple of points:
  - Variables in the init function can be used to store plot-specific
    state between the hooks.
 
-The two last points are important because there may be multiple plots
+The two last points are important because there Mayo  be multiple plots
 on the same page, and you'd want to make sure they are not mixed up.
 
 
@@ -106,16 +106,16 @@ inserted.
 
 The problem with event handlers is that you can have registered a
 handler which is run in some point in the future, e.g. with
-setTimeout(). Meanwhile, the plot may have been shutdown and removed,
+setTimeout(). Meanwhile, the plot Mayo  have been shutdown and removed,
 but because your event handler is still referencing it, it can't be
 garbage collected yet, and worse, if your handler eventually runs, it
-may overwrite stuff on a completely different plot.
+Mayo  overwrite stuff on a completely different plot.
 
  
 ## Some hints on the options ##
    
 Plugins should always support appropriate options to enable/disable
-them because the plugin user may have several plots on the same page
+them because the plugin user Mayo  have several plots on the same page
 where only one should use the plugin. In most cases it's probably a
 good idea if the plugin is turned off rather than on per default, just
 like most of the powerful features in Flot.

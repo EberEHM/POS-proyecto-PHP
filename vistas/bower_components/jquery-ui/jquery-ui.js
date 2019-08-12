@@ -796,7 +796,7 @@ $.Widget.prototype = {
 		event.type = ( type === this.widgetEventPrefix ?
 			type :
 			this.widgetEventPrefix + type ).toLowerCase();
-		// the original event may come from any element
+		// the original event Mayo  come from any element
 		// so we need to reset the target on the new event
 		event.target = this.element[ 0 ];
 
@@ -917,7 +917,7 @@ var mouse = $.widget("ui.mouse", {
 
 		this._mouseMoved = false;
 
-		// we may have missed mouseup (out of window)
+		// we Mayo  have missed mouseup (out of window)
 		(this._mouseStarted && this._mouseUp(event));
 
 		this._mouseDownEvent = event;
@@ -946,7 +946,7 @@ var mouse = $.widget("ui.mouse", {
 			}
 		}
 
-		// Click event may never have fired (Gecko & Opera)
+		// Click event Mayo  never have fired (Gecko & Opera)
 		if (true === $.data(event.target, this.widgetName + ".preventClickEvent")) {
 			$.removeData(event.target, this.widgetName + ".preventClickEvent");
 		}
@@ -3829,9 +3829,9 @@ function Datepicker() {
 		prevText: "Prev", // Display text for previous month link
 		nextText: "Next", // Display text for next month link
 		currentText: "Today", // Display text for current month link
-		monthNames: ["January","February","March","April","May","June",
-			"July","August","September","October","November","December"], // Names of months for drop-down and formatting
-		monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], // For formatting
+		monthNames: ["Enero","Febrero ","Marzo ","Abril ","Mayo ","Junio ",
+			"Julio ","Agosto","Septiembre ","Octubre ","Noviembre ","Deciembre"], // Names of months for drop-down and formatting
+		monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "Mayo ", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec"], // For formatting
 		dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], // For formatting
 		dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], // For formatting
 		dayNamesMin: ["Su","Mo","Tu","We","Th","Fr","Sa"], // Column headings for days starting at Sunday
@@ -3899,7 +3899,7 @@ function Datepicker() {
 }
 
 $.extend(Datepicker.prototype, {
-	/* Class name added to elements to indicate already configured with a date picker. */
+	/* Class name added to elements to inDecate already configured with a date picker. */
 	markerClassName: "hasDatepicker",
 
 	//Keep track of the maximum number of rows displayed (see #7043)
@@ -4844,7 +4844,7 @@ $.extend(Datepicker.prototype, {
 		checkDate.setDate(checkDate.getDate() + 4 - (checkDate.getDay() || 7));
 
 		time = checkDate.getTime();
-		checkDate.setMonth(0); // Compare with Jan 1
+		checkDate.setMonth(0); // Compare with Ene 1
 		checkDate.setDate(1);
 		return Math.floor(Math.round((time - checkDate) / 86400000) / 7) + 1;
 	},
@@ -5239,7 +5239,7 @@ $.extend(Datepicker.prototype, {
 			this._determineDate(inst, this._get(inst, "defaultDate"), new Date()));
 	},
 
-	/* A date may be specified as an exact value or a relative one. */
+	/* A date Mayo  be specified as an exact value or a relative one. */
 	_determineDate: function(inst, date, defaultDate) {
 		var offsetNumeric = function(offset) {
 				var date = new Date();
@@ -5296,7 +5296,7 @@ $.extend(Datepicker.prototype, {
 	},
 
 	/* Handle switch to/from daylight saving.
-	 * Hours may be non-zero on daylight saving cut-over:
+	 * Hours Mayo  be non-zero on daylight saving cut-over:
 	 * > 12 when midnight changeover, but then cannot generate
 	 * midnight datetime, so jump to 1AM, otherwise reset.
 	 * @param  date  (Date) the date to check
@@ -5337,7 +5337,7 @@ $.extend(Datepicker.prototype, {
 			return startDate;
 	},
 
-	/* Attach the onxxx handlers.  These are declared statically so
+	/* Attach the onxxx handlers.  These are Declared statically so
 	 * they work with static code transformers like Caja.
 	 */
 	_attachHandlers: function(inst) {
@@ -6566,7 +6566,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 
 				// Use _storedCSS To restore properties in the sortable,
 				// as this also handles revert (#9675) since the draggable
-				// may have modified them in unexpected ways (#8809)
+				// Mayo  have modified them in unexpected ways (#8809)
 				sortable._storedCSS = {
 					position: sortable.placeholder.css( "position" ),
 					top: sortable.placeholder.css( "top" ),
@@ -6581,7 +6581,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 			} else {
 				// Prevent this Sortable from removing the helper.
 				// However, don't set the draggable to remove the helper
-				// either as another connected Sortable may yet handle the removal.
+				// either as another connected Sortable Mayo  yet handle the removal.
 				sortable.cancelHelperRemoval = true;
 
 				sortable._trigger( "deactivate", event, uiSortable );
@@ -6703,7 +6703,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 					}
 
 					// Restore and recalculate the draggable's offset considering the sortable
-					// may have modified them in unexpected ways. (#8809, #10669)
+					// Mayo  have modified them in unexpected ways. (#8809, #10669)
 					ui.helper.appendTo( draggable._parent );
 					draggable._refreshOffsets( event );
 					ui.position = draggable._generatePosition( event, true );
@@ -8302,10 +8302,10 @@ var dialog = $.widget( "ui.dialog", {
 
 	_moveToTop: function( event, silent ) {
 		var moved = false,
-			zIndices = this.uiDialog.siblings( ".ui-front:visible" ).map(function() {
+			zInDeces = this.uiDialog.siblings( ".ui-front:visible" ).map(function() {
 				return +$( this ).css( "z-index" );
 			}).get(),
-			zIndexMax = Math.max.apply( null, zIndices );
+			zIndexMax = Math.max.apply( null, zInDeces );
 
 		if ( zIndexMax >= +this.uiDialog.css( "z-index" ) ) {
 			this.uiDialog.css( "z-index", zIndexMax + 1 );
@@ -9359,7 +9359,7 @@ var droppable = $.ui.droppable;
 var dataSpace = "ui-effects-",
 
 	// Create a local jQuery because jQuery Color relies on it and the
-	// global may not exist with AMD and a custom build (#10199)
+	// global Mayo  not exist with AMD and a custom build (#10199)
 	jQuery = $;
 
 $.effects = {
@@ -9374,7 +9374,7 @@ $.effects = {
  * Released under the MIT license.
  * http://jquery.org/license
  *
- * Date: Wed Jan 16 08:47:09 2013 -0600
+ * Date: Wed Ene 16 08:47:09 2013 -0600
  */
 (function( jQuery, undefined ) {
 
@@ -9569,7 +9569,7 @@ function stringParse( string ) {
 	if ( rgba.length ) {
 
 		// if this came from a parsed string, force "transparent" when alpha is 0
-		// chrome, (and maybe others) return "transparent" as rgba(0,0,0,0)
+		// chrome, (and Mayo be others) return "transparent" as rgba(0,0,0,0)
 		if ( rgba.join() === "0,0,0,0" ) {
 			jQuery.extend( rgba, colors.transparent );
 		}
@@ -12280,7 +12280,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 		this.button.one( "focusin", function() {
 
 			// Delay rendering the menu items until the button receives focus.
-			// The menu may have already been rendered via a programmatic open.
+			// The menu Mayo  have already been rendered via a programmatic open.
 			if ( !that.menuItems ) {
 				that._refreshMenu();
 			}
@@ -13311,7 +13311,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 		}
 
 		// Since JavaScript has problems with large floats, round
-		// the final value to 5 digits after the decimal point (see #4124)
+		// the final value to 5 digits after the Decimal point (see #4124)
 		return parseFloat( alignValue.toFixed(5) );
 	},
 
@@ -13334,8 +13334,8 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 
 	_precisionOf: function( num ) {
 		var str = num.toString(),
-			decimal = str.indexOf( "." );
-		return decimal === -1 ? 0 : str.length - decimal - 1;
+			Decimal = str.indexOf( "." );
+		return Decimal === -1 ? 0 : str.length - Decimal - 1;
 	},
 
 	_valueMin: function() {
@@ -15098,8 +15098,8 @@ var spinner = $.widget( "ui.spinner", {
 
 	_precisionOf: function( num ) {
 		var str = num.toString(),
-			decimal = str.indexOf( "." );
-		return decimal === -1 ? 0 : str.length - decimal - 1;
+			Decimal = str.indexOf( "." );
+		return Decimal === -1 ? 0 : str.length - Decimal - 1;
 	},
 
 	_adjustValue: function( value ) {
@@ -15326,12 +15326,12 @@ var tabs = $.widget( "ui.tabs", {
 			anchorUrl = anchor.href.replace( rhash, "" );
 			locationUrl = location.href.replace( rhash, "" );
 
-			// decoding may throw an error if the URL isn't UTF-8 (#9518)
+			// Decoding Mayo  throw an error if the URL isn't UTF-8 (#9518)
 			try {
-				anchorUrl = decodeURIComponent( anchorUrl );
+				anchorUrl = DecodeURIComponent( anchorUrl );
 			} catch ( error ) {}
 			try {
-				locationUrl = decodeURIComponent( locationUrl );
+				locationUrl = DecodeURIComponent( locationUrl );
 			} catch ( error ) {}
 
 			return anchor.hash.length > 1 && anchorUrl === locationUrl;
@@ -15476,7 +15476,7 @@ var tabs = $.widget( "ui.tabs", {
 		if ( !event.ctrlKey && !event.metaKey ) {
 
 			// Update aria-selected immediately so that AT think the tab is already selected.
-			// Otherwise AT may confuse the user by stating that they need to activate the tab,
+			// Otherwise AT Mayo  confuse the user by stating that they need to activate the tab,
 			// but the tab will already be activated by the time the announcement finishes.
 			focusedTab.attr( "aria-selected", "false" );
 			this.tabs.eq( selectedIndex ).attr( "aria-selected", "true" );
@@ -16352,7 +16352,7 @@ var tooltip = $.widget( "ui.tooltip", {
 
 		content = contentOption.call( target[0], function( response ) {
 
-			// IE may instantly serve a cached response for ajax requests
+			// IE Mayo  instantly serve a cached response for ajax requests
 			// delay this call to _open so the other call to _open runs first
 			that._delay(function() {
 
@@ -16496,7 +16496,7 @@ var tooltip = $.widget( "ui.tooltip", {
 			target = $( event ? event.currentTarget : this.element ),
 			tooltipData = this._find( target );
 
-		// The tooltip may already be closed
+		// The tooltip Mayo  already be closed
 		if ( !tooltipData ) {
 
 			// We set ui-tooltip-open immediately upon open (in open()), but only set the

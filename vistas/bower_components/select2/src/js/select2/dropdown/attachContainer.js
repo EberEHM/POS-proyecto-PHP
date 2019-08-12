@@ -1,12 +1,12 @@
 define([
 
 ], function () {
-  function AttachContainer (decorated, $element, options) {
-    decorated.call(this, $element, options);
+  function AttachContainer (Decorated, $element, options) {
+    Decorated.call(this, $element, options);
   }
 
   AttachContainer.prototype.position =
-    function (decorated, $dropdown, $container) {
+    function (Decorated, $dropdown, $container) {
     var $dropdownContainer = $container.find('.dropdown-wrapper');
     $dropdownContainer.append($dropdown);
 

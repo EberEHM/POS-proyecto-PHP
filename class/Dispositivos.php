@@ -68,7 +68,7 @@ class Dispositivos{
 
 	static public function agregarDispositivo($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(imagen, NumeroOrden, idCliente, idTipoReparacion, descripcionFalla, imei, descripcion, presupuesto, recibio, fechaAproximada) VALUES (:imagen, :NumeroOrden, :idCliente, :idTipoReparacion, :descripcionFalla, :imei, :descripcion, :presupuesto, :recibio, :fechaAproximada)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(imagen, NumeroOrden, idCliente, idTipoReparacion, descripcionFalla, imei, descripcion, presupuesto, recibio, fechaAbroximada) VALUES (:imagen, :NumeroOrden, :idCliente, :idTipoReparacion, :descripcionFalla, :imei, :descripcion, :presupuesto, :recibio, :fechaAbroximada)");
 
 		$stmt->bindParam(":imagen", $datos["imagen"], PDO::PARAM_STR);
 		$stmt->bindParam(":NumeroOrden", $datos["NumeroOrden"], PDO::PARAM_STR);
@@ -79,7 +79,7 @@ class Dispositivos{
 		$stmt->bindParam(":descripcion", $datos["descripcion"], PDO::PARAM_STR);
 		$stmt->bindParam(":presupuesto", $datos["presupuesto"], PDO::PARAM_STR);
 		$stmt->bindParam(":recibio", $datos["recibio"], PDO::PARAM_STR);
-		$stmt->bindParam(":fechaAproximada", $datos["fechaAproximada"], PDO::PARAM_STR);
+		$stmt->bindParam(":fechaAbroximada", $datos["fechaAbroximada"], PDO::PARAM_STR);
 
 
 		if($stmt->execute()){
@@ -105,7 +105,7 @@ class Dispositivos{
 
 	static public function editarDispositivo($tabla, $datos){
 	
-		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET imagen = :imagen, idCliente = :idCliente, idTipoReparacion = :idTipoReparacion, descripcionFalla = :descripcionFalla, imei = :imei, descripcion = :descripcion, presupuesto = :presupuesto, recibio = :recibio, fechaAproximada = :fechaAproximada  WHERE NumeroOrden = :NumeroOrden");
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET imagen = :imagen, idCliente = :idCliente, idTipoReparacion = :idTipoReparacion, descripcionFalla = :descripcionFalla, imei = :imei, descripcion = :descripcion, presupuesto = :presupuesto, recibio = :recibio, fechaAbroximada = :fechaAbroximada  WHERE NumeroOrden = :NumeroOrden");
 
 		$stmt -> bindParam(":imagen", $datos["imagen"], PDO::PARAM_STR);
 		$stmt -> bindParam(":idCliente", $datos["idCliente"], PDO::PARAM_STR);
@@ -115,7 +115,7 @@ class Dispositivos{
 		$stmt -> bindParam(":descripcion", $datos["descripcion"], PDO::PARAM_STR);
 		$stmt -> bindParam(":presupuesto", $datos["presupuesto"], PDO::PARAM_STR);
 		$stmt -> bindParam(":recibio", $datos["recibio"], PDO::PARAM_STR);
-		$stmt -> bindParam(":fechaAproximada", $datos["fechaAproximada"], PDO::PARAM_STR);
+		$stmt -> bindParam(":fechaAbroximada", $datos["fechaAbroximada"], PDO::PARAM_STR);
 		$stmt -> bindParam(":NumeroOrden", $datos["NumeroOrden"], PDO::PARAM_STR);
 
 

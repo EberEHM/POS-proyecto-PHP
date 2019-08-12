@@ -7,13 +7,13 @@ require_once "../controladores/ControladorCategorias.php";
 require_once "../class/Categorias.php";
  
 
-class TablaProductos{
+class TablAbroductos{
 
  	/*=============================================
  	 MOSTRAR LA TABLA DE PRODUCTOS
   	=============================================*/ 
 
-	public function mostrarTablaProductos(){
+	public function mostrarTablAbroductos(){
 
 		$item = null;
     	$valor = null;
@@ -184,6 +184,6 @@ class TablaProductos{
 /*=============================================
 ACTIVAR TABLA DE PRODUCTOS
 =============================================*/ 
-$activarProductos = new TablaProductos();
-$activarProductos -> mostrarTablaProductos();
+$activarProductos = new TablAbroductos();
+$activarProductos -> mostrarTablAbroductos();
 

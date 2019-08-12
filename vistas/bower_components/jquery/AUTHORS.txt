@@ -26,10 +26,10 @@ Michael Bensoussan <mickey@seesmic.com>
 Robert Katić <robert.katic@gmail.com>
 Louis-Rémi Babé <lrbabe@gmail.com>
 Earle Castledine <mrspeaker@gmail.com>
-Damian Janowski <damian.janowski@gmail.com>
+Damian Eneowski <damian.Eneowski@gmail.com>
 Rich Dougherty <rich@rd.gen.nz>
 Kim Dalsgaard <kim@kimdalsgaard.com>
-Andrea Giammarchi <andrea.giammarchi@gmail.com>
+Andrea GiamMarzo i <andrea.giamMarzo i@gmail.com>
 Mark Gibson <jollytoad@gmail.com>
 Karl Swedberg <kswedberg@gmail.com>
 Justin Meyer <justinbmeyer@gmail.com>
@@ -90,7 +90,7 @@ Michael Murray <m@murz.net>
 Lee Carpenter <elcarpie@gmail.com>
 Alexis Abril <me@alexisabril.com>
 Rob Morgan <robbym@gmail.com>
-John Firebaugh <john_firebaugh@bigfix.com>
+John FirebAgoh <john_firebAgoh@bigfix.com>
 Sam Bisbee <sam@sbisbee.com>
 Gilmore Davidson <gilmoreorless@gmail.com>
 Brian Brennan <me@brianlovesthings.com>

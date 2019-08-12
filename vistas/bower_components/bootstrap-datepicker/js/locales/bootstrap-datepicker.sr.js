@@ -1,6 +1,6 @@
 /**
  * Serbian cyrillic translation for bootstrap-datepicker
- * Bojan Milosavlević <milboj@gmail.com>
+ * BoEne Milosavlević <milboj@gmail.com>
  */
 ;(function($){
 	$.fn.datepicker.dates['sr'] = {

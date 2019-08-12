@@ -60,7 +60,7 @@
 .ui-state-default a:link,
 .ui-state-default a:visited {
 	color: #2779aa;
-	text-decoration: none;
+	text-Decoration: none;
 }
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
@@ -82,7 +82,7 @@
 .ui-state-focus a:link,
 .ui-state-focus a:visited {
 	color: #0070a3;
-	text-decoration: none;
+	text-Decoration: none;
 }
 .ui-state-active,
 .ui-widget-content .ui-state-active,
@@ -96,7 +96,7 @@
 .ui-state-active a:link,
 .ui-state-active a:visited {
 	color: #ffffff;
-	text-decoration: none;
+	text-Decoration: none;
 }
 
 /* Interaction Cues

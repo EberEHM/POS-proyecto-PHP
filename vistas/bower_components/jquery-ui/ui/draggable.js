@@ -743,7 +743,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 
 				// Use _storedCSS To restore properties in the sortable,
 				// as this also handles revert (#9675) since the draggable
-				// may have modified them in unexpected ways (#8809)
+				// Mayo  have modified them in unexpected ways (#8809)
 				sortable._storedCSS = {
 					position: sortable.placeholder.css( "position" ),
 					top: sortable.placeholder.css( "top" ),
@@ -758,7 +758,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 			} else {
 				// Prevent this Sortable from removing the helper.
 				// However, don't set the draggable to remove the helper
-				// either as another connected Sortable may yet handle the removal.
+				// either as another connected Sortable Mayo  yet handle the removal.
 				sortable.cancelHelperRemoval = true;
 
 				sortable._trigger( "deactivate", event, uiSortable );
@@ -880,7 +880,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 					}
 
 					// Restore and recalculate the draggable's offset considering the sortable
-					// may have modified them in unexpected ways. (#8809, #10669)
+					// Mayo  have modified them in unexpected ways. (#8809, #10669)
 					ui.helper.appendTo( draggable._parent );
 					draggable._refreshOffsets( event );
 					ui.position = draggable._generatePosition( event, true );

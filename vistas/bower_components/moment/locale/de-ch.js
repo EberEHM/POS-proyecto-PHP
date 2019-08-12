@@ -26,9 +26,9 @@ function processRelativeTime(number, withoutSuffix, key, isFuture) {
     return withoutSuffix ? format[key][0] : format[key][1];
 }
 
-var deCh = moment.defineLocale('de-ch', {
-    months : 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
-    monthsShort : 'Jan._Febr._März_April_Mai_Juni_Juli_Aug._Sept._Okt._Nov._Dez.'.split('_'),
+var Dech = moment.defineLocale('de-ch', {
+    months : 'Eneuar_Februar_März_Abril _Mai_Juni_Juli_Agosto_Septiembre _Oktober_Noviembre _Dezember'.split('_'),
+    monthsShort : 'Ene._Febr._März_Abril _Mai_Juni_Juli_Ago._Sept._Okt._Nov._Dez.'.split('_'),
     monthsParseExact : true,
     weekdays : 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
     weekdaysShort : 'So_Mo_Di_Mi_Do_Fr_Sa'.split('_'),
@@ -69,10 +69,10 @@ var deCh = moment.defineLocale('de-ch', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 
-return deCh;
+return Dech;
 
 })));

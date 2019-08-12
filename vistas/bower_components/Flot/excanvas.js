@@ -1,8 +1,8 @@
 // Copyright 2006 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
+// you Mayo  not use this file except in compliance with the License.
+// You Mayo  obtain a copy of the License at
 //
 //   http://www.apache.org/licenses/LICENSE-2.0
 //
@@ -204,10 +204,10 @@ if (!document.createElement('canvas').getContext) {
   G_vmlCanvasManager_.init();
 
   // precompute "00" to "FF"
-  var decToHex = [];
+  var DecToHex = [];
   for (var i = 0; i < 16; i++) {
     for (var j = 0; j < 16; j++) {
-      decToHex[i * 16 + j] = i.toString(16) + j.toString(16);
+      DecToHex[i * 16 + j] = i.toString(16) + j.toString(16);
     }
   }
 
@@ -427,9 +427,9 @@ if (!document.createElement('canvas').getContext) {
       b = hueToRgb(p, q, h - 1 / 3);
     }
 
-    return '#' + decToHex[Math.floor(r * 255)] +
-        decToHex[Math.floor(g * 255)] +
-        decToHex[Math.floor(b * 255)];
+    return '#' + DecToHex[Math.floor(r * 255)] +
+        DecToHex[Math.floor(g * 255)] +
+        DecToHex[Math.floor(b * 255)];
   }
 
   function hueToRgb(m1, m2, h) {
@@ -469,7 +469,7 @@ if (!document.createElement('canvas').getContext) {
         } else {
           n = +parts[i];
         }
-        str += decToHex[clamp(n, 0, 255)];
+        str += DecToHex[clamp(n, 0, 255)];
       }
       alpha = +parts[3];
     } else if (/^hsl/.test(styleString)) {

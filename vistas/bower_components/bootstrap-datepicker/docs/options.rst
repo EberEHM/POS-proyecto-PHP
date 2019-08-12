@@ -21,7 +21,7 @@ assumeNearbyYear
 
 Boolean or Integer.  Default: false
 
-If true, manually-entered dates with two-digit years, such as "5/1/15", will be parsed as "2015", not "15". If the year is less than 10 years in advance, the picker will use the current century, otherwise, it will use the previous one. For example "5/1/15" would parse to May 1st, 2015, but "5/1/97" would be May 1st, 1997.
+If true, manually-entered dates with two-digit years, such as "5/1/15", will be parsed as "2015", not "15". If the year is less than 10 years in advance, the picker will use the current century, otherwise, it will use the previous one. For example "5/1/15" would parse to Mayo  1st, 2015, but "5/1/97" would be Mayo  1st, 1997.
 
 To configure the number of years in advance that the picker will still use the current century, use an Integer instead of the Boolean true. E.g. "assumeNearbyYear: 20"
 
@@ -34,7 +34,7 @@ Function(Date).  Default: $.noop
 A function that takes a date as a parameter and returns one of the following values:
 
  * undefined to have no effect
- * A Boolean, indicating whether or not this date is selectable
+ * A Boolean, inDecating whether or not this date is selectable
  * A String representing additional CSS classes to apply to the date's cell
  * An object with the following properties:
 
@@ -52,7 +52,7 @@ Function(Date).  Default: $.noop
 A function that takes a date as a parameter and returns one of the following values:
 
  * undefined to have no effect
- * A Boolean, indicating whether or not this month is selectable
+ * A Boolean, inDecating whether or not this month is selectable
  * A String representing additional CSS classes to apply to the month's cell
  * An object with the following properties:
 
@@ -69,7 +69,7 @@ Function(Date).  Default: $.noop
 A function that takes a date as a parameter and returns one of the following values:
 
  * undefined to have no effect
- * A Boolean, indicating whether or not this year is selectable
+ * A Boolean, inDecating whether or not this year is selectable
  * A String representing additional CSS classes to apply to the year's cell
  * An object with the following properties:
 
@@ -86,7 +86,7 @@ Function(Date).  Default: $.noop
 A function that takes a date as a parameter and returns one of the following values:
 
  * undefined to have no effect
- * A Boolean, indicating whether or not this year is selectable
+ * A Boolean, inDecating whether or not this year is selectable
  * A String representing additional CSS classes to apply to the year's cell
  * An object with the following properties:
 
@@ -103,7 +103,7 @@ Function(Date).  Default: $.noop
 A function that takes a date as a parameter and returns one of the following values:
 
  * undefined to have no effect
- * A Boolean, indicating whether or not this year is selectable
+ * A Boolean, inDecating whether or not this year is selectable
  * A String representing additional CSS classes to apply to the year's cell
  * An object with the following properties:
 
@@ -188,7 +188,7 @@ This option can be:
  * An object with keys ``year``, ``month`` and ``day`` (can't be set from a data attribute). If the given object is missing any of the required keys, their defaults are:
 
    * ``year``: the current year
-   * ``month``: 0 (Note that it starts with 0 for January)
+   * ``month``: 0 (Note that it starts with 0 for Enero)
    * ``day``: 1
 
 disableTouchKeyboard
@@ -214,7 +214,7 @@ endDate
 
 Date or String.  Default: End of time
 
-The latest date that may be selected; all later dates will be disabled.
+The latest date that Mayo  be selected; all later dates will be disabled.
 
 Date should be in local timezone. String must be parsable with ``format``.
 
@@ -246,7 +246,7 @@ The date format, combination of d, dd, D, DD, m, mm, M, MM, yy, yyyy.
 * d, dd: Numeric date, no leading zero and leading zero, respectively.  Eg, 5, 05.
 * D, DD: Abbreviated and full weekday names, respectively.  Eg, Mon, Monday.
 * m, mm: Numeric month, no leading zero and leading zero, respectively.  Eg, 7, 07.
-* M, MM: Abbreviated and full month names, respectively.  Eg, Jan, January
+* M, MM: Abbreviated and full month names, respectively.  Eg, Ene, Enero
 * yy, yyyy: 2- and 4-digit years, respectively.  Eg, 12, 2012.
 
 Object.
@@ -343,8 +343,8 @@ maxViewMode
 
 Number, String.  Default: 4, "centuries"
 
-Set a maximum limit for the view mode.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "decade", 3 or "decades" or "century", and 4 or "centuries" or "millenium".
-Gives the ability to pick only a day, a month, a year or a decade.  The day is set to the 1st for "months", the month is set to January for "years", the year is set to the first year from the decade for "decades", and the year is set to the first from the millennium for "centuries".
+Set a maximum limit for the view mode.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "Decade", 3 or "Decades" or "century", and 4 or "centuries" or "millenium".
+Gives the ability to pick only a day, a month, a year or a Decade.  The day is set to the 1st for "months", the month is set to Enero for "years", the year is set to the first year from the Decade for "Decades", and the year is set to the first from the millennium for "centuries".
 
 
 minViewMode
@@ -352,8 +352,8 @@ minViewMode
 
 Number, String.  Default: 0, "days"
 
-Set a minimum limit for the view mode.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "decade", 3 or "decades" or "century", and 4 or "centuries" or "millenium".
-Gives the ability to pick only a month, a year or a decade.  The day is set to the 1st for "months", and the month is set to January for "years", the year is set to the first year from the decade for "decades", and the year is set to the first from the millennium for "centuries".
+Set a minimum limit for the view mode.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "Decade", 3 or "Decades" or "century", and 4 or "centuries" or "millenium".
+Gives the ability to pick only a month, a year or a Decade.  The day is set to the 1st for "months", and the month is set to Enero for "years", the year is set to the first year from the Decade for "Decades", and the year is set to the first from the millennium for "centuries".
 
 
 multidate
@@ -382,7 +382,7 @@ orientation
 
 String.  Default: "auto"
 
-A space-separated string consisting of one or two of "left" or "right", "top" or "bottom", and "auto" (may be omitted); for example, "top left", "bottom" (horizontal orientation will default to "auto"), "right" (vertical orientation will default to "auto"), "auto top".  Allows for fixed placement of the picker popup.
+A space-separated string consisting of one or two of "left" or "right", "top" or "bottom", and "auto" (Mayo  be omitted); for example, "top left", "bottom" (horizontal orientation will default to "auto"), "right" (vertical orientation will default to "auto"), "auto top".  Allows for fixed placement of the picker popup.
 
 "orientation" refers to the location of the picker popup's "anchor"; you can also think of it as the location of the trigger element (input, component, etc) relative to the picker.
 
@@ -403,7 +403,7 @@ startDate
 
 Date or String.  Default: Beginning of time
 
-The earliest date that may be selected; all earlier dates will be disabled.
+The earliest date that Mayo  be selected; all earlier dates will be disabled.
 
 Date should be in local timezone. String must be parsable with ``format``.
 
@@ -416,7 +416,7 @@ startView
 
 Number, String.  Default: 0, "days"
 
-The view that the datepicker should show when it is opened.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "decade", 3 or "decades" or "century", and 4 or "centuries" or "millenium".  Useful for date-of-birth datepickers.
+The view that the datepicker should show when it is opened.  Accepts: 0 or "days" or "month", 1 or "months" or "year", 2 or "years" or "Decade", 3 or "Decades" or "century", and 4 or "centuries" or "millenium".  Useful for date-of-birth datepickers.
 
 
 templates

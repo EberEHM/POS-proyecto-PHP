@@ -1,6 +1,6 @@
 /**
  * Serbian cyrillic translation for bootstrap-datepicker
- * Bojan Milosavlević <milboj@gmail.com>
+ * BoEne Milosavlević <milboj@gmail.com>
  *
  * DEPRECATED: This language code 'rs' is deprecated (invalid serbian language code) and will be removed in 2.0.
  */

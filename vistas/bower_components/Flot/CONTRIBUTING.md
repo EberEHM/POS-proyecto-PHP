@@ -45,7 +45,7 @@ with the following updates and exceptions:
 #### Spacing ####
 
 Use four-space indents, no tabs.  Do not add horizontal space around parameter
-lists, loop definitions, or array/object indices. For example:
+lists, loop definitions, or array/object inDeces. For example:
 
 ```js
     for ( var i = 0; i < data.length; i++ ) {  // This block is wrong!
@@ -82,7 +82,7 @@ example:
 
 Block comments should be wrapped at 80 characters.
 
-Code should attempt to wrap at 80 characters, but may run longer if wrapping
+Code should attempt to wrap at 80 characters, but Mayo  run longer if wrapping
 would hurt readability more than having to scroll horizontally.  This is a
 judgement call made on a situational basis.
 

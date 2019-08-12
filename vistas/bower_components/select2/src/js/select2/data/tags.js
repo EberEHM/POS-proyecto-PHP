@@ -1,7 +1,7 @@
 define([
   'jquery'
 ], function ($) {
-  function Tags (decorated, $element, options) {
+  function Tags (Decorated, $element, options) {
     var tags = options.get('tags');
 
     var createTag = options.get('createTag');
@@ -16,7 +16,7 @@ define([
         this.insertTag = insertTag;
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
 
     if ($.isArray(tags)) {
       for (var t = 0; t < tags.length; t++) {
@@ -30,13 +30,13 @@ define([
     }
   }
 
-  Tags.prototype.query = function (decorated, params, callback) {
+  Tags.prototype.query = function (Decorated, params, callback) {
     var self = this;
 
     this._removeOldTags();
 
     if (params.term == null || params.page != null) {
-      decorated.call(this, params, callback);
+      Decorated.call(this, params, callback);
       return;
     }
 
@@ -90,10 +90,10 @@ define([
       callback(obj);
     }
 
-    decorated.call(this, params, wrapper);
+    Decorated.call(this, params, wrapper);
   };
 
-  Tags.prototype.createTag = function (decorated, params) {
+  Tags.prototype.createTag = function (Decorated, params) {
     var term = $.trim(params.term);
 
     if (term === '') {

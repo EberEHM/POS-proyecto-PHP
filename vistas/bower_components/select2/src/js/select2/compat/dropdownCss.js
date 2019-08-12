@@ -9,8 +9,8 @@ define([
 
   function DropdownCSS () { }
 
-  DropdownCSS.prototype.render = function (decorated) {
-    var $dropdown = decorated.call(this);
+  DropdownCSS.prototype.render = function (Decorated) {
+    var $dropdown = Decorated.call(this);
 
     var dropdownCssClass = this.options.get('dropdownCssClass') || '';
 

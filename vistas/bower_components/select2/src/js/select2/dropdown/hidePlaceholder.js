@@ -1,16 +1,16 @@
 define([
 
 ], function () {
-  function HidePlaceholder (decorated, $element, options, dataAdapter) {
+  function HidePlaceholder (Decorated, $element, options, dataAdapter) {
     this.placeholder = this.normalizePlaceholder(options.get('placeholder'));
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
   }
 
-  HidePlaceholder.prototype.append = function (decorated, data) {
+  HidePlaceholder.prototype.append = function (Decorated, data) {
     data.results = this.removePlaceholder(data.results);
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
   };
 
   HidePlaceholder.prototype.normalizePlaceholder = function (_, placeholder) {

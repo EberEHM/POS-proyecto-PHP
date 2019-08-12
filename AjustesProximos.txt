@@ -1,12 +1,12 @@
 AJUSTES ALAS VENTAS
--el primer auste es que genere codigos de barras de los productos por medio de un boton, dicho codigo no debe repetirce
+-el primer auste es que genere codigos de barras de los productos por medio de un boton, Decho codigo no debe repetirce
 como ekemplo tomar lo del usuario de el modulo registrar usuario.
 
 -Buscar la forma de que al momento de detectar el codigo con el scaner agregarlo a la venta sin presionar "Agregar", o 
 optimizar el sistema vinculando botones a teclas de la PC.
 
 Ajuste brusco:
--Que el sistema genere la factura electronica en formato PDF y XML apropiada para el SAT, dicha factura debe ser
+-Que el sistema genere la factura electronica en formato PDF y XML Abropiada para el SAT, Decha factura debe ser
 con los datos necesarios, el presio del punto de venta con esa funcion aumenta a 12,000.-
 
 

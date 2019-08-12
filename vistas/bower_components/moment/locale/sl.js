@@ -82,8 +82,8 @@ function processRelativeTime(number, withoutSuffix, key, isFuture) {
 }
 
 var sl = moment.defineLocale('sl', {
-    months : 'januar_februar_marec_april_maj_junij_julij_avgust_september_oktober_november_december'.split('_'),
-    monthsShort : 'jan._feb._mar._apr._maj._jun._jul._avg._sep._okt._nov._dec.'.split('_'),
+    months : 'Eneuar_februar_marec_Abril _maj_junij_julij_avgust_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene._feb._mar._Abr._maj._jun._jul._avg._sep._okt._nov._Dec.'.split('_'),
     monthsParseExact: true,
     weekdays : 'nedelja_ponedeljek_torek_sreda_četrtek_petek_sobota'.split('_'),
     weekdaysShort : 'ned._pon._tor._sre._čet._pet._sob.'.split('_'),
@@ -153,7 +153,7 @@ var sl = moment.defineLocale('sl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 

@@ -138,7 +138,7 @@ $(document).on("click", ".btnEditarDispositivo", function(){
       $("#editarDescripcion").val(respuesta["descripcion"]);
       $("#editarPrecio").val(respuesta["presupuesto"]);
       $("#editarRecibio").val(respuesta["recibio"]);
-      $("#editarFechaEntrega").val(respuesta["fechaAproximada"]);
+      $("#editarFechaEntrega").val(respuesta["fechaAbroximada"]);
       $("#fotoActual").val(respuesta["imagen"]);
 
       if(respuesta["imagen"] != ""){

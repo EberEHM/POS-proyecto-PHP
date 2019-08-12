@@ -10,9 +10,9 @@ var months = [
 
 var monthsShort = ['Faoi', 'Gear', 'Màrt', 'Gibl', 'Cèit', 'Ògmh', 'Iuch', 'Lùn', 'Sult', 'Dàmh', 'Samh', 'Dùbh'];
 
-var weekdays = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Diciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
+var weekdays = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Deciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
 
-var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dic', 'Dia', 'Dih', 'Dis'];
+var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dec', 'Dia', 'Dih', 'Dis'];
 
 var weekdaysMin = ['Dò', 'Lu', 'Mà', 'Ci', 'Ar', 'Ha', 'Sa'];
 
@@ -61,7 +61,7 @@ export default moment.defineLocale('gd', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

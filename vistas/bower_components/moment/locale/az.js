@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Azerbaijani [az]
+//! locale : AzerbaiEnei [az]
 //! author : topchiyev : https://github.com/topchiyev
 
 ;(function (global, factory) {
@@ -32,8 +32,8 @@ var suffixes = {
 };
 
 var az = moment.defineLocale('az', {
-    months : 'yanvar_fevral_mart_aprel_may_iyun_iyul_avqust_sentyabr_oktyabr_noyabr_dekabr'.split('_'),
-    monthsShort : 'yan_fev_mar_apr_may_iyn_iyl_avq_sen_okt_noy_dek'.split('_'),
+    months : 'yanvar_fevral_mart_Abrel_Mayo _iyun_iyul_avqust_sentyabr_oktyabr_noyabr_dekabr'.split('_'),
+    monthsShort : 'yan_fev_mar_Abr_Mayo _iyn_iyl_avq_sen_okt_noy_dek'.split('_'),
     weekdays : 'Bazar_Bazar ertəsi_Çərşənbə axşamı_Çərşənbə_Cümə axşamı_Cümə_Şənbə'.split('_'),
     weekdaysShort : 'Baz_BzE_ÇAx_Çər_CAx_Cüm_Şən'.split('_'),
     weekdaysMin : 'Bz_BE_ÇA_Çə_CA_Cü_Şə'.split('_'),
@@ -96,7 +96,7 @@ var az = moment.defineLocale('az', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 

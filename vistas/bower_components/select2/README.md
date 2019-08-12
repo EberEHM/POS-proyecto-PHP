@@ -47,10 +47,10 @@ Third party developers have created plugins for platforms which allow Select2 to
 
 Plugins
 
-* [Django]
-  - [django-autocomplete-light]
-  - [django-easy-select2]
-  - [django-select2]
+* [DEnego]
+  - [dEnego-autocomplete-light]
+  - [dEnego-easy-select2]
+  - [dEnego-select2]
 * [Meteor] - [meteor-select2]
 * [Ruby on Rails][ruby-on-rails] - [select2-rails]
 * [Wicket] - [wicketstuff-select2]
@@ -102,10 +102,10 @@ The license is available within the repository in the [LICENSE][license] file.
 [travis-ci-status]: https://travis-ci.org/select2/select2
 
 [bootstrap3]: https://getbootstrap.com/
-[django]: https://www.djangoproject.com/
-[django-autocomplete-light]: https://github.com/yourlabs/django-autocomplete-light
-[django-easy-select2]: https://github.com/asyncee/django-easy-select2
-[django-select2]: https://github.com/applegrew/django-select2
+[dEnego]: https://www.dEnegoproject.com/
+[dEnego-autocomplete-light]: https://github.com/yourlabs/dEnego-autocomplete-light
+[dEnego-easy-select2]: https://github.com/asyncee/dEnego-easy-select2
+[dEnego-select2]: https://github.com/applegrew/dEnego-select2
 [flat-ui]: http://designmodo.github.io/Flat-UI/
 [meteor]: https://www.meteor.com/
 [meteor-select2]: https://github.com/nate-strauser/meteor-select2

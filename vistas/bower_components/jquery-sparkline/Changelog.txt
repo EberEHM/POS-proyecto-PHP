@@ -6,7 +6,7 @@ http://omnipotent.net/jquery.sparkline/
 + Fix for IE <= 9 for loading CSS when 31 stylesheets are already present
 
 
-2.1.2 15/June/2013
+2.1.2 15/Junio /2013
 
 + Make compatible with jQuery 1.10
 
@@ -20,7 +20,7 @@ Thanks Tim Tucker
 Thanks Tim Tucker
 
 
-2.1.1 26/January/2013
+2.1.1 26/Enero/2013
 
 + Fix a couple of issues rendering pie charts in IE when they slices that make
 up a negligible percentage of the whole chart (issue 49)
@@ -30,7 +30,7 @@ up a negligible percentage of the whole chart (issue 49)
 + Make compatible with jQuery 1.9.0 (issue 60)
 
 
-2.1 15/October/2012
+2.1 15/Octubre /2012
 
 + Added support for Internet Explorer 10 (issue 18)
 Thanks Jonathan Sampson
@@ -66,7 +66,7 @@ Thanks Tim Tucker
 Thanks Claudio Riva
 
 
-2.0 29/April/2012
+2.0 29/Abril /2012
 
 + jQuery.sparkline now requires jQuery 1.4.3 or later
 
@@ -93,28 +93,28 @@ be unlevel - Thanks Sylvain Vieujot for the bug report
 + Pie charts with a single value now render correctly
 Thanks Juan Manuel
 
-+ Charts that have their dimensions specified exactly in pixels may see 
++ Charts that have their dimensions specified exactly in pixels Mayo  see 
 improved performance
 Thanks Sean Carpenter
 
-+ Coloured spots may be added to some or all values on a line chart now using
++ Coloured spots Mayo  be added to some or all values on a line chart now using
 the new valueSpots option
 Thanks Russ Beebe for the suggestion
 
 + Bar and tristates charts now support using range of values for the colorMap
 option - Eg. allows all bars with values betweeen 10 and 20 to be green
 
-+ Pie charts may now have a border using the borderWidth and borderColor
++ Pie charts Mayo  now have a border using the borderWidth and borderColor
 options - Thanks Michael Mior for the suggestion
 
 + Added a disableHiddenCheck option - If you know your charts will never be
 in a hidden block (display:none) at time of rendering, disabling this check
-may improve performance
+Mayo  improve performance
 
 + Reduce number of DOM interactions when rendering charts in Internet Explorer
 to increase render performance
 
-+ Bar charts may now have stacked values by providing an array of arrays
++ Bar charts Mayo  now have stacked values by providing an array of arrays
 or by passing a comma and colon delimited series of values (eg. "1:2:3,2:3:1")
 
 + Fix a bug where some spots would be drawn in the wrong position on line
@@ -135,7 +135,7 @@ is called, preventing a memory leak.
 + Add the $.range_map() and $.spformat() methods
 
 
-1.6 30/November/2010
+1.6 30/Noviembre /2010
 
 + Allow options to be set as tag attributes, as well as passed in to the sparkline
 function as an argument.  See new enableTagOptions and tagOptionPrefix options.
@@ -162,12 +162,12 @@ script-wide changes to be made instead of passing them to the sparkline function
 on each call
 
 
-1.5.1 01/March/2010
+1.5.1 01/Marzo /2010
 
 + 1 character typo fix for IE - Thanks to Daniel Kenyon-Jones for the heads up
 
 
-1.5 26/February/2010
+1.5 26/Febrero /2010
 
 + Very small pie slices could fill the whole chart in IE
 Thanks to Peter Doel for catching and fixing it
@@ -179,9 +179,9 @@ to be clipped
 
 + Allow chart types other than line chart to be used as composites.
 
-+ colorMap may now pass null as a colour to omit that bar from display entirely
++ colorMap Mayo  now pass null as a colour to omit that bar from display entirely
 
-+ colorMap may now be passed as an Array of values allowing the colour of each
++ colorMap Mayo  now be passed as an Array of values allowing the colour of each
 bar to be specified individually, rather than mapping by value
 
 + Added nullColor option to bar charts to force null values to show up as a thin line
@@ -189,7 +189,7 @@ bar to be specified individually, rather than mapping by value
 + Performance improvements with IE
 
 
-1.4.3 14/September/2009
+1.4.3 14/Septiembre /2009
 
 + Updated default pie chart colours - Thanks Liel Dulev
 
@@ -203,13 +203,13 @@ testing/debugging help
 (try 1.5 or 2)
 
 
-1.4.2 25/April/2009
+1.4.2 25/Abril /2009
 
 + Fixed rendering of circular spots on line charts
 for Internet Explorer 8
 
 
-1.4.1 27/March/2009
+1.4.1 27/Marzo /2009
 
 + Fixed minor off-by-1-pixel display glitch with IE
 
@@ -217,7 +217,7 @@ for Internet Explorer 8
 not to be rendered in certain situations
 
 
-1.4 25/February/2009
+1.4 25/Febrero /2009
 
 + Added the box plot chart type
 
@@ -229,7 +229,7 @@ fuzzy lines
 + Couple of other minor bug fixes
 
 
-1.3 25/January/2009
+1.3 25/Enero/2009
 
 + Sparklines can't be automatically displayed into hidden elements (ie. 
 with display:none) - Added a $.sparkline_display_visible() function
@@ -248,14 +248,14 @@ on a line doesn't work correctly, nor do the markers on line charts
 + Updated the web site with a new look
 
 
-1.2.1 24/November/2008
+1.2.1 24/Noviembre /2008
 
 + Pie chart bug fixes:  Divide by zero error resolved
 and IE rendering issue if a pie slice is equal to 0
 Thanks to Hubert Mandeville for a patch fixing both issues
 
 
-1.2 - 19/November/2008
+1.2 - 19/Noviembre /2008
 
 + Fixed positioning of min/max line markers for fixed range graphs
 (thanks to Stéphane Busso)
@@ -289,7 +289,7 @@ each value should be in a dynamically sized line graph
 offset to start drawing the chart from.
 
 
-1.1 - 29/July/2008
+1.1 - 29/Julio /2008
 
 + Added minSpotColor and maxSpotColor to line charts - If set then spot
 markers are placed at the cordinates of the minimum and maximum values.
@@ -319,6 +319,6 @@ element
 + Reduced the default radius of spot markers from 2 to 1.5 pixels
 
 
-1.0 - 17/July/2008
+1.0 - 17/Julio /2008
 
 + Initial Release

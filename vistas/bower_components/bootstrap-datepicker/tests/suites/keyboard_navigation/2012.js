@@ -1,12 +1,12 @@
 module('Keyboard Navigation 2012', {
     setup: function(){
         /*
-            Tests start with picker on March 31, 2012.  Fun facts:
+            Tests start with picker on Marzo  31, 2012.  Fun facts:
 
-            * February 1, 2012 was on a Wednesday
-            * February 29, 2012 was on a Wednesday
-            * March 1, 2012 was on a Thursday
-            * March 31, 2012 was on a Saturday
+            * Febrero  1, 2012 was on a Wednesday
+            * Febrero  29, 2012 was on a Wednesday
+            * Marzo  1, 2012 was on a Thursday
+            * Marzo  31, 2012 was on a Saturday
         */
         this.input = $('<input type="text" value="31-03-2012">')
                         .appendTo('#qunit-fixture')
@@ -26,7 +26,7 @@ test('by day (right/left arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 day, left arrow key
     this.input.trigger({
@@ -39,7 +39,7 @@ test('by day (right/left arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 2, 30));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: +1 day, right arrow key
     for (var i=0; i<2; i++)
@@ -50,9 +50,9 @@ test('by day (right/left arrows)', function(){
     datesEqual(this.dp.viewDate, UTCDate(2012, 3, 1));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2012, 3, 1));
-    // Month changed: April 1 (this is not a joke!)
+    // Month changed: Abril  1 (this is not a joke!)
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'April 2012', 'Title is "April 2012"');
+    equal(target.text(), 'Abril  2012', 'Title is "Abril  2012"');
 });
 
 test('by week (up/down arrows)', function(){
@@ -60,7 +60,7 @@ test('by week (up/down arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 week, up arrow key
     this.input.trigger({
@@ -73,7 +73,7 @@ test('by week (up/down arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 2, 24));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: +1 week, down arrow key
     for (var i=0; i<2; i++)
@@ -85,7 +85,7 @@ test('by week (up/down arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2012, 3, 7));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'April 2012', 'Title is "April 2012"');
+    equal(target.text(), 'Abril  2012', 'Title is "Abril  2012"');
 });
 
 test('by month, v1 (shift + left/right arrows)', function(){
@@ -93,7 +93,7 @@ test('by month, v1 (shift + left/right arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 month, shift + left arrow key
     this.input.trigger({
@@ -107,7 +107,7 @@ test('by month, v1 (shift + left/right arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 1, 29));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
 
     // Navigation: +1 month, shift + right arrow key
     for (var i=0; i<2; i++)
@@ -120,7 +120,7 @@ test('by month, v1 (shift + left/right arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2012, 3, 29));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'April 2012', 'Title is "April 2012"');
+    equal(target.text(), 'Abril  2012', 'Title is "Abril  2012"');
 });
 
 test('by month, v2 (shift + up/down arrows)', function(){
@@ -128,7 +128,7 @@ test('by month, v2 (shift + up/down arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 month, shift + up arrow key
     this.input.trigger({
@@ -142,7 +142,7 @@ test('by month, v2 (shift + up/down arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 1, 29));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
 
     // Navigation: +1 month, shift + down arrow key
     for (var i=0; i<2; i++)
@@ -155,7 +155,7 @@ test('by month, v2 (shift + up/down arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2012, 3, 29));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'April 2012', 'Title is "April 2012"');
+    equal(target.text(), 'Abril  2012', 'Title is "Abril  2012"');
 });
 
 test('by year, v1 (ctrl + left/right arrows)', function(){
@@ -163,7 +163,7 @@ test('by year, v1 (ctrl + left/right arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 year, ctrl + left arrow key
     this.input.trigger({
@@ -177,7 +177,7 @@ test('by year, v1 (ctrl + left/right arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2011, 2, 31));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2011', 'Title is "March 2011"');
+    equal(target.text(), 'Marzo  2011', 'Title is "Marzo  2011"');
 
     // Navigation: +1 year, ctrl + right arrow key
     for (var i=0; i<2; i++)
@@ -190,7 +190,7 @@ test('by year, v1 (ctrl + left/right arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2013, 2, 31));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2013', 'Title is "March 2013"');
+    equal(target.text(), 'Marzo  2013', 'Title is "Marzo  2013"');
 });
 
 test('by year, v2 (ctrl + up/down arrows)', function(){
@@ -198,7 +198,7 @@ test('by year, v2 (ctrl + up/down arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 year, ctrl + up arrow key
     this.input.trigger({
@@ -212,7 +212,7 @@ test('by year, v2 (ctrl + up/down arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2011, 2, 31));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2011', 'Title is "March 2011"');
+    equal(target.text(), 'Marzo  2011', 'Title is "Marzo  2011"');
 
     // Navigation: +1 year, ctrl + down arrow key
     for (var i=0; i<2; i++)
@@ -225,7 +225,7 @@ test('by year, v2 (ctrl + up/down arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2013, 2, 31));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2013', 'Title is "March 2013"');
+    equal(target.text(), 'Marzo  2013', 'Title is "Marzo  2013"');
 });
 
 test('by year, v3 (ctrl + shift + left/right arrows)', function(){
@@ -233,7 +233,7 @@ test('by year, v3 (ctrl + shift + left/right arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 year, ctrl + left arrow key
     this.input.trigger({
@@ -248,7 +248,7 @@ test('by year, v3 (ctrl + shift + left/right arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2011, 2, 31));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2011', 'Title is "March 2011"');
+    equal(target.text(), 'Marzo  2011', 'Title is "Marzo  2011"');
 
     // Navigation: +1 year, ctrl + right arrow key
     for (var i=0; i<2; i++)
@@ -262,7 +262,7 @@ test('by year, v3 (ctrl + shift + left/right arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2013, 2, 31));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2013', 'Title is "March 2013"');
+    equal(target.text(), 'Marzo  2013', 'Title is "Marzo  2013"');
 });
 
 test('by year, v4 (ctrl + shift + up/down arrows)', function(){
@@ -270,7 +270,7 @@ test('by year, v4 (ctrl + shift + up/down arrows)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 year, ctrl + up arrow key
     this.input.trigger({
@@ -285,7 +285,7 @@ test('by year, v4 (ctrl + shift + up/down arrows)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2011, 2, 31));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2011', 'Title is "March 2011"');
+    equal(target.text(), 'Marzo  2011', 'Title is "Marzo  2011"');
 
     // Navigation: +1 year, ctrl + down arrow key
     for (var i=0; i<2; i++)
@@ -299,7 +299,7 @@ test('by year, v4 (ctrl + shift + up/down arrows)', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
     datesEqual(this.dp.focusDate, UTCDate(2013, 2, 31));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2013', 'Title is "March 2013"');
+    equal(target.text(), 'Marzo  2013', 'Title is "Marzo  2013"');
 });
 
 test('by year, from leap day', function(){
@@ -312,7 +312,7 @@ test('by year, from leap day', function(){
     datesEqual(this.dp.viewDate, UTCDate(2012, 1, 29));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 1, 29));
     equal(this.dp.focusDate, null);
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
 
     // Navigation: -1 year
     this.input.trigger({
@@ -326,7 +326,7 @@ test('by year, from leap day', function(){
     datesEqual(this.dp.focusDate, UTCDate(2011, 1, 28));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2011', 'Title is "February 2011"');
+    equal(target.text(), 'Febrero  2011', 'Title is "Febrero  2011"');
 
     // Navigation: +1 year, back to leap year
     this.input.trigger({
@@ -339,7 +339,7 @@ test('by year, from leap day', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 1, 29));
     datesEqual(this.dp.focusDate, UTCDate(2012, 1, 28));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
 
     // Navigation: +1 year
     this.input.trigger({
@@ -352,7 +352,7 @@ test('by year, from leap day', function(){
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 1, 29));
     datesEqual(this.dp.focusDate, UTCDate(2013, 1, 28));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2013', 'Title is "February 2013"');
+    equal(target.text(), 'Febrero  2013', 'Title is "Febrero  2013"');
 });
 
 test('Selection (enter)', function(){
@@ -360,7 +360,7 @@ test('Selection (enter)', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 day, left arrow key
     this.input.trigger({
@@ -373,7 +373,7 @@ test('Selection (enter)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 2, 30));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Selection: Enter
     this.input.trigger({
@@ -386,7 +386,7 @@ test('Selection (enter)', function(){
     equal(this.dp.focusDate, null);
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     ok(this.picker.is(':visible'), 'Picker is not hidden');
 });
@@ -397,7 +397,7 @@ test('Selection + hide (enter)', function(){
     this.dp._process_options({autoclose: true});
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 day, left arrow key
     this.input.trigger({
@@ -410,7 +410,7 @@ test('Selection + hide (enter)', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 2, 30));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Selection: Enter
     this.input.trigger({
@@ -423,7 +423,7 @@ test('Selection + hide (enter)', function(){
     equal(this.dp.focusDate, null);
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     ok(this.picker.is(':not(:visible)'), 'Picker is hidden');
 });
@@ -433,7 +433,7 @@ test('Toggle hide/show (escape); navigation while hidden is suppressed', functio
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     ok(this.picker.is(':visible'), 'Picker is visible');
 

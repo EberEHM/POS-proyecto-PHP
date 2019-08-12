@@ -5,8 +5,8 @@
 import moment from '../moment';
 
 export default moment.defineLocale('fo', {
-    months : 'januar_februar_mars_apríl_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_'),
+    months : 'Eneuar_februar_mars_Abríl_mai_juni_juli_Agosto_Septiembre _oktober_Noviembre _desember'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_mai_jun_jul_Ago_sep_okt_nov_des'.split('_'),
     weekdays : 'sunnudagur_mánadagur_týsdagur_mikudagur_hósdagur_fríggjadagur_leygardagur'.split('_'),
     weekdaysShort : 'sun_mán_týs_mik_hós_frí_ley'.split('_'),
     weekdaysMin : 'su_má_tý_mi_hó_fr_le'.split('_'),
@@ -45,7 +45,7 @@ export default moment.defineLocale('fo', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

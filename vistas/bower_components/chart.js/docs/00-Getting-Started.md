@@ -111,7 +111,7 @@ Chart.defaults.global = {
 	// Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
 	scaleBeginAtZero: false,
 
-	// String - Scale label font declaration for the scale label
+	// String - Scale label font Declaration for the scale label
 	scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 	// Number - Scale label font size in pixels
@@ -141,7 +141,7 @@ Chart.defaults.global = {
 	// String - Tooltip background colour
 	tooltipFillColor: "rgba(0,0,0,0.8)",
 
-	// String - Tooltip label font declaration for the scale label
+	// String - Tooltip label font Declaration for the scale label
 	tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 	// Number - Tooltip label font size in pixels
@@ -153,7 +153,7 @@ Chart.defaults.global = {
 	// String - Tooltip label font colour
 	tooltipFontColor: "#fff",
 
-	// String - Tooltip title font declaration for the scale label
+	// String - Tooltip title font Declaration for the scale label
 	tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 	// Number - Tooltip title font size in pixels

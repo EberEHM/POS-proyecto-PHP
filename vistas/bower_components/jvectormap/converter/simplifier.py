@@ -6,7 +6,7 @@ from osgeo import osr
 import anyjson
 import shapely.geometry
 import shapely.ops
-import codecs
+import coDecs
 import time
 
 

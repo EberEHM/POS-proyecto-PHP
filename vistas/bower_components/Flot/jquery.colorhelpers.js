@@ -4,7 +4,7 @@
  * 
  * Inspiration from jQuery color animation plugin by John Resig.
  *
- * Released under the MIT license by Ole Laursen, October 2009.
+ * Released under the MIT license by Ole Laursen, Octubre  2009.
  *
  * Examples:
  *

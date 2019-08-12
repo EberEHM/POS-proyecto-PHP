@@ -21,7 +21,7 @@ var defaultParams = {
   target: 'body',
   backdrop: true,
   animation: true,
-  allowOutsideClick: true,
+  allowOutsiDeclick: true,
   allowEscapeKey: true,
   allowEnterKey: true,
   showConfirmButton: true,
@@ -100,7 +100,7 @@ var colorLuminance = function colorLuminance(hex, lum) {
   }
   lum = lum || 0;
 
-  // Convert to decimal and change luminosity
+  // Convert to Decimal and change luminosity
   var rgb = '#';
   for (var i = 0; i < 3; i++) {
     var c = parseInt(hex.substr(i * 2, 2), 16);
@@ -880,13 +880,13 @@ var sweetAlert$1 = function sweetAlert() {
         if (e.target !== popup || params.showConfirmButton || params.showCancelButton) {
           return;
         }
-        if (params.allowOutsideClick) {
+        if (params.allowOutsiDeclick) {
           sweetAlert.closePopup(params.onClose);
           dismissWith('overlay');
         }
       };
     } else {
-      var ignoreOutsideClick = false;
+      var ignoreOutsiDeclick = false;
 
       // Ignore click events that had mousedown on the popup but mouseup on the container
       // This can happen when the user drags a slider
@@ -896,7 +896,7 @@ var sweetAlert$1 = function sweetAlert() {
           // We only check if the mouseup target is the container because usually it doesn't
           // have any other direct children aside of the popup
           if (e.target === container) {
-            ignoreOutsideClick = true;
+            ignoreOutsiDeclick = true;
           }
         };
       };
@@ -907,20 +907,20 @@ var sweetAlert$1 = function sweetAlert() {
           popup.onmouseup = undefined;
           // We also need to check if the mouseup target is a child of the popup
           if (e.target === popup || popup.contains(e.target)) {
-            ignoreOutsideClick = true;
+            ignoreOutsiDeclick = true;
           }
         };
       };
 
       container.onclick = function (e) {
-        if (ignoreOutsideClick) {
-          ignoreOutsideClick = false;
+        if (ignoreOutsiDeclick) {
+          ignoreOutsiDeclick = false;
           return;
         }
         if (e.target !== container) {
           return;
         }
-        if (params.allowOutsideClick) {
+        if (params.allowOutsiDeclick) {
           dismissWith('overlay');
         }
       };

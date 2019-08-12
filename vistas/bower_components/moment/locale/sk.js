@@ -11,8 +11,8 @@
 }(this, (function (moment) { 'use strict';
 
 
-var months = 'január_február_marec_apríl_máj_jún_júl_august_september_október_november_december'.split('_');
-var monthsShort = 'jan_feb_mar_apr_máj_jún_júl_aug_sep_okt_nov_dec'.split('_');
+var months = 'Eneuár_február_marec_Abríl_máj_jún_júl_Agosto_Septiembre _október_Noviembre _Deciembre'.split('_');
+var monthsShort = 'Ene_feb_mar_Abr_máj_jún_júl_Ago_sep_okt_nov_Dec'.split('_');
 function plural(n) {
     return (n > 1) && (n < 5);
 }
@@ -141,7 +141,7 @@ var sk = moment.defineLocale('sk', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

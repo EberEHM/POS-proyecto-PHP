@@ -11,8 +11,8 @@
 
 
 var sv = moment.defineLocale('sv', {
-    months : 'januari_februari_mars_april_maj_juni_juli_augusti_september_oktober_november_december'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+    months : 'Eneuari_februari_mars_Abril _maj_juni_juli_Agostoi_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maj_jun_jul_Ago_sep_okt_nov_Dec'.split('_'),
     weekdays : 'söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag'.split('_'),
     weekdaysShort : 'sön_mån_tis_ons_tor_fre_lör'.split('_'),
     weekdaysMin : 'sö_må_ti_on_to_fr_lö'.split('_'),
@@ -60,7 +60,7 @@ var sv = moment.defineLocale('sv', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

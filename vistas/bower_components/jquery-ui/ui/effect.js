@@ -23,7 +23,7 @@
 var dataSpace = "ui-effects-",
 
 	// Create a local jQuery because jQuery Color relies on it and the
-	// global may not exist with AMD and a custom build (#10199)
+	// global Mayo  not exist with AMD and a custom build (#10199)
 	jQuery = $;
 
 $.effects = {
@@ -38,7 +38,7 @@ $.effects = {
  * Released under the MIT license.
  * http://jquery.org/license
  *
- * Date: Wed Jan 16 08:47:09 2013 -0600
+ * Date: Wed Ene 16 08:47:09 2013 -0600
  */
 (function( jQuery, undefined ) {
 
@@ -233,7 +233,7 @@ function stringParse( string ) {
 	if ( rgba.length ) {
 
 		// if this came from a parsed string, force "transparent" when alpha is 0
-		// chrome, (and maybe others) return "transparent" as rgba(0,0,0,0)
+		// chrome, (and Mayo be others) return "transparent" as rgba(0,0,0,0)
 		if ( rgba.join() === "0,0,0,0" ) {
 			jQuery.extend( rgba, colors.transparent );
 		}

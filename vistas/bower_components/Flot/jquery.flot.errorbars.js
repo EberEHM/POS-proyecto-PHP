@@ -43,7 +43,7 @@ error-bars on X and asymmetric on Y would be:
 	[ x, y, xerr, yerr_lower, yerr_upper ]
 
 By default no end caps are drawn. Setting upperCap and/or lowerCap to "-" will
-draw a small cap perpendicular to the error bar. They can also be set to a
+draw a small cap perpenDecular to the error bar. They can also be set to a
 user-defined drawing function, with (ctx, x, y, radius) as parameters, as eg.
 
 	function drawSemiCircle( ctx, x, y, radius ) {
@@ -56,7 +56,7 @@ user-defined drawing function, with (ctx, x, y, radius) as parameters, as eg.
 
 Color and radius both default to the same ones of the points series if not
 set. The independent radius parameter on xerr/yerr is useful for the case when
-we may want to add error-bars to a line, without showing the interconnecting
+we Mayo  want to add error-bars to a line, without showing the interconnecting
 points (with radius: 0), and still showing end caps on the error-bars.
 shadowSize and lineWidth are derived as well from the points series.
 

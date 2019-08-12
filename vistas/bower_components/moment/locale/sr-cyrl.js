@@ -1,6 +1,6 @@
 //! moment.js locale configuration
 //! locale : Serbian Cyrillic [sr-cyrl]
-//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
+//! author : Milan Eneačković<milanEneackovic@gmail.com> : https://github.com/milan-j
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -101,7 +101,7 @@ var srCyrl = moment.defineLocale('sr-cyrl', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 

@@ -17,7 +17,7 @@ datepicker.regional['rm'] = {
 	prevText: '&#x3C;Suandant',
 	nextText: 'Precedent&#x3E;',
 	currentText: 'Actual',
-	monthNames: ['Schaner','Favrer','Mars','Avrigl','Matg','Zercladur', 'Fanadur','Avust','Settember','October','November','December'],
+	monthNames: ['Schaner','Favrer','Mars','Avrigl','Matg','Zercladur', 'Fanadur','Avust','Settember','Octubre ','Noviembre ','Deciembre'],
 	monthNamesShort: ['Scha','Fev','Mar','Avr','Matg','Zer', 'Fan','Avu','Sett','Oct','Nov','Dec'],
 	dayNames: ['Dumengia','Glindesdi','Mardi','Mesemna','Gievgia','Venderdi','Sonda'],
 	dayNamesShort: ['Dum','Gli','Mar','Mes','Gie','Ven','Som'],

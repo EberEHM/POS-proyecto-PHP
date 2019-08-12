@@ -1735,7 +1735,7 @@
                             fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
                                 Sizzle.error( "unsupported pseudo: " + pseudo );
 
-                        // The user may use createPseudo to indicate that
+                        // The user Mayo  use createPseudo to inDecate that
                         // arguments are needed to create the filter function
                         // just as Sizzle does
                         if ( fn[ expando ] ) {
@@ -3356,7 +3356,7 @@
             // Remember that the DOM is ready
             jQuery.isReady = true;
 
-            // If a normal DOM Ready event fired, decrement, and wait if need be
+            // If a normal DOM Ready event fired, Decrement, and wait if need be
             if ( wait !== true && --jQuery.readyWait > 0 ) {
                 return;
             }
@@ -3534,7 +3534,7 @@
         },
         set: function( owner, data, value ) {
             var prop,
-            // There may be an unlock assigned to this node,
+            // There Mayo  be an unlock assigned to this node,
             // if there is no entry for this "owner", create one inline
             // and set the unlock as though an owner entry had always existed
                 unlock = this.key( owner ),
@@ -4138,7 +4138,7 @@
                 return;
             }
 
-            // Once for each type.namespace in types; type may be omitted
+            // Once for each type.namespace in types; type Mayo  be omitted
             types = ( types || "" ).match( rnotwhite ) || [ "" ];
             t = types.length;
             while ( t-- ) {
@@ -4352,7 +4352,7 @@
             // Determine handlers
             handlerQueue = jQuery.event.handlers.call( this, event, handlers );
 
-            // Run delegates first; they may want to stop propagation beneath us
+            // Run delegates first; they Mayo  want to stop propagation beneath us
             i = 0;
             while ( (matched = handlerQueue[ i++ ]) && !event.isPropagationStopped() ) {
                 event.currentTarget = matched.elem;
@@ -4612,7 +4612,7 @@
             this.originalEvent = src;
             this.type = src.type;
 
-            // Events bubbling up the document may have been marked as prevented
+            // Events bubbling up the document Mayo  have been marked as prevented
             // by a handler lower down the tree; reflect the correct value.
             this.isDefaultPrevented = src.defaultPrevented ||
                 // Support: Android < 4.0
@@ -5684,9 +5684,9 @@
             value;
     }
 
-    function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
+    function AgomentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
         var i = extra === ( isBorderBox ? "border" : "content" ) ?
-                // If we already have the right measurement, avoid augmentation
+                // If we already have the right measurement, avoid Agomentation
                 4 :
                 // Otherwise initialize for horizontal or vertical properties
                 name === "width" ? 1 : 0,
@@ -5757,7 +5757,7 @@
 
         // use the active box-sizing model to add/subtract irrelevant styles
         return ( val +
-            augmentWidthOrHeight(
+            AgomentWidthOrHeight(
                 elem,
                 name,
                 extra || ( isBorderBox ? "border" : "content" ),
@@ -5973,7 +5973,7 @@
             set: function( elem, value, extra ) {
                 var styles = extra && getStyles( elem );
                 return setPositiveNumber( elem, value, extra ?
-                    augmentWidthOrHeight(
+                    AgomentWidthOrHeight(
                         elem,
                         name,
                         extra,
@@ -7486,7 +7486,7 @@
     // Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
         allTypes = "*/".concat("*");
 
-// #8138, IE may throw an exception when accessing
+// #8138, IE Mayo  throw an exception when accessing
 // a field from window.location if document.domain has been set
     try {
         ajaxLocation = location.href;
@@ -8551,7 +8551,7 @@
                     callback = xhrCallbacks[ id ] = callback("abort");
 
                     // Do send the request
-                    // This may raise an exception which is actually
+                    // This Mayo  raise an exception which is actually
                     // handled in jQuery.ajax (so no try/catch here)
                     xhr.send( options.hasContent && options.data || null );
                 },
@@ -9062,7 +9062,7 @@
 
 
 // Register as a named AMD module, since jQuery can be concatenated with other
-// files that may use define, but not via a proper concatenation script that
+// files that Mayo  use define, but not via a proper concatenation script that
 // understands anonymous AMD modules. A named AMD is safest and most robust
 // way to register. Lowercase jquery is used because AMD module names are
 // derived from file names, and jQuery is normally delivered in a lowercase

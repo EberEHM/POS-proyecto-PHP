@@ -257,7 +257,7 @@ function parseGoogleCalendarId(url) {
 		(match = /^https:\/\/www.googleapis.com\/calendar\/v3\/calendars\/([^\/]*)/.exec(url)) ||
 		(match = /^https?:\/\/www.google.com\/calendar\/feeds\/([^\/]*)/.exec(url))
 	) {
-		return decodeURIComponent(match[1]);
+		return DecodeURIComponent(match[1]);
 	}
 }
 

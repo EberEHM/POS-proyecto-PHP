@@ -76,7 +76,7 @@ Note that **feature requests must target [Bootstrap v4](https://github.com/twbs/
 
 ## Documentation
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs Mayo  also be run locally.
 
 ### Running documentation locally
 
@@ -113,7 +113,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 * Read and subscribe to [The Official Bootstrap Blog](http://blog.getbootstrap.com).
 * Join [the official Slack room](https://bootstrap-slack.herokuapp.com).
 * Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
-* Implementation help may be found at Stack Overflow (tagged [`twitter-bootstrap-3`](https://stackoverflow.com/questions/tagged/twitter-bootstrap-3)).
+* Implementation help Mayo  be found at Stack Overflow (tagged [`twitter-bootstrap-3`](https://stackoverflow.com/questions/tagged/twitter-bootstrap-3)).
 * Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
 
 

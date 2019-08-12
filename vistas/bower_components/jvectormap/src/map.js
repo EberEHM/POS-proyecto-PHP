@@ -7,10 +7,10 @@
  * @param {Boolean} params.zoomOnScroll When set to true map could be zoomed using mouse scroll. Default value is <code>true</code>.
  * @param {Boolean} params.zoomOnScrollSpeed Mouse scroll speed. Number from 1 to 10. Default value is <code>3</code>.
  * @param {Boolean} params.panOnDrag When set to true, the map pans when being dragged. Default value is <code>true</code>.
- * @param {Number} params.zoomMax Indicates the maximum zoom ratio which could be reached zooming the map. Default value is <code>8</code>.
- * @param {Number} params.zoomMin Indicates the minimum zoom ratio which could be reached zooming the map. Default value is <code>1</code>.
- * @param {Number} params.zoomStep Indicates the multiplier used to zoom map with +/- buttons. Default value is <code>1.6</code>.
- * @param {Boolean} params.zoomAnimate Indicates whether or not to animate changing of map zoom with zoom buttons.
+ * @param {Number} params.zoomMax InDecates the maximum zoom ratio which could be reached zooming the map. Default value is <code>8</code>.
+ * @param {Number} params.zoomMin InDecates the minimum zoom ratio which could be reached zooming the map. Default value is <code>1</code>.
+ * @param {Number} params.zoomStep InDecates the multiplier used to zoom map with +/- buttons. Default value is <code>1.6</code>.
+ * @param {Boolean} params.zoomAnimate InDecates whether or not to animate changing of map zoom with zoom buttons.
  * @param {Boolean} params.regionsSelectable When set to true regions of the map could be selected. Default value is <code>false</code>.
  * @param {Boolean} params.regionsSelectableOne Allow only one region to be selected at the moment. Default value is <code>false</code>.
  * @param {Boolean} params.markersSelectable When set to true markers on the map could be selected. Default value is <code>false</code>.
@@ -96,12 +96,12 @@
  * @param {Function} params.onRegionOver <code>(Event e, String code)</code> Will be called on region mouse over event.
  * @param {Function} params.onRegionOut <code>(Event e, String code)</code> Will be called on region mouse out event.
  * @param {Function} params.onRegionClick <code>(Event e, String code)</code> Will be called on region click event.
- * @param {Function} params.onRegionSelected <code>(Event e, String code, Boolean isSelected, Array selectedRegions)</code> Will be called when region is (de)selected. <code>isSelected</code> parameter of the callback indicates whether region is selected or not. <code>selectedRegions</code> contains codes of all currently selected regions.
+ * @param {Function} params.onRegionSelected <code>(Event e, String code, Boolean isSelected, Array selectedRegions)</code> Will be called when region is (de)selected. <code>isSelected</code> parameter of the callback inDecates whether region is selected or not. <code>selectedRegions</code> contains codes of all currently selected regions.
  * @param {Function} params.onMarkerTipShow <code>(Event e, Object tip, String code)</code> Will be called right before the marker tip is going to be shown.
  * @param {Function} params.onMarkerOver <code>(Event e, String code)</code> Will be called on marker mouse over event.
  * @param {Function} params.onMarkerOut <code>(Event e, String code)</code> Will be called on marker mouse out event.
  * @param {Function} params.onMarkerClick <code>(Event e, String code)</code> Will be called on marker click event.
- * @param {Function} params.onMarkerSelected <code>(Event e, String code, Boolean isSelected, Array selectedMarkers)</code> Will be called when marker is (de)selected. <code>isSelected</code> parameter of the callback indicates whether marker is selected or not. <code>selectedMarkers</code> contains codes of all currently selected markers.
+ * @param {Function} params.onMarkerSelected <code>(Event e, String code, Boolean isSelected, Array selectedMarkers)</code> Will be called when marker is (de)selected. <code>isSelected</code> parameter of the callback inDecates whether marker is selected or not. <code>selectedMarkers</code> contains codes of all currently selected markers.
  * @param {Function} params.onViewportChange <code>(Event e, Number scale)</code> Triggered when the map's viewport is changed (map was panned or zoomed).
  */
 jvm.Map = function(params) {
@@ -642,7 +642,7 @@ jvm.Map.prototype = {
    * @param {Number} params.lng Longitude to set viewport to.
    * @param {Number} params.x Number from 0 to 1 specifying the horizontal coordinate of the central point of the viewport.
    * @param {Number} params.y Number from 0 to 1 specifying the vertical coordinate of the central point of the viewport.
-   * @param {Boolean} params.animate Indicates whether or not to animate the scale change and transition.
+   * @param {Boolean} params.animate InDecates whether or not to animate the scale change and transition.
    */
   setFocus: function(config){
     var bbox,

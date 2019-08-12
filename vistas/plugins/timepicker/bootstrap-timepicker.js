@@ -99,7 +99,7 @@
       this.updateFromElementVal();
     },
 
-    decrementHour: function() {
+    DecrementHour: function() {
       if (this.showMeridian) {
         if (this.hour === 1) {
           this.hour = 12;
@@ -124,7 +124,7 @@
       this.update();
     },
 
-    decrementMinute: function(step) {
+    DecrementMinute: function(step) {
       var newVal;
 
       if (step) {
@@ -134,7 +134,7 @@
       }
 
       if (newVal < 0) {
-        this.decrementHour();
+        this.DecrementHour();
         this.minute = newVal + 60;
       } else {
         this.minute = newVal;
@@ -142,11 +142,11 @@
       this.update();
     },
 
-    decrementSecond: function() {
+    DecrementSecond: function() {
       var newVal = this.second - this.secondStep;
 
       if (newVal < 0) {
-        this.decrementMinute(true);
+        this.DecrementMinute(true);
         this.second = newVal + 60;
       } else {
         this.second = newVal;
@@ -216,15 +216,15 @@
         e.preventDefault();
         switch (this.highlightedUnit) {
         case 'hour':
-          this.decrementHour();
+          this.DecrementHour();
           this.highlightHour();
           break;
         case 'minute':
-          this.decrementMinute();
+          this.DecrementMinute();
           this.highlightMinute();
           break;
         case 'second':
-          this.decrementSecond();
+          this.DecrementSecond();
           this.highlightSecond();
           break;
         case 'meridian':
@@ -309,12 +309,12 @@
            : '') +
          '</tr>'+
          '<tr>'+
-           '<td><a href="#" data-action="decrementHour"><i class="' + this.downArrowStyle + '"></i></a></td>'+
+           '<td><a href="#" data-action="DecrementHour"><i class="' + this.downArrowStyle + '"></i></a></td>'+
            '<td class="separator"></td>'+
-           '<td><a href="#" data-action="decrementMinute"><i class="' + this.downArrowStyle + '"></i></a></td>'+
+           '<td><a href="#" data-action="DecrementMinute"><i class="' + this.downArrowStyle + '"></i></a></td>'+
            (this.showSeconds ?
             '<td class="separator">&nbsp;</td>'+
-            '<td><a href="#" data-action="decrementSecond"><i class="' + this.downArrowStyle + '"></i></a></td>'
+            '<td><a href="#" data-action="DecrementSecond"><i class="' + this.downArrowStyle + '"></i></a></td>'
            : '') +
            (this.showMeridian ?
             '<td class="separator">&nbsp;</td>'+
@@ -844,13 +844,13 @@
         e.preventDefault();
         switch (name) {
         case 'hour':
-          this.decrementHour();
+          this.DecrementHour();
           break;
         case 'minute':
-          this.decrementMinute();
+          this.DecrementMinute();
           break;
         case 'second':
-          this.decrementSecond();
+          this.DecrementSecond();
           break;
         case 'meridian':
           this.toggleMeridian();

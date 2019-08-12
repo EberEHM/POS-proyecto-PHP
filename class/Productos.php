@@ -23,7 +23,7 @@ class Productos{
 
 		}else{
 
-			$consulta = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $orden DESC"); //desendente es de mayor a menor, acendente es de menor a mayor
+			$consulta = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $orden DESC"); //desendente es de Mayo or a menor, acendente es de menor a Mayo or
 
 			$consulta -> execute();
 

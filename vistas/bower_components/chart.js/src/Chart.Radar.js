@@ -28,7 +28,7 @@
 			//Number - Pixel width of the angle line
 			angleLineWidth : 1,
 
-			//String - Point label font declaration
+			//String - Point label font Declaration
 			pointLabelFontFamily : "'Arial'",
 
 			//String - Point label font weight

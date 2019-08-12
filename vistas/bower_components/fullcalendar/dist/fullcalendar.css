@@ -115,7 +115,7 @@ body .fc { /* extra precedence to overcome jqui */
 
 .fc-state-hover {
 	color: #333333;
-	text-decoration: none;
+	text-Decoration: none;
 	background-position: 0 -15px;
 	-webkit-transition: background-position 0.1s linear;
 	   -moz-transition: background-position 0.1s linear;
@@ -267,7 +267,7 @@ a[data-goto] {
 }
 
 a[data-goto]:hover {
-	text-decoration: underline;
+	text-Decoration: underline;
 }
 
 
@@ -404,7 +404,7 @@ temporary rendered events).
 .fc-event,
 .fc-event:hover {
 	color: #fff; /* default TEXT color */
-	text-decoration: none; /* if <a> has an href */
+	text-Decoration: none; /* if <a> has an href */
 }
 
 .fc-event[href],
@@ -625,11 +625,11 @@ a.fc-more {
 	margin: 1px 3px;
 	font-size: .85em;
 	cursor: pointer;
-	text-decoration: none;
+	text-Decoration: none;
 }
 
 a.fc-more:hover {
-	text-decoration: underline;
+	text-Decoration: underline;
 }
 
 .fc-limited { /* rows and cells that are hidden because of a "more" link */
@@ -652,10 +652,10 @@ a.fc-more:hover {
 }
 
 
-/* Now Indicator
+/* Now InDecator
 --------------------------------------------------------------------------------------------------*/
 
-.fc-now-indicator {
+.fc-now-inDecator {
 	position: absolute;
 	border: 0 solid red;
 }
@@ -849,7 +849,7 @@ NOTE: use percentage font sizes or else old IE chokes
 .ui-widget .fc-event {
 	/* overpower jqui's styles on <a> tags. TODO: more DRY */
 	color: #fff; /* default TEXT color */
-	text-decoration: none; /* if <a> has an href */
+	text-Decoration: none; /* if <a> has an href */
 
 	/* undo ui-widget-header bold */
 	font-weight: normal;
@@ -874,11 +874,11 @@ NOTE: use percentage font sizes or else old IE chokes
 
 
 .fc.fc-bootstrap3 a {
-	text-decoration: none;
+	text-Decoration: none;
 }
 
 .fc.fc-bootstrap3 a[data-goto]:hover {
-	text-decoration: underline;
+	text-Decoration: underline;
 }
 
 .fc-bootstrap3 hr.fc-divider {
@@ -1005,7 +1005,7 @@ NOTE: use percentage font sizes or else old IE chokes
 
 .fc-basicWeek-view .fc-content-skeleton,
 .fc-basicDay-view .fc-content-skeleton {
-	/* there may be week numbers in these views, so no padding-top */
+	/* there Mayo  be week numbers in these views, so no padding-top */
 	padding-bottom: 1em; /* ensure a space at bottom of cell for user selecting/clicking */
 }
 
@@ -1131,7 +1131,7 @@ NOTE: use percentage font sizes or else old IE chokes
 }
 
 .fc-time-grid .fc-content-col {
-	position: relative; /* because now-indicator lives directly inside */
+	position: relative; /* because now-inDecator lives directly inside */
 }
 
 .fc-time-grid .fc-content-skeleton {
@@ -1164,7 +1164,7 @@ NOTE: use percentage font sizes or else old IE chokes
 	z-index: 4;
 }
 
-.fc-time-grid .fc-now-indicator-line {
+.fc-time-grid .fc-now-inDecator-line {
 	z-index: 5;
 }
 
@@ -1353,10 +1353,10 @@ be a descendant of the grid when it is being dragged.
 }
 
 
-/* Now Indicator
+/* Now InDecator
 --------------------------------------------------------------------------------------------------*/
 
-.fc-time-grid .fc-now-indicator-line {
+.fc-time-grid .fc-now-inDecator-line {
 	border-top-width: 1px;
 	left: 0;
 	right: 0;
@@ -1364,11 +1364,11 @@ be a descendant of the grid when it is being dragged.
 
 /* arrow on axis */
 
-.fc-time-grid .fc-now-indicator-arrow {
+.fc-time-grid .fc-now-inDecator-arrow {
 	margin-top: -5px; /* vertically center on top coordinate */
 }
 
-.fc-ltr .fc-time-grid .fc-now-indicator-arrow {
+.fc-ltr .fc-time-grid .fc-now-inDecator-arrow {
 	left: 0;
 	/* triangle pointing right... */
 	border-width: 5px 0 5px 6px;
@@ -1376,7 +1376,7 @@ be a descendant of the grid when it is being dragged.
 	border-bottom-color: transparent;
 }
 
-.fc-rtl .fc-time-grid .fc-now-indicator-arrow {
+.fc-rtl .fc-time-grid .fc-now-inDecator-arrow {
 	right: 0;
 	/* triangle pointing left... */
 	border-width: 5px 6px 5px 0;
@@ -1458,13 +1458,13 @@ be a descendant of the grid when it is being dragged.
 
 .fc-list-item-title a {
 	/* every event title cell has an <a> tag */
-	text-decoration: none;
+	text-Decoration: none;
 	color: inherit;
 }
 
 .fc-list-item-title a[href]:hover {
 	/* hover effect only on titles with hrefs */
-	text-decoration: underline;
+	text-Decoration: underline;
 }
 
 /* message when no events */

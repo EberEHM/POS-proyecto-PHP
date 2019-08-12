@@ -67,7 +67,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 .hljs-javadoctag,
 .hljs-yardoctag,
 .hljs-phpdoc {
-  text-decoration: none;
+  text-Decoration: none;
 }
 
 .hljs-constant {
@@ -85,7 +85,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 }
 
 .markdown .hljs-link_url {
-  text-decoration: underline;
+  text-Decoration: underline;
 }
 
 
@@ -137,7 +137,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 }
 
 .hljs-title,
-.hljs-decorator,
+.hljs-Decorator,
 .css .hljs-function {
   color: #FFC66D;
 }

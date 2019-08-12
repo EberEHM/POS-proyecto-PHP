@@ -159,7 +159,7 @@ if($_SESSION["perfil"] == "Almacen"){
 
               <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 
-              <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar el correo" required>
+              <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar el correo"required>
               
             </div>
             

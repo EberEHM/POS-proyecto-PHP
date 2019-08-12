@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # bootstrap-datepicker documentation build configuration file, created by
-# sphinx-quickstart on Fri Aug  2 14:45:57 2013.
+# sphinx-quickstart on Fri Ago  2 14:45:57 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -145,7 +145,7 @@ html_static_path = ['_static']
 #html_additional_pages = {}
 
 # If false, no module index is generated.
-#html_domain_indices = True
+#html_domain_inDeces = True
 
 # If false, no index is generated.
 #html_use_index = True
@@ -209,10 +209,10 @@ latex_documents = [
 #latex_show_urls = False
 
 # Documents to append as an appendix to all manuals.
-#latex_appendices = []
+#latex_appenDeces = []
 
 # If false, no module index is generated.
-#latex_domain_indices = True
+#latex_domain_inDeces = True
 
 
 # -- Options for manual page output --------------------------------------------
@@ -240,10 +240,10 @@ texinfo_documents = [
 ]
 
 # Documents to append as an appendix to all manuals.
-#texinfo_appendices = []
+#texinfo_appenDeces = []
 
 # If false, no module index is generated.
-#texinfo_domain_indices = True
+#texinfo_domain_inDeces = True
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'

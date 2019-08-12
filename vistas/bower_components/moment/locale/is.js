@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Icelandic [is]
+//! locale : IcelanDec [is]
 //! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 ;(function (global, factory) {
@@ -78,9 +78,9 @@ function translate(number, withoutSuffix, key, isFuture) {
 }
 
 var is = moment.defineLocale('is', {
-    months : 'janúar_febrúar_mars_apríl_maí_júní_júlí_ágúst_september_október_nóvember_desember'.split('_'),
-    monthsShort : 'jan_feb_mar_apr_maí_jún_júl_ágú_sep_okt_nóv_des'.split('_'),
-    weekdays : 'sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_laugardagur'.split('_'),
+    months : 'Eneúar_febrúar_mars_Abríl_maí_júní_júlí_ágúst_Septiembre _október_nóvember_desember'.split('_'),
+    monthsShort : 'Ene_feb_mar_Abr_maí_jún_júl_ágú_sep_okt_nóv_des'.split('_'),
+    weekdays : 'sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_lAgoardagur'.split('_'),
     weekdaysShort : 'sun_mán_þri_mið_fim_fös_lau'.split('_'),
     weekdaysMin : 'Su_Má_Þr_Mi_Fi_Fö_La'.split('_'),
     longDateFormat : {
@@ -118,7 +118,7 @@ var is = moment.defineLocale('is', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

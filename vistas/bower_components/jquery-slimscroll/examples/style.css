@@ -8,6 +8,6 @@ pre.prettyprint { padding:15px; border:1px solid #eee; border-radius:5px; backgr
 .slimScrollDiv { border:1px solid #eee; }
 #nav { position:fixed; top:0; left:0; background:#fff; padding:15px; border-radius:20px; width:200px; }
 #nav ul { list-style-type:square; list-style-position:inside; margin:20px 0 0 0; padding:0; }
-#nav a { text-decoration:none; color:#000; }
-#nav a:hover { text-decoration: underline }
+#nav a { text-Decoration:none; color:#000; }
+#nav a:hover { text-Decoration: underline }
 #git-fork img { position:fixed; top:0; right:0; border:0; z-index:999; }

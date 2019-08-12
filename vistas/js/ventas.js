@@ -474,11 +474,11 @@ $(".formularioVenta").on("change", "input.nuevaCantidadProducto", function(){
 function sumarTotalPrecios(){
 
 	var precioItem = $(".nuevoPrecioProducto");
-	var arraySumaPrecio = [];
+	var arraySumAbrecio = [];
 
 	for (var i = 0; i < precioItem.length; i++) {
 
-		arraySumaPrecio.push(Number($(precioItem[i]).val()));
+		arraySumAbrecio.push(Number($(precioItem[i]).val()));
 
 	
 	}
@@ -490,7 +490,7 @@ function sumarTotalPrecios(){
 
 	}
 
-	var sumaTotalPrecio = arraySumaPrecio.reduce(sumaArrayPrecios);
+	var sumaTotalPrecio = arraySumAbrecio.reduce(sumaArrayPrecios);
 
 	$("#nuevoTotalVenta").val(sumaTotalPrecio);
 	$("#totalVenta").val(sumaTotalPrecio);
@@ -650,7 +650,7 @@ LISTAR TODOS LOS PRODUCTOS
 
 function listarProductos(){
 
-	var listaProductos = [];
+	var listAbroductos = [];
 
 	var descripcion = $(".nuevaDescripcionProducto");
 
@@ -660,7 +660,7 @@ function listarProductos(){
 
 	for(var i = 0; i < descripcion.length; i++){
 
-		listaProductos.push({ "idProducto" : $(descripcion[i]).attr("idPro"), 
+		listAbroductos.push({ "idProducto" : $(descripcion[i]).attr("idPro"), 
 							  "descripcion" : $(descripcion[i]).val(),
 							  "cantidad" : $(cantidad[i]).val(),
 							  "stock" : $(cantidad[i]).attr("nuevoStock"),
@@ -670,7 +670,7 @@ function listarProductos(){
 	}
 
 
-	$("#listaProductos").val(JSON.stringify(listaProductos)); 
+	$("#listAbroductos").val(JSON.stringify(listAbroductos)); 
 
 }
 

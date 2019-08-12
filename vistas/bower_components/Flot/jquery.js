@@ -397,7 +397,7 @@ jQuery.extend({
 		// Remember that the DOM is ready
 		jQuery.isReady = true;
 
-		// If a normal DOM Ready event fired, decrement, and wait if need be
+		// If a normal DOM Ready event fired, Decrement, and wait if need be
 		if ( wait !== true && --jQuery.readyWait > 0 ) {
 			return;
 		}
@@ -861,7 +861,7 @@ jQuery.ready.promise = function( obj ) {
 
 		// If IE event model is used
 		} else {
-			// Ensure firing before onload, maybe late but safe also for iframes
+			// Ensure firing before onload, Mayo be late but safe also for iframes
 			document.attachEvent( "onreadystatechange", DOMContentLoaded );
 
 			// A fallback to window.onload, that will always work
@@ -2764,7 +2764,7 @@ jQuery.event = {
 			return;
 		}
 
-		// Once for each type.namespace in types; type may be omitted
+		// Once for each type.namespace in types; type Mayo  be omitted
 		types = jQuery.trim( hoverHack( types || "" ) ).split(" ");
 		for ( t = 0; t < types.length; t++ ) {
 			tns = rtypenamespace.exec( types[t] ) || [];
@@ -2826,7 +2826,7 @@ jQuery.event = {
 	},
 
 	// Events that are safe to short-circuit if no handlers are attached.
-	// Native DOM events should not be added, they may have inline handlers.
+	// Native DOM events should not be added, they Mayo  have inline handlers.
 	customEvent: {
 		"getData": true,
 		"setData": true,
@@ -3039,7 +3039,7 @@ jQuery.event = {
 			handlerQueue.push({ elem: this, matches: handlers.slice( delegateCount ) });
 		}
 
-		// Run delegates first; they may want to stop propagation beneath us
+		// Run delegates first; they Mayo  want to stop propagation beneath us
 		for ( i = 0; i < handlerQueue.length && !event.isPropagationStopped(); i++ ) {
 			matched = handlerQueue[ i ];
 			event.currentTarget = matched.elem;
@@ -3249,7 +3249,7 @@ jQuery.Event = function( src, props ) {
 		this.originalEvent = src;
 		this.type = src.type;
 
-		// Events bubbling up the document may have been marked as prevented
+		// Events bubbling up the document Mayo  have been marked as prevented
 		// by a handler lower down the tree; reflect the correct value.
 		this.isDefaultPrevented = ( src.defaultPrevented || src.returnValue === false ||
 			src.getPreventDefault && src.getPreventDefault() ) ? returnTrue : returnFalse;
@@ -3359,7 +3359,7 @@ if ( !jQuery.support.submitBubbles ) {
 				return false;
 			}
 
-			// Lazy-add a submit handler when a descendant form may potentially be submitted
+			// Lazy-add a submit handler when a descendant form Mayo  potentially be submitted
 			jQuery.event.add( this, "click._submit keypress._submit", function( e ) {
 				// Node name check avoids a VML-related crash in IE (#9807)
 				var elem = e.target,
@@ -3704,7 +3704,7 @@ var cachedruns,
 		return -1;
 	},
 
-	// Augment a function for special use by Sizzle
+	// Agoment a function for special use by Sizzle
 	markFunction = function( fn, value ) {
 		fn[ expando ] = value == null || value;
 		return fn;
@@ -4357,7 +4357,7 @@ Expr = Sizzle.selectors = {
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
-			// The user may use createPseudo to indicate that
+			// The user Mayo  use createPseudo to inDecate that
 			// arguments are needed to create the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
@@ -6136,7 +6136,7 @@ jQuery.buildFragment = function( args, context, scripts ) {
 	var fragment, cacheable, cachehit,
 		first = args[ 0 ];
 
-	// Set context from what may come in as undefined or a jQuery collection or a node
+	// Set context from what Mayo  come in as undefined or a jQuery collection or a node
 	// Updated to fix #12266 where accessing context[0] could throw an exception in IE9/10 &
 	// also doubles as fix for #8950 where plain objects caused createDocumentFragment exception
 	context = context || document;
@@ -6332,7 +6332,7 @@ jQuery.extend({
 					// Remove IE's autoinserted <tbody> from table fragments
 					if ( !jQuery.support.tbody ) {
 
-						// String was a <table>, *may* have spurious <tbody>
+						// String was a <table>, *Mayo * have spurious <tbody>
 						hasBody = rtbody.test(elem);
 							tbody = tag === "table" && !hasBody ?
 								div.firstChild && div.firstChild.childNodes :
@@ -6392,7 +6392,7 @@ jQuery.extend({
 				// Check if we consider it executable
 				if ( !elem.type || rscriptType.test( elem.type ) ) {
 					// Detach the script and store it in the scripts array (if provided) or the fragment
-					// Return truthy to indicate that it has been handled
+					// Return truthy to inDecate that it has been handled
 					return scripts ?
 						scripts.push( elem.parentNode ? elem.parentNode.removeChild( elem ) : elem ) :
 						fragment.appendChild( elem );
@@ -6904,9 +6904,9 @@ function setPositiveNumber( elem, value, subtract ) {
 			value;
 }
 
-function augmentWidthOrHeight( elem, name, extra, isBorderBox ) {
+function AgomentWidthOrHeight( elem, name, extra, isBorderBox ) {
 	var i = extra === ( isBorderBox ? "border" : "content" ) ?
-		// If we already have the right measurement, avoid augmentation
+		// If we already have the right measurement, avoid Agomentation
 		4 :
 		// Otherwise initialize for horizontal or vertical properties
 		name === "width" ? 1 : 0,
@@ -6978,7 +6978,7 @@ function getWidthOrHeight( elem, name, extra ) {
 
 	// use the active box-sizing model to add/subtract irrelevant styles
 	return ( val +
-		augmentWidthOrHeight(
+		AgomentWidthOrHeight(
 			elem,
 			name,
 			extra || ( isBorderBox ? "border" : "content" ),
@@ -7049,7 +7049,7 @@ jQuery.each([ "height", "width" ], function( i, name ) {
 
 		set: function( elem, value, extra ) {
 			return setPositiveNumber( elem, value, extra ?
-				augmentWidthOrHeight(
+				AgomentWidthOrHeight(
 					elem,
 					name,
 					extra,
@@ -7257,7 +7257,7 @@ function buildParams( prefix, obj, traditional, add ) {
 				// If array item is non-scalar (array or object), encode its
 				// numeric index to resolve deserialization ambiguity issues.
 				// Note that rack (as of 1.0.0) can't currently deserialize
-				// nested arrays properly, and attempting to do so may cause
+				// nested arrays properly, and attempting to do so Mayo  cause
 				// a server error. Possible fixes are to modify rack's
 				// deserialization algorithm or to provide an option or flag
 				// to force array serialization to be shallow.
@@ -7316,7 +7316,7 @@ var
 	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = ["*/"] + ["*"];
 
-// #8138, IE may throw an exception when accessing
+// #8138, IE Mayo  throw an exception when accessing
 // a field from window.location if document.domain has been set
 try {
 	ajaxLocation = location.href;
@@ -7717,7 +7717,7 @@ jQuery.extend({
 			};
 
 		// Callback for when everything is done
-		// It is defined here because jslint complains if it is declared
+		// It is defined here because jslint complains if it is Declared
 		// at the end of the function (which would be more logical and readable)
 		function done( status, nativeStatusText, responses, headers ) {
 			var isSuccess, success, error, response, modified,
@@ -8429,7 +8429,7 @@ if ( jQuery.support.ajax ) {
 					} catch( _ ) {}
 
 					// Do send the request
-					// This may raise an exception which is actually
+					// This Mayo  raise an exception which is actually
 					// handled in jQuery.ajax (so no try/catch here)
 					xhr.send( ( s.hasContent && s.data ) || null );
 
@@ -9455,10 +9455,10 @@ window.jQuery = window.$ = jQuery;
 
 // Expose jQuery as an AMD module, but only for AMD loaders that
 // understand the issues with loading multiple versions of jQuery
-// in a page that all might call define(). The loader will indicate
+// in a page that all might call define(). The loader will inDecate
 // they have special allowances for multiple jQuery versions by
 // specifying define.amd.jQuery = true. Register as a named module,
-// since jQuery can be concatenated with other files that may use define,
+// since jQuery can be concatenated with other files that Mayo  use define,
 // but not use a proper concatenation script that understands anonymous
 // AMD modules. A named AMD is safest and most robust way to register.
 // Lowercase jquery is used because AMD module names are derived from

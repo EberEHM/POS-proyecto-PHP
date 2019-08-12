@@ -242,7 +242,7 @@ Bugfixes:
  * Right align calendar on right window edge conflict
  * On "ENTER" keydown on picker, prevent the closest form to be submitted too
  * fixed bower.json twitte bootstrap dependency
- * Replaced named entities with decimal entities
+ * Replaced named entities with Decimal entities
  * assigning plugin to a local variable to fix bug in noConflict
 
 Repo changes:
@@ -275,7 +275,7 @@ Repo changes:
 * Add package name and version to npm package.json
 
 Bugfixes:
-* Remove font-family declaration for datepicker 
+* Remove font-family Declaration for datepicker 
 * Don't deselect date unless datepicker is multidate
 * Removed comment from compiled CSS.
 * Don't clear input after typing date and hitting Enter when keyboard nav is disabled
@@ -336,14 +336,14 @@ Non-API changes:
 * Empty pickers in a range picker setup will be populated with the first date selected by the user to make finding the next date easier.
 
 Bug squashed:
-* Jan 1, 1970 is now highlighted when selected
+* Ene 1, 1970 is now highlighted when selected
 * `touchstart` added to document-bound picker-closing events (alongside `mousedown`)
 * Fixed a display bug with component add-on icons being vertically higher than they should have been.
 * Input is refocused after clicking the picker.
 * `changeDate` event is triggered when `setDate` is called.
 
 Locale changes:
-* Added Ukrainian, Belgium-Dutch, Welsh, Galician, Vietnamese, and Azerbaijani
+* Added Ukrainian, Belgium-Dutch, Welsh, Galician, Vietnamese, and AzerbaiEnei
 * `clear` for German, Danish, Italian, and Romanian
 * Fixed `weekStart` and `format` for Norwegian
 * `weekStart` and `format` for Georgian
@@ -440,7 +440,7 @@ Bugs squashed:
 
 Minor improvements:
 * Better text color for highlighted "today" date.
-* Last year in decade view now marked as "new" instead of "old".
+* Last year in Decade view now marked as "new" instead of "old".
 * Formats now properly handle trailing separators.
 
 Locale changes:

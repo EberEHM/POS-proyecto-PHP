@@ -35,7 +35,7 @@ Link	Asia/Thimphu		Asia/Thimbu
 Link	Asia/Makassar		Asia/Ujung_Pandang
 Link	Asia/Ulaanbaatar	Asia/Ulan_Bator
 Link	Atlantic/Faroe		Atlantic/Faeroe
-Link	Europe/Oslo		Atlantic/Jan_Mayen
+Link	Europe/Oslo		Atlantic/Ene_Mayo en
 Link	Australia/Sydney	Australia/ACT
 Link	Australia/Sydney	Australia/Canberra
 Link	Australia/Lord_Howe	Australia/LHI
@@ -81,7 +81,7 @@ Link	America/Jamaica		Jamaica
 Link	Asia/Tokyo		Japan
 Link	Pacific/Kwajalein	Kwajalein
 Link	Africa/Tripoli		Libya
-Link	America/Tijuana		Mexico/BajaNorte
+Link	America/Tijuana		Mexico/BaEneorte
 Link	America/Mazatlan	Mexico/BajaSur
 Link	America/Mexico_City	Mexico/General
 Link	Pacific/Auckland	NZ

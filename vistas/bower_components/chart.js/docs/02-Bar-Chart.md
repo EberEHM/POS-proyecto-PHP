@@ -21,7 +21,7 @@ var myBarChart = new Chart(ctx).Bar(data, options);
 
 ```javascript
 var data = {
-	labels: ["January", "February", "March", "April", "May", "June", "July"],
+	labels: ["Enero", "Febrero ", "Marzo ", "Abril ", "Mayo ", "Junio ", "Julio "],
 	datasets: [
 		{
 			label: "My First dataset",
@@ -116,7 +116,7 @@ canvas.onclick = function(evt){
 };
 ```
 
-This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
+This functionality Mayo  be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
 
 #### .update( )
 
@@ -124,9 +124,9 @@ Calling `update()` on your Chart instance will re-render the chart with any upda
 
 ```javascript
 myBarChart.datasets[0].bars[2].value = 50;
-// Would update the first dataset's value of 'March' to be 50
+// Would update the first dataset's value of 'Marzo ' to be 50
 myBarChart.update();
-// Calling update now animates the position of March from 90 to 50.
+// Calling update now animates the position of Marzo  from 90 to 50.
 ```
 
 #### .addData( valuesArray, label )
@@ -135,7 +135,7 @@ Calling `addData(valuesArray, label)` on your Chart instance passing an array of
 
 ```javascript
 // The values array passed into addData should be one for each dataset in the chart
-myBarChart.addData([40, 60], "August");
+myBarChart.addData([40, 60], "Agosto");
 // The new data will now animate at the end of the chart.
 ```
 

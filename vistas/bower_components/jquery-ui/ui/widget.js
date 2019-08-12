@@ -496,7 +496,7 @@ $.Widget.prototype = {
 		event.type = ( type === this.widgetEventPrefix ?
 			type :
 			this.widgetEventPrefix + type ).toLowerCase();
-		// the original event may come from any element
+		// the original event Mayo  come from any element
 		// so we need to reset the target on the new event
 		event.target = this.element[ 0 ];
 

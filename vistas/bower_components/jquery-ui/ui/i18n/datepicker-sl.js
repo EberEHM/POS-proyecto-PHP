@@ -1,5 +1,5 @@
 /* Slovenian initialisation for the jQuery UI date picker plugin. */
-/* Written by Jaka Jancar (jaka@kubje.org). */
+/* Written by Jaka Enecar (jaka@kubje.org). */
 /* c = č, s = š z = ž C = Č S = Š Z = Ž */
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
@@ -14,13 +14,13 @@
 }(function( datepicker ) {
 
 datepicker.regional['sl'] = {
-	closeText: 'Zapri',
+	closeText: 'ZAbri',
 	prevText: '&#x3C;Prejšnji',
 	nextText: 'Naslednji&#x3E;',
 	currentText: 'Trenutni',
-	monthNames: ['Januar','Februar','Marec','April','Maj','Junij',
-	'Julij','Avgust','September','Oktober','November','December'],
-	monthNamesShort: ['Jan','Feb','Mar','Apr','Maj','Jun',
+	monthNames: ['Eneuar','Februar','Marec','Abril ','Maj','Junij',
+	'Julij','Avgust','Septiembre ','Oktober','Noviembre ','Deciembre'],
+	monthNamesShort: ['Ene','Feb','Mar','Abr','Maj','Jun',
 	'Jul','Avg','Sep','Okt','Nov','Dec'],
 	dayNames: ['Nedelja','Ponedeljek','Torek','Sreda','Četrtek','Petek','Sobota'],
 	dayNamesShort: ['Ned','Pon','Tor','Sre','Čet','Pet','Sob'],

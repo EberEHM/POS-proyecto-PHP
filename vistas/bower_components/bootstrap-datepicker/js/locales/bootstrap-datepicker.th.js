@@ -1,6 +1,6 @@
 /**
  * Thai translation for bootstrap-datepicker
- * Suchau Jiraprapot <seroz24@gmail.com>
+ * Suchau JirAbrapot <seroz24@gmail.com>
  */
 ;(function($){
 	$.fn.datepicker.dates['th'] = {

@@ -7,7 +7,7 @@
 },{
     "name": "join_data",
     "data": [
-        ["Africa/Abidjan", "+00:00"],
+        ["Africa/AbidEne", "+00:00"],
         ["Africa/Accra", "+00:00"],
         ["Africa/Addis_Ababa", "+03:00"],
         ["Africa/Algiers", "+01:00"],
@@ -146,7 +146,7 @@
         ["America/Iqaluit", "-05:00"],
         ["America/Jamaica", "-05:00"],
         ["America/Jujuy", "-03:00"],
-        ["America/Juneau", "-09:00"],
+        ["America/Junio au", "-09:00"],
         ["America/Kentucky/Louisville", "-05:00"],
         ["America/Kentucky/Monticello", "-05:00"],
         ["America/Knox_IN", "-06:00"],
@@ -336,7 +336,7 @@
         ["Atlantic/Cape_Verde", "-01:00"],
         ["Atlantic/Faeroe", "+00:00"],
         ["Atlantic/Faroe", "+00:00"],
-        ["Atlantic/Jan_Mayen", "+01:00"],
+        ["Atlantic/Ene_Mayo en", "+01:00"],
         ["Atlantic/Madeira", "+00:00"],
         ["Atlantic/Reykjavik", "+00:00"],
         ["Atlantic/South_Georgia", "-02:00"],
@@ -412,7 +412,7 @@
         ["Europe/Kaliningrad", "+02:00"],
         ["Europe/Kiev", "+02:00"],
         ["Europe/Lisbon", "+00:00"],
-        ["Europe/Ljubljana", "+01:00"],
+        ["Europe/LjublEnea", "+01:00"],
         ["Europe/London", "+00:00"],
         ["Europe/Luxembourg", "+01:00"],
         ["Europe/Madrid", "+01:00"],
@@ -466,7 +466,7 @@
         ["Indian/Mahe", "+04:00"],
         ["Indian/Maldives", "+05:00"],
         ["Indian/Mauritius", "+04:00"],
-        ["Indian/Mayotte", "+03:00"],
+        ["Indian/Mayo otte", "+03:00"],
         ["Indian/Reunion", "+04:00"],
         ["Iran", "+03:30"],
         ["Israel", "+02:00"],
@@ -474,7 +474,7 @@
         ["Japan", "+09:00"],
         ["Kwajalein", "+12:00"],
         ["Libya", "+02:00"],
-        ["Mexico/BajaNorte", "-08:00"],
+        ["Mexico/BaEneorte", "-08:00"],
         ["Mexico/BajaSur", "-07:00"],
         ["Mexico/General", "-06:00"],
         ["Navajo", "-07:00"],
@@ -561,7 +561,7 @@
     "name": "union",
     "by": "tz_shift"
 },{
-    "name": "simplify_adjancent_polygons"
+    "name": "simplify_adEnecent_polygons"
 },{
     "name": "write_data",
     "file_name": "/Users/kirilllebedev/Maps/tz/tz.shp"

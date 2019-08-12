@@ -1379,7 +1379,7 @@ via a regexp with an \s.
 var PART_SEPARATOR = '\u000b'; // vertical tab
 
 /*
-Inserted as the first character of a literal-text chunk to indicate that the literal text is not actually literal text,
+Inserted as the first character of a literal-text chunk to inDecate that the literal text is not actually literal text,
 but rather, a "special" token that has custom rendering (see specialTokens map).
 */
 var SPECIAL_TOKEN_MARKER = '\u001f'; // information separator 1
@@ -1388,8 +1388,8 @@ var SPECIAL_TOKEN_MARKER = '\u001f'; // information separator 1
 Inserted at the beginning and end of a span of text that must have non-zero numeric characters.
 Handling of these markers is done in a post-processing step at the very end of text rendering.
 */
-var MAYBE_MARKER = '\u001e'; // information separator 2
-var MAYBE_REGEXP = new RegExp(MAYBE_MARKER + '([^' + MAYBE_MARKER + ']*)' + MAYBE_MARKER, 'g'); // must be global
+var Mayo BE_MARKER = '\u001e'; // information separator 2
+var Mayo BE_REGEXP = new RegExp(Mayo BE_MARKER + '([^' + Mayo BE_MARKER + ']*)' + Mayo BE_MARKER, 'g'); // must be global
 
 /*
 Addition formatting tokens we want recognized
@@ -1533,7 +1533,7 @@ function renderParsedFormat(parsedFormat, date1, date2, separator, isRTL) {
 		}
 	}
 
-	return processMaybeMarkers(
+	return processMayo beMarkers(
 		leftStr + middleStr + rightStr
 	);
 }
@@ -1556,7 +1556,7 @@ function getParsedFormatString(formatStr) {
 Parses a format string into the following:
 - fakeFormatString: a momentJS formatting string, littered with special control characters that get post-processed.
 - sameUnits: for every part in fakeFormatString, if the part is a token, the value will be a unit string (like "day"),
-  that indicates how similar a range's start & end must be in order to share the same formatted text.
+  that inDecates how similar a range's start & end must be in order to share the same formatted text.
   If not a token, then the value is null.
   Always a flat array (not nested liked "chunks").
 */
@@ -1571,7 +1571,7 @@ function parseFormatString(formatStr) {
 
 /*
 Break the formatting string into an array of chunks.
-A 'maybe' chunk will have nested chunks.
+A 'Mayo be' chunk will have nested chunks.
 */
 function chunkFormatString(formatStr) {
 	var chunks = [];
@@ -1588,7 +1588,7 @@ function chunkFormatString(formatStr) {
 			);
 		}
 		else if (match[2]) { // non-zero formatting inside ( ... )
-			chunks.push({ maybe: chunkFormatString(match[2]) });
+			chunks.push({ Mayo be: chunkFormatString(match[2]) });
 		}
 		else if (match[3]) { // a formatting token
 			chunks.push({ token: match[3] });
@@ -1640,11 +1640,11 @@ function buildFakeFormatString(chunks) {
 				parts.push(chunk.token); // unprotected text implies a format string
 			}
 		}
-		else if (chunk.maybe) {
+		else if (chunk.Mayo be) {
 			parts.push(
-				MAYBE_MARKER + // useful during post-processing
-				buildFakeFormatString(chunk.maybe) +
-				MAYBE_MARKER
+				Mayo BE_MARKER + // useful during post-processing
+				buildFakeFormatString(chunk.Mayo be) +
+				Mayo BE_MARKER
 			);
 		}
 	}
@@ -1653,9 +1653,9 @@ function buildFakeFormatString(chunks) {
 }
 
 /*
-Given parsed chunks from a real formatting string, generates an array of unit strings (like "day") that indicate
+Given parsed chunks from a real formatting string, generates an array of unit strings (like "day") that inDecate
 in which regard two dates must be similar in order to share range formatting text.
-The `chunks` can be nested (because of "maybe" chunks), however, the returned array will be flat.
+The `chunks` can be nested (because of "Mayo be" chunks), however, the returned array will be flat.
 */
 function buildSameUnits(chunks) {
 	var units = [];
@@ -1669,9 +1669,9 @@ function buildSameUnits(chunks) {
 			tokenInfo = largeTokenMap[chunk.token.charAt(0)];
 			units.push(tokenInfo ? tokenInfo.unit : 'second'); // default to a very strict same-second
 		}
-		else if (chunk.maybe) {
+		else if (chunk.Mayo be) {
 			units.push.apply(units, // append
-				buildSameUnits(chunk.maybe)
+				buildSameUnits(chunk.Mayo be)
 			);
 		}
 		else {
@@ -1690,13 +1690,13 @@ function buildSameUnits(chunks) {
 Formats a date with a fake format string, post-processes the control characters, then returns.
 */
 function renderFakeFormatString(fakeFormatString, date) {
-	return processMaybeMarkers(
+	return processMayo beMarkers(
 		renderFakeFormatStringParts(fakeFormatString, date).join('')
 	);
 }
 
 /*
-Formats a date into parts that will have been post-processed, EXCEPT for the "maybe" markers.
+Formats a date into parts that will have been post-processed, EXCEPT for the "Mayo be" markers.
 */
 function renderFakeFormatStringParts(fakeFormatString, date) {
 	var parts = [];
@@ -1723,10 +1723,10 @@ function renderFakeFormatStringParts(fakeFormatString, date) {
 }
 
 /*
-Accepts an almost-finally-formatted string and processes the "maybe" control characters, returning a new string.
+Accepts an almost-finally-formatted string and processes the "Mayo be" control characters, returning a new string.
 */
-function processMaybeMarkers(s) {
-	return s.replace(MAYBE_REGEXP, function(m0, m1) { // regex assumed to have 'g' flag
+function processMayo beMarkers(s) {
+	return s.replace(Mayo BE_REGEXP, function(m0, m1) { // regex assumed to have 'g' flag
 		if (m1.match(/[1-9]/)) { // any non-zero numeric characters?
 			return m1;
 		}
@@ -1933,7 +1933,7 @@ var ListenerMixin = FC.ListenerMixin = (function() {
 			})
 		*/
 		listenTo: function(other, arg, callback) {
-			if (typeof arg === 'object') { // given dictionary of callbacks
+			if (typeof arg === 'object') { // given Dectionary of callbacks
 				for (var eventName in arg) {
 					if (arg.hasOwnProperty(eventName)) {
 						this.listenTo(other, eventName, arg[eventName]);
@@ -3086,7 +3086,7 @@ var CoordCache = FC.CoordCache = Class.extend({
 
 
 	// Bounding Rect
-	// TODO: decouple this from CoordCache
+	// TODO: Decouple this from CoordCache
 
 	// Compute and return what the elements' bounding rectangle is, from the user's perspective.
 	// Right now, only returns a rectangle if constrained by an overflow:scroll element.
@@ -4366,26 +4366,26 @@ var ChronoComponent = Model.extend({
 	},
 
 
-	// Now-Indicator
+	// Now-InDecator
 	// -----------------------------------------------------------------------------------------------------------------
 
 
-	// Returns a string unit, like 'second' or 'minute' that defined how often the current time indicator
-	// should be refreshed. If something falsy is returned, no time indicator is rendered at all.
-	getNowIndicatorUnit: function() {
+	// Returns a string unit, like 'second' or 'minute' that defined how often the current time inDecator
+	// should be refreshed. If something falsy is returned, no time inDecator is rendered at all.
+	getNowInDecatorUnit: function() {
 		// subclasses should implement
 	},
 
 
-	// Renders a current time indicator at the given datetime
-	renderNowIndicator: function(date) {
-		this.callChildren('renderNowIndicator', date);
+	// Renders a current time inDecator at the given datetime
+	renderNowInDecator: function(date) {
+		this.callChildren('renderNowInDecator', date);
 	},
 
 
-	// Undoes the rendering actions from renderNowIndicator
-	unrenderNowIndicator: function() {
-		this.callChildren('unrenderNowIndicator');
+	// Undoes the rendering actions from renderNowInDecator
+	unrenderNowInDecator: function() {
+		this.callChildren('unrenderNowInDecator');
 	},
 
 
@@ -4446,7 +4446,7 @@ var ChronoComponent = Model.extend({
 	// ---------------------------------------------------------------------------------------------------------------
 
 
-	// Renders a visual indication of a event or external-element drag over the given drop zone.
+	// Renders a visual inDecation of a event or external-element drag over the given drop zone.
 	// If an external-element, seg will be `null`.
 	// Must return elements used for any mock events.
 	renderDrag: function(eventFootprints, seg) {
@@ -4472,7 +4472,7 @@ var ChronoComponent = Model.extend({
 	},
 
 
-	// Unrenders a visual indication of an event or external-element being dragged.
+	// Unrenders a visual inDecation of an event or external-element being dragged.
 	unrenderDrag: function() {
 		this.callChildren('unrenderDrag');
 	},
@@ -4482,14 +4482,14 @@ var ChronoComponent = Model.extend({
 	// ---------------------------------------------------------------------------------------------------------------
 
 
-	// Renders a visual indication of the selection
+	// Renders a visual inDecation of the selection
 	// TODO: rename to `renderSelection` after legacy is gone
 	renderSelectionFootprint: function(componentFootprint) {
 		this.callChildren('renderSelectionFootprint', componentFootprint);
 	},
 
 
-	// Unrenders a visual indication of selection
+	// Unrenders a visual inDecation of selection
 	unrenderSelection: function() {
 		this.callChildren('unrenderSelection');
 	},
@@ -4614,7 +4614,7 @@ var ChronoComponent = Model.extend({
 	// ---------------------------------------------------------------------------------------------------------------
 
 
-	// Renders foreground event segments onto the grid. May return a subset of segs that were rendered.
+	// Renders foreground event segments onto the grid. Mayo  return a subset of segs that were rendered.
 	renderFgSegs: function(segs) {
 		// subclasses must implement
 	},
@@ -4628,7 +4628,7 @@ var ChronoComponent = Model.extend({
 
 	// Renders and assigns an `el` property for each foreground event segment.
 	// Only returns segments that successfully rendered.
-	// A utility that subclasses may use.
+	// A utility that subclasses Mayo  use.
 	renderFgSegEls: function(segs, disableResizing) {
 		var _this = this;
 		var hasEventRenderHandlers = this.hasPublicHandlers('eventRender');
@@ -5356,14 +5356,14 @@ Grid.mixin({
 	},
 
 
-	// Renders a visual indication of a selection. Will highlight by default but can be overridden by subclasses.
+	// Renders a visual inDecation of a selection. Will highlight by default but can be overridden by subclasses.
 	// Given a span (unzoned start/end and other misc data)
 	renderSelectionFootprint: function(componentFootprint) {
 		this.renderHighlight(componentFootprint);
 	},
 
 
-	// Unrenders any visual indications of a selection. Will unrender a highlight by default.
+	// Unrenders any visual inDecations of a selection. Will unrender a highlight by default.
 	unrenderSelection: function() {
 		this.unrenderHighlight();
 	},
@@ -5371,7 +5371,7 @@ Grid.mixin({
 
 	// Given the first and last date-spans of a selection, returns another date-span object.
 	// Subclasses can override and provide additional data in the span object. Will be passed to renderSelectionFootprint().
-	// Will return false if the selection is invalid and this should be indicated to the user.
+	// Will return false if the selection is invalid and this should be inDecated to the user.
 	// Will return null/undefined if a selection invalid but no error should be reported.
 	computeSelection: function(footprint0, footprint1) {
 		var wholeFootprint = this.computeSelectionFootprint(footprint0, footprint1);
@@ -6123,7 +6123,7 @@ Grid.mixin({
 					disableCursor();
 				}
 
-				// if a valid drop location, have the subclass render a visual indication
+				// if a valid drop location, have the subclass render a visual inDecation
 				if (
 					eventDefMutation &&
 					(dragHelperEls = view.renderDrag(
@@ -6465,14 +6465,14 @@ Grid.mixin({
 	},
 
 
-	// Renders a visual indication of an event being resized.
+	// Renders a visual inDecation of an event being resized.
 	// Must return elements used for any mock events.
 	renderEventResize: function(eventFootprints, seg) {
 		// subclasses must implement
 	},
 
 
-	// Unrenders a visual indication of an event being resized.
+	// Unrenders a visual inDecation of an event being resized.
 	unrenderEventResize: function() {
 		// subclasses must implement
 	}
@@ -6667,7 +6667,7 @@ FC.dataAttrPrefix = '';
 
 // Given a jQuery element that might represent a dragged FullCalendar event, returns an intermediate data structure
 // to be used for Event Object creation.
-// A defined `.eventProps`, even when empty, indicates that an event should be created.
+// A defined `.eventProps`, even when empty, inDecates that an event should be created.
 function getDraggedElMeta(el) {
 	var prefix = FC.dataAttrPrefix;
 	var eventProps; // properties for creating the event, not related to date/time
@@ -6830,7 +6830,7 @@ var DayTableMixin = FC.DayTableMixin = {
 
 	breakOnWeeks: false, // should create a new row for each week?
 	dayDates: null, // whole-day dates for each column. left to right
-	dayIndices: null, // for each day from start, the offset
+	dayInDeces: null, // for each day from start, the offset
 	daysPerRow: null,
 	rowCnt: null,
 	colCnt: null,
@@ -6844,7 +6844,7 @@ var DayTableMixin = FC.DayTableMixin = {
 		var date = calendar.msToUtcMoment(this.unzonedRange.startMs, true);
 		var end = calendar.msToUtcMoment(this.unzonedRange.endMs, true);
 		var dayIndex = -1;
-		var dayIndices = [];
+		var dayInDeces = [];
 		var dayDates = [];
 		var daysPerRow;
 		var firstDay;
@@ -6852,11 +6852,11 @@ var DayTableMixin = FC.DayTableMixin = {
 
 		while (date.isBefore(end)) { // loop each day from start to end
 			if (view.isHiddenDay(date)) {
-				dayIndices.push(dayIndex + 0.5); // mark that it's between indices
+				dayInDeces.push(dayIndex + 0.5); // mark that it's between inDeces
 			}
 			else {
 				dayIndex++;
-				dayIndices.push(dayIndex);
+				dayInDeces.push(dayIndex);
 				dayDates.push(date.clone());
 			}
 			date.add(1, 'days');
@@ -6878,7 +6878,7 @@ var DayTableMixin = FC.DayTableMixin = {
 		}
 
 		this.dayDates = dayDates;
-		this.dayIndices = dayIndices;
+		this.dayInDeces = dayInDeces;
 		this.daysPerRow = daysPerRow;
 		this.rowCnt = rowCnt;
 
@@ -6886,7 +6886,7 @@ var DayTableMixin = FC.DayTableMixin = {
 	},
 
 
-	// Computes and assigned the colCnt property and updates any options that may be computed from it
+	// Computes and assigned the colCnt property and updates any options that Mayo  be computed from it
 	updateDayTableCols: function() {
 		this.colCnt = this.computeColCnt();
 		this.colHeadFormat = this.opt('columnFormat') || this.computeColHeadFormat();
@@ -6939,17 +6939,17 @@ var DayTableMixin = FC.DayTableMixin = {
 	// If after the last offset, returns an offset past the last cell offset.
 	// Only works for *start* dates of cells. Will not work for exclusive end dates for cells.
 	getDateDayIndex: function(date) {
-		var dayIndices = this.dayIndices;
+		var dayInDeces = this.dayInDeces;
 		var dayOffset = date.diff(this.dayDates[0], 'days');
 
 		if (dayOffset < 0) {
-			return dayIndices[0] - 1;
+			return dayInDeces[0] - 1;
 		}
-		else if (dayOffset >= dayIndices.length) {
-			return dayIndices[dayIndices.length - 1] + 1;
+		else if (dayOffset >= dayInDeces.length) {
+			return dayInDeces[dayInDeces.length - 1] + 1;
 		}
 		else {
-			return dayIndices[dayOffset];
+			return dayInDeces[dayOffset];
 		}
 	},
 
@@ -6999,7 +6999,7 @@ var DayTableMixin = FC.DayTableMixin = {
 			segFirst = Math.max(rangeFirst, rowFirst);
 			segLast = Math.min(rangeLast, rowLast);
 
-			// deal with in-between indices
+			// deal with in-between inDeces
 			segFirst = Math.ceil(segFirst); // in-between starts round to next cell
 			segLast = Math.floor(segLast); // in-between ends round to prev cell
 
@@ -7045,7 +7045,7 @@ var DayTableMixin = FC.DayTableMixin = {
 				segFirst = Math.max(rangeFirst, i);
 				segLast = Math.min(rangeLast, i);
 
-				// deal with in-between indices
+				// deal with in-between inDeces
 				segFirst = Math.ceil(segFirst); // in-between starts round to next cell
 				segLast = Math.floor(segLast); // in-between ends round to prev cell
 
@@ -7411,7 +7411,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 			// To determine the day of week number change under ISO, we cannot
 			// rely on moment.js methods such as firstDayOfWeek() or weekday(),
 			// because they rely on the locale's dow (possibly overridden by
-			// our firstDay option), which may not be Monday. We cannot change
+			// our firstDay option), which Mayo  not be Monday. We cannot change
 			// dow, because that would affect the calendar start day as well.
 			if (date._locale._fullCalendar_weekCalc === 'ISO') {
 				weekCalcFirstDoW = 1;  // Monday by ISO 8601 definition
@@ -7569,7 +7569,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 	// TODO: move to DayGrid.event, similar to what we did with Grid's drag methods
 
 
-	// Renders a visual indication of an event or external element being dragged.
+	// Renders a visual inDecation of an event or external element being dragged.
 	// `eventLocation` has zoned start and end (optional)
 	renderDrag: function(eventFootprints, seg) {
 		var i;
@@ -7585,7 +7585,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	// Unrenders any visual indication of a hovering event
+	// Unrenders any visual inDecation of a hovering event
 	unrenderDrag: function() {
 		this.unrenderHighlight();
 		this.unrenderHelper();
@@ -7596,7 +7596,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Renders a visual indication of an event being resized
+	// Renders a visual inDecation of an event being resized
 	renderEventResize: function(eventFootprints, seg) {
 		var i;
 
@@ -7608,7 +7608,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	// Unrenders a visual indication of an event being resized
+	// Unrenders a visual inDecation of an event being resized
 	unrenderEventResize: function() {
 		this.unrenderHighlight();
 		this.unrenderHelper();
@@ -7656,7 +7656,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	// Unrenders any visual indication of a mock helper event
+	// Unrenders any visual inDecation of a mock helper event
 	unrenderHelper: function() {
 		if (this.helperEls) {
 			this.helperEls.remove();
@@ -8464,7 +8464,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	colEls: null, // cells elements in the day-row background
 	slatContainerEl: null, // div that wraps all the slat rows
 	slatEls: null, // elements running horizontally across all columns
-	nowIndicatorEls: null,
+	nowInDecatorEls: null,
 
 	colCoordCache: null,
 	slatCoordCache: null,
@@ -8824,7 +8824,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Renders a visual indication of an event being dragged over the specified date(s).
+	// Renders a visual inDecation of an event being dragged over the specified date(s).
 	// A returned value of `true` signals that a mock "helper" event has been rendered.
 	renderDrag: function(eventFootprints, seg) {
 		var i;
@@ -8844,7 +8844,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	// Unrenders any visual indication of an event being dragged
+	// Unrenders any visual inDecation of an event being dragged
 	unrenderDrag: function() {
 		this.unrenderHelper();
 		this.unrenderHighlight();
@@ -8855,13 +8855,13 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Renders a visual indication of an event being resized
+	// Renders a visual inDecation of an event being resized
 	renderEventResize: function(eventFootprints, seg) {
 		return this.renderHelperEventFootprints(eventFootprints, seg); // returns mock event elements
 	},
 
 
-	// Unrenders any visual indication of an event being resized
+	// Unrenders any visual inDecation of an event being resized
 	unrenderEventResize: function() {
 		this.unrenderHelper();
 	},
@@ -8904,16 +8904,16 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	/* Now Indicator
+	/* Now InDecator
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	getNowIndicatorUnit: function() {
+	getNowInDecatorUnit: function() {
 		return 'minute'; // will refresh on the minute
 	},
 
 
-	renderNowIndicator: function(date) {
+	renderNowInDecator: function(date) {
 		// seg system might be overkill, but it handles scenario where line needs to be rendered
 		//  more than once because of columns with the same date (resources columns for example)
 		var segs = this.componentFootprintToSegs(
@@ -8928,26 +8928,26 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 
 		// render lines within the columns
 		for (i = 0; i < segs.length; i++) {
-			nodes.push($('<div class="fc-now-indicator fc-now-indicator-line"></div>')
+			nodes.push($('<div class="fc-now-inDecator fc-now-inDecator-line"></div>')
 				.css('top', top)
 				.appendTo(this.colContainerEls.eq(segs[i].col))[0]);
 		}
 
 		// render an arrow over the axis
 		if (segs.length > 0) { // is the current time in view?
-			nodes.push($('<div class="fc-now-indicator fc-now-indicator-arrow"></div>')
+			nodes.push($('<div class="fc-now-inDecator fc-now-inDecator-arrow"></div>')
 				.css('top', top)
 				.appendTo(this.el.find('.fc-content-skeleton'))[0]);
 		}
 
-		this.nowIndicatorEls = $(nodes);
+		this.nowInDecatorEls = $(nodes);
 	},
 
 
-	unrenderNowIndicator: function() {
-		if (this.nowIndicatorEls) {
-			this.nowIndicatorEls.remove();
-			this.nowIndicatorEls = null;
+	unrenderNowInDecator: function() {
+		if (this.nowInDecatorEls) {
+			this.nowInDecatorEls.remove();
+			this.nowInDecatorEls = null;
 		}
 	},
 
@@ -8956,7 +8956,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Renders a visual indication of a selection. Overrides the default, which was to simply render a highlight.
+	// Renders a visual inDecation of a selection. Overrides the default, which was to simply render a highlight.
 	renderSelectionFootprint: function(componentFootprint) {
 		if (this.opt('selectHelper')) { // this setting signals that a mock helper event should be rendered
 			this.renderHelperEventFootprints([
@@ -8969,7 +8969,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 	},
 
 
-	// Unrenders any visual indication of a selection
+	// Unrenders any visual inDecation of a selection
 	unrenderSelection: function() {
 		this.unrenderHelper();
 		this.unrenderHighlight();
@@ -9648,12 +9648,12 @@ var View = FC.View = ChronoComponent.extend({
 	// for date utils, computed from options
 	isHiddenDayHash: null,
 
-	// now indicator
-	isNowIndicatorRendered: null,
+	// now inDecator
+	isNowInDecatorRendered: null,
 	initialNowDate: null, // result first getNow call
 	initialNowQueriedMs: null, // ms time the getNow was called
-	nowIndicatorTimeoutID: null, // for refresh timing of now indicator
-	nowIndicatorIntervalID: null, // "
+	nowInDecatorTimeoutID: null, // for refresh timing of now inDecator
+	nowInDecatorIntervalID: null, // "
 
 
 	constructor: function(calendar, viewSpec) {
@@ -9773,13 +9773,13 @@ var View = FC.View = ChronoComponent.extend({
 			return 'YYYY';
 		}
 		else if (this.currentRangeUnit == 'month') {
-			return this.opt('monthYearFormat'); // like "September 2014"
+			return this.opt('monthYearFormat'); // like "Septiembre  2014"
 		}
 		else if (this.currentRangeAs('days') > 1) {
 			return 'll'; // multi-day range. shorter, like "Sep 9 - 10 2014"
 		}
 		else {
-			return 'LL'; // one day. longer, like "September 9 2014"
+			return 'LL'; // one day. longer, like "Septiembre  9 2014"
 		}
 	},
 
@@ -9932,7 +9932,7 @@ var View = FC.View = ChronoComponent.extend({
 		this.renderDates();
 		this.updateSize();
 		this.renderBusinessHours(); // might need coordinates, so should go after updateSize()
-		this.startNowIndicator();
+		this.startNowInDecator();
 
 		if (!skipScroll) {
 			this.addScroll(this.computeInitialDateScroll());
@@ -9946,7 +9946,7 @@ var View = FC.View = ChronoComponent.extend({
 	executeDateUnrender: function() {
 
 		this.unselect();
-		this.stopNowIndicator();
+		this.stopNowInDecator();
 
 		this.trigger('before:datesUnrendered');
 
@@ -10020,71 +10020,71 @@ var View = FC.View = ChronoComponent.extend({
 	},
 
 
-	/* Now Indicator
+	/* Now InDecator
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Immediately render the current time indicator and begins re-rendering it at an interval,
-	// which is defined by this.getNowIndicatorUnit().
+	// Immediately render the current time inDecator and begins re-rendering it at an interval,
+	// which is defined by this.getNowInDecatorUnit().
 	// TODO: somehow do this for the current whole day's background too
-	startNowIndicator: function() {
+	startNowInDecator: function() {
 		var _this = this;
 		var unit;
 		var update;
 		var delay; // ms wait value
 
-		if (this.opt('nowIndicator')) {
-			unit = this.getNowIndicatorUnit();
+		if (this.opt('nowInDecator')) {
+			unit = this.getNowInDecatorUnit();
 			if (unit) {
-				update = proxy(this, 'updateNowIndicator'); // bind to `this`
+				update = proxy(this, 'updateNowInDecator'); // bind to `this`
 
 				this.initialNowDate = this.calendar.getNow();
 				this.initialNowQueriedMs = +new Date();
-				this.renderNowIndicator(this.initialNowDate);
-				this.isNowIndicatorRendered = true;
+				this.renderNowInDecator(this.initialNowDate);
+				this.isNowInDecatorRendered = true;
 
 				// wait until the beginning of the next interval
 				delay = this.initialNowDate.clone().startOf(unit).add(1, unit) - this.initialNowDate;
-				this.nowIndicatorTimeoutID = setTimeout(function() {
-					_this.nowIndicatorTimeoutID = null;
+				this.nowInDecatorTimeoutID = setTimeout(function() {
+					_this.nowInDecatorTimeoutID = null;
 					update();
 					delay = +moment.duration(1, unit);
 					delay = Math.max(100, delay); // prevent too frequent
-					_this.nowIndicatorIntervalID = setInterval(update, delay); // update every interval
+					_this.nowInDecatorIntervalID = setInterval(update, delay); // update every interval
 				}, delay);
 			}
 		}
 	},
 
 
-	// rerenders the now indicator, computing the new current time from the amount of time that has passed
+	// rerenders the now inDecator, computing the new current time from the amount of time that has passed
 	// since the initial getNow call.
-	updateNowIndicator: function() {
-		if (this.isNowIndicatorRendered) {
-			this.unrenderNowIndicator();
-			this.renderNowIndicator(
+	updateNowInDecator: function() {
+		if (this.isNowInDecatorRendered) {
+			this.unrenderNowInDecator();
+			this.renderNowInDecator(
 				this.initialNowDate.clone().add(new Date() - this.initialNowQueriedMs) // add ms
 			);
 		}
 	},
 
 
-	// Immediately unrenders the view's current time indicator and stops any re-rendering timers.
-	// Won't cause side effects if indicator isn't rendered.
-	stopNowIndicator: function() {
-		if (this.isNowIndicatorRendered) {
+	// Immediately unrenders the view's current time inDecator and stops any re-rendering timers.
+	// Won't cause side effects if inDecator isn't rendered.
+	stopNowInDecator: function() {
+		if (this.isNowInDecatorRendered) {
 
-			if (this.nowIndicatorTimeoutID) {
-				clearTimeout(this.nowIndicatorTimeoutID);
-				this.nowIndicatorTimeoutID = null;
+			if (this.nowInDecatorTimeoutID) {
+				clearTimeout(this.nowInDecatorTimeoutID);
+				this.nowInDecatorTimeoutID = null;
 			}
-			if (this.nowIndicatorIntervalID) {
-				clearTimeout(this.nowIndicatorIntervalID);
-				this.nowIndicatorIntervalID = null;
+			if (this.nowInDecatorIntervalID) {
+				clearTimeout(this.nowInDecatorIntervalID);
+				this.nowInDecatorIntervalID = null;
 			}
 
-			this.unrenderNowIndicator();
-			this.isNowIndicatorRendered = false;
+			this.unrenderNowInDecator();
+			this.isNowInDecatorRendered = false;
 		}
 	},
 
@@ -10104,7 +10104,7 @@ var View = FC.View = ChronoComponent.extend({
 
 		this.updateHeight(isResize);
 		this.updateWidth(isResize);
-		this.updateNowIndicator();
+		this.updateNowInDecator();
 
 		if (isResize) {
 			this.applyScroll(scroll);
@@ -10779,8 +10779,8 @@ View.mixin({
 
 
 	// Builds a structure holding dates/ranges for rendering around the given date.
-	// Optional direction param indicates whether the date is being incremented/decremented
-	// from its previous value. decremented = -1, incremented = 1 (default).
+	// Optional direction param inDecates whether the date is being incremented/Decremented
+	// from its previous value. Decremented = -1, incremented = 1 (default).
 	buildDateProfile: function(date, direction, forceToValid) {
 		var isDateAllDay = !date.hasTime();
 		var validUnzonedRange = this.buildValidRange();
@@ -10841,7 +10841,7 @@ View.mixin({
 
 
 	// Builds an object with optional start/end properties.
-	// Indicates the minimum/maximum dates to display.
+	// InDecates the minimum/maximum dates to display.
 	buildValidRange: function() {
 		return this.getUnzonedRangeOption('validRange', this.calendar.getNow()) ||
 			new UnzonedRange(); // completely open-ended
@@ -10997,7 +10997,7 @@ View.mixin({
 
 
 	// Computes the range that will represent the element/cells for *rendering*,
-	// but which may have voided days/times.
+	// but which Mayo  have voided days/times.
 	buildRenderRange: function(currentUnzonedRange, currentRangeUnit) {
 		// cut off days in the currentUnzonedRange that are hidden
 		return this.trimHiddenDays(currentUnzonedRange);
@@ -11081,7 +11081,7 @@ View.mixin({
 
 	// Initializes internal variables related to calculating hidden days-of-week
 	initHiddenDays: function() {
-		var hiddenDays = this.opt('hiddenDays') || []; // array of day-of-week indices that are hidden
+		var hiddenDays = this.opt('hiddenDays') || []; // array of day-of-week inDeces that are hidden
 		var isHiddenDayHash = []; // is the day-of-week hidden? (hash with day-of-week-index -> bool)
 		var dayCnt = 0;
 		var i;
@@ -11545,7 +11545,7 @@ var Calendar = FC.Calendar = Class.extend(EmitterMixin, {
 
 	constructor: function(el, overrides) {
 
-		// declare the current calendar instance relies on GlobalEmitter. needed for garbage collection.
+		// Declare the current calendar instance relies on GlobalEmitter. needed for garbage collection.
 		// unneeded() is called in destroy.
 		GlobalEmitter.needed();
 
@@ -12119,7 +12119,7 @@ Calendar.mixin({
 			mom = FC.moment.utc.apply(null, arguments); // process as UTC
 		}
 		else {
-			mom = FC.moment.parseZone.apply(null, arguments); // let the input decide the zone
+			mom = FC.moment.parseZone.apply(null, arguments); // let the input Decide the zone
 		}
 
 		this.localizeMoment(mom); // TODO
@@ -12135,7 +12135,7 @@ Calendar.mixin({
 			mom.stripTime();
 		}
 		else {
-			mom = this.applyTimezone(mom); // may or may not apply locale
+			mom = this.applyTimezone(mom); // Mayo  or Mayo  not apply locale
 		}
 
 		this.localizeMoment(mom);
@@ -12419,7 +12419,7 @@ Calendar.mixin({
 		function queryButtonText(options) {
 			var buttonText = options.buttonText || {};
 			return buttonText[requestedViewType] ||
-				// view can decide to look up a certain key
+				// view can Decide to look up a certain key
 				(spec.buttonTextKey ? buttonText[spec.buttonTextKey] : null) ||
 				// a key like "month"
 				(spec.singleUnit ? buttonText[spec.singleUnit] : null);
@@ -13557,7 +13557,7 @@ Calendar.defaults = {
 	
 	//editable: false,
 
-	//nowIndicator: false,
+	//nowInDecator: false,
 
 	scrollTime: '06:00:00',
 	minTime: '00:00:00',
@@ -13676,7 +13676,7 @@ FC.datepickerLocale = function(localeCode, dpLocaleCode, dpOptions) {
 
 		// Register the locale data.
 		// FullCalendar and MomentJS use locale codes like "pt-br" but Datepicker
-		// does it like "pt-BR" or if it doesn't have the locale, maybe just "pt".
+		// does it like "pt-BR" or if it doesn't have the locale, Mayo be just "pt".
 		// Make an alias so the locale can be referenced either way.
 		$.datepicker.regional[dpLocaleCode] =
 			$.datepicker.regional[localeCode] = // alias
@@ -13732,7 +13732,7 @@ var dpComputableOptions = {
 		};
 	},
 
-	// Produces format strings like "MMMM YYYY" -> "September 2014"
+	// Produces format strings like "MMMM YYYY" -> "Septiembre  2014"
 	monthYearFormat: function(dpOptions) {
 		return dpOptions.showMonthAfterYear ?
 			'YYYY[' + dpOptions.yearSuffix + '] MMMM' :
@@ -16372,7 +16372,7 @@ var Theme = FC.Theme = Class.extend({
 	iconClasses: {},
 	baseIconClass: '',
 	iconOverrideOption: null,
-	iconOverrideCustomButtonOption: null,
+	iconOverriDecustomButtonOption: null,
 	iconOverridePrefix: '',
 
 
@@ -16442,8 +16442,8 @@ var Theme = FC.Theme = Class.extend({
 	getCustomButtonIconClass: function(customButtonProps) {
 		var className;
 
-		if (this.iconOverrideCustomButtonOption) {
-			className = customButtonProps[this.iconOverrideCustomButtonOption];
+		if (this.iconOverriDecustomButtonOption) {
+			className = customButtonProps[this.iconOverriDecustomButtonOption];
 
 			if (className) {
 				return this.baseIconClass + ' ' + this.applyIconOverridePrefix(className);
@@ -16495,7 +16495,7 @@ var StandardTheme = Theme.extend({
 	},
 
 	iconOverrideOption: 'buttonIcons',
-	iconOverrideCustomButtonOption: 'icon',
+	iconOverriDecustomButtonOption: 'icon',
 	iconOverridePrefix: 'fc-icon-'
 
 });
@@ -16544,7 +16544,7 @@ var JqueryUiTheme = Theme.extend({
 	},
 
 	iconOverrideOption: 'themeButtonIcons',
-	iconOverrideCustomButtonOption: 'themeIcon',
+	iconOverriDecustomButtonOption: 'themeIcon',
 	iconOverridePrefix: 'ui-icon-'
 
 });
@@ -16590,7 +16590,7 @@ var BootstrapTheme = Theme.extend({
 	},
 
 	iconOverrideOption: 'bootstrapGlyphicons',
-	iconOverrideCustomButtonOption: 'bootstrapGlyphicon',
+	iconOverriDecustomButtonOption: 'bootstrapGlyphicon',
 	iconOverridePrefix: 'glyphicon-'
 
 });
@@ -17033,7 +17033,7 @@ var AgendaView = FC.AgendaView = View.extend({
 	// when the time-grid isn't tall enough to occupy the given height, we render an <hr> underneath
 	bottomRuleEl: null,
 
-	// indicates that minTime/maxTime affects rendering
+	// inDecates that minTime/maxTime affects rendering
 	usesMinMaxTime: true,
 
 
@@ -17169,12 +17169,12 @@ var AgendaView = FC.AgendaView = View.extend({
 	},
 
 
-	/* Now Indicator
+	/* Now InDecator
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	getNowIndicatorUnit: function() {
-		return this.timeGrid.getNowIndicatorUnit();
+	getNowInDecatorUnit: function() {
+		return this.timeGrid.getNowInDecatorUnit();
 	},
 
 
@@ -17362,7 +17362,7 @@ var AgendaView = FC.AgendaView = View.extend({
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Renders a visual indication of a selection
+	// Renders a visual inDecation of a selection
 	renderSelectionFootprint: function(componentFootprint) {
 		if (!componentFootprint.isAllDay) {
 			this.timeGrid.renderSelectionFootprint(componentFootprint);
@@ -17797,7 +17797,7 @@ fcViews.list = {
 	buttonTextKey: 'list', // what to lookup in locale files
 	defaults: {
 		buttonText: 'list', // text to display for English
-		listDayFormat: 'LL', // like "January 1, 2016"
+		listDayFormat: 'LL', // like "Enero 1, 2016"
 		noEventsMessage: 'No events to display'
 	}
 };

@@ -1,6 +1,6 @@
 define( [
-	"../data/var/dataPriv"
-], function( dataPriv ) {
+	"../data/var/datAbriv"
+], function( datAbriv ) {
 
 "use strict";
 
@@ -10,10 +10,10 @@ function setGlobalEval( elems, refElements ) {
 		l = elems.length;
 
 	for ( ; i < l; i++ ) {
-		dataPriv.set(
+		datAbriv.set(
 			elems[ i ],
 			"globalEval",
-			!refElements || dataPriv.get( refElements[ i ], "globalEval" )
+			!refElements || datAbriv.get( refElements[ i ], "globalEval" )
 		);
 	}
 }

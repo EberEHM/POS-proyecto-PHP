@@ -1,5 +1,5 @@
 define(function () {
-  // Icelandic
+  // IcelanDec
   return {
     inputTooLong: function (args) {
       var overChars = args.input.length - args.maximum;

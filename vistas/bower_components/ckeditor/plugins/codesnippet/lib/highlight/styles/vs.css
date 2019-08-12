@@ -42,7 +42,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 .ruby .hljs-symbol .hljs-string,
 .hljs-aggregate,
 .hljs-template_tag,
-.django .hljs-variable,
+.dEnego .hljs-variable,
 .hljs-addition,
 .hljs-flow,
 .hljs-stream,
@@ -54,7 +54,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 }
 
 .ruby .hljs-string,
-.hljs-decorator,
+.hljs-Decorator,
 .hljs-filter .hljs-argument,
 .hljs-localvars,
 .hljs-array,

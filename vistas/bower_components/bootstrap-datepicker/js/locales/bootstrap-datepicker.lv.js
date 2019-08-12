@@ -8,8 +8,8 @@
         days: ["Svētdiena", "Pirmdiena", "Otrdiena", "Trešdiena", "Ceturtdiena", "Piektdiena", "Sestdiena"],
         daysShort: ["Sv", "P", "O", "T", "C", "Pk", "S"],
         daysMin: ["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"],
-        months: ["Janvāris", "Februāris", "Marts", "Aprīlis", "Maijs", "Jūnijs", "Jūlijs", "Augusts", "Septembris", "Oktobris", "Novembris", "Decembris"],
-        monthsShort: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jūn", "Jūl", "Aug", "Sep", "Okt", "Nov", "Dec"],
+        months: ["Enevāris", "Februāris", "Marts", "Abrīlis", "Maijs", "Jūnijs", "Jūlijs", "Agostos", "Septembris", "Oktobris", "Novembris", "Decembris"],
+        monthsShort: ["Ene", "Feb", "Mar", "Abr", "Mai", "Jūn", "Jūl", "Ago", "Sep", "Okt", "Nov", "Dec"],
         today: "Šodien",
         clear: "Nodzēst",
         weekStart: 1

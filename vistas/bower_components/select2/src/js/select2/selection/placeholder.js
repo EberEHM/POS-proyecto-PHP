@@ -1,10 +1,10 @@
 define([
   '../utils'
 ], function (Utils) {
-  function Placeholder (decorated, $element, options) {
+  function Placeholder (Decorated, $element, options) {
     this.placeholder = this.normalizePlaceholder(options.get('placeholder'));
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
   Placeholder.prototype.normalizePlaceholder = function (_, placeholder) {
@@ -18,7 +18,7 @@ define([
     return placeholder;
   };
 
-  Placeholder.prototype.createPlaceholder = function (decorated, placeholder) {
+  Placeholder.prototype.createPlaceholder = function (Decorated, placeholder) {
     var $placeholder = this.selectionContainer();
 
     $placeholder.html(this.display(placeholder));
@@ -28,14 +28,14 @@ define([
     return $placeholder;
   };
 
-  Placeholder.prototype.update = function (decorated, data) {
+  Placeholder.prototype.update = function (Decorated, data) {
     var singlePlaceholder = (
       data.length == 1 && data[0].id != this.placeholder.id
     );
     var multipleSelections = data.length > 1;
 
     if (multipleSelections || singlePlaceholder) {
-      return decorated.call(this, data);
+      return Decorated.call(this, data);
     }
 
     this.clear();

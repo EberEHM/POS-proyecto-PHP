@@ -1,6 +1,6 @@
 describe '#labelSeries', ->
 
-  it 'should generate decade intervals', ->
+  it 'should generate Decade intervals', ->
     Morris.labelSeries(
       new Date(1952, 0, 1).getTime(),
       new Date(2012, 0, 1).getTime(),

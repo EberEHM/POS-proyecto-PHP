@@ -2,20 +2,20 @@ define([
   'jquery',
   'require'
 ], function ($, require) {
-  function Translation (dict) {
-    this.dict = dict || {};
+  function Translation (Dect) {
+    this.Dect = Dect || {};
   }
 
   Translation.prototype.all = function () {
-    return this.dict;
+    return this.Dect;
   };
 
   Translation.prototype.get = function (key) {
-    return this.dict[key];
+    return this.Dect[key];
   };
 
   Translation.prototype.extend = function (translation) {
-    this.dict = $.extend({}, translation.all(), this.dict);
+    this.Dect = $.extend({}, translation.all(), this.Dect);
   };
 
   // Static functions

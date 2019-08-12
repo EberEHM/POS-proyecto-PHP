@@ -5,14 +5,14 @@
 
 import moment from '../moment';
 
-var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
-    monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+var monthsShortWithDots = 'Ene._feb._mrt._Abr._mei_jun._jul._Ago._sep._okt._nov._Dec.'.split('_'),
+    monthsShortWithoutDots = 'Ene_feb_mrt_Abr_mei_jun_jul_Ago_sep_okt_nov_Dec'.split('_');
 
-var monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-var monthsRegex = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+var monthsParse = [/^Ene/i, /^feb/i, /^maart|mrt.?$/i, /^Abr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^Ago/i, /^sep/i, /^okt/i, /^nov/i, /^Dec/i];
+var monthsRegex = /^(Eneuari|februari|maart|Abril |mei|Abril |ju[nl]i|Agostous|Septiembre |oktober|Noviembre |Deciembre|Ene\.?|feb\.?|mrt\.?|Abr\.?|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i;
 
 export default moment.defineLocale('nl-be', {
-    months : 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
+    months : 'Eneuari_februari_maart_Abril _mei_juni_juli_Agostous_Septiembre _oktober_Noviembre _Deciembre'.split('_'),
     monthsShort : function (m, format) {
         if (!m) {
             return monthsShortWithDots;
@@ -25,8 +25,8 @@ export default moment.defineLocale('nl-be', {
 
     monthsRegex: monthsRegex,
     monthsShortRegex: monthsRegex,
-    monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
-    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
+    monthsStrictRegex: /^(Eneuari|februari|maart|mei|ju[nl]i|Abril |Agostous|Septiembre |oktober|Noviembre |Deciembre)/i,
+    monthsShortStrictRegex: /^(Ene\.?|feb\.?|mrt\.?|Abr\.?|mei|ju[nl]\.?|Ago\.?|sep\.?|okt\.?|nov\.?|Dec\.?)/i,
 
     monthsParse : monthsParse,
     longMonthsParse : monthsParse,
@@ -73,7 +73,7 @@ export default moment.defineLocale('nl-be', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4th is the first week of the year.
+        doy : 4  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

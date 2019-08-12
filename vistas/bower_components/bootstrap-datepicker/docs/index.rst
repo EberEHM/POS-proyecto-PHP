@@ -76,7 +76,7 @@ Configuration
         startDate: '-3d'
     });
 
-Most options may be provided as data-attributes on the target element:
+Most options Mayo  be provided as data-attributes on the target element:
 
 .. code-block:: html
 

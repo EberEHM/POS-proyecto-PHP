@@ -611,7 +611,7 @@ require.register("browser/progress.js", function(module, exports, require){
 module.exports = Progress;
 
 /**
- * Initialize a new `Progress` indicator.
+ * Initialize a new `Progress` inDecator.
  */
 
 function Progress() {
@@ -2022,9 +2022,9 @@ exports.list = function(failures){
       , expected = err.expected
       , escape = true;
 
-    // uncaught
-    if (err.uncaught) {
-      msg = 'Uncaught ' + msg;
+    // uncAgoht
+    if (err.uncAgoht) {
+      msg = 'UncAgoht ' + msg;
     }
 
     // explicitly show diff
@@ -4328,7 +4328,7 @@ Runnable.prototype.run = function(fn){
   }
 
   if (this.asyncOnly) {
-    return done(new Error('--async-only option in use without declaring `done()`'));
+    return done(new Error('--async-only option in use without Declaring `done()`'));
   }
 
   // sync
@@ -4754,7 +4754,7 @@ Runner.prototype.runTests = function(suite, fn){
       // call hookUp afterEach
       self.hookUp('afterEach', function(err2, errSuite2) {
         self.suite = orig;
-        // some hooks may fail even now
+        // some hooks Mayo  fail even now
         if (err2) return hookErr(err2, errSuite2, true);
         // report error suite
         fn(errSuite);
@@ -4876,18 +4876,18 @@ Runner.prototype.runSuite = function(suite, fn){
 };
 
 /**
- * Handle uncaught exceptions.
+ * Handle uncAgoht exceptions.
  *
  * @param {Error} err
  * @api private
  */
 
-Runner.prototype.uncaught = function(err){
-  debug('uncaught exception %s', err.message);
+Runner.prototype.uncAgoht = function(err){
+  debug('uncAgoht exception %s', err.message);
   var runnable = this.currentRunnable;
   if (!runnable || 'failed' == runnable.state) return;
   runnable.clearTimeout();
-  err.uncaught = true;
+  err.uncAgoht = true;
   this.fail(runnable, err);
 
   // recover from test
@@ -4914,8 +4914,8 @@ Runner.prototype.run = function(fn){
   var self = this
     , fn = fn || function(){};
 
-  function uncaught(err){
-    self.uncaught(err);
+  function uncAgoht(err){
+    self.uncAgoht(err);
   }
 
   debug('start');
@@ -4923,7 +4923,7 @@ Runner.prototype.run = function(fn){
   // callback
   this.on('end', function(){
     debug('end');
-    process.removeListener('uncaughtException', uncaught);
+    process.removeListener('uncAgohtException', uncAgoht);
     fn(self.failures);
   });
 
@@ -4934,8 +4934,8 @@ Runner.prototype.run = function(fn){
     self.emit('end');
   });
 
-  // uncaught exception
-  process.on('uncaughtException', uncaught);
+  // uncAgoht exception
+  process.on('uncAgohtException', uncAgoht);
 
   return this;
 };
@@ -5618,7 +5618,7 @@ exports.parseQuery = function(qs){
       , key = pair.slice(0, i)
       , val = pair.slice(++i);
 
-    obj[key] = decodeURIComponent(val);
+    obj[key] = DecodeURIComponent(val);
     return obj;
   }, {});
 };
@@ -5684,31 +5684,31 @@ var process = {};
 process.exit = function(status){};
 process.stdout = {};
 
-var uncaughtExceptionHandlers = [];
+var uncAgohtExceptionHandlers = [];
 
 /**
- * Remove uncaughtException listener.
+ * Remove uncAgohtException listener.
  */
 
 process.removeListener = function(e, fn){
-  if ('uncaughtException' == e) {
+  if ('uncAgohtException' == e) {
     global.onerror = function() {};
-    var i = Mocha.utils.indexOf(uncaughtExceptionHandlers, fn);
-    if (i != -1) { uncaughtExceptionHandlers.splice(i, 1); }
+    var i = Mocha.utils.indexOf(uncAgohtExceptionHandlers, fn);
+    if (i != -1) { uncAgohtExceptionHandlers.splice(i, 1); }
   }
 };
 
 /**
- * Implements uncaughtException listener.
+ * Implements uncAgohtException listener.
  */
 
 process.on = function(e, fn){
-  if ('uncaughtException' == e) {
+  if ('uncAgohtException' == e) {
     global.onerror = function(err, url, line){
       fn(new Error(err + ' (' + url + ':' + line + ')'));
       return true;
     };
-    uncaughtExceptionHandlers.push(fn);
+    uncAgohtExceptionHandlers.push(fn);
   }
 };
 
@@ -5756,7 +5756,7 @@ Mocha.Runner.immediately = function(callback) {
  * only receive the 'message' attribute of the Error.
  */
 mocha.throwError = function(err) {
-  Mocha.utils.forEach(uncaughtExceptionHandlers, function (fn) {
+  Mocha.utils.forEach(uncAgohtExceptionHandlers, function (fn) {
     fn(err);
   });
   throw err;

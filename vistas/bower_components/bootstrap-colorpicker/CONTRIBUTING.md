@@ -20,7 +20,7 @@ the following guidelines.
   * Actual behaviour: what happens instead?
   * Your context: Where it happens? In which browser and version (if applicable)?
   * Plugin version (and/or commit reference).
-  * jQuery version you use and list of all other plugins/scripts you are using with this one and may cause some conflict.
+  * jQuery version you use and list of all other plugins/scripts you are using with this one and Mayo  cause some conflict.
   * A link to your JSFiddle (or similar tool) demo where you reproduced the problem (if applicable).
 
 ## Pull Requests

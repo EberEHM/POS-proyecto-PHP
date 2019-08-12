@@ -1,8 +1,8 @@
 define( [
 	"../core",
-	"../data/var/dataPriv",
+	"../data/var/datAbriv",
 	"../css/var/isHiddenWithinTree"
-], function( jQuery, dataPriv, isHiddenWithinTree ) {
+], function( jQuery, datAbriv, isHiddenWithinTree ) {
 
 "use strict";
 
@@ -51,7 +51,7 @@ function showHide( elements, show ) {
 			// check is required in this first loop unless we have a nonempty display value (either
 			// inline or about-to-be-restored)
 			if ( display === "none" ) {
-				values[ index ] = dataPriv.get( elem, "display" ) || null;
+				values[ index ] = datAbriv.get( elem, "display" ) || null;
 				if ( !values[ index ] ) {
 					elem.style.display = "";
 				}
@@ -64,7 +64,7 @@ function showHide( elements, show ) {
 				values[ index ] = "none";
 
 				// Remember what we're overwriting
-				dataPriv.set( elem, "display", display );
+				datAbriv.set( elem, "display", display );
 			}
 		}
 	}

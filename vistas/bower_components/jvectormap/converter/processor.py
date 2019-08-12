@@ -4,7 +4,7 @@ import csv
 import shapely.wkb
 import shapely.geometry
 import shapely.ops
-import codecs
+import coDecs
 import os
 import inspect
 import copy
@@ -268,7 +268,7 @@ class DataSource:
         geometry = geometry.buffer(0)
       properties = {}
       for field in self.fields:
-        properties[field['name']] = feature.GetFieldAsString(field['name']).decode('utf-8')
+        properties[field['name']] = feature.GetFieldAsString(field['name']).Decode('utf-8')
       self.geometries.append( Geometry(geometry, properties) )
 
     self.layer.ResetReading()
@@ -516,8 +516,8 @@ class Processor:
       data_col = csv.reader(data_file, delimiter='\t', quotechar='"')
     data = {}
     for row in data_col:
-      row_dict = dict(zip(field_names, row))
-      data[row_dict.pop(config['on'])] = row_dict
+      row_Dect = Dect(zip(field_names, row))
+      data[row_Dect.pop(config['on'])] = row_Dect
     for geometry in data_source.geometries:
       if geometry.properties[config['on']] in data:
         geometry.properties.update( data[geometry.properties[config['on']]] )
@@ -538,7 +538,7 @@ class Processor:
     for geometry in data_source.geometries:
       geometry.geom = geometry.geom.buffer(config['distance'], config['resolution'])
 
-  def simplify_adjancent_polygons(self, config, data_source):
+  def simplify_adEnecent_polygons(self, config, data_source):
     simple_geometries = PolygonSimplifier( map( lambda g: g.geom, data_source.geometries ) ).simplify()
     for i in range(len(data_source.geometries)):
       data_source.geometries[i].geom = simple_geometries[i]

@@ -18,7 +18,7 @@ datepicker.regional['hr'] = {
 	nextText: '&#x3E;',
 	currentText: 'Danas',
 	monthNames: ['Siječanj','Veljača','Ožujak','Travanj','Svibanj','Lipanj',
-	'Srpanj','Kolovoz','Rujan','Listopad','Studeni','Prosinac'],
+	'Srpanj','Kolovoz','RuEne','Listopad','Studeni','Prosinac'],
 	monthNamesShort: ['Sij','Velj','Ožu','Tra','Svi','Lip',
 	'Srp','Kol','Ruj','Lis','Stu','Pro'],
 	dayNames: ['Nedjelja','Ponedjeljak','Utorak','Srijeda','Četvrtak','Petak','Subota'],

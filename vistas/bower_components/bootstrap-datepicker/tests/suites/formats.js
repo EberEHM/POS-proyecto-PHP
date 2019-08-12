@@ -1,7 +1,7 @@
 module('Formats', {
     setup: function(){
         this.input = $('<input type="text">').appendTo('#qunit-fixture');
-        this.date = UTCDate(2012, 2, 15, 0, 0, 0, 0); // March 15, 2012
+        this.date = UTCDate(2012, 2, 15, 0, 0, 0, 0); // Marzo  15, 2012
     },
     teardown: function(){
         this.input.data('datepicker').picker.remove();
@@ -74,18 +74,18 @@ test('M: Month shortname case insensitive.', function(){
 
 test('MM: Month full name.', function(){
     this.input
-        .val('2012-March-5')
+        .val('2012-Marzo -5')
         .datepicker({format: 'yyyy-MM-dd'})
         .datepicker('setValue');
-    equal(this.input.val().split('-')[1], 'March');
+    equal(this.input.val().split('-')[1], 'Marzo ');
 });
 
 test('M: Month fullname case insensitive.', function(){
     this.input
-        .val('2012-MARCH-05')
+        .val('2012-Marzo -05')
         .datepicker({format: 'yyyy-MM-dd'})
         .datepicker('setValue');
-    equal(this.input.val().split('-')[1], 'March');
+    equal(this.input.val().split('-')[1], 'Marzo ');
 });
 
 test('yy: Year, two-digit.', function(){
@@ -133,7 +133,7 @@ test('yyyy-MM-dd: Regression: Infinite loop when numbers used for month', functi
         .val('2012-02-12')
         .datepicker({format: 'yyyy-MM-dd'})
         .datepicker('setValue');
-    equal(this.input.val(), '2012-February-12');
+    equal(this.input.val(), '2012-Febrero -12');
 });
 
 test('+1d: Tomorrow', patch_date(function(Date){
@@ -256,7 +256,7 @@ test('Invalid formats are force-parsed into a valid date on tab', patch_date(fun
         keyCode: 9
     });
 
-    equal(this.input.val(), '56-September-30');
+    equal(this.input.val(), '56-Septiembre -30');
 }));
 
 test('Trailing separators', patch_date(function(Date){

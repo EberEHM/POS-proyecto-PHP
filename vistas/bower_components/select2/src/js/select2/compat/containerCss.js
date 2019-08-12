@@ -9,8 +9,8 @@ define([
 
   function ContainerCSS () { }
 
-  ContainerCSS.prototype.render = function (decorated) {
-    var $container = decorated.call(this);
+  ContainerCSS.prototype.render = function (Decorated) {
+    var $container = Decorated.call(this);
 
     var containerCssClass = this.options.get('containerCssClass') || '';
 

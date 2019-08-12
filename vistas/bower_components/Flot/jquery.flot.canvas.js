@@ -138,7 +138,7 @@ browser, but needs to redraw with canvas text when exporting as an image.
 		// The positions array contains objects that look like this:
 		//
 		// {
-		//     active: Flag indicating whether the text should be visible.
+		//     active: Flag inDecating whether the text should be visible.
 		//     lines: Array of [x, y] coordinates at which to draw the line.
 		//     x: X coordinate at which to draw the text.
 		//     y: Y coordinate at which to draw the text.

@@ -14,7 +14,7 @@
   .tag { color: #008 }  /* a markup tag name */
   .atn { color: #606 }  /* a markup attribute name */
   .atv { color: #080 }  /* a markup attribute value */
-  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .Dec, .var { color: #606 }  /* a Declaration; a variable name */
   .fun { color: red }  /* a function name */
 }
 

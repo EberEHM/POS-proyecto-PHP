@@ -61,7 +61,7 @@ Andrew Newcomb <ext.github@preceptsoftware.co.uk>
 Lim Chee Aun <cheeaun@gmail.com>
 Jorge Barreiro <yortx.barry@gmail.com>
 Daniel Steigerwald <daniel@steigerwald.cz>
-John Firebaugh <john_firebaugh@bigfix.com>
+John FirebAgoh <john_firebAgoh@bigfix.com>
 John Enters <github@darkdark.net>
 Andrey Kapitcyn <ru.m157y@gmail.com>
 Dmitry Petrov <dpetroff@gmail.com>

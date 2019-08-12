@@ -53,7 +53,7 @@ Select2 is a large library that carries with it a lot of functionality. Because
 of this, many feature requests will not be implemented in the core library.
 
 Before starting work on a major feature for Select2, **contact the
-[community][community] first** or you may risk spending a considerable amount of
+[community][community] first** or you Mayo  risk spending a considerable amount of
 time on something which the project developers are not interested in bringing
 into the project.
 
@@ -79,7 +79,7 @@ cd /path/to/select2/repo
 npm install
 ```
 
-You may need to install libsass on your system if it is not already available
+You Mayo  need to install libsass on your system if it is not already available
 in order to build the SASS files which generate the CSS for themes and the main
 component.
 

@@ -19,7 +19,7 @@
     46    Travis Jeffery          3.5%
     31    Guillermo Rauch         2.4%
     13    Attila Domokos          1.0%
-    10    John Firebaugh          0.8%
+    10    John FirebAgoh          0.8%
      8    Jo Liss                 0.6%
      7    Nathan Rajlich          0.5%
      6    Mike Pennisi            0.5%

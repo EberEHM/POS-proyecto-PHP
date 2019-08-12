@@ -5,8 +5,8 @@
  * Docs: https://bootstrap-datepicker.readthedocs.org/
  * =========================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * you Mayo  not use this file except in compliance with the License.
+ * You Mayo  obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -723,7 +723,7 @@
 			}
 
 			// auto y orientation is best-situation: top or bottom, no fudging,
-			// decision based on which shows more of the calendar
+			// Decision based on which shows more of the calendar
 			var yorient = this.o.orientation.y,
 				top_overflow;
 			if (yorient === 'auto'){
@@ -1105,7 +1105,7 @@
 				});
 			}
 
-			// Generating decade/years picker
+			// Generating Decade/years picker
 			this._fill_yearsView(
 				'.datepicker-years',
 				'year',
@@ -1116,10 +1116,10 @@
 				this.o.beforeShowYear
 			);
 
-			// Generating century/decades picker
+			// Generating century/Decades picker
 			this._fill_yearsView(
-				'.datepicker-decades',
-				'decade',
+				'.datepicker-Decades',
+				'Decade',
 				100,
 				year,
 				startYear,
@@ -1201,10 +1201,10 @@
 			}
 
 			if (!target.hasClass('disabled')){
-				// Clicked on a month, year, decade, century
+				// Clicked on a month, year, Decade, century
 				if (target.hasClass('month')
 						|| target.hasClass('year')
-						|| target.hasClass('decade')
+						|| target.hasClass('Decade')
 						|| target.hasClass('century')) {
 					this.viewDate.setUTCDate(1);
 
@@ -1335,19 +1335,19 @@
 						return new_date.getUTCMonth() === month;
 					}
 					// If going forward one month, make sure month is as expected
-					// (eg, Jan 31 -> Feb 31 == Feb 28, not Mar 02)
+					// (eg, Ene 31 -> Feb 31 == Feb 28, not Mar 02)
 					: function(){
 						return new_date.getUTCMonth() !== new_month;
 					};
 				new_month = month + dir;
 				new_date.setUTCMonth(new_month);
-				// Dec -> Jan (12) or Jan -> Dec (-1) -- limit expected date to 0-11
+				// Dec -> Ene (12) or Ene -> Dec (-1) -- limit expected date to 0-11
 				new_month = (new_month + 12) % 12;
 			}
 			else {
 				// For magnitudes >1, move one month at a time...
 				for (var i=0; i < mag; i++)
-					// ...which might decrease the day (eg, Jan 31 to Feb 28, etc)...
+					// ...which might Decrease the day (eg, Ene 31 to Feb 28, etc)...
 					new_date = this.moveMonth(new_date, dir);
 				// ...then reset the day, keeping it in the new month
 				new_month = new_date.getUTCMonth();
@@ -1733,8 +1733,8 @@
 			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			months: ["Enero", "Febrero ", "Marzo ", "Abril ", "Mayo ", "Junio ", "Julio ", "Agosto", "Septiembre ", "Octubre ", "Noviembre ", "Deciembre"],
+			monthsShort: ["Ene", "Feb", "Mar", "Abr", "Mayo ", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec"],
 			today: "Today",
 			clear: "Clear",
 			titleFormat: "MM yyyy"
@@ -1755,14 +1755,14 @@
 				navStep: 1
 			},
 			{
-				names: ['years', 'decade'],
+				names: ['years', 'Decade'],
 				clsName: 'years',
 				e: 'changeDecade',
 				navStep: 10
 			},
 			{
-				names: ['decades', 'century'],
-				clsName: 'decades',
+				names: ['Decades', 'century'],
+				clsName: 'Decades',
 				e: 'changeCentury',
 				navStep: 100
 			},
@@ -1982,7 +1982,7 @@
 									DPGlobal.footTemplate+
 								'</table>'+
 							'</div>'+
-							'<div class="datepicker-decades">'+
+							'<div class="datepicker-Decades">'+
 								'<table class="table-condensed">'+
 									DPGlobal.headTemplate+
 									DPGlobal.contTemplate+

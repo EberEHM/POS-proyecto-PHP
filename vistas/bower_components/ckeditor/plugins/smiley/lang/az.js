@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("smiley","az",{options:"Smayli-nin seçimləri",title:"Smayli-ni daxil et",toolbar:"Smayli"});
+﻿CKEDITOR.plugins.setLang("smiley","az",{options:"SMayo li-nin seçimləri",title:"SMayo li-ni daxil et",toolbar:"SMayo li"});

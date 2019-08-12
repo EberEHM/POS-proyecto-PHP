@@ -2,9 +2,9 @@ define( [
 	"../core",
 	"../core/stripAndCollapse",
 	"../var/rnothtmlwhite",
-	"../data/var/dataPriv",
+	"../data/var/datAbriv",
 	"../core/init"
-], function( jQuery, stripAndCollapse, rnothtmlwhite, dataPriv ) {
+], function( jQuery, stripAndCollapse, rnothtmlwhite, datAbriv ) {
 
 "use strict";
 
@@ -137,7 +137,7 @@ jQuery.fn.extend( {
 				if ( className ) {
 
 					// Store className if set
-					dataPriv.set( this, "__className__", className );
+					datAbriv.set( this, "__className__", className );
 				}
 
 				// If the element has a class name or if we're passed `false`,
@@ -148,7 +148,7 @@ jQuery.fn.extend( {
 					this.setAttribute( "class",
 						className || value === false ?
 						"" :
-						dataPriv.get( this, "__className__" ) || ""
+						datAbriv.get( this, "__className__" ) || ""
 					);
 				}
 			}

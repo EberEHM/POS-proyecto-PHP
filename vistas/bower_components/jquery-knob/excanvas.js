@@ -1,8 +1,8 @@
 // Copyright 2006 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
+// you Mayo  not use this file except in compliance with the License.
+// You Mayo  obtain a copy of the License at
 //
 //   http://www.apache.org/licenses/LICENSE-2.0
 //
@@ -194,10 +194,10 @@ if (!document.createElement('canvas').getContext) {
   G_vmlCanvasManager_.init();
 
   // precompute "00" to "FF"
-  var dec2hex = [];
+  var Dec2hex = [];
   for (var i = 0; i < 16; i++) {
     for (var j = 0; j < 16; j++) {
-      dec2hex[i * 16 + j] = i.toString(16) + j.toString(16);
+      Dec2hex[i * 16 + j] = i.toString(16) + j.toString(16);
     }
   }
 
@@ -254,7 +254,7 @@ if (!document.createElement('canvas').getContext) {
 
       str = '#';
       for (var i = 0; i < 3; i++) {
-        str += dec2hex[Number(guts[i])];
+        str += Dec2hex[Number(guts[i])];
       }
 
       if (guts.length == 4 && styleString.substr(3, 1) == 'a') {

@@ -1,13 +1,13 @@
 define([
 
 ], function () {
-  function MinimumInputLength (decorated, $e, options) {
+  function MinimumInputLength (Decorated, $e, options) {
     this.minimumInputLength = options.get('minimumInputLength');
 
-    decorated.call(this, $e, options);
+    Decorated.call(this, $e, options);
   }
 
-  MinimumInputLength.prototype.query = function (decorated, params, callback) {
+  MinimumInputLength.prototype.query = function (Decorated, params, callback) {
     params.term = params.term || '';
 
     if (params.term.length < this.minimumInputLength) {
@@ -23,7 +23,7 @@ define([
       return;
     }
 
-    decorated.call(this, params, callback);
+    Decorated.call(this, params, callback);
   };
 
   return MinimumInputLength;

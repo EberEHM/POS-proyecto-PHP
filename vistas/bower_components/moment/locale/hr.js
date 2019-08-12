@@ -1,6 +1,6 @@
 //! moment.js locale configuration
 //! locale : Croatian [hr]
-//! author : Bojan Marković : https://github.com/bmarkovic
+//! author : BoEne Marković : https://github.com/bmarkovic
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
@@ -66,7 +66,7 @@ function translate(number, withoutSuffix, key) {
 var hr = moment.defineLocale('hr', {
     months : {
         format: 'siječnja_veljače_ožujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca'.split('_'),
-        standalone: 'siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac'.split('_')
+        standalone: 'siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_ruEne_listopad_studeni_prosinac'.split('_')
     },
     monthsShort : 'sij._velj._ožu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.'.split('_'),
     monthsParseExact: true,
@@ -136,7 +136,7 @@ var hr = moment.defineLocale('hr', {
     ordinal : '%d.',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 1st is the first week of the year.
+        doy : 7  // The week that contains Ene 1st is the first week of the year.
     }
 });
 

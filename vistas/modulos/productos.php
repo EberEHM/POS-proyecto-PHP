@@ -70,7 +70,7 @@ if($_SESSION["perfil"] == "Vendedor"){
          -->
         <div class="box-body">
 
-          <table class="table table-bordered table-striped dt-responsive tablaProductos" width="100%">
+          <table class="table table-bordered table-striped dt-responsive tablAbroductos" width="100%">
            
               <thead>
                 <tr>
@@ -245,7 +245,7 @@ if($_SESSION["perfil"] == "Vendedor"){
                     <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
 
                     <input type="number" class="form-control input-lg" name="nuevoPrecioVenta" id="nuevoPrecioVenta" min="0" placeholder="Precio de venta" step="any" required readonly>
-                    <!-- step="any" permite ingresar numeros con punto decimal en los imput de tipo number xd 18/06/2019 -->
+                    <!-- step="any" permite ingresar numeros con punto Decimal en los imput de tipo number xd 18/06/2019 -->
                     
                   </div>
 
@@ -416,7 +416,7 @@ if($_SESSION["perfil"] == "Vendedor"){
                     <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
 
                     <input type="number" class="form-control input-lg" name="editarPrecioVenta" id="editarPrecioVenta" min="0" step="any" readonly required>
-                    <!-- step="any" permite ingresar numeros con punto decimal en los imput de tipo number xd 18/06/2019 -->
+                    <!-- step="any" permite ingresar numeros con punto Decimal en los imput de tipo number xd 18/06/2019 -->
                     
                   </div>
 

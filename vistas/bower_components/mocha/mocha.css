@@ -31,12 +31,12 @@ body {
 }
 
 #mocha h1 a {
-  text-decoration: none;
+  text-Decoration: none;
   color: inherit;
 }
 
 #mocha h1 a:hover {
-  text-decoration: underline;
+  text-Decoration: underline;
 }
 
 #mocha .suite .suite h1 {
@@ -168,7 +168,7 @@ body {
   position: absolute;
   top: 3px;
   right: 0;
-  text-decoration: none;
+  text-Decoration: none;
   vertical-align: middle;
   display: block;
   width: 15px;
@@ -233,7 +233,7 @@ body {
 }
 
 #mocha-stats a {
-  text-decoration: none;
+  text-Decoration: none;
   color: inherit;
 }
 

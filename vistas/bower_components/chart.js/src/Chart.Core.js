@@ -96,7 +96,7 @@
 			// Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
 			scaleBeginAtZero: false,
 
-			// String - Scale label font declaration for the scale label
+			// String - Scale label font Declaration for the scale label
 			scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 			// Number - Scale label font size in pixels
@@ -126,7 +126,7 @@
 			// String - Tooltip background colour
 			tooltipFillColor: "rgba(0,0,0,0.8)",
 
-			// String - Tooltip label font declaration for the scale label
+			// String - Tooltip label font Declaration for the scale label
 			tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 			// Number - Tooltip label font size in pixels
@@ -138,7 +138,7 @@
 			// String - Tooltip label font colour
 			tooltipFontColor: "#fff",
 
-			// String - Tooltip title font declaration for the scale label
+			// String - Tooltip title font Declaration for the scale label
 			tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
 			// Number - Tooltip title font size in pixels
@@ -183,7 +183,7 @@
 		}
 	};
 
-	//Create a dictionary of chart types, to allow for extension of existing types
+	//Create a Dectionary of chart types, to allow for extension of existing types
 	Chart.types = {};
 
 	//Global Chart helpers object for utility methods and classes
@@ -417,14 +417,14 @@
 				if(numberOfSteps > maxSteps){
 					stepValue *=2;
 					numberOfSteps = Math.round(graphRange/stepValue);
-					// Don't ever deal with a decimal number of steps - cancel fitting and just use the minimum number of steps.
+					// Don't ever deal with a Decimal number of steps - cancel fitting and just use the minimum number of steps.
 					if (numberOfSteps % 1 !== 0){
 						skipFitting = true;
 					}
 				}
 				//We can fit in double the amount of scale points on the scale
 				else{
-					//If user has declared ints only, and the step value isn't a decimal
+					//If user has Declared ints only, and the step value isn't a Decimal
 					if (integersOnly && rangeOrderOfMagnitude >= 0){
 						//If the user has said integers only, we need to check that making the scale more granular wouldn't make it a float
 						if(stepValue/2 % 1 === 0){
@@ -1664,7 +1664,7 @@
 
 				each(this.xLabels,function(label,index){
 					var xPos = this.calculateX(index) + aliasPixel(this.lineWidth),
-						// Check to see if line/bar here and decide where to place the line
+						// Check to see if line/bar here and Decide where to place the line
 						linePos = this.calculateX(index - (this.offsetGridLines ? 0.5 : 0)) + aliasPixel(this.lineWidth),
 						isRotated = (this.xLabelRotation > 0),
 						drawVerticalLine = this.showVerticalLines;

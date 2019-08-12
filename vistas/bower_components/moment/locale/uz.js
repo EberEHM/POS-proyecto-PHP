@@ -49,7 +49,7 @@ var uz = moment.defineLocale('uz', {
     },
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 7  // The week that contains Jan 4th is the first week of the year.
+        doy : 7  // The week that contains Ene 4th is the first week of the year.
     }
 });
 

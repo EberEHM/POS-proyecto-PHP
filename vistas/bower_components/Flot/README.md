@@ -89,7 +89,7 @@ First: it's pronounced with a short o, like "plot". Not like "flawed".
 
 So "Flot" rhymes with "plot".
 
-And if you look up "flot" in a Danish-to-English dictionary, some of
+And if you look up "flot" in a Danish-to-English Dectionary, some of
 the words that come up are "good-looking", "attractive", "stylish",
 "smart", "impressive", "extravagant". One of the main goals with Flot
 is pretty looks.

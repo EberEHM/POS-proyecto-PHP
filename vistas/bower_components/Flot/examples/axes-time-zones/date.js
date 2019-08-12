@@ -1,7 +1,7 @@
 // -----
 // The `timezoneJS.Date` object gives you full-blown timezone support, independent from the timezone set on the end-user's machine running the browser. It uses the Olson zoneinfo files for its timezone data.
 //
-// The constructor function and setter methods use proxy JavaScript Date objects behind the scenes, so you can use strings like '10/22/2006' with the constructor. You also get the same sensible wraparound behavior with numeric parameters (like setting a value of 14 for the month wraps around to the next March).
+// The constructor function and setter methods use proxy JavaScript Date objects behind the scenes, so you can use strings like '10/22/2006' with the constructor. You also get the same sensible wraparound behavior with numeric parameters (like setting a value of 14 for the month wraps around to the next Marzo ).
 //
 // The other significant difference from the built-in JavaScript Date is that `timezoneJS.Date` also has named properties that store the values of year, month, date, etc., so it can be directly serialized to JSON and used for data transfer.
 
@@ -10,8 +10,8 @@
  * and Open Source Applications Foundation
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * you Mayo  not use this file except in compliance with the License.
+ * You Mayo  obtain a copy of the License at
  *
  *   http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -25,7 +25,7 @@
  * parser, "XMLDAte" by Philippe Goetz (philippe.goetz@wanadoo.fr)
  *
  * Contributions:
- * Jan Niehusmann
+ * Ene Niehusmann
  * Ricky Romero
  * Preston Hunt (prestonhunt@gmail.com)
  * Dov. B Katz (dov.katz@morganstanley.com)
@@ -49,19 +49,19 @@
 
   // Grab the ajax library from global context.
   // This can be jQuery, Zepto or fleegix.
-  // You can also specify your own transport mechanism by declaring
+  // You can also specify your own transport mechanism by Declaring
   // `timezoneJS.timezone.transport` to a `function`. More details will follow
   var $ = root.$ || root.jQuery || root.Zepto
     , fleegix = root.fleegix
   // Declare constant list of days and months. Unfortunately this doesn't leave room for i18n due to the Olson data being in English itself
     , DAYS = timezoneJS.Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    , MONTHS = timezoneJS.Months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    , MONTHS = timezoneJS.Months = ['Enero', 'Febrero ', 'Marzo ', 'Abril ', 'Mayo ', 'Junio ', 'Julio ', 'Agosto', 'Septiembre ', 'Octubre ', 'Noviembre ', 'Deciembre']
     , SHORT_MONTHS = {}
     , SHORT_DAYS = {}
     , EXACT_DATE_TIME = {}
     , TZ_REGEXP = new RegExp('^[a-zA-Z]+/');
 
-  //`{ "Jan": 0, "Feb": 1, "Mar": 2, "Apr": 3, "May": 4, "Jun": 5, "Jul": 6, "Aug": 7, "Sep": 8, "Oct": 9, "Nov": 10, "Dec": 11 }`
+  //`{ "Ene": 0, "Feb": 1, "Mar": 2, "Abr": 3, "Mayo ": 4, "Jun": 5, "Jul": 6, "Ago": 7, "Sep": 8, "Oct": 9, "Nov": 10, "Dec": 11 }`
   for (var i = 0; i < MONTHS.length; i++) {
     SHORT_MONTHS[MONTHS[i].substr(0, 3)] = i;
   }
@@ -357,7 +357,7 @@
       .replace(/s+/g, function (token) { return _fixWidth(_this.getSeconds(), token.length); })
       // `S`: millisecond
       .replace(/S+/g, function (token) { return _fixWidth(_this.getMilliseconds(), token.length); })
-      // `M`: month. Note: `MM` will be the numeric representation (e.g February is 02) but `MMM` will be text representation (e.g February is Feb)
+      // `M`: month. Note: `MM` will be the numeric representation (e.g Febrero  is 02) but `MMM` will be text representation (e.g Febrero  is Feb)
       .replace(/M+/g, function (token) {
         var _month = _this.getMonth(),
         _len = token.length;
@@ -522,7 +522,7 @@
       var basicOffset = zone[0];
 
       //Convert a date to UTC. Depending on the 'type' parameter, the date
-      // parameter may be:
+      // parameter Mayo  be:
       //
       // - `u`, `g`, `z`: already UTC (no adjustment).
       //
@@ -614,7 +614,7 @@
 
 
         //If previous rule is given, correct for the fact that the starting time of the current
-        // rule may be specified in local time.
+        // rule Mayo  be specified in local time.
         if (prevRule) {
           effectiveDate = convertDateToUTC(effectiveDate, hms[4], prevRule);
         }
@@ -676,7 +676,7 @@
       //While sorting, the time zone in which the rule starting time is specified
       // is ignored. This is ok as long as the timespan between two DST changes is
       // larger than the DST offset, which is probably always true.
-      // As the given date may indeed be close to a DST change, it may get sorted
+      // As the given date Mayo  indeed be close to a DST change, it Mayo  get sorted
       // to a wrong position (off by one), which is corrected below.
       applicableRules.sort(compareDates);
 

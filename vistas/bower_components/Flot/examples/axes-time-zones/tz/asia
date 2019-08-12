@@ -67,7 +67,7 @@ Rule	EUAsia	1996	max	-	Oct	lastSun	 1:00u	0	-
 Rule E-EurAsia	1981	max	-	Mar	lastSun	 0:00	1:00	S
 Rule E-EurAsia	1979	1995	-	Sep	lastSun	 0:00	0	-
 Rule E-EurAsia	1996	max	-	Oct	lastSun	 0:00	0	-
-Rule RussiaAsia	1981	1984	-	Apr	1	 0:00	1:00	S
+Rule RussiaAsia	1981	1984	-	Abr	1	 0:00	1:00	S
 Rule RussiaAsia	1981	1983	-	Oct	1	 0:00	0	-
 Rule RussiaAsia	1984	1991	-	Sep	lastSun	 2:00s	0	-
 Rule RussiaAsia	1985	1991	-	Mar	lastSun	 2:00s	1:00	S
@@ -95,7 +95,7 @@ Zone	Asia/Kabul	4:36:48 -	LMT	1890
 # but started switching at 3:00s in 1998.
 
 # From Arthur David Olson (2011-06-15):
-# While Russia abandoned DST in 2011, Armenia may choose to
+# While Russia abandoned DST in 2011, Armenia Mayo  choose to
 # follow Russia's "old" rules.
 
 # From Alexander Krivenyshev (2012-02-10):
@@ -109,7 +109,7 @@ Zone	Asia/Kabul	4:36:48 -	LMT	1890
 # (brief)
 # http://www.worldtimezone.com/dst_news/dst_news_armenia03.html
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Yerevan	2:58:00 -	LMT	1924 May  2
+Zone	Asia/Yerevan	2:58:00 -	LMT	1924 Mayo   2
 			3:00	-	YERT	1957 Mar    # Yerevan Time
 			4:00 RussiaAsia YER%sT	1991 Mar 31 2:00s
 			3:00	1:00	YERST	1991 Sep 23 # independence
@@ -118,20 +118,20 @@ Zone	Asia/Yerevan	2:58:00 -	LMT	1924 May  2
 			4:00 RussiaAsia	AM%sT	2012 Mar 25 2:00s
 			4:00	-	AMT
 
-# Azerbaijan
-# From Rustam Aliyev of the Azerbaijan Internet Forum (2005-10-23):
+# AzerbaiEne
+# From Rustam Aliyev of the AzerbaiEne Internet Forum (2005-10-23):
 # According to the resolution of Cabinet of Ministers, 1997
 # Resolution available at: http://aif.az/docs/daylight_res.pdf
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Azer	1997	max	-	Mar	lastSun	 4:00	1:00	S
 Rule	Azer	1997	max	-	Oct	lastSun	 5:00	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Baku	3:19:24 -	LMT	1924 May  2
+Zone	Asia/Baku	3:19:24 -	LMT	1924 Mayo   2
 			3:00	-	BAKT	1957 Mar    # Baku Time
 			4:00 RussiaAsia BAK%sT	1991 Mar 31 2:00s
-			3:00	1:00	BAKST	1991 Aug 30 # independence
+			3:00	1:00	BAKST	1991 Ago 30 # independence
 			3:00 RussiaAsia	AZ%sT	1992 Sep lastSat 23:00
-			4:00	-	AZT	1996 # Azerbaijan time
+			4:00	-	AZT	1996 # AzerbaiEne time
 			4:00	EUAsia	AZ%sT	1997
 			4:00	Azer	AZ%sT
 
@@ -143,10 +143,10 @@ Zone	Asia/Bahrain	3:22:20 -	LMT	1920		# Al Manamah
 
 # Bangladesh
 # From Alexander Krivenyshev (2009-05-13):
-# According to newspaper Asian Tribune (May 6, 2009) Bangladesh may introduce
-# Daylight Saving Time from June 16 to Sept 30
+# According to newspaper Asian Tribune (Mayo  6, 2009) Bangladesh Mayo  introduce
+# Daylight Saving Time from Junio  16 to Sept 30
 #
-# Bangladesh to introduce daylight saving time likely from June 16
+# Bangladesh to introduce daylight saving time likely from Junio  16
 # <a href="http://www.asiantribune.com/?q=node/17288">
 # http://www.asiantribune.com/?q=node/17288
 # </a>
@@ -155,16 +155,16 @@ Zone	Asia/Bahrain	3:22:20 -	LMT	1920		# Al Manamah
 # http://www.worldtimezone.com/dst_news/dst_news_bangladesh02.html
 # </a>
 #
-# "... Bangladesh government has decided to switch daylight saving time from
-# June
-# 16 till September 30 in a bid to ensure maximum use of daylight to cope with
+# "... Bangladesh government has Decided to switch daylight saving time from
+# Junio 
+# 16 till Septiembre  30 in a bid to ensure maximum use of daylight to cope with
 # crippling power crisis. "
 #
-# The switch will remain in effect from June 16 to Sept 30 (2009) but if
-# implemented the next year, it will come in force from April 1, 2010
+# The switch will remain in effect from Junio  16 to Sept 30 (2009) but if
+# implemented the next year, it will come in force from Abril  1, 2010
 
 # From Steffen Thorsen (2009-06-02):
-# They have finally decided now, but changed the start date to midnight between
+# They have finally Decided now, but changed the start date to midnight between
 # the 19th and 20th, and they have not set the end date yet.
 #
 # Some sources:
@@ -188,11 +188,11 @@ Zone	Asia/Bahrain	3:22:20 -	LMT	1920		# Al Manamah
 # No DST end date has been announced yet.
 
 # From Alexander Krivenyshev (2009-09-25):
-# Bangladesh won't go back to Standard Time from October 1, 2009,
-# instead it will continue DST measure till the cabinet makes a fresh decision.
+# Bangladesh won't go back to Standard Time from Octubre  1, 2009,
+# instead it will continue DST measure till the cabinet makes a fresh Decision.
 #
 # Following report by same newspaper-"The Daily Star Friday":
-# "DST change awaits cabinet decision-Clock won't go back by 1-hr from Oct 1"
+# "DST change awaits cabinet Decision-Clock won't go back by 1-hr from Oct 1"
 # <a href="http://www.thedailystar.net/newDesign/news-details.php?nid=107021">
 # http://www.thedailystar.net/newDesign/news-details.php?nid=107021
 # </a>
@@ -203,7 +203,7 @@ Zone	Asia/Bahrain	3:22:20 -	LMT	1920		# Al Manamah
 
 # From Steffen Thorsen (2009-10-13):
 # IANS (Indo-Asian News Service) now reports:
-# Bangladesh has decided that the clock advanced by an hour to make
+# Bangladesh has Decided that the clock advanced by an hour to make
 # maximum use of daylight hours as an energy saving measure would
 # "continue for an indefinite period."
 #
@@ -225,9 +225,9 @@ Zone	Asia/Bahrain	3:22:20 -	LMT	1920		# Al Manamah
 # http://www.worldtimezone.com/dst_news/dst_news_bangladesh05.html
 # </a>
 #
-# "...The government yesterday decided to put the clock back by one hour
-# on December 31 midnight and the new time will continue until March 31,
-# 2010 midnight. The decision came at a cabinet meeting at the Prime
+# "...The government yesterday Decided to put the clock back by one hour
+# on Deciembre 31 midnight and the new time will continue until Marzo  31,
+# 2010 midnight. The Decision came at a cabinet meeting at the Prime
 # Minister's Office last night..."
 
 # From Alexander Krivenyshev (2010-03-22):
@@ -248,7 +248,7 @@ Rule	Dhaka	2009	only	-	Dec	31	23:59	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Dhaka	6:01:40 -	LMT	1890
 			5:53:20	-	HMT	1941 Oct    # Howrah Mean Time?
-			6:30	-	BURT	1942 May 15 # Burma Time
+			6:30	-	BURT	1942 Mayo  15 # Burma Time
 			5:30	-	IST	1942 Sep
 			6:30	-	BURT	1951 Sep 30
 			6:00	-	DACT	1971 Mar 26 # Dacca Time
@@ -257,7 +257,7 @@ Zone	Asia/Dhaka	6:01:40 -	LMT	1890
 
 # Bhutan
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Thimphu	5:58:36 -	LMT	1947 Aug 15 # or Thimbu
+Zone	Asia/Thimphu	5:58:36 -	LMT	1947 Ago 15 # or Thimbu
 			5:30	-	IST	1987 Oct
 			6:00	-	BTT	# Bhutan Time
 
@@ -282,16 +282,16 @@ Zone	Asia/Brunei	7:39:40 -	LMT	1926 Mar   # Bandar Seri Begawan
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Rangoon	6:24:40 -	LMT	1880		# or Yangon
 			6:24:36	-	RMT	1920	   # Rangoon Mean Time?
-			6:30	-	BURT	1942 May   # Burma Time
-			9:00	-	JST	1945 May 3
+			6:30	-	BURT	1942 Mayo    # Burma Time
+			9:00	-	JST	1945 Mayo  3
 			6:30	-	MMT		   # Myanmar Time
 
 # Cambodia
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Phnom_Penh	6:59:40 -	LMT	1906 Jun  9
 			7:06:20	-	SMT	1911 Mar 11 0:01 # Saigon MT?
-			7:00	-	ICT	1912 May
-			8:00	-	ICT	1931 May
+			7:00	-	ICT	1912 Mayo 
+			8:00	-	ICT	1931 Mayo 
 			7:00	-	ICT
 
 # China
@@ -310,17 +310,17 @@ Zone	Asia/Phnom_Penh	6:59:40 -	LMT	1906 Jun  9
 # painful to suck in another copy..  So, here is what I have for
 # DST start/end dates for Peking's time zone (info from AP):
 #
-#     1986 May 4 - Sept 14
-#     1987 mid-April - ??
+#     1986 Mayo  4 - Sept 14
+#     1987 mid-Abril  - ??
 
 # From U. S. Naval Observatory (1989-01-19):
 # CHINA               8 H  AHEAD OF UTC  ALL OF CHINA, INCL TAIWAN
-# CHINA               9 H  AHEAD OF UTC  APR 17 - SEP 10
+# CHINA               9 H  AHEAD OF UTC  Abr 17 - SEP 10
 
 # From Paul Eggert (2006-03-22):
 # Shanks & Pottenger write that China (except for Hong Kong and Macau)
-# has had a single time zone since 1980 May 1, observing summer DST
-# from 1986 through 1991; this contradicts Devine's
+# has had a single time zone since 1980 Mayo  1, observing summer DST
+# from 1986 through 1991; this contraDects Devine's
 # note about Time magazine, though apparently _something_ happened in 1986.
 # Go with Shanks & Pottenger for now.  I made up names for the other
 # pre-1980 time zones.
@@ -330,9 +330,9 @@ Zone	Asia/Phnom_Penh	6:59:40 -	LMT	1906 Jun  9
 Rule	Shang	1940	only	-	Jun	 3	0:00	1:00	D
 Rule	Shang	1940	1941	-	Oct	 1	0:00	0	S
 Rule	Shang	1941	only	-	Mar	16	0:00	1:00	D
-Rule	PRC	1986	only	-	May	 4	0:00	1:00	D
+Rule	PRC	1986	only	-	Mayo 	 4	0:00	1:00	D
 Rule	PRC	1986	1991	-	Sep	Sun>=11	0:00	0	S
-Rule	PRC	1987	1991	-	Apr	Sun>=10	0:00	1:00	D
+Rule	PRC	1987	1991	-	Abr	Sun>=10	0:00	1:00	D
 
 # From Anthony Fok (2001-12-20):
 # BTW, I did some research on-line and found some info regarding these five
@@ -379,8 +379,8 @@ Rule	PRC	1987	1991	-	Apr	Sun>=10	0:00	1:00	D
 Zone	Asia/Harbin	8:26:44	-	LMT	1928 # or Haerbin
 			8:30	-	CHAT	1932 Mar # Changbai Time
 			8:00	-	CST	1940
-			9:00	-	CHAT	1966 May
-			8:30	-	CHAT	1980 May
+			9:00	-	CHAT	1966 Mayo 
+			8:30	-	CHAT	1980 Mayo 
 			8:00	PRC	C%sT
 # Zhongyuan Time ("Central plain Time")
 # most of China
@@ -393,19 +393,19 @@ Zone	Asia/Shanghai	8:05:52	-	LMT	1928
 # counties Deqing, Enping, Kaiping, Luoding, Taishan, Xinxing,
 # Yangchun, Yangjiang, Yu'nan, and Yunfu.
 Zone	Asia/Chongqing	7:06:20	-	LMT	1928 # or Chungking
-			7:00	-	LONT	1980 May # Long-shu Time
+			7:00	-	LONT	1980 Mayo  # Long-shu Time
 			8:00	PRC	C%sT
 # Xin-zang Time ("Xinjiang-Tibet Time")
 # The Gansu counties Aksay, Anxi, Dunhuang, Subei; west Qinghai;
 # the Guangdong counties  Xuwen, Haikang, Suixi, Lianjiang,
 # Zhanjiang, Wuchuan, Huazhou, Gaozhou, Maoming, Dianbai, and Xinyi;
 # east Tibet, including Lhasa, Chamdo, Shigaise, Jimsar, Shawan and Hutubi;
-# east Xinjiang, including Urumqi, Turpan, Karamay, Korla, Minfeng, Jinghe,
+# east Xinjiang, including Urumqi, Turpan, KaraMayo , Korla, Minfeng, Jinghe,
 # Wusu, Qiemo, Xinyan, Wulanwusu, Jinghe, Yumin, Tacheng, Tuoli, Emin,
 # Shihezi, Changji, Yanqi, Heshuo, Tuokexun, Tulufan, Shanshan, Hami,
 # Fukang, Kuitun, Kumukuli, Miquan, Qitai, and Turfan.
 Zone	Asia/Urumqi	5:50:20	-	LMT	1928 # or Urumchi
-			6:00	-	URUT	1980 May # Urumqi Time
+			6:00	-	URUT	1980 Mayo  # Urumqi Time
 			8:00	PRC	C%sT
 # Kunlun Time
 # West Tibet, including Pulan, Aheqi, Shufu, Shule;
@@ -471,13 +471,13 @@ Zone	Asia/Urumqi	5:50:20	-	LMT	1928 # or Urumchi
 # start date for Xinjiang time.
 #
 # Without having access to local historical records, nor the ability to legally
-# publish them, I would go with October 1, 1949, when Xinjiang became the Uyghur
+# publish them, I would go with Octubre  1, 1949, when Xinjiang became the Uyghur
 # Autonomous Region under the PRC. (Before that Uyghurs, of course, would also
 # not be using Beijing time, but some local time.)
 
 Zone	Asia/Kashgar	5:03:56	-	LMT	1928 # or Kashi or Kaxgar
 			5:30	-	KAST	1940	 # Kashgar Time
-			5:00	-	KAST	1980 May
+			5:00	-	KAST	1980 Mayo 
 			8:00	PRC	C%sT
 
 
@@ -500,19 +500,19 @@ Zone	Asia/Kashgar	5:03:56	-	LMT	1928 # or Kashi or Kaxgar
 # </a>
 # as of 2009-10-28:
 # Year        Period
-# 1941        1 Apr to 30 Sep
+# 1941        1 Abr to 30 Sep
 # 1942        Whole year
 # 1943        Whole year
 # 1944        Whole year
 # 1945        Whole year
-# 1946        20 Apr to 1 Dec
-# 1947        13 Apr to 30 Dec
-# 1948        2 May to 31 Oct
-# 1949        3 Apr to 30 Oct
-# 1950        2 Apr to 29 Oct
-# 1951        1 Apr to 28 Oct
-# 1952        6 Apr to 25 Oct
-# 1953        5 Apr to 1 Nov
+# 1946        20 Abr to 1 Dec
+# 1947        13 Abr to 30 Dec
+# 1948        2 Mayo  to 31 Oct
+# 1949        3 Abr to 30 Oct
+# 1950        2 Abr to 29 Oct
+# 1951        1 Abr to 28 Oct
+# 1952        6 Abr to 25 Oct
+# 1953        5 Abr to 1 Nov
 # 1954        21 Mar to 31 Oct
 # 1955        20 Mar to 6 Nov
 # 1956        18 Mar to 4 Nov
@@ -524,21 +524,21 @@ Zone	Asia/Kashgar	5:03:56	-	LMT	1928 # or Kashi or Kaxgar
 # 1962        18 Mar to 4 Nov
 # 1963        24 Mar to 3 Nov
 # 1964        22 Mar to 1 Nov
-# 1965        18 Apr to 17 Oct
-# 1966        17 Apr to 16 Oct
-# 1967        16 Apr to 22 Oct
-# 1968        21 Apr to 20 Oct
-# 1969        20 Apr to 19 Oct
-# 1970        19 Apr to 18 Oct
-# 1971        18 Apr to 17 Oct
-# 1972        16 Apr to 22 Oct
-# 1973        22 Apr to 21 Oct
+# 1965        18 Abr to 17 Oct
+# 1966        17 Abr to 16 Oct
+# 1967        16 Abr to 22 Oct
+# 1968        21 Abr to 20 Oct
+# 1969        20 Abr to 19 Oct
+# 1970        19 Abr to 18 Oct
+# 1971        18 Abr to 17 Oct
+# 1972        16 Abr to 22 Oct
+# 1973        22 Abr to 21 Oct
 # 1973/74     30 Dec 73 to 20 Oct 74
-# 1975        20 Apr to 19 Oct
-# 1976        18 Apr to 17 Oct
+# 1975        20 Abr to 19 Oct
+# 1976        18 Abr to 17 Oct
 # 1977        Nil
 # 1978        Nil
-# 1979        13 May to 21 Oct
+# 1979        13 Mayo  to 21 Oct
 # 1980 to Now Nil
 # The page does not give start or end times of day.
 # The page does not give a start date for 1942.
@@ -549,24 +549,24 @@ Zone	Asia/Kashgar	5:03:56	-	LMT	1928 # or Kashi or Kaxgar
 
 # Hong Kong (Xianggang)
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	HK	1941	only	-	Apr	1	3:30	1:00	S
+Rule	HK	1941	only	-	Abr	1	3:30	1:00	S
 Rule	HK	1941	only	-	Sep	30	3:30	0	-
-Rule	HK	1946	only	-	Apr	20	3:30	1:00	S
+Rule	HK	1946	only	-	Abr	20	3:30	1:00	S
 Rule	HK	1946	only	-	Dec	1	3:30	0	-
-Rule	HK	1947	only	-	Apr	13	3:30	1:00	S
+Rule	HK	1947	only	-	Abr	13	3:30	1:00	S
 Rule	HK	1947	only	-	Dec	30	3:30	0	-
-Rule	HK	1948	only	-	May	2	3:30	1:00	S
+Rule	HK	1948	only	-	Mayo 	2	3:30	1:00	S
 Rule	HK	1948	1951	-	Oct	lastSun	3:30	0	-
 Rule	HK	1952	only	-	Oct	25	3:30	0	-
-Rule	HK	1949	1953	-	Apr	Sun>=1	3:30	1:00	S
+Rule	HK	1949	1953	-	Abr	Sun>=1	3:30	1:00	S
 Rule	HK	1953	only	-	Nov	1	3:30	0	-
 Rule	HK	1954	1964	-	Mar	Sun>=18	3:30	1:00	S
 Rule	HK	1954	only	-	Oct	31	3:30	0	-
 Rule	HK	1955	1964	-	Nov	Sun>=1	3:30	0	-
-Rule	HK	1965	1976	-	Apr	Sun>=16	3:30	1:00	S
+Rule	HK	1965	1976	-	Abr	Sun>=16	3:30	1:00	S
 Rule	HK	1965	1976	-	Oct	Sun>=16	3:30	0	-
 Rule	HK	1973	only	-	Dec	30	3:30	1:00	S
-Rule	HK	1979	only	-	May	Sun>=8	3:30	1:00	S
+Rule	HK	1979	only	-	Mayo 	Sun>=8	3:30	1:00	S
 Rule	HK	1979	only	-	Oct	Sun>=16	3:30	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Hong_Kong	7:36:36 -	LMT	1904 Oct 30
@@ -587,32 +587,32 @@ Zone	Asia/Hong_Kong	7:36:36 -	LMT	1904 Oct 30
 # <a href="http://www.cwb.gov.tw/V6/astronomy/cdata/summert.htm">
 # http://www.cwb.gov.tw/V6/astronomy/cdata/summert.htm
 # </a>
-# Taipei has DST in 1979 between July 1st and Sep 30.
+# Taipei has DST in 1979 between Julio  1st and Sep 30.
 
 # From Arthur David Olson (2010-04-07):
 # Here's Google's translation of the table at the bottom of the "summert.htm" page:
 # Decade 	                                                    Name                      Start and end date
-# Republic of China 34 years to 40 years (AD 1945-1951 years) Summer Time               May 1 to September 30
-# 41 years of the Republic of China (AD 1952)                 Daylight Saving Time      March 1 to October 31
-# Republic of China 42 years to 43 years (AD 1953-1954 years) Daylight Saving Time      April 1 to October 31
-# In the 44 years to 45 years (AD 1955-1956 years)            Daylight Saving Time      April 1 to September 30
-# Republic of China 46 years to 48 years (AD 1957-1959)       Summer Time               April 1 to September 30
-# Republic of China 49 years to 50 years (AD 1960-1961)       Summer Time               June 1 to September 30
+# Republic of China 34 years to 40 years (AD 1945-1951 years) Summer Time               Mayo  1 to Septiembre  30
+# 41 years of the Republic of China (AD 1952)                 Daylight Saving Time      Marzo  1 to Octubre  31
+# Republic of China 42 years to 43 years (AD 1953-1954 years) Daylight Saving Time      Abril  1 to Octubre  31
+# In the 44 years to 45 years (AD 1955-1956 years)            Daylight Saving Time      Abril  1 to Septiembre  30
+# Republic of China 46 years to 48 years (AD 1957-1959)       Summer Time               Abril  1 to Septiembre  30
+# Republic of China 49 years to 50 years (AD 1960-1961)       Summer Time               Junio  1 to Septiembre  30
 # Republic of China 51 years to 62 years (AD 1962-1973 years) Stop Summer Time
-# Republic of China 63 years to 64 years (1974-1975 AD)       Daylight Saving Time      April 1 to September 30
+# Republic of China 63 years to 64 years (1974-1975 AD)       Daylight Saving Time      Abril  1 to Septiembre  30
 # Republic of China 65 years to 67 years (1976-1978 AD)       Stop Daylight Saving Time
-# Republic of China 68 years (AD 1979)                        Daylight Saving Time      July 1 to September 30
+# Republic of China 68 years (AD 1979)                        Daylight Saving Time      Julio  1 to Septiembre  30
 # Republic of China since 69 years (AD 1980)                  Stop Daylight Saving Time
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Taiwan	1945	1951	-	May	1	0:00	1:00	D
+Rule	Taiwan	1945	1951	-	Mayo 	1	0:00	1:00	D
 Rule	Taiwan	1945	1951	-	Oct	1	0:00	0	S
 Rule	Taiwan	1952	only	-	Mar	1	0:00	1:00	D
 Rule	Taiwan	1952	1954	-	Nov	1	0:00	0	S
-Rule	Taiwan	1953	1959	-	Apr	1	0:00	1:00	D
+Rule	Taiwan	1953	1959	-	Abr	1	0:00	1:00	D
 Rule	Taiwan	1955	1961	-	Oct	1	0:00	0	S
 Rule	Taiwan	1960	1961	-	Jun	1	0:00	1:00	D
-Rule	Taiwan	1974	1975	-	Apr	1	0:00	1:00	D
+Rule	Taiwan	1974	1975	-	Abr	1	0:00	1:00	D
 Rule	Taiwan	1974	1975	-	Oct	1	0:00	0	S
 Rule	Taiwan	1979	only	-	Jun	30	0:00	1:00	D
 Rule	Taiwan	1979	only	-	Sep	30	0:00	0	S
@@ -629,13 +629,13 @@ Rule	Macau	1963	only	-	Mar	Sun>=16	0:00	1:00	S
 Rule	Macau	1964	only	-	Mar	Sun>=16	3:30	1:00	S
 Rule	Macau	1965	only	-	Mar	Sun>=16	0:00	1:00	S
 Rule	Macau	1965	only	-	Oct	31	0:00	0	-
-Rule	Macau	1966	1971	-	Apr	Sun>=16	3:30	1:00	S
+Rule	Macau	1966	1971	-	Abr	Sun>=16	3:30	1:00	S
 Rule	Macau	1966	1971	-	Oct	Sun>=16	3:30	0	-
-Rule	Macau	1972	1974	-	Apr	Sun>=15	0:00	1:00	S
+Rule	Macau	1972	1974	-	Abr	Sun>=15	0:00	1:00	S
 Rule	Macau	1972	1973	-	Oct	Sun>=15	0:00	0	-
 Rule	Macau	1974	1977	-	Oct	Sun>=15	3:30	0	-
-Rule	Macau	1975	1977	-	Apr	Sun>=15	3:30	1:00	S
-Rule	Macau	1978	1980	-	Apr	Sun>=15	0:00	1:00	S
+Rule	Macau	1975	1977	-	Abr	Sun>=15	3:30	1:00	S
+Rule	Macau	1978	1980	-	Abr	Sun>=15	0:00	1:00	S
 Rule	Macau	1978	1980	-	Oct	Sun>=15	0:00	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Macau	7:34:20 -	LMT	1912
@@ -647,11 +647,11 @@ Zone	Asia/Macau	7:34:20 -	LMT	1912
 
 # Cyprus
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Cyprus	1975	only	-	Apr	13	0:00	1:00	S
+Rule	Cyprus	1975	only	-	Abr	13	0:00	1:00	S
 Rule	Cyprus	1975	only	-	Oct	12	0:00	0	-
-Rule	Cyprus	1976	only	-	May	15	0:00	1:00	S
+Rule	Cyprus	1976	only	-	Mayo 	15	0:00	1:00	S
 Rule	Cyprus	1976	only	-	Oct	11	0:00	0	-
-Rule	Cyprus	1977	1980	-	Apr	Sun>=1	0:00	1:00	S
+Rule	Cyprus	1977	1980	-	Abr	Sun>=1	0:00	1:00	S
 Rule	Cyprus	1977	only	-	Sep	25	0:00	0	-
 Rule	Cyprus	1978	only	-	Oct	2	0:00	0	-
 Rule	Cyprus	1979	1997	-	Sep	lastSun	0:00	0	-
@@ -674,23 +674,23 @@ Link	Asia/Nicosia	Europe/Nicosia
 # We have no details, but we'll guess they didn't move the clocks back in fall.
 #
 # From Mathew Englander, quoting AP (1996-10-23 13:05-04):
-# Instead of putting back clocks at the end of October, Georgia
+# Instead of putting back clocks at the end of Octubre , Georgia
 # will stay on daylight savings time this winter to save energy,
-# President Eduard Shevardnadze decreed Wednesday.
+# President Eduard Shevardnadze Decreed Wednesday.
 #
 # From the BBC via Joseph S. Myers (2004-06-27):
 #
 # Georgia moved closer to Western Europe on Sunday...  The former Soviet
 # republic has changed its time zone back to that of Moscow.  As a result it
 # is now just four hours ahead of Greenwich Mean Time, rather than five hours
-# ahead.  The switch was decreed by the pro-Western president of Georgia,
+# ahead.  The switch was Decreed by the pro-Western president of Georgia,
 # Mikhail Saakashvili, who said the change was partly prompted by the process
 # of integration into Europe.
 
 # From Teimuraz Abashidze (2005-11-07):
-# Government of Georgia ... decided to NOT CHANGE daylight savings time on
+# Government of Georgia ... Decided to NOT CHANGE daylight savings time on
 # [Oct.] 30, as it was done before during last more than 10 years.
-# Currently, we are in fact GMT +4:00, as before 30 October it was GMT
+# Currently, we are in fact GMT +4:00, as before 30 Octubre  it was GMT
 # +3:00.... The problem is, there is NO FORMAL LAW or governmental document
 # about it.  As far as I can find, I was told, that there is no document,
 # because we just DIDN'T ISSUE document about switching to winter time....
@@ -700,10 +700,10 @@ Link	Asia/Nicosia	Europe/Nicosia
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Tbilisi	2:59:16 -	LMT	1880
-			2:59:16	-	TBMT	1924 May  2 # Tbilisi Mean Time
+			2:59:16	-	TBMT	1924 Mayo   2 # Tbilisi Mean Time
 			3:00	-	TBIT	1957 Mar    # Tbilisi Time
 			4:00 RussiaAsia TBI%sT	1991 Mar 31 2:00s
-			3:00	1:00	TBIST	1991 Apr  9 # independence
+			3:00	1:00	TBIST	1991 Abr  9 # independence
 			3:00 RussiaAsia GE%sT	1992 # Georgia Time
 			3:00 E-EurAsia	GE%sT	1994 Sep lastSun
 			4:00 E-EurAsia	GE%sT	1996 Oct lastSun
@@ -717,8 +717,8 @@ Zone	Asia/Tbilisi	2:59:16 -	LMT	1880
 # See Indonesia for the 1945 transition.
 
 # From Joao Carrascalao, brother of the former governor of East Timor, in
-# <a href="http://etan.org/et99c/december/26-31/30ETMAY.htm">
-# East Timor may be late for its millennium
+# <a href="http://etan.org/et99c/Deciembre/26-31/30ETMayo .htm">
+# East Timor Mayo  be late for its millennium
 # </a> (1999-12-26/31):
 # Portugal tried to change the time forward in 1974 because the sun
 # rises too early but the suggestion raised a lot of problems with the
@@ -732,16 +732,16 @@ Zone	Asia/Tbilisi	2:59:16 -	LMT	1880
 # <a href="http://www.hri.org/news/world/undh/last/00-08-16.undh.html">
 # From Manoel de Almeida e Silva, Deputy Spokesman for the UN Secretary-General
 # (2000-08-16)</a>:
-# The Cabinet of the East Timor Transition Administration decided
+# The Cabinet of the East Timor Transition Administration Decided
 # today to advance East Timor's time by one hour.  The time change,
 # which will be permanent, with no seasonal adjustment, will happen at
-# midnight on Saturday, September 16.
+# midnight on Saturday, Septiembre  16.
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Dili	8:22:20 -	LMT	1912
 			8:00	-	TLT	1942 Feb 21 23:00 # E Timor Time
 			9:00	-	JST	1945 Sep 23
-			9:00	-	TLT	1976 May  3
+			9:00	-	TLT	1976 Mayo   3
 			8:00	-	CIT	2000 Sep 17 00:00
 			9:00	-	TLT
 
@@ -749,7 +749,7 @@ Zone	Asia/Dili	8:22:20 -	LMT	1912
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Kolkata	5:53:28 -	LMT	1880	# Kolkata
 			5:53:20	-	HMT	1941 Oct    # Howrah Mean Time?
-			6:30	-	BURT	1942 May 15 # Burma Time
+			6:30	-	BURT	1942 Mayo  15 # Burma Time
 			5:30	-	IST	1942 Sep
 			5:30	1:00	IST	1945 Oct 15
 			5:30	-	IST
@@ -770,8 +770,8 @@ Zone	Asia/Kolkata	5:53:28 -	LMT	1880	# Kolkata
 # Here is another correction to Shanks & Pottenger.
 # JohnTWB writes that Japanese forces did not surrender control in
 # Indonesia until 1945-09-01 00:00 at the earliest (in Jakarta) and
-# other formal surrender ceremonies were September 9, 11, and 13, plus
-# September 12 for the regional surrender to Mountbatten in Singapore.
+# other formal surrender ceremonies were Septiembre  9, 11, and 13, plus
+# Septiembre  12 for the regional surrender to Mountbatten in Singapore.
 # These would be the earliest possible times for a change.
 # Regimes horaires pour le monde entier, by Henri Le Corre, (Editions
 # Traditionnelles, 1987, Paris) says that Java and Madura switched
@@ -780,25 +780,25 @@ Zone	Asia/Kolkata	5:53:28 -	LMT	1880	# Kolkata
 # switched on 1945-09-23.
 #
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone Asia/Jakarta	7:07:12 -	LMT	1867 Aug 10
-# Shanks & Pottenger say the next transition was at 1924 Jan 1 0:13,
+Zone Asia/Jakarta	7:07:12 -	LMT	1867 Ago 10
+# Shanks & Pottenger say the next transition was at 1924 Ene 1 0:13,
 # but this must be a typo.
 			7:07:12	-	JMT	1923 Dec 31 23:47:12 # Jakarta
 			7:20	-	JAVT	1932 Nov	 # Java Time
 			7:30	-	WIT	1942 Mar 23
 			9:00	-	JST	1945 Sep 23
-			7:30	-	WIT	1948 May
-			8:00	-	WIT	1950 May
+			7:30	-	WIT	1948 Mayo 
+			8:00	-	WIT	1950 Mayo 
 			7:30	-	WIT	1964
 			7:00	-	WIT
-Zone Asia/Pontianak	7:17:20	-	LMT	1908 May
+Zone Asia/Pontianak	7:17:20	-	LMT	1908 Mayo 
 			7:17:20	-	PMT	1932 Nov    # Pontianak MT
-			7:30	-	WIT	1942 Jan 29
+			7:30	-	WIT	1942 Ene 29
 			9:00	-	JST	1945 Sep 23
-			7:30	-	WIT	1948 May
-			8:00	-	WIT	1950 May
+			7:30	-	WIT	1948 Mayo 
+			8:00	-	WIT	1950 Mayo 
 			7:30	-	WIT	1964
-			8:00	-	CIT	1988 Jan  1
+			8:00	-	CIT	1988 Ene  1
 			7:00	-	WIT
 Zone Asia/Makassar	7:57:36 -	LMT	1920
 			7:57:36	-	MMT	1932 Nov    # Macassar MT
@@ -853,7 +853,7 @@ Zone Asia/Jayapura	9:22:48 -	LMT	1932 Nov
 # I used Ed Reingold's cal-persia in GNU Emacs 21.2 to check Persian dates,
 # stopping after 2037 when 32-bit time_t's overflow.
 # That cal-persia used Birashk's approximation, which disagrees with the solar
-# calendar predictions for the year 2025, so I corrected those dates by hand.
+# calendar preDections for the year 2025, so I corrected those dates by hand.
 #
 # From Oscar van Vlijmen (2005-03-30), writing about future
 # discrepancies between cal-persia and the Iranian calendar:
@@ -892,7 +892,7 @@ Rule	Iran	1978	1980	-	Mar	21	0:00	1:00	D
 Rule	Iran	1978	only	-	Oct	21	0:00	0	S
 Rule	Iran	1979	only	-	Sep	19	0:00	0	S
 Rule	Iran	1980	only	-	Sep	23	0:00	0	S
-Rule	Iran	1991	only	-	May	 3	0:00	1:00	D
+Rule	Iran	1991	only	-	Mayo 	 3	0:00	1:00	D
 Rule	Iran	1992	1995	-	Mar	22	0:00	1:00	D
 Rule	Iran	1991	1995	-	Sep	22	0:00	0	S
 Rule	Iran	1996	only	-	Mar	21	0:00	1:00	D
@@ -977,21 +977,21 @@ Zone	Asia/Tehran	3:25:44	-	LMT	1916
 # </a>
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Iraq	1982	only	-	May	1	0:00	1:00	D
+Rule	Iraq	1982	only	-	Mayo 	1	0:00	1:00	D
 Rule	Iraq	1982	1984	-	Oct	1	0:00	0	S
 Rule	Iraq	1983	only	-	Mar	31	0:00	1:00	D
-Rule	Iraq	1984	1985	-	Apr	1	0:00	1:00	D
+Rule	Iraq	1984	1985	-	Abr	1	0:00	1:00	D
 Rule	Iraq	1985	1990	-	Sep	lastSun	1:00s	0	S
 Rule	Iraq	1986	1990	-	Mar	lastSun	1:00s	1:00	D
-# IATA SSIM (1991/1996) says Apr 1 12:01am UTC; guess the `:01' is a typo.
+# IATA SSIM (1991/1996) says Abr 1 12:01am UTC; guess the `:01' is a typo.
 # Shanks & Pottenger say Iraq did not observe DST 1992/1997; ignore this.
 #
-Rule	Iraq	1991	2007	-	Apr	 1	3:00s	1:00	D
+Rule	Iraq	1991	2007	-	Abr	 1	3:00s	1:00	D
 Rule	Iraq	1991	2007	-	Oct	 1	3:00s	0	S
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Baghdad	2:57:40	-	LMT	1890
 			2:57:36	-	BMT	1918	    # Baghdad Mean Time?
-			3:00	-	AST	1982 May
+			3:00	-	AST	1982 Mayo 
 			3:00	Iraq	A%sT
 
 
@@ -1023,23 +1023,23 @@ Zone	Asia/Baghdad	2:57:40	-	LMT	1890
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Zion	1940	only	-	Jun	 1	0:00	1:00	D
 Rule	Zion	1942	1944	-	Nov	 1	0:00	0	S
-Rule	Zion	1943	only	-	Apr	 1	2:00	1:00	D
-Rule	Zion	1944	only	-	Apr	 1	0:00	1:00	D
-Rule	Zion	1945	only	-	Apr	16	0:00	1:00	D
+Rule	Zion	1943	only	-	Abr	 1	2:00	1:00	D
+Rule	Zion	1944	only	-	Abr	 1	0:00	1:00	D
+Rule	Zion	1945	only	-	Abr	16	0:00	1:00	D
 Rule	Zion	1945	only	-	Nov	 1	2:00	0	S
-Rule	Zion	1946	only	-	Apr	16	2:00	1:00	D
+Rule	Zion	1946	only	-	Abr	16	2:00	1:00	D
 Rule	Zion	1946	only	-	Nov	 1	0:00	0	S
-Rule	Zion	1948	only	-	May	23	0:00	2:00	DD
+Rule	Zion	1948	only	-	Mayo 	23	0:00	2:00	DD
 Rule	Zion	1948	only	-	Sep	 1	0:00	1:00	D
 Rule	Zion	1948	1949	-	Nov	 1	2:00	0	S
-Rule	Zion	1949	only	-	May	 1	0:00	1:00	D
-Rule	Zion	1950	only	-	Apr	16	0:00	1:00	D
+Rule	Zion	1949	only	-	Mayo 	 1	0:00	1:00	D
+Rule	Zion	1950	only	-	Abr	16	0:00	1:00	D
 Rule	Zion	1950	only	-	Sep	15	3:00	0	S
-Rule	Zion	1951	only	-	Apr	 1	0:00	1:00	D
+Rule	Zion	1951	only	-	Abr	 1	0:00	1:00	D
 Rule	Zion	1951	only	-	Nov	11	3:00	0	S
-Rule	Zion	1952	only	-	Apr	20	2:00	1:00	D
+Rule	Zion	1952	only	-	Abr	20	2:00	1:00	D
 Rule	Zion	1952	only	-	Oct	19	3:00	0	S
-Rule	Zion	1953	only	-	Apr	12	2:00	1:00	D
+Rule	Zion	1953	only	-	Abr	12	2:00	1:00	D
 Rule	Zion	1953	only	-	Sep	13	3:00	0	S
 Rule	Zion	1954	only	-	Jun	13	0:00	1:00	D
 Rule	Zion	1954	only	-	Sep	12	0:00	0	S
@@ -1047,19 +1047,19 @@ Rule	Zion	1955	only	-	Jun	11	2:00	1:00	D
 Rule	Zion	1955	only	-	Sep	11	0:00	0	S
 Rule	Zion	1956	only	-	Jun	 3	0:00	1:00	D
 Rule	Zion	1956	only	-	Sep	30	3:00	0	S
-Rule	Zion	1957	only	-	Apr	29	2:00	1:00	D
+Rule	Zion	1957	only	-	Abr	29	2:00	1:00	D
 Rule	Zion	1957	only	-	Sep	22	0:00	0	S
 Rule	Zion	1974	only	-	Jul	 7	0:00	1:00	D
 Rule	Zion	1974	only	-	Oct	13	0:00	0	S
-Rule	Zion	1975	only	-	Apr	20	0:00	1:00	D
-Rule	Zion	1975	only	-	Aug	31	0:00	0	S
-Rule	Zion	1985	only	-	Apr	14	0:00	1:00	D
+Rule	Zion	1975	only	-	Abr	20	0:00	1:00	D
+Rule	Zion	1975	only	-	Ago	31	0:00	0	S
+Rule	Zion	1985	only	-	Abr	14	0:00	1:00	D
 Rule	Zion	1985	only	-	Sep	15	0:00	0	S
-Rule	Zion	1986	only	-	May	18	0:00	1:00	D
+Rule	Zion	1986	only	-	Mayo 	18	0:00	1:00	D
 Rule	Zion	1986	only	-	Sep	 7	0:00	0	S
-Rule	Zion	1987	only	-	Apr	15	0:00	1:00	D
+Rule	Zion	1987	only	-	Abr	15	0:00	1:00	D
 Rule	Zion	1987	only	-	Sep	13	0:00	0	S
-Rule	Zion	1988	only	-	Apr	 9	0:00	1:00	D
+Rule	Zion	1988	only	-	Abr	 9	0:00	1:00	D
 Rule	Zion	1988	only	-	Sep	 3	0:00	0	S
 
 # From Ephraim Silverberg
@@ -1090,15 +1090,15 @@ Rule	Zion	1988	only	-	Sep	 3	0:00	0	S
 # (the eve of the 7th of Tishrei in the lunar Hebrew calendar).
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Zion	1989	only	-	Apr	30	0:00	1:00	D
+Rule	Zion	1989	only	-	Abr	30	0:00	1:00	D
 Rule	Zion	1989	only	-	Sep	 3	0:00	0	S
 Rule	Zion	1990	only	-	Mar	25	0:00	1:00	D
-Rule	Zion	1990	only	-	Aug	26	0:00	0	S
+Rule	Zion	1990	only	-	Ago	26	0:00	0	S
 Rule	Zion	1991	only	-	Mar	24	0:00	1:00	D
 Rule	Zion	1991	only	-	Sep	 1	0:00	0	S
 Rule	Zion	1992	only	-	Mar	29	0:00	1:00	D
 Rule	Zion	1992	only	-	Sep	 6	0:00	0	S
-Rule	Zion	1993	only	-	Apr	 2	0:00	1:00	D
+Rule	Zion	1993	only	-	Abr	 2	0:00	1:00	D
 Rule	Zion	1993	only	-	Sep	 5	0:00	0	S
 
 # The dates for 1994-1995 were obtained from Office of the Spokeswoman for the
@@ -1106,8 +1106,8 @@ Rule	Zion	1993	only	-	Sep	 5	0:00	0	S
 # calling the office directly at 972-2-6701447 or 972-2-6701448.
 
 # Rule	NAME    FROM    TO      TYPE    IN      ON      AT      SAVE    LETTER/S
-Rule	Zion	1994	only	-	Apr	 1	0:00	1:00	D
-Rule	Zion	1994	only	-	Aug	28	0:00	0	S
+Rule	Zion	1994	only	-	Abr	 1	0:00	1:00	D
+Rule	Zion	1994	only	-	Ago	28	0:00	0	S
 Rule	Zion	1995	only	-	Mar	31	0:00	1:00	D
 Rule	Zion	1995	only	-	Sep	 3	0:00	0	S
 
@@ -1132,7 +1132,7 @@ Rule	Zion	1997	only	-	Mar	21	0:00	1:00	D
 Rule	Zion	1997	only	-	Sep	14	0:00	0	S
 Rule	Zion	1998	only	-	Mar	20	0:00	1:00	D
 Rule	Zion	1998	only	-	Sep	 6	0:00	0	S
-Rule	Zion	1999	only	-	Apr	 2	2:00	1:00	D
+Rule	Zion	1999	only	-	Abr	 2	2:00	1:00	D
 Rule	Zion	1999	only	-	Sep	 3	2:00	0	S
 
 # The Knesset Interior Committee has changed the dates for 2000 for
@@ -1149,20 +1149,20 @@ Rule	Zion	1999	only	-	Sep	 3	2:00	0	S
 #	ftp://ftp.cs.huji.ac.il/pub/tz/announcements/2000-2004.ps.gz
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Zion	2000	only	-	Apr	14	2:00	1:00	D
+Rule	Zion	2000	only	-	Abr	14	2:00	1:00	D
 Rule	Zion	2000	only	-	Oct	 6	1:00	0	S
-Rule	Zion	2001	only	-	Apr	 9	1:00	1:00	D
+Rule	Zion	2001	only	-	Abr	 9	1:00	1:00	D
 Rule	Zion	2001	only	-	Sep	24	1:00	0	S
 Rule	Zion	2002	only	-	Mar	29	1:00	1:00	D
 Rule	Zion	2002	only	-	Oct	 7	1:00	0	S
 Rule	Zion	2003	only	-	Mar	28	1:00	1:00	D
 Rule	Zion	2003	only	-	Oct	 3	1:00	0	S
-Rule	Zion	2004	only	-	Apr	 7	1:00	1:00	D
+Rule	Zion	2004	only	-	Abr	 7	1:00	1:00	D
 Rule	Zion	2004	only	-	Sep	22	1:00	0	S
 
 # The proposed law agreed upon by the Knesset Interior Committee on
 # 2005-02-14 is that, for 2005 and beyond, DST starts at 02:00 the
-# last Friday before April 2nd (i.e. the last Friday in March or April
+# last Friday before Abril  2nd (i.e. the last Friday in Marzo  or Abril 
 # 1st itself if it falls on a Friday) and ends at 02:00 on the Saturday
 # night _before_ the fast of Yom Kippur.
 #
@@ -1181,11 +1181,11 @@ Rule	Zion	2004	only	-	Sep	22	1:00	0	S
 # Rule	Zion	2005	2012	-	Mar	Fri>=26	2:00	1:00	D
 #
 # but older zic implementations (e.g., Solaris 8) do not support
-# "Fri>=26" to mean April 1 in years like 2005, so for now we list the
+# "Fri>=26" to mean Abril  1 in years like 2005, so for now we list the
 # springtime transitions explicitly.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Zion	2005	only	-	Apr	 1	2:00	1:00	D
+Rule	Zion	2005	only	-	Abr	 1	2:00	1:00	D
 Rule	Zion	2005	only	-	Oct	 9	2:00	0	S
 Rule	Zion	2006	2010	-	Mar	Fri>=26	2:00	1:00	D
 Rule	Zion	2006	only	-	Oct	 1	2:00	0	S
@@ -1193,22 +1193,22 @@ Rule	Zion	2007	only	-	Sep	16	2:00	0	S
 Rule	Zion	2008	only	-	Oct	 5	2:00	0	S
 Rule	Zion	2009	only	-	Sep	27	2:00	0	S
 Rule	Zion	2010	only	-	Sep	12	2:00	0	S
-Rule	Zion	2011	only	-	Apr	 1	2:00	1:00	D
+Rule	Zion	2011	only	-	Abr	 1	2:00	1:00	D
 Rule	Zion	2011	only	-	Oct	 2	2:00	0	S
 Rule	Zion	2012	only	-	Mar	Fri>=26	2:00	1:00	D
 Rule	Zion	2012	only	-	Sep	23	2:00	0	S
 
 # From Ephraim Silverberg (2012-10-18):
 # Yesterday, the Interior Ministry Committee, after more than a year
-# past, approved sending the proposed June 2011 changes to the Time
+# past, approved sending the proposed Junio  2011 changes to the Time
 # Decree Law back to the Knesset for second and third (final) votes
-# before the upcoming elections on Jan. 22, 2013.  Hence, although the
-# changes are not yet law, they are expected to be so before February 2013.
+# before the upcoming elections on Ene. 22, 2013.  Hence, although the
+# changes are not yet law, they are expected to be so before Febrero  2013.
 #
-# As of 2013, DST starts at 02:00 on the Friday before the last Sunday in March.
-# DST ends at 02:00 on the first Sunday after October 1, unless it occurs on the
+# As of 2013, DST starts at 02:00 on the Friday before the last Sunday in Marzo .
+# DST ends at 02:00 on the first Sunday after Octubre  1, unless it occurs on the
 # second day of the Jewish Rosh Hashana holiday, in which case DST ends a day
-# later (i.e. at 02:00 the first Monday after October 2).
+# later (i.e. at 02:00 the first Monday after Octubre  2).
 # [Rosh Hashana holidays are factored in until 2100.]
 
 # From Ephraim Silverberg (2012-11-05):
@@ -1247,13 +1247,13 @@ Zone	Asia/Jerusalem	2:20:56 -	LMT	1880
 # daylight saving between 1948 and 1951, but ``the system was discontinued
 # because the public believed it would lead to longer working hours.''
 
-# From Mayumi Negishi in the 2005-08-10 Japan Times
+# From Mayo umi Negishi in the 2005-08-10 Japan Times
 # <http://www.japantimes.co.jp/cgi-bin/getarticle.pl5?nn20050810f2.htm>:
 # Occupation authorities imposed daylight-saving time on Japan on
 # [1948-05-01]....  But lack of prior debate and the execution of
 # daylight-saving time just three days after the bill was passed generated
 # deep hatred of the concept....  The Diet unceremoniously passed a bill to
-# dump the unpopular system in October 1951, less than a month after the San
+# dump the unpopular system in Octubre  1951, less than a month after the San
 # Francisco Peace Treaty was signed.  (A government poll in 1951 showed 53%
 # of the Japanese wanted to scrap daylight-saving time, as opposed to 30% who
 # wanted to keep it.)
@@ -1261,10 +1261,10 @@ Zone	Asia/Jerusalem	2:20:56 -	LMT	1880
 # From Paul Eggert (2006-03-22):
 # Shanks & Pottenger write that DST in Japan during those years was as follows:
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Japan	1948	only	-	May	Sun>=1	2:00	1:00	D
+Rule	Japan	1948	only	-	Mayo 	Sun>=1	2:00	1:00	D
 Rule	Japan	1948	1951	-	Sep	Sat>=8	2:00	0	S
-Rule	Japan	1949	only	-	Apr	Sun>=1	2:00	1:00	D
-Rule	Japan	1950	1951	-	May	Sun>=1	2:00	1:00	D
+Rule	Japan	1949	only	-	Abr	Sun>=1	2:00	1:00	D
+Rule	Japan	1950	1951	-	Mayo 	Sun>=1	2:00	1:00	D
 # but the only locations using it (for birth certificates, presumably, since
 # their audience is astrologers) were US military bases.  For now, assume
 # that for most purposes daylight-saving time was observed; otherwise, what
@@ -1293,7 +1293,7 @@ Rule	Japan	1950	1951	-	May	Sun>=1	2:00	1:00	D
 
 # Shanks & Pottenger claim JST in use since 1896, and that a few
 # places (e.g. Ishigaki) use +0800; go with Suzuki.  Guess that all
-# ordinances took effect on Jan 1.
+# ordinances took effect on Ene 1.
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
@@ -1307,14 +1307,14 @@ Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
 # From <a href="http://star.arabia.com/990701/JO9.html">
 # Jordan Week (1999-07-01) </a> via Steffen Thorsen (1999-09-09):
 # Clocks in Jordan were forwarded one hour on Wednesday at midnight,
-# in accordance with the government's decision to implement summer time
+# in accordance with the government's Decision to implement summer time
 # all year round.
 #
 # From <a href="http://star.arabia.com/990930/JO9.html">
 # Jordan Week (1999-09-30) </a> via Steffen Thorsen (1999-11-09):
-# Winter time starts today Thursday, 30 September. Clocks will be turned back
-# by one hour.  This is the latest government decision and it's final!
-# The decision was taken because of the increase in working hours in
+# Winter time starts today Thursday, 30 Septiembre . Clocks will be turned back
+# by one hour.  This is the latest government Decision and it's final!
+# The Decision was taken because of the increase in working hours in
 # government's departments from six to seven hours.
 #
 # From Paul Eggert (2005-11-22):
@@ -1326,20 +1326,20 @@ Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
 #
 # From Steffen Thorsen (2006-10-01), after a heads-up from Hilal Malawi:
 # http://www.petranews.gov.jo/nepras/2006/Sep/05/4000.htm
-# "Jordan will switch to winter time on Friday, October 27".
+# "Jordan will switch to winter time on Friday, Octubre  27".
 #
 
 # From Phil Pizzey (2009-04-02):
-# ...I think I may have spotted an error in the timezone data for
+# ...I think I Mayo  have spotted an error in the timezone data for
 # Jordan.
 # The current (2009d) asia file shows Jordan going to daylight
 # saving
-# time on the last Thursday in March.
+# time on the last Thursday in Marzo .
 #
 # Rule  Jordan      2000  max	-  Mar   lastThu     0:00s 1:00  S
 #
 # However timeanddate.com, which I usually find reliable, shows Jordan
-# going to daylight saving time on the last Friday in March since 2002.
+# going to daylight saving time on the last Friday in Marzo  since 2002.
 # Please see
 # <a href="http://www.timeanddate.com/worldclock/timezone.html?n=11">
 # http://www.timeanddate.com/worldclock/timezone.html?n=11
@@ -1353,9 +1353,9 @@ Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
 #
 # Google's translation:
 #
-# > The Council of Ministers decided in 2002 to adopt the principle of timely
+# > The Council of Ministers Decided in 2002 to adopt the principle of timely
 # > submission of the summer at 60 minutes as of midnight on the last Thursday
-# > of the month of March of each year.
+# > of the month of Marzo  of each year.
 #
 # So - this means the midnight between Thursday and Friday since 2002.
 
@@ -1375,22 +1375,22 @@ Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Jordan	1973	only	-	Jun	6	0:00	1:00	S
 Rule	Jordan	1973	1975	-	Oct	1	0:00	0	-
-Rule	Jordan	1974	1977	-	May	1	0:00	1:00	S
+Rule	Jordan	1974	1977	-	Mayo 	1	0:00	1:00	S
 Rule	Jordan	1976	only	-	Nov	1	0:00	0	-
 Rule	Jordan	1977	only	-	Oct	1	0:00	0	-
-Rule	Jordan	1978	only	-	Apr	30	0:00	1:00	S
+Rule	Jordan	1978	only	-	Abr	30	0:00	1:00	S
 Rule	Jordan	1978	only	-	Sep	30	0:00	0	-
-Rule	Jordan	1985	only	-	Apr	1	0:00	1:00	S
+Rule	Jordan	1985	only	-	Abr	1	0:00	1:00	S
 Rule	Jordan	1985	only	-	Oct	1	0:00	0	-
-Rule	Jordan	1986	1988	-	Apr	Fri>=1	0:00	1:00	S
+Rule	Jordan	1986	1988	-	Abr	Fri>=1	0:00	1:00	S
 Rule	Jordan	1986	1990	-	Oct	Fri>=1	0:00	0	-
-Rule	Jordan	1989	only	-	May	8	0:00	1:00	S
-Rule	Jordan	1990	only	-	Apr	27	0:00	1:00	S
-Rule	Jordan	1991	only	-	Apr	17	0:00	1:00	S
+Rule	Jordan	1989	only	-	Mayo 	8	0:00	1:00	S
+Rule	Jordan	1990	only	-	Abr	27	0:00	1:00	S
+Rule	Jordan	1991	only	-	Abr	17	0:00	1:00	S
 Rule	Jordan	1991	only	-	Sep	27	0:00	0	-
-Rule	Jordan	1992	only	-	Apr	10	0:00	1:00	S
+Rule	Jordan	1992	only	-	Abr	10	0:00	1:00	S
 Rule	Jordan	1992	1993	-	Oct	Fri>=1	0:00	0	-
-Rule	Jordan	1993	1998	-	Apr	Fri>=1	0:00	1:00	S
+Rule	Jordan	1993	1998	-	Abr	Fri>=1	0:00	1:00	S
 Rule	Jordan	1994	only	-	Sep	Fri>=15	0:00	0	-
 Rule	Jordan	1995	1998	-	Sep	Fri>=15	0:00s	0	-
 Rule	Jordan	1999	only	-	Jul	 1	0:00s	1:00	S
@@ -1429,9 +1429,9 @@ Zone	Asia/Amman	2:23:44 -	LMT	1931
 # <a href="http://www.kazsociety.org.uk/news/2005/03/30.htm">
 # From Kazakhstan Embassy's News Bulletin #11 (2005-03-21):
 # </a>
-# The Government of Kazakhstan passed a resolution March 15 abolishing
+# The Government of Kazakhstan passed a resolution Marzo  15 abolishing
 # daylight saving time citing lack of economic benefits and health
-# complications coupled with a decrease in productivity.
+# complications coupled with a Decrease in productivity.
 #
 # From Branislav Kojic (in Astana) via Gwillim Law (2005-06-28):
 # ... what happened was that the former Kazakhstan Eastern time zone
@@ -1447,29 +1447,29 @@ Zone	Asia/Amman	2:23:44 -	LMT	1931
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 #
 # Almaty (formerly Alma-Ata), representing most locations in Kazakhstan
-Zone	Asia/Almaty	5:07:48 -	LMT	1924 May  2 # or Alma-Ata
+Zone	Asia/Almaty	5:07:48 -	LMT	1924 Mayo   2 # or Alma-Ata
 			5:00	-	ALMT	1930 Jun 21 # Alma-Ata Time
 			6:00 RussiaAsia ALM%sT	1991
 			6:00	-	ALMT	1992
 			6:00 RussiaAsia	ALM%sT	2005 Mar 15
 			6:00	-	ALMT
 # Qyzylorda (aka Kyzylorda, Kizilorda, Kzyl-Orda, etc.)
-Zone	Asia/Qyzylorda	4:21:52 -	LMT	1924 May  2
+Zone	Asia/Qyzylorda	4:21:52 -	LMT	1924 Mayo   2
 			4:00	-	KIZT	1930 Jun 21 # Kizilorda Time
-			5:00	-	KIZT	1981 Apr  1
+			5:00	-	KIZT	1981 Abr  1
 			5:00	1:00	KIZST	1981 Oct  1
-			6:00	-	KIZT	1982 Apr  1
+			6:00	-	KIZT	1982 Abr  1
 			5:00 RussiaAsia	KIZ%sT	1991
 			5:00	-	KIZT	1991 Dec 16 # independence
-			5:00	-	QYZT	1992 Jan 19 2:00
+			5:00	-	QYZT	1992 Ene 19 2:00
 			6:00 RussiaAsia	QYZ%sT	2005 Mar 15
 			6:00	-	QYZT
 # Aqtobe (aka Aktobe, formerly Akt'ubinsk)
-Zone	Asia/Aqtobe	3:48:40	-	LMT	1924 May  2
+Zone	Asia/Aqtobe	3:48:40	-	LMT	1924 Mayo   2
 			4:00	-	AKTT	1930 Jun 21 # Aktyubinsk Time
-			5:00	-	AKTT	1981 Apr  1
+			5:00	-	AKTT	1981 Abr  1
 			5:00	1:00	AKTST	1981 Oct  1
-			6:00	-	AKTT	1982 Apr  1
+			6:00	-	AKTT	1982 Abr  1
 			5:00 RussiaAsia	AKT%sT	1991
 			5:00	-	AKTT	1991 Dec 16 # independence
 			5:00 RussiaAsia	AQT%sT	2005 Mar 15 # Aqtobe Time
@@ -1477,22 +1477,22 @@ Zone	Asia/Aqtobe	3:48:40	-	LMT	1924 May  2
 # Mangghystau
 # Aqtau was not founded until 1963, but it represents an inhabited region,
 # so include time stamps before 1963.
-Zone	Asia/Aqtau	3:21:04	-	LMT	1924 May  2
+Zone	Asia/Aqtau	3:21:04	-	LMT	1924 Mayo   2
 			4:00	-	FORT	1930 Jun 21 # Fort Shevchenko T
 			5:00	-	FORT	1963
 			5:00	-	SHET	1981 Oct  1 # Shevchenko Time
-			6:00	-	SHET	1982 Apr  1
+			6:00	-	SHET	1982 Abr  1
 			5:00 RussiaAsia	SHE%sT	1991
 			5:00	-	SHET	1991 Dec 16 # independence
 			5:00 RussiaAsia	AQT%sT	1995 Mar lastSun 2:00 # Aqtau Time
 			4:00 RussiaAsia	AQT%sT	2005 Mar 15
 			5:00	-	AQTT
 # West Kazakhstan
-Zone	Asia/Oral	3:25:24	-	LMT	1924 May  2 # or Ural'sk
+Zone	Asia/Oral	3:25:24	-	LMT	1924 Mayo   2 # or Ural'sk
 			4:00	-	URAT	1930 Jun 21 # Ural'sk time
-			5:00	-	URAT	1981 Apr  1
+			5:00	-	URAT	1981 Abr  1
 			5:00	1:00	URAST	1981 Oct  1
-			6:00	-	URAT	1982 Apr  1
+			6:00	-	URAT	1982 Abr  1
 			5:00 RussiaAsia	URA%sT	1989 Mar 26 2:00
 			4:00 RussiaAsia	URA%sT	1991
 			4:00	-	URAT	1991 Dec 16 # independence
@@ -1508,20 +1508,20 @@ Zone	Asia/Oral	3:25:24	-	LMT	1924 May  2 # or Ural'sk
 # Kyrgyzstan is canceling the daylight saving time system.  I take the article
 # to mean that they will leave their clocks at 6 hours ahead of UTC.
 # From Malik Abdugaliev (2005-09-21):
-# Our government cancels daylight saving time 6th of August 2005.
+# Our government cancels daylight saving time 6th of Agosto 2005.
 # From 2005-08-12 our GMT-offset is +6, w/o any daylight saving.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Kyrgyz	1992	1996	-	Apr	Sun>=7	0:00s	1:00	S
+Rule	Kyrgyz	1992	1996	-	Abr	Sun>=7	0:00s	1:00	S
 Rule	Kyrgyz	1992	1996	-	Sep	lastSun	0:00	0	-
 Rule	Kyrgyz	1997	2005	-	Mar	lastSun	2:30	1:00	S
 Rule	Kyrgyz	1997	2004	-	Oct	lastSun	2:30	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Bishkek	4:58:24 -	LMT	1924 May  2
+Zone	Asia/Bishkek	4:58:24 -	LMT	1924 Mayo   2
 			5:00	-	FRUT	1930 Jun 21 # Frunze Time
 			6:00 RussiaAsia FRU%sT	1991 Mar 31 2:00s
-			5:00	1:00	FRUST	1991 Aug 31 2:00 # independence
-			5:00	Kyrgyz	KG%sT	2005 Aug 12    # Kyrgyzstan Time
+			5:00	1:00	FRUST	1991 Ago 31 2:00 # independence
+			5:00	Kyrgyz	KG%sT	2005 Ago 12    # Kyrgyzstan Time
 			6:00	-	KGT
 
 ###############################################################################
@@ -1532,14 +1532,14 @@ Zone	Asia/Bishkek	4:58:24 -	LMT	1924 May  2
 # <http://www.koreaherald.co.kr/SITE/data/html_dir/2006/07/10/200607100012.asp>:
 # The Ministry of Commerce, Industry and Energy has already
 # commissioned a research project [to reintroduce DST] and has said
-# the system may begin as early as 2008....  Korea ran a daylight
+# the system Mayo  begin as early as 2008....  Korea ran a daylight
 # saving program from 1949-61 but stopped it during the 1950-53 Korean War.
 
 # From Shanks & Pottenger:
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	ROK	1960	only	-	May	15	0:00	1:00	D
+Rule	ROK	1960	only	-	Mayo 	15	0:00	1:00	D
 Rule	ROK	1960	only	-	Sep	13	0:00	0	S
-Rule	ROK	1987	1988	-	May	Sun>=8	0:00	1:00	D
+Rule	ROK	1987	1988	-	Mayo 	Sun>=8	0:00	1:00	D
 Rule	ROK	1987	1988	-	Oct	Sun>=8	0:00	0	S
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
@@ -1548,7 +1548,7 @@ Zone	Asia/Seoul	8:27:52	-	LMT	1890
 			9:00	-	KST	1928
 			8:30	-	KST	1932
 			9:00	-	KST	1954 Mar 21
-			8:00	ROK	K%sT	1961 Aug 10
+			8:00	ROK	K%sT	1961 Ago 10
 			8:30	-	KST	1968 Oct
 			9:00	ROK	K%sT
 Zone	Asia/Pyongyang	8:23:00 -	LMT	1890
@@ -1556,7 +1556,7 @@ Zone	Asia/Pyongyang	8:23:00 -	LMT	1890
 			9:00	-	KST	1928
 			8:30	-	KST	1932
 			9:00	-	KST	1954 Mar 21
-			8:00	-	KST	1961 Aug 10
+			8:00	-	KST	1961 Ago 10
 			9:00	-	KST
 
 ###############################################################################
@@ -1566,7 +1566,7 @@ Zone	Asia/Pyongyang	8:23:00 -	LMT	1890
 # From the Arab Times (2007-03-14):
 # The Civil Service Commission (CSC) has approved a proposal forwarded
 # by MP Ahmad Baqer on implementing the daylight saving time (DST) in
-# Kuwait starting from April until the end of Sept this year, reports Al-Anba.
+# Kuwait starting from Abril  until the end of Sept this year, reports Al-Anba.
 # <http://www.arabtimesonline.com/arabtimes/kuwait/Viewdet.asp?ID=9950>.
 # From Paul Eggert (2007-03-29):
 # We don't know the details, or whether the approval means it'll happen,
@@ -1578,32 +1578,32 @@ Zone	Asia/Kuwait	3:11:56 -	LMT	1950
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Vientiane	6:50:24 -	LMT	1906 Jun  9 # or Viangchan
 			7:06:20	-	SMT	1911 Mar 11 0:01 # Saigon MT?
-			7:00	-	ICT	1912 May
-			8:00	-	ICT	1931 May
+			7:00	-	ICT	1912 Mayo 
+			8:00	-	ICT	1931 Mayo 
 			7:00	-	ICT
 
 # Lebanon
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Lebanon	1920	only	-	Mar	28	0:00	1:00	S
 Rule	Lebanon	1920	only	-	Oct	25	0:00	0	-
-Rule	Lebanon	1921	only	-	Apr	3	0:00	1:00	S
+Rule	Lebanon	1921	only	-	Abr	3	0:00	1:00	S
 Rule	Lebanon	1921	only	-	Oct	3	0:00	0	-
 Rule	Lebanon	1922	only	-	Mar	26	0:00	1:00	S
 Rule	Lebanon	1922	only	-	Oct	8	0:00	0	-
-Rule	Lebanon	1923	only	-	Apr	22	0:00	1:00	S
+Rule	Lebanon	1923	only	-	Abr	22	0:00	1:00	S
 Rule	Lebanon	1923	only	-	Sep	16	0:00	0	-
-Rule	Lebanon	1957	1961	-	May	1	0:00	1:00	S
+Rule	Lebanon	1957	1961	-	Mayo 	1	0:00	1:00	S
 Rule	Lebanon	1957	1961	-	Oct	1	0:00	0	-
 Rule	Lebanon	1972	only	-	Jun	22	0:00	1:00	S
 Rule	Lebanon	1972	1977	-	Oct	1	0:00	0	-
-Rule	Lebanon	1973	1977	-	May	1	0:00	1:00	S
-Rule	Lebanon	1978	only	-	Apr	30	0:00	1:00	S
+Rule	Lebanon	1973	1977	-	Mayo 	1	0:00	1:00	S
+Rule	Lebanon	1978	only	-	Abr	30	0:00	1:00	S
 Rule	Lebanon	1978	only	-	Sep	30	0:00	0	-
-Rule	Lebanon	1984	1987	-	May	1	0:00	1:00	S
+Rule	Lebanon	1984	1987	-	Mayo 	1	0:00	1:00	S
 Rule	Lebanon	1984	1991	-	Oct	16	0:00	0	-
 Rule	Lebanon	1988	only	-	Jun	1	0:00	1:00	S
-Rule	Lebanon	1989	only	-	May	10	0:00	1:00	S
-Rule	Lebanon	1990	1992	-	May	1	0:00	1:00	S
+Rule	Lebanon	1989	only	-	Mayo 	10	0:00	1:00	S
+Rule	Lebanon	1990	1992	-	Mayo 	1	0:00	1:00	S
 Rule	Lebanon	1992	only	-	Oct	4	0:00	0	-
 Rule	Lebanon	1993	max	-	Mar	lastSun	0:00	1:00	S
 Rule	Lebanon	1993	1998	-	Sep	lastSun	0:00	0	-
@@ -1621,14 +1621,14 @@ Rule	NBorneo	1935	1941	-	Dec	14	0:00	0	-
 # The data here are taken from Mok Ly Yng (2003-10-30)
 # <http://www.math.nus.edu.sg/aslaksen/teaching/timezone.html>.
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone Asia/Kuala_Lumpur	6:46:46 -	LMT	1901 Jan  1
+Zone Asia/Kuala_Lumpur	6:46:46 -	LMT	1901 Ene  1
 			6:55:25	-	SMT	1905 Jun  1 # Singapore M.T.
-			7:00	-	MALT	1933 Jan  1 # Malaya Time
-			7:00	0:20	MALST	1936 Jan  1
+			7:00	-	MALT	1933 Ene  1 # Malaya Time
+			7:00	0:20	MALST	1936 Ene  1
 			7:20	-	MALT	1941 Sep  1
 			7:30	-	MALT	1942 Feb 16
 			9:00	-	JST	1945 Sep 12
-			7:30	-	MALT	1982 Jan  1
+			7:30	-	MALT	1982 Ene  1
 			8:00	-	MYT	# Malaysia Time
 # Sabah & Sarawak
 # From Paul Eggert (2006-03-22):
@@ -1639,7 +1639,7 @@ Zone Asia/Kuching	7:21:20	-	LMT	1926 Mar
 			7:30	-	BORT	1933	# Borneo Time
 			8:00	NBorneo	BOR%sT	1942 Feb 16
 			9:00	-	JST	1945 Sep 12
-			8:00	-	BORT	1982 Jan  1
+			8:00	-	BORT	1982 Ene  1
 			8:00	-	MYT
 
 # Maldives
@@ -1667,8 +1667,8 @@ Zone	Indian/Maldives	4:54:00 -	LMT	1880	# Male
 # Mongolia discontinued the use of daylight savings time in 1999; 1998
 # being the last year it was implemented.  The dates of implementation I am
 # unsure of, but most probably it was similar to Russia, except for the time
-# of implementation may have been different....
-# Some maps in the past have indicated that there was an additional time
+# of implementation Mayo  have been different....
+# Some maps in the past have inDecated that there was an additional time
 # zone in the eastern part of Mongolia, including the provinces of Dornod,
 # Suhbaatar, and possibly Khentij.
 
@@ -1692,9 +1692,9 @@ Zone	Indian/Maldives	4:54:00 -	LMT	1880	# Male
 # [The province of Selenge is omitted from the above lists.]
 
 # From Ganbold Ts., Ulaanbaatar (2004-04-17):
-# Daylight saving occurs at 02:00 local time last Saturday of March.
+# Daylight saving occurs at 02:00 local time last Saturday of Marzo .
 # It will change back to normal at 02:00 local time last Saturday of
-# September.... As I remember this rule was changed in 2001.
+# Septiembre .... As I remember this rule was changed in 2001.
 #
 # From Paul Eggert (2004-04-17):
 # For now, assume Rives McDow's informant got confused about Friday vs
@@ -1719,8 +1719,8 @@ Zone	Indian/Maldives	4:54:00 -	LMT	1880	# Male
 # For now, let's ignore this information, until we have more confirmation.
 
 # From Ganbold Ts. (2007-02-26):
-# Parliament of Mongolia has just changed the daylight-saving rule in February.
-# They decided not to adopt daylight-saving time....
+# Parliament of Mongolia has just changed the daylight-saving rule in Febrero .
+# They Decided not to adopt daylight-saving time....
 # http://www.mongolnews.mn/index.php?module=unuudur&sec=view&id=15742
 
 # From Deborah Goldsmith (2008-03-30):
@@ -1749,7 +1749,7 @@ Zone	Indian/Maldives	4:54:00 -	LMT	1880	# Male
 # There it appears that flights between Choibalsan and Ulaanbatar arrive
 # about 1:35 - 1:50 hours later in local clock time, no matter the
 # direction, while Ulaanbaatar-Khvod takes 2 hours in the Eastern
-# direction and 3:35 back, which indicates that Ulaanbatar and Khvod are
+# direction and 3:35 back, which inDecates that Ulaanbatar and Khvod are
 # in different time zones (like we know about), while Choibalsan and
 # Ulaanbatar are in the same time zone (correction needed).
 
@@ -1760,7 +1760,7 @@ Zone	Indian/Maldives	4:54:00 -	LMT	1880	# Male
 # this is almost surely wrong.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Mongol	1983	1984	-	Apr	1	0:00	1:00	S
+Rule	Mongol	1983	1984	-	Abr	1	0:00	1:00	S
 Rule	Mongol	1983	only	-	Oct	1	0:00	0	-
 # Shanks & Pottenger and IATA SSIM say 1990s switches occurred at 00:00,
 # but McDow says the 2001 switches occurred at 02:00.  Also, IATA SSIM
@@ -1776,24 +1776,24 @@ Rule	Mongol	1983	only	-	Oct	1	0:00	0	-
 Rule	Mongol	1985	1998	-	Mar	lastSun	0:00	1:00	S
 Rule	Mongol	1984	1998	-	Sep	lastSun	0:00	0	-
 # IATA SSIM (1999-09) says Mongolia no longer observes DST.
-Rule	Mongol	2001	only	-	Apr	lastSat	2:00	1:00	S
+Rule	Mongol	2001	only	-	Abr	lastSat	2:00	1:00	S
 Rule	Mongol	2001	2006	-	Sep	lastSat	2:00	0	-
 Rule	Mongol	2002	2006	-	Mar	lastSat	2:00	1:00	S
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 # Hovd, a.k.a. Chovd, Dund-Us, Dzhargalant, Khovd, Jirgalanta
-Zone	Asia/Hovd	6:06:36 -	LMT	1905 Aug
+Zone	Asia/Hovd	6:06:36 -	LMT	1905 Ago
 			6:00	-	HOVT	1978	# Hovd Time
 			7:00	Mongol	HOV%sT
 # Ulaanbaatar, a.k.a. Ulan Bataar, Ulan Bator, Urga
-Zone	Asia/Ulaanbaatar 7:07:32 -	LMT	1905 Aug
+Zone	Asia/Ulaanbaatar 7:07:32 -	LMT	1905 Ago
 			7:00	-	ULAT	1978	# Ulaanbaatar Time
 			8:00	Mongol	ULA%sT
-# Choibalsan, a.k.a. Bajan Tuemen, Bajan Tumen, Chojbalsan,
+# Choibalsan, a.k.a. BaEne Tuemen, BaEne Tumen, Chojbalsan,
 # Choybalsan, Sanbejse, Tchoibalsan
-Zone	Asia/Choibalsan	7:38:00 -	LMT	1905 Aug
+Zone	Asia/Choibalsan	7:38:00 -	LMT	1905 Ago
 			7:00	-	ULAT	1978
-			8:00	-	ULAT	1983 Apr
+			8:00	-	ULAT	1983 Abr
 			9:00	Mongol	CHO%sT	2008 Mar 31 # Choibalsan Time
 			8:00	Mongol	CHO%sT
 
@@ -1811,22 +1811,22 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # Pakistan
 
 # From Rives McDow (2002-03-13):
-# I have been advised that Pakistan has decided to adopt dst on a
-# TRIAL basis for one year, starting 00:01 local time on April 7, 2002
-# and ending at 00:01 local time October 6, 2002.  This is what I was
-# told, but I believe that the actual time of change may be 00:00; the
+# I have been advised that Pakistan has Decided to adopt dst on a
+# TRIAL basis for one year, starting 00:01 local time on Abril  7, 2002
+# and ending at 00:01 local time Octubre  6, 2002.  This is what I was
+# told, but I believe that the actual time of change Mayo  be 00:00; the
 # 00:01 was to make it clear which day it was on.
 
 # From Paul Eggert (2002-03-15):
 # Jesper Norgaard found this URL:
-# http://www.pak.gov.pk/public/news/app/app06_dec.htm
+# http://www.pak.gov.pk/public/news/app/app06_Dec.htm
 # (dated 2001-12-06) which says that the Cabinet adopted a scheme "to
 # advance the clocks by one hour on the night between the first
-# Saturday and Sunday of April and revert to the original position on
-# 15th October each year".  This agrees with McDow's 04-07 at 00:00,
-# but disagrees about the October transition, and makes it sound like
+# Saturday and Sunday of Abril  and revert to the original position on
+# 15th Octubre  each year".  This agrees with McDow's 04-07 at 00:00,
+# but disagrees about the Octubre  transition, and makes it sound like
 # it's not on a trial basis.  Also, the "between the first Saturday
-# and Sunday of April" phrase, if taken literally, means that the
+# and Sunday of Abril " phrase, if taken literally, means that the
 # transition takes place at 00:00 on the first Sunday on or after 04-02.
 
 # From Paul Eggert (2003-02-09):
@@ -1837,9 +1837,9 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # According to http://www.dawn.com/2003/03/07/top15.htm
 # there will be no DST in Pakistan this year:
 #
-# ISLAMABAD, March 6: Information and Media Development Minister Sheikh
+# ISLAMABAD, Marzo  6: Information and Media Development Minister Sheikh
 # Rashid Ahmed on Thursday said the cabinet had reversed a previous
-# decision to advance clocks by one hour in summer and put them back by
+# Decision to advance clocks by one hour in summer and put them back by
 # one hour in winter with the aim of saving light hours and energy.
 #
 # The minister told a news conference that the experiment had rather
@@ -1848,7 +1848,7 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # From Alex Krivenyshev (2008-05-15):
 #
 # Here is an article that Pakistan plan to introduce Daylight Saving Time
-# on June 1, 2008 for 3 months.
+# on Junio  1, 2008 for 3 months.
 #
 # "... The federal cabinet on Wednesday announced a new conservation plan to help
 # reduce load shedding by approving the closure of commercial centres at 9pm and
@@ -1867,9 +1867,9 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # XXX--midnight transitions is a guess; 2008 only is a guess.
 
 # From Alexander Krivenyshev (2008-08-28):
-# Pakistan government has decided to keep the watches one-hour advanced
-# for another 2 months--plan to return to Standard Time on October 31
-# instead of August 31.
+# Pakistan government has Decided to keep the watches one-hour advanced
+# for another 2 months--plan to return to Standard Time on Octubre  31
+# instead of Agosto 31.
 #
 # <a href="http://www.worldtimezone.com/dst_news/dst_news_pakistan02.html">
 # http://www.worldtimezone.com/dst_news/dst_news_pakistan02.html
@@ -1881,19 +1881,19 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 
 # From Alexander Krivenyshev (2009-04-08):
 # Based on previous media reports that "... proposed plan to
-# advance clocks by one hour from May 1 will cause disturbance
+# advance clocks by one hour from Mayo  1 will cause disturbance
 # to the working schedules rather than bringing discipline in
 # official working."
 # <a href="http://www.thenews.com.pk/daily_detail.asp?id=171280">
 # http://www.thenews.com.pk/daily_detail.asp?id=171280
 # </a>
 #
-# recent news that instead of May 2009 - Pakistan plan to
-# introduce DST from April 15, 2009
+# recent news that instead of Mayo  2009 - Pakistan plan to
+# introduce DST from Abril  15, 2009
 #
 # FYI: Associated Press Of Pakistan
-# April 08, 2009
-# Cabinet okays proposal to advance clocks by one hour from April 15
+# Abril  08, 2009
+# Cabinet okays proposal to advance clocks by one hour from Abril  15
 # <a href="http://www.app.com.pk/en_/index.php?option=com_content&task=view&id=73043&Itemid=1">
 # http://www.app.com.pk/en_/index.php?option=com_content&task=view&id=73043&Itemid=1
 # </a>
@@ -1906,13 +1906,13 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 #
 # ....
 # The Federal Cabinet on Wednesday approved the proposal to
-# advance clocks in the country by one hour from April 15 to
+# advance clocks in the country by one hour from Abril  15 to
 # conserve energy"
 
 # From Steffen Thorsen (2009-09-17):
 # "The News International," Pakistan reports that: "The Federal
-# Government has decided to restore the previous time by moving the
-# clocks backward by one hour from October 1. A formal announcement to
+# Government has Decided to restore the previous time by moving the
+# clocks backward by one hour from Octubre  1. A formal announcement to
 # this effect will be made after the Prime Minister grants approval in
 # this regard."
 # <a href="http://www.thenews.com.pk/updates.asp?id=87168">
@@ -1921,7 +1921,7 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 
 # From Alexander Krivenyshev (2009-09-28):
 # According to Associated Press Of Pakistan, it is confirmed that
-# Pakistan clocks across the country would be turned back by an hour from October
+# Pakistan clocks across the country would be turned back by an hour from Octubre 
 # 1, 2009.
 #
 # "Clocks to go back one hour from 1 Oct"
@@ -1936,20 +1936,20 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # From Steffen Thorsen (2009-09-29):
 # Alexander Krivenyshev wrote:
 # > According to Associated Press Of Pakistan, it is confirmed that
-# > Pakistan clocks across the country would be turned back by an hour from October
+# > Pakistan clocks across the country would be turned back by an hour from Octubre 
 # > 1, 2009.
 #
-# Now they seem to have changed their mind, November 1 is the new date:
+# Now they seem to have changed their mind, Noviembre  1 is the new date:
 # <a href="http://www.thenews.com.pk/top_story_detail.asp?Id=24742">
 # http://www.thenews.com.pk/top_story_detail.asp?Id=24742
 # </a>
-# "The country's clocks will be reversed by one hour on November 1.
+# "The country's clocks will be reversed by one hour on Noviembre  1.
 # Officials of Federal Ministry for Interior told this to Geo News on
 # Monday."
 #
 # And more importantly, it seems that these dates will be kept every year:
-# "It has now been decided that clocks will be wound forward by one hour
-# on April 15 and reversed by an hour on November 1 every year without
+# "It has now been Decided that clocks will be wound forward by one hour
+# on Abril  15 and reversed by an hour on Noviembre  1 every year without
 # obtaining prior approval, the officials added."
 #
 # We have confirmed this year's end date with both with the Ministry of
@@ -1960,7 +1960,7 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 
 # From Christoph Goehre (2009-10-01):
 # [T]he German Consulate General in Karachi reported me today that Pakistan
-# will go back to standard time on 1st of November.
+# will go back to standard time on 1st of Noviembre .
 
 # From Steffen Thorsen (2010-03-26):
 # Steffen Thorsen wrote:
@@ -1968,10 +1968,10 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # > Pakistan on 2010-04-01.
 # >
 # > Then today, the president said that they might have to revert the
-# > decision if it is not supported by the parliament. So at the time
+# > Decision if it is not supported by the parliament. So at the time
 # > being, it seems unclear if DST will be actually observed or not - but
-# > April 1 could be a more likely date than April 15.
-# Now, it seems that the decision to not observe DST in final:
+# > Abril  1 could be a more likely date than Abril  15.
+# Now, it seems that the Decision to not observe DST in final:
 #
 # "Govt Withdraws Plan To Advance Clocks"
 # <a href="http://www.apakistannews.com/govt-withdraws-plan-to-advance-clocks-172041">
@@ -1984,11 +1984,11 @@ Zone	Asia/Muscat	3:54:20 -	LMT	1920
 # </a>
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule Pakistan	2002	only	-	Apr	Sun>=2	0:01	1:00	S
+Rule Pakistan	2002	only	-	Abr	Sun>=2	0:01	1:00	S
 Rule Pakistan	2002	only	-	Oct	Sun>=2	0:01	0	-
 Rule Pakistan	2008	only	-	Jun	1	0:00	1:00	S
 Rule Pakistan	2008	only	-	Nov	1	0:00	0	-
-Rule Pakistan	2009	only	-	Apr	15	0:00	1:00	S
+Rule Pakistan	2009	only	-	Abr	15	0:00	1:00	S
 Rule Pakistan	2009	only	-	Nov	1	0:00	0	-
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
@@ -2019,11 +2019,11 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # towns in that area are Nablus (Shchem), El-Halil (Hebron), Ramallah, and
 # East Jerusalem.
 #
-# Both areas were occupied by Israel in June 1967, but not annexed (except
+# Both areas were occupied by Israel in Junio  1967, but not annexed (except
 # for East Jerusalem).  They were on Israel time since then; there might
 # have been a Military Governor's order about time zones, but I'm not aware
-# of any (such orders may have been issued semi-annually whenever summer
-# time was in effect, but maybe the legal aspect of time was just neglected).
+# of any (such orders Mayo  have been issued semi-annually whenever summer
+# time was in effect, but Mayo be the legal aspect of time was just neglected).
 #
 # The Palestinian Authority was established in 1993, and got hold of most
 # towns in the West Bank and Gaza by 1995.  I know that in order to
@@ -2040,7 +2040,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # West bank   | Zion      | Jordan    | Zion      | Jordan
 # Gaza        | Zion      | Egypt     | Zion      | Jordan
 #
-# I guess more info may be available from the PA's web page (if/when they
+# I guess more info Mayo  be available from the PA's web page (if/when they
 # have one).
 
 # From Paul Eggert (2006-03-22):
@@ -2050,7 +2050,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # We don't yet need a separate entry for the West Bank, since
 # the only differences between it and Gaza that we know about
 # occurred before our cutoff date of 1970.
-# However, as we get more information, we may need to add entries
+# However, as we get more information, we Mayo  need to add entries
 # for parts of the West Bank as they transitioned from Israel's rules
 # to Palestine's rules.
 
@@ -2058,19 +2058,19 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # forwarded by Ephraim Silverberg:
 #
 # Despite the fact that Israel changed over to daylight savings time
-# last week, the PLO Authority (PA) has decided not to turn its clocks
+# last week, the PLO Authority (PA) has Decided not to turn its clocks
 # one-hour forward at this time.  As a sign of independence from Israeli rule,
-# the PA has decided to implement DST in April.
+# the PA has Decided to implement DST in Abril .
 
 # From Paul Eggert (1999-09-20):
 # Daoud Kuttab writes in
-# <a href="http://www.jpost.com/com/Archive/22.Apr.1999/Opinion/Article-2.html">
+# <a href="http://www.jpost.com/com/Archive/22.Abr.1999/Opinion/Article-2.html">
 # Holiday havoc
 # </a> (Jerusalem Post, 1999-04-22) that
 # the Palestinian National Authority changed to DST on 1999-04-15.
-# I vaguely recall that they switch back in October (sorry, forgot the source).
+# I vaguely recall that they switch back in Octubre  (sorry, forgot the source).
 # For now, let's assume that the spring switch was at 24:00,
-# and that they switch at 0:00 on the 3rd Fridays of April and October.
+# and that they switch at 0:00 on the 3rd Fridays of Abril  and Octubre .
 
 # From Paul Eggert (2005-11-22):
 # Starting 2004 transitions are from Steffen Thorsen's web site timeanddate.com.
@@ -2100,20 +2100,20 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 
 # From Jesper Norgaard Welen (2007-09-18):
 # According to Steffen Thorsen's web site the Gaza Strip and the rest of the
-# Palestinian territories left DST early on 13.th. of September at 2:00.
+# Palestinian territories left DST early on 13.th. of Septiembre  at 2:00.
 
 # From Paul Eggert (2007-09-20):
 # My understanding is that Gaza and the West Bank disagree even over when
 # the weekend is (Thursday+Friday versus Friday+Saturday), so I'd be a bit
 # surprised if they agreed about DST.  But for now, assume they agree.
-# For lack of better information, predict that future changes will be
-# the 2nd Thursday of September at 02:00.
+# For lack of better information, preDect that future changes will be
+# the 2nd Thursday of Septiembre  at 02:00.
 
 # From Alexander Krivenyshev (2008-08-28):
 # Here is an article, that Mideast running on different clocks at Ramadan.
 #
-# Gaza Strip (as Egypt) ended DST at midnight Thursday (Aug 28, 2008), while
-# the West Bank will end Daylight Saving Time at midnight Sunday (Aug 31, 2008).
+# Gaza Strip (as Egypt) ended DST at midnight Thursday (Ago 28, 2008), while
+# the West Bank will end Daylight Saving Time at midnight Sunday (Ago 31, 2008).
 #
 # <a href="http://www.guardian.co.uk/world/feedarticle/7759001">
 # http://www.guardian.co.uk/world/feedarticle/7759001
@@ -2128,8 +2128,8 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 
 # From Alexander Krivenyshev (2009-03-26):
 # According to the Palestine News Network (arabic.pnn.ps), Palestinian
-# government decided to start Daylight Time on Thursday night March
-# 26 and continue until the night of 27 September 2009.
+# government Decided to start Daylight Time on Thursday night Marzo 
+# 26 and continue until the night of 27 Septiembre  2009.
 #
 # (in Arabic)
 # <a href="http://arabic.pnn.ps/index.php?option=com_content&task=view&id=50850">
@@ -2166,7 +2166,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # Seems that Gaza Strip will go back to Winter Time same date as West Bank.
 #
 # According to Palestinian Ministry Of Interior, West Bank and Gaza Strip plan
-# to change time back to Standard time on September 4, 2009.
+# to change time back to Standard time on Septiembre  4, 2009.
 #
 # "Winter time unite the West Bank and Gaza"
 # (from Palestinian National Authority):
@@ -2179,9 +2179,9 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # </a>
 
 # From Alexander Krivenyshev (2010-03-19):
-# According to Voice of Palestine DST will last for 191 days, from March
+# According to Voice of Palestine DST will last for 191 days, from Marzo 
 # 26, 2010 till "the last Sunday before the tenth day of Tishri
-# (October), each year" (October 03, 2010?)
+# (Octubre ), each year" (Octubre  03, 2010?)
 #
 # <a href="http://palvoice.org/forums/showthread.php?t=245697">
 # http://palvoice.org/forums/showthread.php?t=245697
@@ -2193,7 +2193,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # </a>
 
 # From Steffen Thorsen (2010-03-24):
-# ...Ma'an News Agency reports that Hamas cabinet has decided it will
+# ...Ma'an News Agency reports that Hamas cabinet has Decided it will
 # start one day later, at 12:01am. Not sure if they really mean 12:01am or
 # noon though:
 #
@@ -2218,7 +2218,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 
 # From Steffen Thorsen (2011-08-26):
 # Gaza and the West Bank did go back to standard time in the beginning of
-# August, and will now enter daylight saving time again on 2011-08-30
+# Agosto, and will now enter daylight saving time again on 2011-08-30
 # 00:00 (so two periods of DST in 2011). The pause was because of
 # Ramadan.
 #
@@ -2232,7 +2232,7 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 
 # From Alexander Krivenyshev (2011-08-27):
 # According to the article in The Jerusalem Post:
-# "...Earlier this month, the Palestinian government in the West Bank decided to
+# "...Earlier this month, the Palestinian government in the West Bank Decided to
 # move to standard time for 30 days, during Ramadan. The Palestinians in the
 # Gaza Strip accepted the change and also moved their clocks one hour back.
 # The Hamas government said on Saturday that it won't observe summertime after
@@ -2278,28 +2278,28 @@ Zone	Asia/Karachi	4:28:12 -	LMT	1907
 # The timeanddate article for 2012 says that "the end date has not yet been
 # announced" and that "Last year, both...paused daylight saving time during...
 # Ramadan. It is not yet known [for] 2012."
-# For now, assume both switch back on the last Friday in September. XXX
+# For now, assume both switch back on the last Friday in Septiembre . XXX
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule EgyptAsia	1957	only	-	May	10	0:00	1:00	S
+Rule EgyptAsia	1957	only	-	Mayo 	10	0:00	1:00	S
 Rule EgyptAsia	1957	1958	-	Oct	 1	0:00	0	-
-Rule EgyptAsia	1958	only	-	May	 1	0:00	1:00	S
-Rule EgyptAsia	1959	1967	-	May	 1	1:00	1:00	S
+Rule EgyptAsia	1958	only	-	Mayo 	 1	0:00	1:00	S
+Rule EgyptAsia	1959	1967	-	Mayo 	 1	1:00	1:00	S
 Rule EgyptAsia	1959	1965	-	Sep	30	3:00	0	-
 Rule EgyptAsia	1966	only	-	Oct	 1	3:00	0	-
 
-Rule Palestine	1999	2005	-	Apr	Fri>=15	0:00	1:00	S
+Rule Palestine	1999	2005	-	Abr	Fri>=15	0:00	1:00	S
 Rule Palestine	1999	2003	-	Oct	Fri>=15	0:00	0	-
 Rule Palestine	2004	only	-	Oct	 1	1:00	0	-
 Rule Palestine	2005	only	-	Oct	 4	2:00	0	-
-Rule Palestine	2006	2008	-	Apr	 1	0:00	1:00	S
+Rule Palestine	2006	2008	-	Abr	 1	0:00	1:00	S
 Rule Palestine	2006	only	-	Sep	22	0:00	0	-
 Rule Palestine	2007	only	-	Sep	Thu>=8	2:00	0	-
-Rule Palestine	2008	only	-	Aug	lastFri	0:00	0	-
+Rule Palestine	2008	only	-	Ago	lastFri	0:00	0	-
 Rule Palestine	2009	only	-	Mar	lastFri	0:00	1:00	S
 Rule Palestine	2009	only	-	Sep	Fri>=1	2:00	0	-
 Rule Palestine	2010	only	-	Mar	lastSat	0:01	1:00	S
-Rule Palestine	2010	only	-	Aug	11	0:00	0	-
+Rule Palestine	2010	only	-	Ago	11	0:00	0	-
 
 # From Arthur David Olson (2011-09-20):
 # 2011 transitions per http://www.timeanddate.com as of 2011-09-20.
@@ -2308,26 +2308,26 @@ Rule Palestine	2010	only	-	Aug	11	0:00	0	-
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Gaza	2:17:52	-	LMT	1900 Oct
-			2:00	Zion	EET	1948 May 15
+			2:00	Zion	EET	1948 Mayo  15
 			2:00 EgyptAsia	EE%sT	1967 Jun  5
 			2:00	Zion	I%sT	1996
 			2:00	Jordan	EE%sT	1999
-			2:00 Palestine	EE%sT	2011 Apr  2 12:01
-			2:00	1:00	EEST	2011 Aug  1
+			2:00 Palestine	EE%sT	2011 Abr  2 12:01
+			2:00	1:00	EEST	2011 Ago  1
 			2:00	-	EET	2012 Mar 30
 			2:00	1:00	EEST	2012 Sep 21 1:00
 			2:00	-	EET
 
 Zone	Asia/Hebron	2:20:23	-	LMT	1900 Oct
-			2:00	Zion	EET	1948 May 15
+			2:00	Zion	EET	1948 Mayo  15
 			2:00 EgyptAsia	EE%sT	1967 Jun  5
 			2:00	Zion	I%sT	1996
 			2:00	Jordan	EE%sT	1999
-			2:00 Palestine	EE%sT	2008 Aug
+			2:00 Palestine	EE%sT	2008 Ago
 			2:00 	1:00	EEST	2008 Sep
-			2:00 Palestine	EE%sT	2011 Apr  1 12:01
-			2:00	1:00	EEST	2011 Aug  1
-			2:00	-	EET	2011 Aug 30
+			2:00 Palestine	EE%sT	2011 Abr  1 12:01
+			2:00	1:00	EEST	2011 Ago  1
+			2:00	-	EET	2011 Ago 30
 			2:00	1:00	EEST	2011 Sep 30 3:00
 			2:00	-	EET	2012 Mar 30
 			2:00	1:00	EEST	2012 Sep 21 1:00
@@ -2340,14 +2340,14 @@ Zone	Asia/Hebron	2:20:23	-	LMT	1900 Oct
 # On 1844-08-16, Narciso Claveria, governor-general of the
 # Philippines, issued a proclamation announcing that 1844-12-30 was to
 # be immediately followed by 1845-01-01.  Robert H. van Gent has a
-# transcript of the decree in <http://www.phys.uu.nl/~vgent/idl/idl.htm>.
+# transcript of the Decree in <http://www.phys.uu.nl/~vgent/idl/idl.htm>.
 # The rest of the data are from Shanks & Pottenger.
 
 # From Paul Eggert (2006-04-25):
 # Tomorrow's Manila Standard reports that the Philippines Department of
-# Trade and Industry is considering adopting DST this June when the
+# Trade and Industry is considering adopting DST this Junio  when the
 # rainy season begins.  See
-# <http://www.manilastandardtoday.com/?page=politics02_april26_2006>.
+# <http://www.manilastandardtoday.com/?page=politics02_Abril 26_2006>.
 # For now, we'll ignore this, since it's not definite and we lack details.
 #
 # From Jesper Norgaard Welen (2006-04-26):
@@ -2359,14 +2359,14 @@ Zone	Asia/Hebron	2:20:23	-	LMT	1900 Oct
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Phil	1936	only	-	Nov	1	0:00	1:00	S
 Rule	Phil	1937	only	-	Feb	1	0:00	0	-
-Rule	Phil	1954	only	-	Apr	12	0:00	1:00	S
+Rule	Phil	1954	only	-	Abr	12	0:00	1:00	S
 Rule	Phil	1954	only	-	Jul	1	0:00	0	-
 Rule	Phil	1978	only	-	Mar	22	0:00	1:00	S
 Rule	Phil	1978	only	-	Sep	21	0:00	0	-
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Manila	-15:56:00 -	LMT	1844 Dec 31
-			8:04:00 -	LMT	1899 May 11
-			8:00	Phil	PH%sT	1942 May
+			8:04:00 -	LMT	1899 Mayo  11
+			8:00	Phil	PH%sT	1942 Mayo 
 			9:00	-	JST	1944 Nov
 			8:00	Phil	PH%sT
 
@@ -2385,15 +2385,15 @@ Zone	Asia/Riyadh	3:06:52 -	LMT	1950
 # The data here are taken from Mok Ly Yng (2003-10-30)
 # <http://www.math.nus.edu.sg/aslaksen/teaching/timezone.html>.
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
+Zone	Asia/Singapore	6:55:25 -	LMT	1901 Ene  1
 			6:55:25	-	SMT	1905 Jun  1 # Singapore M.T.
-			7:00	-	MALT	1933 Jan  1 # Malaya Time
-			7:00	0:20	MALST	1936 Jan  1
+			7:00	-	MALT	1933 Ene  1 # Malaya Time
+			7:00	0:20	MALST	1936 Ene  1
 			7:20	-	MALT	1941 Sep  1
 			7:30	-	MALT	1942 Feb 16
 			9:00	-	JST	1945 Sep 12
-			7:30	-	MALT	1965 Aug  9 # independence
-			7:30	-	SGT	1982 Jan  1 # Singapore Time
+			7:30	-	MALT	1965 Ago  9 # independence
+			7:30	-	SGT	1982 Ene  1 # Singapore Time
 			8:00	-	SGT
 
 # Spratly Is
@@ -2412,13 +2412,13 @@ Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
 # <a href="news:54rka5$m5h@mtinsc01-mgt.ops.worldnet.att.net">
 # Daily News - Hot News Section (1996-10-26)
 # </a>:
-# With effect from 12.30 a.m. on 26th October 1996
+# With effect from 12.30 a.m. on 26th Octubre  1996
 # Sri Lanka will be six (06) hours ahead of GMT.
 
 # From Jesper Norgaard Welen (2006-04-14), quoting Sri Lanka News Online
 # <http://news.sinhalaya.com/wmview.php?ArtID=11002> (2006-04-13):
-# 0030 hrs on April 15, 2006 (midnight of April 14, 2006 +30 minutes)
-# at present, become 2400 hours of April 14, 2006 (midnight of April 14, 2006).
+# 0030 hrs on Abril  15, 2006 (midnight of Abril  14, 2006 +30 minutes)
+# at present, become 2400 hours of Abril  14, 2006 (midnight of Abril  14, 2006).
 
 # From Peter Apps and Ranga Sirila of Reuters (2006-04-12) in:
 # <http://today.reuters.co.uk/news/newsArticle.aspx?type=scienceNews&storyID=2006-04-12T172228Z_01_COL295762_RTRIDST_0_SCIENCE-SRILANKA-TIME-DC.XML>
@@ -2433,7 +2433,7 @@ Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
 # I think the abbreviation LKT originated from the world of computers at
 # the time of or subsequent to the time zone changes by SL Government
 # twice in 1996 and probably SL Government or its standardization
-# agencies never declared an abbreviation as a national standard.
+# agencies never Declared an abbreviation as a national standard.
 #
 # I recollect before the recent change the government annoucemments
 # mentioning it as simply changing Sri Lanka Standard Time or Sri Lanka
@@ -2445,7 +2445,7 @@ Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
 # item....
 #
 # Within Sri Lanka I think LKT is well known among computer users and
-# adminsitrators.  In my opinion SLT may not be a good choice because the
+# adminsitrators.  In my opinion SLT Mayo  not be a good choice because the
 # nation's largest telcom / internet operator Sri Lanka Telcom is well
 # known by that abbreviation - simply as SLT (there IP domains are
 # slt.lk and sltnet.lk).
@@ -2461,29 +2461,29 @@ Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Colombo	5:19:24 -	LMT	1880
 			5:19:32	-	MMT	1906	# Moratuwa Mean Time
-			5:30	-	IST	1942 Jan  5
+			5:30	-	IST	1942 Ene  5
 			5:30	0:30	IHST	1942 Sep
 			5:30	1:00	IST	1945 Oct 16 2:00
-			5:30	-	IST	1996 May 25 0:00
+			5:30	-	IST	1996 Mayo  25 0:00
 			6:30	-	LKT	1996 Oct 26 0:30
-			6:00	-	LKT	2006 Apr 15 0:30
+			6:00	-	LKT	2006 Abr 15 0:30
 			5:30	-	IST
 
 # Syria
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Syria	1920	1923	-	Apr	Sun>=15	2:00	1:00	S
+Rule	Syria	1920	1923	-	Abr	Sun>=15	2:00	1:00	S
 Rule	Syria	1920	1923	-	Oct	Sun>=1	2:00	0	-
-Rule	Syria	1962	only	-	Apr	29	2:00	1:00	S
+Rule	Syria	1962	only	-	Abr	29	2:00	1:00	S
 Rule	Syria	1962	only	-	Oct	1	2:00	0	-
-Rule	Syria	1963	1965	-	May	1	2:00	1:00	S
+Rule	Syria	1963	1965	-	Mayo 	1	2:00	1:00	S
 Rule	Syria	1963	only	-	Sep	30	2:00	0	-
 Rule	Syria	1964	only	-	Oct	1	2:00	0	-
 Rule	Syria	1965	only	-	Sep	30	2:00	0	-
-Rule	Syria	1966	only	-	Apr	24	2:00	1:00	S
+Rule	Syria	1966	only	-	Abr	24	2:00	1:00	S
 Rule	Syria	1966	1976	-	Oct	1	2:00	0	-
-Rule	Syria	1967	1978	-	May	1	2:00	1:00	S
+Rule	Syria	1967	1978	-	Mayo 	1	2:00	1:00	S
 Rule	Syria	1977	1978	-	Sep	1	2:00	0	-
-Rule	Syria	1983	1984	-	Apr	9	2:00	1:00	S
+Rule	Syria	1983	1984	-	Abr	9	2:00	1:00	S
 Rule	Syria	1983	1984	-	Oct	1	2:00	0	-
 Rule	Syria	1986	only	-	Feb	16	2:00	1:00	S
 Rule	Syria	1986	only	-	Oct	9	2:00	0	-
@@ -2492,11 +2492,11 @@ Rule	Syria	1987	1988	-	Oct	31	2:00	0	-
 Rule	Syria	1988	only	-	Mar	15	2:00	1:00	S
 Rule	Syria	1989	only	-	Mar	31	2:00	1:00	S
 Rule	Syria	1989	only	-	Oct	1	2:00	0	-
-Rule	Syria	1990	only	-	Apr	1	2:00	1:00	S
+Rule	Syria	1990	only	-	Abr	1	2:00	1:00	S
 Rule	Syria	1990	only	-	Sep	30	2:00	0	-
-Rule	Syria	1991	only	-	Apr	 1	0:00	1:00	S
+Rule	Syria	1991	only	-	Abr	 1	0:00	1:00	S
 Rule	Syria	1991	1992	-	Oct	 1	0:00	0	-
-Rule	Syria	1992	only	-	Apr	 8	0:00	1:00	S
+Rule	Syria	1992	only	-	Abr	 8	0:00	1:00	S
 Rule	Syria	1993	only	-	Mar	26	0:00	1:00	S
 Rule	Syria	1993	only	-	Sep	25	0:00	0	-
 # IATA SSIM (1998-02) says 1998-04-02;
@@ -2505,12 +2505,12 @@ Rule	Syria	1993	only	-	Sep	25	0:00	0	-
 # (2006) says 2006-03-31 and 2006-09-22;
 # for now ignore all these claims and go with Shanks & Pottenger,
 # except for the 2006-09-22 claim (which seems right for Ramadan).
-Rule	Syria	1994	1996	-	Apr	 1	0:00	1:00	S
+Rule	Syria	1994	1996	-	Abr	 1	0:00	1:00	S
 Rule	Syria	1994	2005	-	Oct	 1	0:00	0	-
 Rule	Syria	1997	1998	-	Mar	lastMon	0:00	1:00	S
-Rule	Syria	1999	2006	-	Apr	 1	0:00	1:00	S
+Rule	Syria	1999	2006	-	Abr	 1	0:00	1:00	S
 # From Stephen Colebourne (2006-09-18):
-# According to IATA data, Syria will change DST on 21st September [21:00 UTC]
+# According to IATA data, Syria will change DST on 21st Septiembre  [21:00 UTC]
 # this year [only]....  This is probably related to Ramadan, like Egypt.
 Rule	Syria	2006	only	-	Sep	22	0:00	0	-
 # From Paul Eggert (2007-03-29):
@@ -2519,7 +2519,7 @@ Rule	Syria	2006	only	-	Sep	22	0:00	0	-
 Rule	Syria	2007	only	-	Mar	lastFri	0:00	1:00	S
 # From Jesper Norgard (2007-10-27):
 # The sister center ICARDA of my work CIMMYT is confirming that Syria DST will
-# not take place 1.st November at 0:00 o'clock but 1.st November at 24:00 or
+# not take place 1.st Noviembre  at 0:00 o'clock but 1.st Noviembre  at 24:00 or
 # rather Midnight between Thursday and Friday. This does make more sence than
 # having it between Wednesday and Thursday (two workdays in Syria) since the
 # weekend in Syria is not Saturday and Sunday, but Friday and Saturday. So now
@@ -2529,7 +2529,7 @@ Rule	Syria	2007	only	-	Mar	lastFri	0:00	1:00	S
 # Jesper Norgaard Welen wrote:
 #
 # > "Winter local time in Syria will be observed at midnight of Thursday 1
-# > November 2007, and the clock will be put back 1 hour."
+# > Noviembre  2007, and the clock will be put back 1 hour."
 #
 # I found confirmation on this in this gov.sy-article (Arabic):
 # http://wehda.alwehda.gov.sy/_print_veiw.asp?FileName=12521710520070926111247
@@ -2542,15 +2542,15 @@ Rule	Syria	2007	only	-	Nov	 Fri>=1	0:00	0	-
 
 # From Stephen Colebourne (2008-03-17):
 # For everyone's info, I saw an IATA time zone change for [Syria] for
-# this month (March 2008) in the last day or so...This is the data IATA
+# this month (Marzo  2008) in the last day or so...This is the data IATA
 # are now using:
 # Country     Time Standard   --- DST Start ---   --- DST End ---  DST
 # Name        Zone Variation   Time    Date        Time    Date
 # Variation
 # Syrian Arab
-# Republic    SY    +0200      2200  03APR08       2100  30SEP08   +0300
-#                              2200  02APR09       2100  30SEP09   +0300
-#                              2200  01APR10       2100  30SEP10   +0300
+# Republic    SY    +0200      2200  03Abr08       2100  30SEP08   +0300
+#                              2200  02Abr09       2100  30SEP09   +0300
+#                              2200  01Abr10       2100  30SEP10   +0300
 
 # From Arthur David Olson (2008-03-17):
 # Here's a link to English-language coverage by the Syrian Arab News
@@ -2558,19 +2558,19 @@ Rule	Syria	2007	only	-	Nov	 Fri>=1	0:00	0	-
 # <a href="http://www.sana.sy/eng/21/2008/03/11/165173.htm">
 # http://www.sana.sy/eng/21/2008/03/11/165173.htm
 # </a>...which reads (in part) "The Cabinet approved the suggestion of the
-# Ministry of Electricity to begin daylight savings time on Friday April
-# 4th, advancing clocks one hour ahead on midnight of Thursday April 3rd."
+# Ministry of Electricity to begin daylight savings time on Friday Abril 
+# 4th, advancing clocks one hour ahead on midnight of Thursday Abril  3rd."
 # Since Syria is two hours east of UTC, the 2200 and 2100 transition times
 # shown above match up with midnight in Syria.
 
 # From Arthur David Olson (2008-03-18):
-# My buest guess at a Syrian rule is "the Friday nearest April 1";
+# My buest guess at a Syrian rule is "the Friday nearest Abril  1";
 # coding that involves either using a "Mar Fri>=29" construct that old time zone
 # compilers can't handle  or having multiple Rules (a la Israel).
-# For now, use "Apr Fri>=1", and go with IATA on a uniform Sep 30 end.
+# For now, use "Abr Fri>=1", and go with IATA on a uniform Sep 30 end.
 
 # From Steffen Thorsen (2008-10-07):
-# Syria has now officially decided to end DST on 2008-11-01 this year,
+# Syria has now officially Decided to end DST on 2008-11-01 this year,
 # according to the following article in the Syrian Arab News Agency (SANA).
 #
 # The article is in Arabic, and seems to tell that they will go back to
@@ -2597,8 +2597,8 @@ Rule	Syria	2007	only	-	Nov	 Fri>=1	0:00	0	-
 # We have not found any sources saying anything about when DST ends this year.
 #
 # Our summary
-# <a href="http://www.timeanddate.com/news/time/syria-dst-starts-march-27-2009.html">
-# http://www.timeanddate.com/news/time/syria-dst-starts-march-27-2009.html
+# <a href="http://www.timeanddate.com/news/time/syria-dst-starts-Marzo -27-2009.html">
+# http://www.timeanddate.com/news/time/syria-dst-starts-Marzo -27-2009.html
 # </a>
 
 # From Steffen Thorsen (2009-10-27):
@@ -2616,7 +2616,7 @@ Rule	Syria	2007	only	-	Nov	 Fri>=1	0:00	0	-
 
 # From Steffen Thorsen (2010-03-17):
 # The "Syrian News Station" reported on 2010-03-16 that the Council of
-# Ministers has decided that Syria will start DST on midnight Thursday
+# Ministers has Decided that Syria will start DST on midnight Thursday
 # 2010-04-01: (midnight between Thursday and Friday):
 # <a href="http://sns.sy/sns/?path=news/read/11421">
 # http://sns.sy/sns/?path=news/read/11421 (Arabic)
@@ -2637,12 +2637,12 @@ Rule	Syria	2007	only	-	Nov	 Fri>=1	0:00	0	-
 # </a>
 
 # From Arthur David Olson (2012-03-27):
-# Assume last Friday in March going forward XXX.
+# Assume last Friday in Marzo  going forward XXX.
 
-Rule	Syria	2008	only	-	Apr	Fri>=1	0:00	1:00	S
+Rule	Syria	2008	only	-	Abr	Fri>=1	0:00	1:00	S
 Rule	Syria	2008	only	-	Nov	1	0:00	0	-
 Rule	Syria	2009	only	-	Mar	lastFri	0:00	1:00	S
-Rule	Syria	2010	2011	-	Apr	Fri>=1	0:00	1:00	S
+Rule	Syria	2010	2011	-	Abr	Fri>=1	0:00	1:00	S
 Rule	Syria	2012	max	-	Mar	lastFri	0:00	1:00	S
 Rule	Syria	2009	max	-	Oct	lastFri	0:00	0	-
 
@@ -2653,7 +2653,7 @@ Zone	Asia/Damascus	2:25:12 -	LMT	1920	# Dimashq
 # Tajikistan
 # From Shanks & Pottenger.
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Dushanbe	4:35:12 -	LMT	1924 May  2
+Zone	Asia/Dushanbe	4:35:12 -	LMT	1924 Mayo   2
 			5:00	-	DUST	1930 Jun 21 # Dushanbe Time
 			6:00 RussiaAsia DUS%sT	1991 Mar 31 2:00s
 			5:00	1:00	DUSST	1991 Sep  9 2:00s
@@ -2662,17 +2662,17 @@ Zone	Asia/Dushanbe	4:35:12 -	LMT	1924 May  2
 # Thailand
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Bangkok	6:42:04	-	LMT	1880
-			6:42:04	-	BMT	1920 Apr # Bangkok Mean Time
+			6:42:04	-	BMT	1920 Abr # Bangkok Mean Time
 			7:00	-	ICT
 
 # Turkmenistan
 # From Shanks & Pottenger.
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Ashgabat	3:53:32 -	LMT	1924 May  2 # or Ashkhabad
+Zone	Asia/Ashgabat	3:53:32 -	LMT	1924 Mayo   2 # or Ashkhabad
 			4:00	-	ASHT	1930 Jun 21 # Ashkhabad Time
 			5:00 RussiaAsia	ASH%sT	1991 Mar 31 2:00
 			4:00 RussiaAsia	ASH%sT	1991 Oct 27 # independence
-			4:00 RussiaAsia	TM%sT	1992 Jan 19 2:00
+			4:00 RussiaAsia	TM%sT	1992 Ene 19 2:00
 			5:00	-	TMT
 
 # United Arab Emirates
@@ -2682,15 +2682,15 @@ Zone	Asia/Dubai	3:41:12 -	LMT	1920
 
 # Uzbekistan
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Samarkand	4:27:12 -	LMT	1924 May  2
+Zone	Asia/Samarkand	4:27:12 -	LMT	1924 Mayo   2
 			4:00	-	SAMT	1930 Jun 21 # Samarkand Time
-			5:00	-	SAMT	1981 Apr  1
+			5:00	-	SAMT	1981 Abr  1
 			5:00	1:00	SAMST	1981 Oct  1
-			6:00	-	TAST	1982 Apr  1 # Tashkent Time
+			6:00	-	TAST	1982 Abr  1 # Tashkent Time
 			5:00 RussiaAsia	SAM%sT	1991 Sep  1 # independence
 			5:00 RussiaAsia	UZ%sT	1992
 			5:00	-	UZT
-Zone	Asia/Tashkent	4:37:12 -	LMT	1924 May  2
+Zone	Asia/Tashkent	4:37:12 -	LMT	1924 Mayo   2
 			5:00	-	TAST	1930 Jun 21 # Tashkent Time
 			6:00 RussiaAsia	TAS%sT	1991 Mar 31 2:00
 			5:00 RussiaAsia	TAS%sT	1991 Sep  1 # independence
@@ -2707,8 +2707,8 @@ Zone	Asia/Tashkent	4:37:12 -	LMT	1924 May  2
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Asia/Ho_Chi_Minh	7:06:40 -	LMT	1906 Jun  9
 			7:06:20	-	SMT	1911 Mar 11 0:01 # Saigon MT?
-			7:00	-	ICT	1912 May
-			8:00	-	ICT	1931 May
+			7:00	-	ICT	1912 Mayo 
+			8:00	-	ICT	1931 Mayo 
 			7:00	-	ICT
 
 # Yemen

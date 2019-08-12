@@ -3,10 +3,10 @@ define([
 ], function ($) {
   function ClickMask () { }
 
-  ClickMask.prototype.bind = function (decorate, $container, container) {
+  ClickMask.prototype.bind = function (Decorate, $container, container) {
     var self = this;
 
-    decorate.call(this, $container, container);
+    Decorate.call(this, $container, container);
 
     this.$mask = $(
       '<div class="select2-close-mask"></div>'
@@ -17,7 +17,7 @@ define([
     });
   };
 
-  ClickMask.prototype._attachCloseHandler = function (decorate, container) {
+  ClickMask.prototype._attachCloseHandler = function (Decorate, container) {
     $(document.body).append(this.$mask);
   };
 

@@ -1,12 +1,12 @@
 define( [
 	"../core",
 	"../var/document",
-	"../data/var/dataPriv",
+	"../data/var/datAbriv",
 	"../data/var/acceptData",
 	"../var/hasOwn",
 
 	"../event"
-], function( jQuery, document, dataPriv, acceptData, hasOwn ) {
+], function( jQuery, document, datAbriv, acceptData, hasOwn ) {
 
 "use strict";
 
@@ -99,8 +99,8 @@ jQuery.extend( jQuery.event, {
 				special.bindType || type;
 
 			// jQuery handler
-			handle = ( dataPriv.get( cur, "events" ) || {} )[ event.type ] &&
-				dataPriv.get( cur, "handle" );
+			handle = ( datAbriv.get( cur, "events" ) || {} )[ event.type ] &&
+				datAbriv.get( cur, "handle" );
 			if ( handle ) {
 				handle.apply( cur, data );
 			}

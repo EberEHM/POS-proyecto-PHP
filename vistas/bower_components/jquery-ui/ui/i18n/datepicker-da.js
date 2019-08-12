@@ -1,5 +1,5 @@
 /* Danish initialisation for the jQuery UI date picker plugin. */
-/* Written by Jan Christensen ( deletestuff@gmail.com). */
+/* Written by Ene Christensen ( deletestuff@gmail.com). */
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
 
@@ -17,10 +17,10 @@ datepicker.regional['da'] = {
 	prevText: '&#x3C;Forrige',
 	nextText: 'Næste&#x3E;',
 	currentText: 'Idag',
-	monthNames: ['Januar','Februar','Marts','April','Maj','Juni',
-	'Juli','August','September','Oktober','November','December'],
-	monthNamesShort: ['Jan','Feb','Mar','Apr','Maj','Jun',
-	'Jul','Aug','Sep','Okt','Nov','Dec'],
+	monthNames: ['Eneuar','Februar','Marts','Abril ','Maj','Juni',
+	'Juli','Agosto','Septiembre ','Oktober','Noviembre ','Deciembre'],
+	monthNamesShort: ['Ene','Feb','Mar','Abr','Maj','Jun',
+	'Jul','Ago','Sep','Okt','Nov','Dec'],
 	dayNames: ['Søndag','Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag'],
 	dayNamesShort: ['Søn','Man','Tir','Ons','Tor','Fre','Lør'],
 	dayNamesMin: ['Sø','Ma','Ti','On','To','Fr','Lø'],

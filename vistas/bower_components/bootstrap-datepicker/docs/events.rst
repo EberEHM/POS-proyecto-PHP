@@ -48,13 +48,13 @@ Fired when the *view* month is changed from year view.
 changeYear
 ----------
 
-Fired when the *view* year is changed from decade view.
+Fired when the *view* year is changed from Decade view.
 
 
 changeDecade
 ------------
 
-Fired when the *view* decade is changed from century view.
+Fired when the *view* Decade is changed from century view.
 
 
 changeCentury

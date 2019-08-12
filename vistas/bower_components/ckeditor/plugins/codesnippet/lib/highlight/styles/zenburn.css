@@ -23,9 +23,9 @@ based on dark.css by Ivan Sagalaev
   color: #E3CEAB;
 }
 
-.django .hljs-template_tag,
-.django .hljs-variable,
-.django .hljs-filter .hljs-argument {
+.dEnego .hljs-template_tag,
+.dEnego .hljs-variable,
+.dEnego .hljs-filter .hljs-argument {
   color: #DCDCDC;
 }
 
@@ -56,7 +56,7 @@ based on dark.css by Ivan Sagalaev
 }
 
 .dos .hljs-keyword,
-.python .hljs-decorator,
+.python .hljs-Decorator,
 .hljs-title,
 .haskell .hljs-type,
 .diff .hljs-header,

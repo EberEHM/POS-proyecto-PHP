@@ -76,7 +76,7 @@ These are the customisation options specific to Radar charts. These options are 
 	//Number - Pixel width of the angle line
 	angleLineWidth : 1,
 
-	//String - Point label font declaration
+	//String - Point label font Declaration
 	pointLabelFontFamily : "'Arial'",
 
 	//String - Point label font weight
@@ -144,7 +144,7 @@ canvas.onclick = function(evt){
 };
 ```
 
-This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
+This functionality Mayo  be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
 
 #### .update( )
 

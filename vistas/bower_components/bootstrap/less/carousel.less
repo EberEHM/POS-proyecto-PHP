@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 
-// Wrapper for the slide container and indicators
+// Wrapper for the slide container and inDecators
 .carousel {
   position: relative;
 }
@@ -18,7 +18,7 @@
     position: relative;
     .transition(.6s ease-in-out left);
 
-    // Account for jankitude on images
+    // Account for Enekitude on images
     > img,
     > a > img {
       &:extend(.img-responsive);
@@ -120,7 +120,7 @@
   &:focus {
     outline: 0;
     color: @carousel-control-color;
-    text-decoration: none;
+    text-Decoration: none;
     .opacity(.9);
   }
 
@@ -166,12 +166,12 @@
   }
 }
 
-// Optional indicator pips
+// Optional inDecator pips
 //
 // Add an unordered list with the following class and add a list item for each
 // slide your carousel holds.
 
-.carousel-indicators {
+.carousel-inDecators {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -188,7 +188,7 @@
     height: 10px;
     margin: 1px;
     text-indent: -999px;
-    border: 1px solid @carousel-indicator-border-color;
+    border: 1px solid @carousel-inDecator-border-color;
     border-radius: 10px;
     cursor: pointer;
 
@@ -208,7 +208,7 @@
     margin: 0;
     width:  12px;
     height: 12px;
-    background-color: @carousel-indicator-active-bg;
+    background-color: @carousel-inDecator-active-bg;
   }
 }
 
@@ -263,8 +263,8 @@
     padding-bottom: 30px;
   }
 
-  // Move up the indicators
-  .carousel-indicators {
+  // Move up the inDecators
+  .carousel-inDecators {
     bottom: 20px;
   }
 }

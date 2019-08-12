@@ -10,7 +10,7 @@ Optional extensions on the jquery.inputmask base
 (function ($) {
     //number aliases
     $.extend($.inputmask.defaults.aliases, {
-        'decimal': {
+        'Decimal': {
             mask: "~",
             placeholder: "",
             repeat: "*",
@@ -53,7 +53,7 @@ Optional extensions on the jquery.inputmask base
                 var cbuf = buffer.slice(),
                     radixPos = $.inArray(opts.radixPoint, buffer);
                 if (!reformatOnly) {
-                    cbuf.splice(pos, 0, "?"); //set position indicator
+                    cbuf.splice(pos, 0, "?"); //set position inDecator
                 }
                 var bufVal = cbuf.join('');
                 if (opts.autoGroup || (reformatOnly && bufVal.indexOf(opts.groupSeparator) != -1)) {
@@ -171,7 +171,7 @@ Optional extensions on the jquery.inputmask base
                     return new RegExp("^" + signedExpression + "(\\d+|\\d{1," + opts.groupSize + "}((" + escapedGroupSeparator + "\\d{" + opts.groupSize + "})?)+)$");
                 }
             },
-            alias: "decimal"
+            alias: "Decimal"
         }
     });
 })(jQuery);

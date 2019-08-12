@@ -148,7 +148,7 @@
             }, {
                 mask: "+994-##-###-##-##",
                 cc: "AZ",
-                cd: "Azerbaijan",
+                cd: "AzerbaiEne",
                 desc_en: "",
                 name_ru: "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043d",
                 desc_ru: ""
@@ -610,7 +610,7 @@
             }, {
                 mask: "+262-#####-####",
                 cc: "FR",
-                cd: "Mayotte",
+                cd: "Mayo otte",
                 desc_en: "",
                 name_ru: "\u041c\u0430\u0439\u043e\u0442\u0442\u0430",
                 desc_ru: ""

@@ -6,7 +6,7 @@
 	{ "mask": "+32(50)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Brugge (Bruges)" },
 	{ "mask": "+32(2)###-##-##", "cc": "BE", "cd": "Belgium", "city": "Brussel/Bruxelles (Brussels)" },
 	{ "mask": "+32(71)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Charleroi" },
-	{ "mask": "+32(60)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Chimay" },
+	{ "mask": "+32(60)##-##-##", "cc": "BE", "cd": "Belgium", "city": "ChiMayo " },
 	{ "mask": "+32(83)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Ciney" },
 	{ "mask": "+32(52)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Dendermonde" },
 	{ "mask": "+32(13)##-##-##", "cc": "BE", "cd": "Belgium", "city": "Diest" },

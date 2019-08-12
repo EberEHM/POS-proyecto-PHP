@@ -46,7 +46,7 @@ define([
   }
 
   Utils.Decorate = function (SuperClass, DecoratorClass) {
-    var decoratedMethods = getMethods(DecoratorClass);
+    var DecoratedMethods = getMethods(DecoratorClass);
     var superMethods = getMethods(SuperClass);
 
     function DecoratedClass () {
@@ -81,28 +81,28 @@ define([
     }
 
     var calledMethod = function (methodName) {
-      // Stub out the original method if it's not decorating an actual method
+      // Stub out the original method if it's not Decorating an actual method
       var originalMethod = function () {};
 
       if (methodName in DecoratedClass.prototype) {
         originalMethod = DecoratedClass.prototype[methodName];
       }
 
-      var decoratedMethod = DecoratorClass.prototype[methodName];
+      var DecoratedMethod = DecoratorClass.prototype[methodName];
 
       return function () {
         var unshift = Array.prototype.unshift;
 
         unshift.call(arguments, originalMethod);
 
-        return decoratedMethod.apply(this, arguments);
+        return DecoratedMethod.apply(this, arguments);
       };
     };
 
-    for (var d = 0; d < decoratedMethods.length; d++) {
-      var decoratedMethod = decoratedMethods[d];
+    for (var d = 0; d < DecoratedMethods.length; d++) {
+      var DecoratedMethod = DecoratedMethods[d];
 
-      DecoratedClass.prototype[decoratedMethod] = calledMethod(decoratedMethod);
+      DecoratedClass.prototype[DecoratedMethod] = calledMethod(DecoratedMethod);
     }
 
     return DecoratedClass;
@@ -220,7 +220,7 @@ define([
     var overflowX = el.style.overflowX;
     var overflowY = el.style.overflowY;
 
-    //Check both x and y declarations
+    //Check both x and y Declarations
     if (overflowX === overflowY &&
         (overflowY === 'hidden' || overflowY === 'visible')) {
       return false;

@@ -3,11 +3,11 @@ define([
   '../utils',
   '../keys'
 ], function ($, Utils, KEYS) {
-  function Search (decorated, $element, options) {
-    decorated.call(this, $element, options);
+  function Search (Decorated, $element, options) {
+    Decorated.call(this, $element, options);
   }
 
-  Search.prototype.render = function (decorated) {
+  Search.prototype.render = function (Decorated) {
     var $search = $(
       '<li class="select2-search select2-search--inline">' +
         '<input class="select2-search__field" type="search" tabindex="-1"' +
@@ -19,17 +19,17 @@ define([
     this.$searchContainer = $search;
     this.$search = $search.find('input');
 
-    var $rendered = decorated.call(this);
+    var $rendered = Decorated.call(this);
 
     this._transferTabIndex();
 
     return $rendered;
   };
 
-  Search.prototype.bind = function (decorated, container, $container) {
+  Search.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('open', function () {
       self.$search.trigger('focus');
@@ -154,21 +154,21 @@ define([
    *
    * @private
    */
-  Search.prototype._transferTabIndex = function (decorated) {
+  Search.prototype._transferTabIndex = function (Decorated) {
     this.$search.attr('tabindex', this.$selection.attr('tabindex'));
     this.$selection.attr('tabindex', '-1');
   };
 
-  Search.prototype.createPlaceholder = function (decorated, placeholder) {
+  Search.prototype.createPlaceholder = function (Decorated, placeholder) {
     this.$search.attr('placeholder', placeholder.text);
   };
 
-  Search.prototype.update = function (decorated, data) {
+  Search.prototype.update = function (Decorated, data) {
     var searchHadFocus = this.$search[0] == document.activeElement;
 
     this.$search.attr('placeholder', '');
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
 
     this.$selection.find('.select2-selection__rendered')
                    .append(this.$searchContainer);
@@ -193,7 +193,7 @@ define([
     this._keyUpPrevented = false;
   };
 
-  Search.prototype.searchRemoveChoice = function (decorated, item) {
+  Search.prototype.searchRemoveChoice = function (Decorated, item) {
     this.trigger('unselect', {
       data: item
     });

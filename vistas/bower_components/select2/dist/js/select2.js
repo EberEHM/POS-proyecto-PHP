@@ -113,10 +113,10 @@ var requirejs, require, define;
                     i -= 1;
                 } else if (part === '..') {
                     // If at the start, or previous value is still ..,
-                    // keep them so that when converted to a path it may
+                    // keep them so that when converted to a path it Mayo 
                     // still work when converted to a path, even though
                     // as an ID it is less than ideal. In larger point
-                    // releases, may be better to just kick out an error.
+                    // releases, Mayo  be better to just kick out an error.
                     if (i === 0 || (i === 1 && name[2] === '..') || name[i - 1] === '..') {
                         continue;
                     } else if (i > 0) {
@@ -187,7 +187,7 @@ var requirejs, require, define;
     function makeRequire(relName, forceSync) {
         return function () {
             //A version of a require function that passes a moduleName
-            //value for items that may need to
+            //value for items that Mayo  need to
             //look up paths relative to the moduleName
             var args = aps.call(arguments, 0);
 
@@ -281,7 +281,7 @@ var requirejs, require, define;
             }
         }
 
-        //Using ridiculous property names for space reasons
+        //Using riDeculous property names for space reasons
         return {
             f: prefix ? prefix + '!' + name : name, //fullName
             n: name,
@@ -375,7 +375,7 @@ var requirejs, require, define;
                 }
             }
         } else if (name) {
-            //May just be an object definition for the module. Only
+            //Mayo  just be an object definition for the module. Only
             //worry about defining if have a module name.
             defined[name] = callback;
         }
@@ -459,7 +459,7 @@ var requirejs, require, define;
             throw new Error('See almond README: incorrect module build, no module name');
         }
 
-        //This module may not have dependencies
+        //This module Mayo  not have dependencies
         if (!deps.splice) {
             //deps is not an array, so probably means
             //an object literal or factory function for
@@ -546,7 +546,7 @@ S2.define('select2/utils',[
   }
 
   Utils.Decorate = function (SuperClass, DecoratorClass) {
-    var decoratedMethods = getMethods(DecoratorClass);
+    var DecoratedMethods = getMethods(DecoratorClass);
     var superMethods = getMethods(SuperClass);
 
     function DecoratedClass () {
@@ -581,28 +581,28 @@ S2.define('select2/utils',[
     }
 
     var calledMethod = function (methodName) {
-      // Stub out the original method if it's not decorating an actual method
+      // Stub out the original method if it's not Decorating an actual method
       var originalMethod = function () {};
 
       if (methodName in DecoratedClass.prototype) {
         originalMethod = DecoratedClass.prototype[methodName];
       }
 
-      var decoratedMethod = DecoratorClass.prototype[methodName];
+      var DecoratedMethod = DecoratorClass.prototype[methodName];
 
       return function () {
         var unshift = Array.prototype.unshift;
 
         unshift.call(arguments, originalMethod);
 
-        return decoratedMethod.apply(this, arguments);
+        return DecoratedMethod.apply(this, arguments);
       };
     };
 
-    for (var d = 0; d < decoratedMethods.length; d++) {
-      var decoratedMethod = decoratedMethods[d];
+    for (var d = 0; d < DecoratedMethods.length; d++) {
+      var DecoratedMethod = DecoratedMethods[d];
 
-      DecoratedClass.prototype[decoratedMethod] = calledMethod(decoratedMethod);
+      DecoratedClass.prototype[DecoratedMethod] = calledMethod(DecoratedMethod);
     }
 
     return DecoratedClass;
@@ -720,7 +720,7 @@ S2.define('select2/utils',[
     var overflowX = el.style.overflowX;
     var overflowY = el.style.overflowY;
 
-    //Check both x and y declarations
+    //Check both x and y Declarations
     if (overflowX === overflowY &&
         (overflowY === 'hidden' || overflowY === 'visible')) {
       return false;
@@ -1697,10 +1697,10 @@ S2.define('select2/selection/multiple',[
 S2.define('select2/selection/placeholder',[
   '../utils'
 ], function (Utils) {
-  function Placeholder (decorated, $element, options) {
+  function Placeholder (Decorated, $element, options) {
     this.placeholder = this.normalizePlaceholder(options.get('placeholder'));
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
   Placeholder.prototype.normalizePlaceholder = function (_, placeholder) {
@@ -1714,7 +1714,7 @@ S2.define('select2/selection/placeholder',[
     return placeholder;
   };
 
-  Placeholder.prototype.createPlaceholder = function (decorated, placeholder) {
+  Placeholder.prototype.createPlaceholder = function (Decorated, placeholder) {
     var $placeholder = this.selectionContainer();
 
     $placeholder.html(this.display(placeholder));
@@ -1724,14 +1724,14 @@ S2.define('select2/selection/placeholder',[
     return $placeholder;
   };
 
-  Placeholder.prototype.update = function (decorated, data) {
+  Placeholder.prototype.update = function (Decorated, data) {
     var singlePlaceholder = (
       data.length == 1 && data[0].id != this.placeholder.id
     );
     var multipleSelections = data.length > 1;
 
     if (multipleSelections || singlePlaceholder) {
-      return decorated.call(this, data);
+      return Decorated.call(this, data);
     }
 
     this.clear();
@@ -1750,10 +1750,10 @@ S2.define('select2/selection/allowClear',[
 ], function ($, KEYS) {
   function AllowClear () { }
 
-  AllowClear.prototype.bind = function (decorated, container, $container) {
+  AllowClear.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     if (this.placeholder == null) {
       if (this.options.get('debug') && window.console && console.error) {
@@ -1821,8 +1821,8 @@ S2.define('select2/selection/allowClear',[
     }
   };
 
-  AllowClear.prototype.update = function (decorated, data) {
-    decorated.call(this, data);
+  AllowClear.prototype.update = function (Decorated, data) {
+    Decorated.call(this, data);
 
     if (this.$selection.find('.select2-selection__placeholder').length > 0 ||
         data.length === 0) {
@@ -1847,11 +1847,11 @@ S2.define('select2/selection/search',[
   '../utils',
   '../keys'
 ], function ($, Utils, KEYS) {
-  function Search (decorated, $element, options) {
-    decorated.call(this, $element, options);
+  function Search (Decorated, $element, options) {
+    Decorated.call(this, $element, options);
   }
 
-  Search.prototype.render = function (decorated) {
+  Search.prototype.render = function (Decorated) {
     var $search = $(
       '<li class="select2-search select2-search--inline">' +
         '<input class="select2-search__field" type="search" tabindex="-1"' +
@@ -1863,17 +1863,17 @@ S2.define('select2/selection/search',[
     this.$searchContainer = $search;
     this.$search = $search.find('input');
 
-    var $rendered = decorated.call(this);
+    var $rendered = Decorated.call(this);
 
     this._transferTabIndex();
 
     return $rendered;
   };
 
-  Search.prototype.bind = function (decorated, container, $container) {
+  Search.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('open', function () {
       self.$search.trigger('focus');
@@ -1998,21 +1998,21 @@ S2.define('select2/selection/search',[
    *
    * @private
    */
-  Search.prototype._transferTabIndex = function (decorated) {
+  Search.prototype._transferTabIndex = function (Decorated) {
     this.$search.attr('tabindex', this.$selection.attr('tabindex'));
     this.$selection.attr('tabindex', '-1');
   };
 
-  Search.prototype.createPlaceholder = function (decorated, placeholder) {
+  Search.prototype.createPlaceholder = function (Decorated, placeholder) {
     this.$search.attr('placeholder', placeholder.text);
   };
 
-  Search.prototype.update = function (decorated, data) {
+  Search.prototype.update = function (Decorated, data) {
     var searchHadFocus = this.$search[0] == document.activeElement;
 
     this.$search.attr('placeholder', '');
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
 
     this.$selection.find('.select2-selection__rendered')
                    .append(this.$searchContainer);
@@ -2037,7 +2037,7 @@ S2.define('select2/selection/search',[
     this._keyUpPrevented = false;
   };
 
-  Search.prototype.searchRemoveChoice = function (decorated, item) {
+  Search.prototype.searchRemoveChoice = function (Decorated, item) {
     this.trigger('unselect', {
       data: item
     });
@@ -2070,7 +2070,7 @@ S2.define('select2/selection/eventRelay',[
 ], function ($) {
   function EventRelay () { }
 
-  EventRelay.prototype.bind = function (decorated, container, $container) {
+  EventRelay.prototype.bind = function (Decorated, container, $container) {
     var self = this;
     var relayEvents = [
       'open', 'opening',
@@ -2081,7 +2081,7 @@ S2.define('select2/selection/eventRelay',[
 
     var preventableEvents = ['opening', 'closing', 'selecting', 'unselecting'];
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('*', function (name, params) {
       // Ignore events that should not be relayed
@@ -2115,20 +2115,20 @@ S2.define('select2/translation',[
   'jquery',
   'require'
 ], function ($, require) {
-  function Translation (dict) {
-    this.dict = dict || {};
+  function Translation (Dect) {
+    this.Dect = Dect || {};
   }
 
   Translation.prototype.all = function () {
-    return this.dict;
+    return this.Dect;
   };
 
   Translation.prototype.get = function (key) {
-    return this.dict[key];
+    return this.Dect[key];
   };
 
   Translation.prototype.extend = function (translation) {
-    this.dict = $.extend({}, translation.all(), this.dict);
+    this.Dect = $.extend({}, translation.all(), this.Dect);
   };
 
   // Static functions
@@ -3516,7 +3516,7 @@ S2.define('select2/data/ajax',[
 S2.define('select2/data/tags',[
   'jquery'
 ], function ($) {
-  function Tags (decorated, $element, options) {
+  function Tags (Decorated, $element, options) {
     var tags = options.get('tags');
 
     var createTag = options.get('createTag');
@@ -3531,7 +3531,7 @@ S2.define('select2/data/tags',[
         this.insertTag = insertTag;
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
 
     if ($.isArray(tags)) {
       for (var t = 0; t < tags.length; t++) {
@@ -3545,13 +3545,13 @@ S2.define('select2/data/tags',[
     }
   }
 
-  Tags.prototype.query = function (decorated, params, callback) {
+  Tags.prototype.query = function (Decorated, params, callback) {
     var self = this;
 
     this._removeOldTags();
 
     if (params.term == null || params.page != null) {
-      decorated.call(this, params, callback);
+      Decorated.call(this, params, callback);
       return;
     }
 
@@ -3605,10 +3605,10 @@ S2.define('select2/data/tags',[
       callback(obj);
     }
 
-    decorated.call(this, params, wrapper);
+    Decorated.call(this, params, wrapper);
   };
 
-  Tags.prototype.createTag = function (decorated, params) {
+  Tags.prototype.createTag = function (Decorated, params) {
     var term = $.trim(params.term);
 
     if (term === '') {
@@ -3645,24 +3645,24 @@ S2.define('select2/data/tags',[
 S2.define('select2/data/tokenizer',[
   'jquery'
 ], function ($) {
-  function Tokenizer (decorated, $element, options) {
+  function Tokenizer (Decorated, $element, options) {
     var tokenizer = options.get('tokenizer');
 
     if (tokenizer !== undefined) {
       this.tokenizer = tokenizer;
     }
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
-  Tokenizer.prototype.bind = function (decorated, container, $container) {
-    decorated.call(this, container, $container);
+  Tokenizer.prototype.bind = function (Decorated, container, $container) {
+    Decorated.call(this, container, $container);
 
     this.$search =  container.dropdown.$search || container.selection.$search ||
       $container.find('.select2-search__field');
   };
 
-  Tokenizer.prototype.query = function (decorated, params, callback) {
+  Tokenizer.prototype.query = function (Decorated, params, callback) {
     var self = this;
 
     function createAndSelect (data) {
@@ -3708,7 +3708,7 @@ S2.define('select2/data/tokenizer',[
       params.term = tokenData.term;
     }
 
-    decorated.call(this, params, callback);
+    Decorated.call(this, params, callback);
   };
 
   Tokenizer.prototype.tokenizer = function (_, params, options, callback) {
@@ -3762,13 +3762,13 @@ S2.define('select2/data/tokenizer',[
 S2.define('select2/data/minimumInputLength',[
 
 ], function () {
-  function MinimumInputLength (decorated, $e, options) {
+  function MinimumInputLength (Decorated, $e, options) {
     this.minimumInputLength = options.get('minimumInputLength');
 
-    decorated.call(this, $e, options);
+    Decorated.call(this, $e, options);
   }
 
-  MinimumInputLength.prototype.query = function (decorated, params, callback) {
+  MinimumInputLength.prototype.query = function (Decorated, params, callback) {
     params.term = params.term || '';
 
     if (params.term.length < this.minimumInputLength) {
@@ -3784,7 +3784,7 @@ S2.define('select2/data/minimumInputLength',[
       return;
     }
 
-    decorated.call(this, params, callback);
+    Decorated.call(this, params, callback);
   };
 
   return MinimumInputLength;
@@ -3793,13 +3793,13 @@ S2.define('select2/data/minimumInputLength',[
 S2.define('select2/data/maximumInputLength',[
 
 ], function () {
-  function MaximumInputLength (decorated, $e, options) {
+  function MaximumInputLength (Decorated, $e, options) {
     this.maximumInputLength = options.get('maximumInputLength');
 
-    decorated.call(this, $e, options);
+    Decorated.call(this, $e, options);
   }
 
-  MaximumInputLength.prototype.query = function (decorated, params, callback) {
+  MaximumInputLength.prototype.query = function (Decorated, params, callback) {
     params.term = params.term || '';
 
     if (this.maximumInputLength > 0 &&
@@ -3816,7 +3816,7 @@ S2.define('select2/data/maximumInputLength',[
       return;
     }
 
-    decorated.call(this, params, callback);
+    Decorated.call(this, params, callback);
   };
 
   return MaximumInputLength;
@@ -3825,14 +3825,14 @@ S2.define('select2/data/maximumInputLength',[
 S2.define('select2/data/maximumSelectionLength',[
 
 ], function (){
-  function MaximumSelectionLength (decorated, $e, options) {
+  function MaximumSelectionLength (Decorated, $e, options) {
     this.maximumSelectionLength = options.get('maximumSelectionLength');
 
-    decorated.call(this, $e, options);
+    Decorated.call(this, $e, options);
   }
 
   MaximumSelectionLength.prototype.query =
-    function (decorated, params, callback) {
+    function (Decorated, params, callback) {
       var self = this;
 
       this.current(function (currentData) {
@@ -3847,7 +3847,7 @@ S2.define('select2/data/maximumSelectionLength',[
           });
           return;
         }
-        decorated.call(self, params, callback);
+        Decorated.call(self, params, callback);
       });
   };
 
@@ -3903,8 +3903,8 @@ S2.define('select2/dropdown/search',[
 ], function ($, Utils) {
   function Search () { }
 
-  Search.prototype.render = function (decorated) {
-    var $rendered = decorated.call(this);
+  Search.prototype.render = function (Decorated) {
+    var $rendered = Decorated.call(this);
 
     var $search = $(
       '<span class="select2-search select2-search--dropdown">' +
@@ -3922,10 +3922,10 @@ S2.define('select2/dropdown/search',[
     return $rendered;
   };
 
-  Search.prototype.bind = function (decorated, container, $container) {
+  Search.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     this.$search.on('keydown', function (evt) {
       self.trigger('keypress', evt);
@@ -4002,16 +4002,16 @@ S2.define('select2/dropdown/search',[
 S2.define('select2/dropdown/hidePlaceholder',[
 
 ], function () {
-  function HidePlaceholder (decorated, $element, options, dataAdapter) {
+  function HidePlaceholder (Decorated, $element, options, dataAdapter) {
     this.placeholder = this.normalizePlaceholder(options.get('placeholder'));
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
   }
 
-  HidePlaceholder.prototype.append = function (decorated, data) {
+  HidePlaceholder.prototype.append = function (Decorated, data) {
     data.results = this.removePlaceholder(data.results);
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
   };
 
   HidePlaceholder.prototype.normalizePlaceholder = function (_, placeholder) {
@@ -4045,30 +4045,30 @@ S2.define('select2/dropdown/hidePlaceholder',[
 S2.define('select2/dropdown/infiniteScroll',[
   'jquery'
 ], function ($) {
-  function InfiniteScroll (decorated, $element, options, dataAdapter) {
+  function InfiniteScroll (Decorated, $element, options, dataAdapter) {
     this.lastParams = {};
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
 
     this.$loadingMore = this.createLoadingMore();
     this.loading = false;
   }
 
-  InfiniteScroll.prototype.append = function (decorated, data) {
+  InfiniteScroll.prototype.append = function (Decorated, data) {
     this.$loadingMore.remove();
     this.loading = false;
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
 
     if (this.showLoadingMore(data)) {
       this.$results.append(this.$loadingMore);
     }
   };
 
-  InfiniteScroll.prototype.bind = function (decorated, container, $container) {
+  InfiniteScroll.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('query', function (params) {
       self.lastParams = params;
@@ -4136,18 +4136,18 @@ S2.define('select2/dropdown/attachBody',[
   'jquery',
   '../utils'
 ], function ($, Utils) {
-  function AttachBody (decorated, $element, options) {
+  function AttachBody (Decorated, $element, options) {
     this.$dropdownParent = options.get('dropdownParent') || $(document.body);
 
-    decorated.call(this, $element, options);
+    Decorated.call(this, $element, options);
   }
 
-  AttachBody.prototype.bind = function (decorated, container, $container) {
+  AttachBody.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
     var setupResultsEvents = false;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('open', function () {
       self._showDropdown();
@@ -4178,13 +4178,13 @@ S2.define('select2/dropdown/attachBody',[
     });
   };
 
-  AttachBody.prototype.destroy = function (decorated) {
-    decorated.call(this);
+  AttachBody.prototype.destroy = function (Decorated) {
+    Decorated.call(this);
 
     this.$dropdownContainer.remove();
   };
 
-  AttachBody.prototype.position = function (decorated, $dropdown, $container) {
+  AttachBody.prototype.position = function (Decorated, $dropdown, $container) {
     // Clone all of the container classes
     $dropdown.attr('class', $container.attr('class'));
 
@@ -4199,10 +4199,10 @@ S2.define('select2/dropdown/attachBody',[
     this.$container = $container;
   };
 
-  AttachBody.prototype.render = function (decorated) {
+  AttachBody.prototype.render = function (Decorated) {
     var $container = $('<span></span>');
 
-    var $dropdown = decorated.call(this);
+    var $dropdown = Decorated.call(this);
     $container.append($dropdown);
 
     this.$dropdownContainer = $container;
@@ -4210,12 +4210,12 @@ S2.define('select2/dropdown/attachBody',[
     return $container;
   };
 
-  AttachBody.prototype._hideDropdown = function (decorated) {
+  AttachBody.prototype._hideDropdown = function (Decorated) {
     this.$dropdownContainer.detach();
   };
 
   AttachBody.prototype._attachPositioningHandler =
-      function (decorated, container) {
+      function (Decorated, container) {
     var self = this;
 
     var scrollEvent = 'scroll.select2.' + container.id;
@@ -4243,7 +4243,7 @@ S2.define('select2/dropdown/attachBody',[
   };
 
   AttachBody.prototype._detachPositioningHandler =
-      function (decorated, container) {
+      function (Decorated, container) {
     var scrollEvent = 'scroll.select2.' + container.id;
     var resizeEvent = 'resize.select2.' + container.id;
     var orientationEvent = 'orientationchange.select2.' + container.id;
@@ -4345,7 +4345,7 @@ S2.define('select2/dropdown/attachBody',[
     this.$dropdown.css(css);
   };
 
-  AttachBody.prototype._showDropdown = function (decorated) {
+  AttachBody.prototype._showDropdown = function (Decorated) {
     this.$dropdownContainer.appendTo(this.$dropdownParent);
 
     this._positionDropdown();
@@ -4374,22 +4374,22 @@ S2.define('select2/dropdown/minimumResultsForSearch',[
     return count;
   }
 
-  function MinimumResultsForSearch (decorated, $element, options, dataAdapter) {
+  function MinimumResultsForSearch (Decorated, $element, options, dataAdapter) {
     this.minimumResultsForSearch = options.get('minimumResultsForSearch');
 
     if (this.minimumResultsForSearch < 0) {
       this.minimumResultsForSearch = Infinity;
     }
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
   }
 
-  MinimumResultsForSearch.prototype.showSearch = function (decorated, params) {
+  MinimumResultsForSearch.prototype.showSearch = function (Decorated, params) {
     if (countResults(params.data.results) < this.minimumResultsForSearch) {
       return false;
     }
 
-    return decorated.call(this, params);
+    return Decorated.call(this, params);
   };
 
   return MinimumResultsForSearch;
@@ -4400,10 +4400,10 @@ S2.define('select2/dropdown/selectOnClose',[
 ], function () {
   function SelectOnClose () { }
 
-  SelectOnClose.prototype.bind = function (decorated, container, $container) {
+  SelectOnClose.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('close', function (params) {
       self._handleSelectOnClose(params);
@@ -4451,10 +4451,10 @@ S2.define('select2/dropdown/closeOnSelect',[
 ], function () {
   function CloseOnSelect () { }
 
-  CloseOnSelect.prototype.bind = function (decorated, container, $container) {
+  CloseOnSelect.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('select', function (evt) {
       self._selectTriggered(evt);

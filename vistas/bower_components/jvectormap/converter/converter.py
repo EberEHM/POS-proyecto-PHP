@@ -11,7 +11,7 @@ import shapely.affinity
 from osgeo import ogr
 from osgeo import osr
 import json
-import codecs
+import coDecs
 import copy
 
 class Map:
@@ -153,8 +153,8 @@ class Converter:
           shapelyGeometry = shapelyGeometry.buffer(0, 1)
         shapelyGeometry = self.applyFilters(shapelyGeometry)
         if shapelyGeometry:
-          name = feature.GetFieldAsString(str(sourceConfig.get('name_field'))).decode(sourceConfig.get('input_file_encoding'))
-          code = feature.GetFieldAsString(str(sourceConfig.get('code_field'))).decode(sourceConfig.get('input_file_encoding'))
+          name = feature.GetFieldAsString(str(sourceConfig.get('name_field'))).Decode(sourceConfig.get('input_file_encoding'))
+          code = feature.GetFieldAsString(str(sourceConfig.get('code_field'))).Decode(sourceConfig.get('input_file_encoding'))
           if code in codes:
             code = '_' + str(nextCode)
             nextCode += 1

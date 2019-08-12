@@ -117,7 +117,7 @@
       this.$element.val('');
     },
 
-    decrementHour: function() {
+    DecrementHour: function() {
       if (this.showMeridian) {
         if (this.hour === 1) {
           this.hour = 12;
@@ -141,7 +141,7 @@
       }
     },
 
-    decrementMinute: function(step) {
+    DecrementMinute: function(step) {
       var newVal;
 
       if (step) {
@@ -151,18 +151,18 @@
       }
 
       if (newVal < 0) {
-        this.decrementHour();
+        this.DecrementHour();
         this.minute = newVal + 60;
       } else {
         this.minute = newVal;
       }
     },
 
-    decrementSecond: function() {
+    DecrementSecond: function() {
       var newVal = this.second - this.secondStep;
 
       if (newVal < 0) {
-        this.decrementMinute(true);
+        this.DecrementMinute(true);
         this.second = newVal + 60;
       } else {
         this.second = newVal;
@@ -226,15 +226,15 @@
         e.preventDefault();
         switch (this.highlightedUnit) {
         case 'hour':
-          this.decrementHour();
+          this.DecrementHour();
           this.highlightHour();
           break;
         case 'minute':
-          this.decrementMinute();
+          this.DecrementMinute();
           this.highlightMinute();
           break;
         case 'second':
-          this.decrementSecond();
+          this.DecrementSecond();
           this.highlightSecond();
           break;
         case 'meridian':
@@ -313,12 +313,12 @@
            : '') +
          '</tr>'+
          '<tr>'+
-           '<td><a href="#" data-action="decrementHour"><span class="'+ this.icons.down +'"></span></a></td>'+
+           '<td><a href="#" data-action="DecrementHour"><span class="'+ this.icons.down +'"></span></a></td>'+
            '<td class="separator"></td>'+
-           '<td><a href="#" data-action="decrementMinute"><span class="'+ this.icons.down +'"></span></a></td>'+
+           '<td><a href="#" data-action="DecrementMinute"><span class="'+ this.icons.down +'"></span></a></td>'+
            (this.showSeconds ?
             '<td class="separator">&nbsp;</td>'+
-            '<td><a href="#" data-action="decrementSecond"><span class="'+ this.icons.down +'"></span></a></td>'
+            '<td><a href="#" data-action="DecrementSecond"><span class="'+ this.icons.down +'"></span></a></td>'
            : '') +
            (this.showMeridian ?
             '<td class="separator">&nbsp;</td>'+
@@ -609,7 +609,7 @@
         if (delta > 0) {
           this.incrementMinute();
         } else {
-          this.decrementMinute();
+          this.DecrementMinute();
         }
         this.highlightMinute();
         break;
@@ -617,7 +617,7 @@
         if (delta > 0) {
           this.incrementSecond();
         } else {
-          this.decrementSecond();
+          this.DecrementSecond();
         }
         this.highlightSecond();
         break;
@@ -629,7 +629,7 @@
         if (delta > 0) {
           this.incrementHour();
         } else {
-          this.decrementHour();
+          this.DecrementHour();
         }
         this.highlightHour();
         break;
@@ -686,7 +686,7 @@
           left = windowWidth - widgetWidth - visualPadding;
         }
       }
-      // auto y orientation is best-situation: top or bottom, no fudging, decision based on which shows more of the widget
+      // auto y orientation is best-situation: top or bottom, no fudging, Decision based on which shows more of the widget
       var yorient = this.orientation.y, topOverflow, bottomOverflow;
       if (yorient === 'auto') {
         topOverflow = -scrollTop + offset.top - widgetHeight;
@@ -1090,13 +1090,13 @@
         e.preventDefault();
         switch (name) {
         case 'hour':
-          this.decrementHour();
+          this.DecrementHour();
           break;
         case 'minute':
-          this.decrementMinute();
+          this.DecrementMinute();
           break;
         case 'second':
-          this.decrementSecond();
+          this.DecrementSecond();
           break;
         case 'meridian':
           this.toggleMeridian();

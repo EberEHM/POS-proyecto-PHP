@@ -132,7 +132,7 @@ Google Maps).
                 tmp;
 
             // actually we should check img.complete, but it
-            // appears to be a somewhat unreliable indicator in
+            // appears to be a somewhat unreliable inDecator in
             // IE6 (false even after load event)
             if (!img || img.width <= 0 || img.height <= 0)
                 continue;
@@ -191,7 +191,7 @@ Google Maps).
             y1 = yaxis.p2c(y1);
             y2 = yaxis.p2c(y2);
             
-            // the transformation may have swapped us
+            // the transformation Mayo  have swapped us
             if (x1 > x2) {
                 tmp = x2;
                 x2 = x1;

@@ -17,22 +17,22 @@ define([
     return count;
   }
 
-  function MinimumResultsForSearch (decorated, $element, options, dataAdapter) {
+  function MinimumResultsForSearch (Decorated, $element, options, dataAdapter) {
     this.minimumResultsForSearch = options.get('minimumResultsForSearch');
 
     if (this.minimumResultsForSearch < 0) {
       this.minimumResultsForSearch = Infinity;
     }
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
   }
 
-  MinimumResultsForSearch.prototype.showSearch = function (decorated, params) {
+  MinimumResultsForSearch.prototype.showSearch = function (Decorated, params) {
     if (countResults(params.data.results) < this.minimumResultsForSearch) {
       return false;
     }
 
-    return decorated.call(this, params);
+    return Decorated.call(this, params);
   };
 
   return MinimumResultsForSearch;

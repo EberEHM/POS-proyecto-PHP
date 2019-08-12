@@ -327,8 +327,8 @@ return $.widget( "ui.spinner", {
 
 	_precisionOf: function( num ) {
 		var str = num.toString(),
-			decimal = str.indexOf( "." );
-		return decimal === -1 ? 0 : str.length - decimal - 1;
+			Decimal = str.indexOf( "." );
+		return Decimal === -1 ? 0 : str.length - Decimal - 1;
 	},
 
 	_adjustValue: function( value ) {

@@ -319,7 +319,7 @@ module.exports = function (grunt) {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
           conservativeCollapse: true,
-          decodeEntities: false,
+          DecodeEntities: false,
           minifyCSS: {
             compatibility: 'ie8',
             keepSpecialComments: 0

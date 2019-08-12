@@ -155,7 +155,7 @@ CKEDITOR.replace( '<em>textarea_id</em>', {
 				function configureTransformations( evt ) {
 					var editor = evt.editor;
 
-					editor.dataProcessor.htmlFilter.addRules( {
+					editor.datAbrocessor.htmlFilter.addRules( {
 						attributes: {
 							style: function( value, element ) {
 								// Return #RGB for background and border colors
@@ -186,15 +186,15 @@ CKEDITOR.replace( '<em>textarea_id</em>', {
 				 */
 				function configureHtmlWriter( evt ) {
 					var editor = evt.editor,
-						dataProcessor = editor.dataProcessor;
+						datAbrocessor = editor.datAbrocessor;
 
 					// Out self closing tags the HTML4 way, like <br>.
-					dataProcessor.writer.selfClosingEnd = '>';
+					datAbrocessor.writer.selfClosingEnd = '>';
 
 					// Make output formatting behave similar to FCKeditor.
 					var dtd = CKEDITOR.dtd;
 					for ( var e in CKEDITOR.tools.extend( {}, dtd.$nonBodyContent, dtd.$block, dtd.$listItem, dtd.$tableContent ) ) {
-						dataProcessor.writer.setRules( e, {
+						datAbrocessor.writer.setRules( e, {
 							indent: true,
 							breakBeforeOpen: true,
 							breakAfterOpen: false,

@@ -4,8 +4,8 @@ define([
 ], function ($, Utils) {
   function Search () { }
 
-  Search.prototype.render = function (decorated) {
-    var $rendered = decorated.call(this);
+  Search.prototype.render = function (Decorated) {
+    var $rendered = Decorated.call(this);
 
     var $search = $(
       '<span class="select2-search select2-search--dropdown">' +
@@ -23,10 +23,10 @@ define([
     return $rendered;
   };
 
-  Search.prototype.bind = function (decorated, container, $container) {
+  Search.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     this.$search.on('keydown', function (evt) {
       self.trigger('keypress', evt);

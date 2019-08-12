@@ -36,7 +36,7 @@ var initSample = ( function() {
 			CKEDITOR.inline( 'editor' );
 
 			// TODO we can consider displaying some info box that
-			// without wysiwygarea the classic editor may not work.
+			// without wysiwygarea the classic editor Mayo  not work.
 		}
 	};
 

@@ -1,30 +1,30 @@
 define([
   'jquery'
 ], function ($) {
-  function InfiniteScroll (decorated, $element, options, dataAdapter) {
+  function InfiniteScroll (Decorated, $element, options, dataAdapter) {
     this.lastParams = {};
 
-    decorated.call(this, $element, options, dataAdapter);
+    Decorated.call(this, $element, options, dataAdapter);
 
     this.$loadingMore = this.createLoadingMore();
     this.loading = false;
   }
 
-  InfiniteScroll.prototype.append = function (decorated, data) {
+  InfiniteScroll.prototype.append = function (Decorated, data) {
     this.$loadingMore.remove();
     this.loading = false;
 
-    decorated.call(this, data);
+    Decorated.call(this, data);
 
     if (this.showLoadingMore(data)) {
       this.$results.append(this.$loadingMore);
     }
   };
 
-  InfiniteScroll.prototype.bind = function (decorated, container, $container) {
+  InfiniteScroll.prototype.bind = function (Decorated, container, $container) {
     var self = this;
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('query', function (params) {
       self.lastParams = params;

@@ -22,14 +22,14 @@
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	ArgAQ	1964	1966	-	Mar	 1	0:00	0	-
 Rule	ArgAQ	1964	1966	-	Oct	15	0:00	1:00	S
-Rule	ArgAQ	1967	only	-	Apr	 2	0:00	0	-
+Rule	ArgAQ	1967	only	-	Abr	 2	0:00	0	-
 Rule	ArgAQ	1967	1968	-	Oct	Sun>=1	0:00	1:00	S
-Rule	ArgAQ	1968	1969	-	Apr	Sun>=1	0:00	0	-
-Rule	ArgAQ	1974	only	-	Jan	23	0:00	1:00	S
-Rule	ArgAQ	1974	only	-	May	 1	0:00	0	-
+Rule	ArgAQ	1968	1969	-	Abr	Sun>=1	0:00	0	-
+Rule	ArgAQ	1974	only	-	Ene	23	0:00	1:00	S
+Rule	ArgAQ	1974	only	-	Mayo 	 1	0:00	0	-
 Rule	ChileAQ	1972	1986	-	Mar	Sun>=9	3:00u	0	-
 Rule	ChileAQ	1974	1987	-	Oct	Sun>=9	4:00u	1:00	S
-Rule	ChileAQ	1987	only	-	Apr	12	3:00u	0	-
+Rule	ChileAQ	1987	only	-	Abr	12	3:00u	0	-
 Rule	ChileAQ	1988	1989	-	Mar	Sun>=9	3:00u	0	-
 Rule	ChileAQ	1988	only	-	Oct	Sun>=1	4:00u	1:00	S
 Rule	ChileAQ	1989	only	-	Oct	Sun>=9	4:00u	1:00	S
@@ -40,25 +40,25 @@ Rule	ChileAQ	1991	1997	-	Oct	Sun>=9	4:00u	1:00	S
 Rule	ChileAQ	1997	only	-	Mar	30	3:00u	0	-
 Rule	ChileAQ	1998	only	-	Mar	Sun>=9	3:00u	0	-
 Rule	ChileAQ	1998	only	-	Sep	27	4:00u	1:00	S
-Rule	ChileAQ	1999	only	-	Apr	 4	3:00u	0	-
+Rule	ChileAQ	1999	only	-	Abr	 4	3:00u	0	-
 Rule	ChileAQ	1999	2010	-	Oct	Sun>=9	4:00u	1:00	S
 Rule	ChileAQ	2000	2007	-	Mar	Sun>=9	3:00u	0	-
-# N.B.: the end of March 29 in Chile is March 30 in Universal time,
+# N.B.: the end of Marzo  29 in Chile is Marzo  30 in Universal time,
 # which is used below in specifying the transition.
 Rule	ChileAQ	2008	only	-	Mar	30	3:00u	0	-
 Rule	ChileAQ	2009	only	-	Mar	Sun>=9	3:00u	0	-
-Rule	ChileAQ	2010	only	-	Apr	Sun>=1	3:00u	0	-
-Rule	ChileAQ	2011	only	-	May	Sun>=2	3:00u	0	-
-Rule	ChileAQ	2011	only	-	Aug	Sun>=16	4:00u	1:00	S
-Rule	ChileAQ	2012	only	-	Apr	Sun>=23	3:00u	0	-
+Rule	ChileAQ	2010	only	-	Abr	Sun>=1	3:00u	0	-
+Rule	ChileAQ	2011	only	-	Mayo 	Sun>=2	3:00u	0	-
+Rule	ChileAQ	2011	only	-	Ago	Sun>=16	4:00u	1:00	S
+Rule	ChileAQ	2012	only	-	Abr	Sun>=23	3:00u	0	-
 Rule	ChileAQ	2012	only	-	Sep	Sun>=2	4:00u	1:00	S
 Rule	ChileAQ	2013	max	-	Mar	Sun>=9	3:00u	0	-
 Rule	ChileAQ	2013	max	-	Oct	Sun>=9	4:00u	1:00	S
 
 # These rules are stolen from the `australasia' file.
-Rule	AusAQ	1917	only	-	Jan	 1	0:01	1:00	-
+Rule	AusAQ	1917	only	-	Ene	 1	0:01	1:00	-
 Rule	AusAQ	1917	only	-	Mar	25	2:00	0	-
-Rule	AusAQ	1942	only	-	Jan	 1	2:00	1:00	-
+Rule	AusAQ	1942	only	-	Ene	 1	2:00	1:00	-
 Rule	AusAQ	1942	only	-	Mar	29	2:00	0	-
 Rule	AusAQ	1942	only	-	Sep	27	2:00	1:00	-
 Rule	AusAQ	1943	1944	-	Mar	lastSun	2:00	0	-
@@ -77,11 +77,11 @@ Rule	ATAQ	1987	only	-	Oct	Sun>=22	2:00s	1:00	-
 Rule	ATAQ	1988	1990	-	Oct	lastSun	2:00s	1:00	-
 Rule	ATAQ	1991	1999	-	Oct	Sun>=1	2:00s	1:00	-
 Rule	ATAQ	1991	2005	-	Mar	lastSun	2:00s	0	-
-Rule	ATAQ	2000	only	-	Aug	lastSun	2:00s	1:00	-
+Rule	ATAQ	2000	only	-	Ago	lastSun	2:00s	1:00	-
 Rule	ATAQ	2001	max	-	Oct	Sun>=1	2:00s	1:00	-
-Rule	ATAQ	2006	only	-	Apr	Sun>=1	2:00s	0	-
+Rule	ATAQ	2006	only	-	Abr	Sun>=1	2:00s	0	-
 Rule	ATAQ	2007	only	-	Mar	lastSun	2:00s	0	-
-Rule	ATAQ	2008	max	-	Apr	Sun>=1	2:00s	0	-
+Rule	ATAQ	2008	max	-	Abr	Sun>=1	2:00s	0	-
 
 # Argentina - year-round bases
 # Belgrano II, Confin Coast, -770227-0343737, since 1972-02-05
@@ -127,13 +127,13 @@ Rule	ATAQ	2008	max	-	Apr	Sun>=1	2:00s	0	-
 # We got these changes from the Australian Antarctic Division:
 # - Macquarie Island will stay on UTC+11 for winter and therefore not
 # switch back from daylight savings time when other parts of Australia do
-# on 4 April.
+# on 4 Abril .
 #
-# - Casey station reverted to its normal time of UTC+8 on 5 March 2010.
+# - Casey station reverted to its normal time of UTC+8 on 5 Marzo  2010.
 # The change to UTC+11 is being considered as a regular summer thing but
-# has not been decided yet.
+# has not been Decided yet.
 #
-# - Davis station will revert to its normal time of UTC+7 at 10 March 2010
+# - Davis station will revert to its normal time of UTC+7 at 10 Marzo  2010
 # 20:00 UTC.
 #
 # - Mawson station stays on UTC+5.
@@ -155,7 +155,7 @@ Zone Antarctica/Casey	0	-	zzz	1969
 			8:00	-	WST	2011 Oct 28 2:00
 			11:00	-	CAST	2012 Feb 21 17:00u
 			8:00	-	WST
-Zone Antarctica/Davis	0	-	zzz	1957 Jan 13
+Zone Antarctica/Davis	0	-	zzz	1957 Ene 13
 			7:00	-	DAVT	1964 Nov # Davis Time
 			0	-	zzz	1969 Feb
 			7:00	-	DAVT	2009 Oct 18 2:00
@@ -171,7 +171,7 @@ Zone Antarctica/Macquarie 0	-	zzz	1911
 			10:00	-	EST	1916 Oct 1 2:00
 			10:00	1:00	EST	1917 Feb
 			10:00	AusAQ	EST	1967
-			10:00	ATAQ	EST	2010 Apr 4 3:00
+			10:00	ATAQ	EST	2010 Abr 4 3:00
 			11:00	-	MIST	# Macquarie Island Time
 # References:
 # <a href="http://www.antdiv.gov.au/aad/exop/sfo/casey/casey_aws.html">
@@ -230,7 +230,7 @@ Zone Indian/Kerguelen	0	-	zzz	1950	# Port-aux-Francais
 #
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone Antarctica/DumontDUrville 0 -	zzz	1947
-			10:00	-	PMT	1952 Jan 14 # Port-Martin Time
+			10:00	-	PMT	1952 Ene 14 # Port-Martin Time
 			0	-	zzz	1956 Nov
 			10:00	-	DDUT	# Dumont-d'Urville Time
 # Reference:
@@ -239,7 +239,7 @@ Zone Antarctica/DumontDUrville 0 -	zzz	1947
 # </a>
 
 # Germany - year-round base
-# Georg von Neumayer, -7039-00815
+# Georg von NeuMayo er, -7039-00815
 
 # India - year-round base
 # Dakshin Gangotri, -7005+01200
@@ -255,7 +255,7 @@ Zone Antarctica/DumontDUrville 0 -	zzz	1947
 # was established on 1957-01-29.  Since Syowa station is still the main
 # station of Japan, it's appropriate for the principal location.
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone Antarctica/Syowa	0	-	zzz	1957 Jan 29
+Zone Antarctica/Syowa	0	-	zzz	1957 Ene 29
 			3:00	-	SYOT	# Syowa Time
 # See:
 # <a href="http://www.nipr.ac.jp/english/ara01.html">
@@ -282,7 +282,7 @@ Rule	NZAQ	1975	only	-	Feb	23	2:00s	0	S
 Rule	NZAQ	1976	1989	-	Mar	Sun>=1	2:00s	0	S
 Rule	NZAQ	1990	2007	-	Mar	Sun>=15	2:00s	0	S
 Rule	NZAQ	2007	max	-	Sep	lastSun	2:00s	1:00	D
-Rule	NZAQ	2008	max	-	Apr	Sun>=1	2:00s	0	S
+Rule	NZAQ	2008	max	-	Abr	Sun>=1	2:00s	0	S
 
 # Norway - territories
 # Bouvet (never inhabited)
@@ -347,7 +347,7 @@ Zone Antarctica/Vostok	0	-	zzz	1957 Dec 16
 #	previously sealers and a scientific expedition wintered by accident,
 #	and a garrison was deployed briefly
 # Halley, Coates Land, -7535-02604, since 1956-01-06
-#	Halley is on a moving ice shelf and is periodically relocated
+#	Halley is on a moving ice shelf and is perioDecally relocated
 #	so that it is never more than 10km from its nominal location.
 # Rothera, Adelaide Island, -6734-6808, since 1976-12-01
 #
@@ -365,7 +365,7 @@ Zone Antarctica/Rothera	0	-	zzz	1976 Dec  1
 #
 # Palmer, Anvers Island, since 1965 (moved 2 miles in 1968)
 #
-# From Ethan Dicks (1996-10-06):
+# From Ethan Decks (1996-10-06):
 # It keeps the same time as Punta Arenas, Chile, because, just like us
 # and the South Pole, that's the other end of their supply line....
 # I verified with someone who was there that since 1980,
@@ -375,7 +375,7 @@ Zone Antarctica/Rothera	0	-	zzz	1976 Dec  1
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone Antarctica/Palmer	0	-	zzz	1965
 			-4:00	ArgAQ	AR%sT	1969 Oct 5
-			-3:00	ArgAQ	AR%sT	1982 May
+			-3:00	ArgAQ	AR%sT	1982 Mayo 
 			-4:00	ChileAQ	CL%sT
 #
 #
@@ -408,6 +408,6 @@ Zone Antarctica/McMurdo	0	-	zzz	1956
 # Something about the generators running at 60.1hertz or something
 # makes all of the clocks run fast.  So every couple of days,
 # we have to go around and set them back 5 minutes or so.
-# Maybe if we let them run fast all of the time, we'd get to leave here sooner!!
+# Mayo be if we let them run fast all of the time, we'd get to leave here sooner!!
 #
 Link	Antarctica/McMurdo	Antarctica/South_Pole

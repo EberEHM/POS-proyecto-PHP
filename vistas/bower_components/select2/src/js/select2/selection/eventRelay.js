@@ -3,7 +3,7 @@ define([
 ], function ($) {
   function EventRelay () { }
 
-  EventRelay.prototype.bind = function (decorated, container, $container) {
+  EventRelay.prototype.bind = function (Decorated, container, $container) {
     var self = this;
     var relayEvents = [
       'open', 'opening',
@@ -14,7 +14,7 @@ define([
 
     var preventableEvents = ['opening', 'closing', 'selecting', 'unselecting'];
 
-    decorated.call(this, container, $container);
+    Decorated.call(this, container, $container);
 
     container.on('*', function (name, params) {
       // Ignore events that should not be relayed

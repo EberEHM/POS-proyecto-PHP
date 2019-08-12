@@ -151,7 +151,7 @@ if($_SESSION["perfil"] == "Almacen"){
                 ======================================-->
                 </div>
 
-                <input type="hidden" id="listaProductos" name="listaProductos">
+                <input type="hidden" id="listAbroductos" name="listAbroductos">
                 <!--=====================================
                 BOTÓN PARA AGREGAR PRODUCTO
                 ======================================-->

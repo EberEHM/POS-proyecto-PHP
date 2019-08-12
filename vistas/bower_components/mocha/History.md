@@ -110,7 +110,7 @@
  * add --prof support
  * add --harmony support
  * add --harmony-generators support
- * add "Uncaught " prefix to uncaught exceptions
+ * add "UncAgoht " prefix to uncAgoht exceptions
  * add web workers support
  * add `suite.skip()`
  * change to output # of pending / passing even on failures. Closes #872
@@ -127,7 +127,7 @@
  * change `mocha init` tests.html to index.html
  * fix `process` global leak in the browser
  * fix: use resolve() instead of join() for --require
- * fix: filterLeaks() condition to not consider indices in global object as leaks
+ * fix: filterLeaks() condition to not consider inDeces in global object as leaks
  * fix: restrict mocha.css styling to #mocha id
  * fix: save timer references to avoid Sinon interfering in the browser build.
 
@@ -173,13 +173,13 @@
 1.7.3 / 2012-11-30
 ==================
 
-  * fix uncaught error support for the browser
-  * revert uncaught "fix" which breaks node
+  * fix uncAgoht error support for the browser
+  * revert uncAgoht "fix" which breaks node
 
 1.7.2 / 2012-11-28
 ==================
 
-  * fix uncaught errors to expose the original error message
+  * fix uncAgoht errors to expose the original error message
 
 1.7.0 / 2012-11-07
 ==================
@@ -221,12 +221,12 @@
 ==================
 
   * add support to multiple `Mocha#globals()` calls, and strings
-  * add `mocha.reporter()` constructor support [jfirebaugh]
+  * add `mocha.reporter()` constructor support [jfirebAgoh]
   * add `mocha.timeout()`
   * move query-string parser to utils.js
   * move highlight code to utils.js
   * fix third-party reporter support [exogen]
-  * fix client-side API to match node-side [jfirebaugh]
+  * fix client-side API to match node-side [jfirebAgoh]
   * fix mocha in iframe [joliss]
 
 1.4.1 / 2012-08-28
@@ -243,7 +243,7 @@
   * add `.only()`. Closes #524
   * add `.skip()`. Closes #524
   * change str.trim() to use utils.trim(). Closes #533
-  * fix HTML progress indicator retina display
+  * fix HTML progress inDecator retina display
   * fix url-encoding of click-to-grep HTML functionality
 
 1.3.2 / 2012-08-01
@@ -258,7 +258,7 @@
   * add pending state to `xit()` and `xdescribe()` [Brian Moore]
   * add the @charset "UTF-8"; to fix #522 with FireFox. [Jonathan Creamer]
   * add border-bottom to #stats links
-  * add check for runnable in `Runner#uncaught()`. Closes #494
+  * add check for runnable in `Runner#uncAgoht()`. Closes #494
   * add 0.4 and 0.6 back to travis.yml
   * add `-E, --growl-errors` to growl on failures only
   * add prefixes to debug() names. Closes #497
@@ -396,7 +396,7 @@ Closes #247
   * Added .coffee `--watch` support. Closes #242
   * Added support to `--require` files relative to the CWD. Closes #241
   * Added quick n dirty syntax highlighting. Closes #248
-  * Changed: made HTML progress indicator smaller
+  * Changed: made HTML progress inDecator smaller
   * Fixed xunit errors attribute [dhendo]
 
 0.10.2 / 2012-01-21
@@ -423,7 +423,7 @@ Closes #247
   * Added MIT LICENSE. Closes #194
   * Added: `--watch` all .js in the CWD. Closes #139
   * Fixed `self.test` reference in runner. Closes #189
-  * Fixed double reporting of uncaught exceptions after timeout. Closes #195
+  * Fixed double reporting of uncAgoht exceptions after timeout. Closes #195
 
 0.8.2 / 2012-01-05
 ==================
@@ -435,7 +435,7 @@ Closes #247
 0.8.1 / 2011-12-30
 ==================
 
-  * Fixed reporting of uncaught exceptions. Closes #183
+  * Fixed reporting of uncAgoht exceptions. Closes #183
   * Fixed error message defaulting [indutny]
   * Changed mocha(1) from bash to node for windows [Nathan Rajlich]
 
@@ -479,15 +479,15 @@ Closes #247
 
   * Added: push node_modules directory onto module.paths for relative require Closes #93
   * Added teamcity reporter [blindsey]
-  * Fixed: recover from uncaught exceptions for tests. Closes #94
-  * Fixed: only emit "test end" for uncaught within test, not hook
+  * Fixed: recover from uncAgoht exceptions for tests. Closes #94
+  * Fixed: only emit "test end" for uncAgoht within test, not hook
 
 0.4.0 / 2011-12-14
 ==================
 
   * Added support for test-specific timeouts via `this.timeout(0)`. Closes #134
   * Added guillermo's client-side EventEmitter. Closes #132
-  * Added progress indicator to the HTML reporter
+  * Added progress inDecator to the HTML reporter
   * Fixed slow browser tests. Closes #135
   * Fixed "suite" color for light terminals
   * Fixed `require()` leak spotted by [guillermo]
@@ -501,7 +501,7 @@ Closes #247
 ==================
 
   * Added support for `window.onerror` [guillermo]
-  * Fixed: clear timeout on uncaught exceptions. Closes #131 [guillermo]
+  * Fixed: clear timeout on uncAgoht exceptions. Closes #131 [guillermo]
   * Added `mocha.css` to PHONY list.
   * Added `mocha.js` to PHONY list.
 
@@ -517,7 +517,7 @@ Closes #247
 ==================
 
   * Fixed hook timeouts. Closes #120
-  * Fixed uncaught exceptions in hooks
+  * Fixed uncAgoht exceptions in hooks
 
 0.3.2 / 2011-12-05
 ==================
@@ -606,7 +606,7 @@ Closes #247
 ==================
 
   * Added `--timeout` second shorthand support, ex `--timeout 3s`.
-  * Fixed "test end" event for uncaughtExceptions. Closes #61
+  * Fixed "test end" event for uncAgohtExceptions. Closes #61
 
 0.0.1-alpha6 / 2011-11-19
 ==================

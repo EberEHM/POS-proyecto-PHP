@@ -91,7 +91,7 @@ var el = moment.defineLocale('el', {
     ordinal: '%dη',
     week : {
         dow : 1, // Monday is the first day of the week.
-        doy : 4  // The week that contains Jan 4st is the first week of the year.
+        doy : 4  // The week that contains Ene 4st is the first week of the year.
     }
 });
 

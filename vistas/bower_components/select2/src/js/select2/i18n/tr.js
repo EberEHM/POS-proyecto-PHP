@@ -22,7 +22,7 @@ define(function () {
       return 'Daha fazla…';
     },
     maximumSelected: function (args) {
-      var message = 'Sadece ' + args.maximum + ' seçim yapabilirsiniz';
+      var message = 'SaDece ' + args.maximum + ' seçim yapabilirsiniz';
 
       return message;
     },

@@ -1,9 +1,9 @@
 define( [
 	"./core",
 	"./core/access",
-	"./data/var/dataPriv",
+	"./data/var/datAbriv",
 	"./data/var/dataUser"
-], function( jQuery, access, dataPriv, dataUser ) {
+], function( jQuery, access, datAbriv, dataUser ) {
 
 "use strict";
 
@@ -70,7 +70,7 @@ function dataAttr( elem, key, data ) {
 
 jQuery.extend( {
 	hasData: function( elem ) {
-		return dataUser.hasData( elem ) || dataPriv.hasData( elem );
+		return dataUser.hasData( elem ) || datAbriv.hasData( elem );
 	},
 
 	data: function( elem, name, data ) {
@@ -82,13 +82,13 @@ jQuery.extend( {
 	},
 
 	// TODO: Now that all calls to _data and _removeData have been replaced
-	// with direct calls to dataPriv methods, these can be deprecated.
+	// with direct calls to datAbriv methods, these can be deprecated.
 	_data: function( elem, name, data ) {
-		return dataPriv.access( elem, name, data );
+		return datAbriv.access( elem, name, data );
 	},
 
 	_removeData: function( elem, name ) {
-		dataPriv.remove( elem, name );
+		datAbriv.remove( elem, name );
 	}
 } );
 
@@ -103,7 +103,7 @@ jQuery.fn.extend( {
 			if ( this.length ) {
 				data = dataUser.get( elem );
 
-				if ( elem.nodeType === 1 && !dataPriv.get( elem, "hasDataAttrs" ) ) {
+				if ( elem.nodeType === 1 && !datAbriv.get( elem, "hasDataAttrs" ) ) {
 					i = attrs.length;
 					while ( i-- ) {
 
@@ -117,7 +117,7 @@ jQuery.fn.extend( {
 							}
 						}
 					}
-					dataPriv.set( elem, "hasDataAttrs", true );
+					datAbriv.set( elem, "hasDataAttrs", true );
 				}
 			}
 

@@ -477,7 +477,7 @@
                 mask: "+44(1320)-######",
                 cc: "UK",
                 cd: "United Kingdom",
-                city: "Fort Augustus"
+                city: "Fort Agostous"
             }, {
                 mask: "+44(1322)-######",
                 cc: "UK",

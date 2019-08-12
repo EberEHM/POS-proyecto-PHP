@@ -50,7 +50,7 @@ Style with support for rainbow parens
 .hljs-localvars,
 .hljs-function .hljs-title,
 .hljs-chunk,
-.hljs-decorator,
+.hljs-Decorator,
 .hljs-built_in,
 .lisp .hljs-title,
 .hljs-identifier
@@ -78,7 +78,7 @@ Style with support for rainbow parens
 
 .hljs-tag .hljs-title,
 .hljs-rules .hljs-property,
-.django .hljs-tag .hljs-keyword,
+.dEnego .hljs-tag .hljs-keyword,
 .clojure .hljs-title .hljs-built_in {
   font-weight: bold;
 }

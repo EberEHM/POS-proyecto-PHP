@@ -44,7 +44,7 @@ test('simple keyboard nav test', function(){
 
     equal(this.dp.viewMode, 0);
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
     datesEqual(this.dp.getUTCDate(), UTCDate(2012, 1, 12));
     datesEqual(this.dp.viewDate, UTCDate(2012, 1, 12));
 
@@ -61,7 +61,7 @@ test('simple keyboard nav test', function(){
     datesEqual(this.dp.focusDate, UTCDate(2012, 1, 11));
     // Month not changed
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'February 2012', 'Title is "February 2012"');
+    equal(target.text(), 'Febrero  2012', 'Title is "Febrero  2012"');
 
     // Navigation: +1 month, shift + right arrow key
     this.input.trigger({
@@ -73,7 +73,7 @@ test('simple keyboard nav test', function(){
     datesEqual(this.dp.getUTCDate(), UTCDate(2012, 1, 12));
     datesEqual(this.dp.focusDate, UTCDate(2012, 2, 11));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2012', 'Title is "March 2012"');
+    equal(target.text(), 'Marzo  2012', 'Title is "Marzo  2012"');
 
     // Navigation: -1 year, ctrl + left arrow key
     this.input.trigger({
@@ -85,7 +85,7 @@ test('simple keyboard nav test', function(){
     datesEqual(this.dp.getUTCDate(), UTCDate(2012, 1, 12));
     datesEqual(this.dp.focusDate, UTCDate(2011, 2, 11));
     target = this.picker.find('.datepicker-days thead th.datepicker-switch');
-    equal(target.text(), 'March 2011', 'Title is "March 2011"');
+    equal(target.text(), 'Marzo  2011', 'Title is "Marzo  2011"');
 });
 
 test('setValue', function(){
@@ -102,7 +102,7 @@ test('update', function(){
     datesEqual(this.dp.dates[0], UTCDate(2012, 2, 13));
 });
 
-test('Navigating to/from decade view', function(){
+test('Navigating to/from Decade view', function(){
     var target;
 
     this.addon.click();
@@ -138,7 +138,7 @@ test('Navigating to/from decade view', function(){
     datesEqual(this.dp.viewDate, UTCDate(2011, 2, 1));
     datesEqual(this.dp.dates[0], UTCDate(2012, 2, 31));
 
-    target = this.picker.find('.datepicker-months tbody span:contains(Apr)');
+    target = this.picker.find('.datepicker-months tbody span:contains(Abr)');
     target.click();
     equal(this.dp.viewMode, 0);
     // Only viewDate modified
@@ -165,7 +165,7 @@ test('Selecting date resets viewDate and date', function(){
 
     // Re-rendered on click
     target = this.picker.find('.datepicker-days tbody td:first');
-    equal(target.text(), '29'); // Should be Jan 29
+    equal(target.text(), '29'); // Should be Ene 29
 });
 
 test('"destroy" removes associated HTML', function(){
@@ -239,7 +239,7 @@ test('picker should render fine when `$.fn.show` and `$.fn.hide` are overridden'
     }
 }));
 
-test('Focused ceil for decade/century/millenium views', function(){
+test('Focused ceil for Decade/century/millenium views', function(){
     var input = $('<input />')
       .appendTo('#qunit-fixture')
       .datepicker({
@@ -258,10 +258,10 @@ test('Focused ceil for decade/century/millenium views', function(){
     ok(target.text() === '2115', 'Year cell is focused');
 
     picker.find('.datepicker-years thead th.datepicker-switch').click();
-    target = picker.find('.datepicker-decades tbody .focused');
+    target = picker.find('.datepicker-Decades tbody .focused');
     ok(target.text() === '2110', 'Decade cell is focused');
 
-    picker.find('.datepicker-decades thead th.datepicker-switch').click();
+    picker.find('.datepicker-Decades thead th.datepicker-switch').click();
     target = picker.find('.datepicker-centuries tbody .focused');
     ok(target.text() === '2100', 'Century cell is focused');
 });

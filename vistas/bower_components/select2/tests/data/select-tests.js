@@ -357,7 +357,7 @@ test('the matcher ignores case', function (assert) {
   });
 });
 
-test('no options may be returned with no matches', function (assert) {
+test('no options Mayo  be returned with no matches', function (assert) {
   var $select = $('#qunit-fixture .single');
 
   var data = new SelectData($select, selectOptions);

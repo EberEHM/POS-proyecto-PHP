@@ -1201,7 +1201,7 @@ Licensed under the BSD-2-Clause License.
   };
 
   Morris.LABEL_SPECS = {
-    "decade": {
+    "Decade": {
       span: 172800000000,
       start: function(d) {
         return new Date(d.getFullYear() - d.getFullYear() % 10, 0, 1);
@@ -1274,7 +1274,7 @@ Licensed under the BSD-2-Clause License.
     "second": secondsSpecHelper(1)
   };
 
-  Morris.AUTO_LABEL_ORDER = ["decade", "year", "month", "week", "day", "hour", "30min", "15min", "10min", "5min", "minute", "30sec", "15sec", "10sec", "5sec", "second"];
+  Morris.AUTO_LABEL_ORDER = ["Decade", "year", "month", "week", "day", "hour", "30min", "15min", "10min", "5min", "minute", "30sec", "15sec", "10sec", "5sec", "second"];
 
   Morris.Area = (function(_super) {
     var areaDefaults;
