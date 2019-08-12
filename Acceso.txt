@@ -1,0 +1,4 @@
+usuario : admin
+password: admin
+
+FALTA LIMPIAR IMAGENES DIRECTAMENTE EN LAS CARPETAS
