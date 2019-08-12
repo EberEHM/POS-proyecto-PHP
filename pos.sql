@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-08-2019 a las 02:24:26
+-- Tiempo de generación: 12-08-2019 a las 12:20:29
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.7
 
@@ -33,6 +33,13 @@ CREATE TABLE `categorias` (
   `categoria` text COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `categoria`) VALUES
+(6, 'Yuyui');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +54,13 @@ CREATE TABLE `clientes` (
   `direccion` text COLLATE utf8mb4_spanish_ci NOT NULL,
   `compras` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`idCliente`, `nombre`, `email`, `telefono`, `direccion`, `compras`) VALUES
+(5, 'Jenny', 'jenny@gmail.com', '(227) 727 2727', '15 clavfl', 0);
 
 -- --------------------------------------------------------
 
@@ -66,9 +80,16 @@ CREATE TABLE `dispositivos` (
   `presupuesto` double NOT NULL,
   `recibio` text COLLATE utf8_spanish2_ci NOT NULL,
   `fechaEntrada` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `fechaAbroximada` text COLLATE utf8_spanish2_ci NOT NULL,
+  `fechaAproximada` text COLLATE utf8_spanish2_ci NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `dispositivos`
+--
+
+INSERT INTO `dispositivos` (`idDispositivo`, `imagen`, `NumeroOrden`, `idCliente`, `idTipoReparacion`, `descripcionFalla`, `imei`, `descripcion`, `presupuesto`, `recibio`, `fechaEntrada`, `fechaAproximada`, `estado`) VALUES
+(20, 'vistas/img/dispositivos/default/tel.png', 1, 5, 2, 'Uno ', 2147483647, 'Lo que sea', 1112, 'Administrador', '2019-08-12 08:08:40', '2019-08-24', 0);
 
 -- --------------------------------------------------------
 
@@ -102,10 +123,19 @@ CREATE TABLE `productos` (
   `imagen` text COLLATE utf8mb4_spanish_ci NOT NULL,
   `stock` int(11) NOT NULL,
   `precioCompra` double NOT NULL,
-  `precioVenta` int(11) NOT NULL,
+  `precioVenta` double NOT NULL,
   `ventas` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`idProducto`, `idCategoria`, `codigo`, `descripcion`, `imagen`, `stock`, `precioCompra`, `precioVenta`, `ventas`, `fecha`) VALUES
+(5, 6, '122344444', 'Lo que dea', 'vistas/img/productos/122344444/457.jpg', 7, 20, 28, 0, '2019-08-12 10:03:55'),
+(7, 6, '202', 'Audifonos iphone originales, inalambricos', 'vistas/img/productos/default/anonymous.png', 90, 0, 0, 0, '2019-08-12 09:52:40'),
+(8, 6, '500', '900', 'vistas/img/productos/default/anonymous.png', 800, 0.1, 0.14, 0, '2019-08-12 10:18:13');
 
 -- --------------------------------------------------------
 
@@ -148,7 +178,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `password`, `perfil`, `foto`, `estado`, `ultimo_login`, `fecha`) VALUES
-(10, 'Administrador', 'admin', '$2a$07$asxx54ahjppf45sd87a5auXBm1Vr2M1NV5t/zNQtGHGpS5fFirrbG', 'Administrador', 'vistas/img/usuarios/admin/420.jpg', 1, '2019-08-11 19:21:08', '2019-08-12 00:21:32');
+(10, 'Administrador', 'admin', '$2a$07$asxx54ahjppf45sd87a5auXBm1Vr2M1NV5t/zNQtGHGpS5fFirrbG', 'Administrador', 'vistas/img/usuarios/admin/420.jpg', 1, '2019-08-12 02:58:36', '2019-08-12 08:02:25'),
+(11, 'Lupe', 'Lupe', '$2a$07$asxx54ahjppf45sd87a5aug2ku8IakqeuU8H4OOeTuJo2pXiPJRt2', 'Vendedor', 'vistas/img/usuarios/Lupe/866.png', 1, '2019-08-12 02:36:18', '2019-08-12 07:36:18');
 
 -- --------------------------------------------------------
 
@@ -170,54 +201,54 @@ CREATE TABLE `ventas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
--- ÍnDeces para tablas volcadas
+-- Índices para tablas volcadas
 --
 
 --
--- InDeces de la tabla `categorias`
+-- Indices de la tabla `categorias`
 --
 ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 --
--- InDeces de la tabla `clientes`
+-- Indices de la tabla `clientes`
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`idCliente`);
 
 --
--- InDeces de la tabla `dispositivos`
+-- Indices de la tabla `dispositivos`
 --
 ALTER TABLE `dispositivos`
   ADD PRIMARY KEY (`idDispositivo`);
 
 --
--- InDeces de la tabla `optimizarproductos`
+-- Indices de la tabla `optimizarproductos`
 --
 ALTER TABLE `optimizarproductos`
   ADD PRIMARY KEY (`id`);
 
 --
--- InDeces de la tabla `productos`
+-- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
   ADD PRIMARY KEY (`idProducto`),
   ADD KEY `idCategoria` (`idCategoria`);
 
 --
--- InDeces de la tabla `tiporeparacion`
+-- Indices de la tabla `tiporeparacion`
 --
 ALTER TABLE `tiporeparacion`
   ADD PRIMARY KEY (`idTipoReparacion`);
 
 --
--- InDeces de la tabla `usuarios`
+-- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- InDeces de la tabla `ventas`
+-- Indices de la tabla `ventas`
 --
 ALTER TABLE `ventas`
   ADD PRIMARY KEY (`idVenta`),
@@ -231,19 +262,19 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `dispositivos`
 --
 ALTER TABLE `dispositivos`
-  MODIFY `idDispositivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `idDispositivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `optimizarproductos`
@@ -255,7 +286,7 @@ ALTER TABLE `optimizarproductos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `idProducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idProducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `tiporeparacion`
@@ -267,13 +298,13 @@ ALTER TABLE `tiporeparacion`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `idVenta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idVenta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
