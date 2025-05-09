@@ -593,9 +593,9 @@ class ControladorVentas{
 
 	public function ctrSumaTotalVentas(){
 
-		$tabla="ventas";
+		$tabla = "ventas";
 
-		$respuesta=Ventas::sumaTotalVentas($tabla);
+		$respuesta = Ventas::sumaTotalVentas($tabla);
 
 		return $respuesta;
 

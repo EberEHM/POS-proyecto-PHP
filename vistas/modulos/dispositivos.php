@@ -102,7 +102,7 @@ if($_SESSION["perfil"] == "Almacen"){
                 <td>'.$value["presupuesto"].'</td> 
                 <td>'.$value["recibio"].'</td>
                 <td>'.$value["fechaEntrada"].'</td>
-                <td>'.$value["fechaAbroximada"].'</td>';
+                <td>'.$value["fechaAproximada"].'</td>';
 
                 if($value["estado"] != 0){
 

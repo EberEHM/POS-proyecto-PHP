@@ -183,7 +183,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
             <div class="input-group">
 
-              <span class="input-group-addon"><i class="fa fa-code"></i></span>
+              <span class="input-group-addon"><i class="fa fa-barcode"></i></span>
 
               <input type="text" class="form-control input-lg" name="nuevoCodigo" id="nuevoCodigo" placeholder="Ingresar el código"  required>
               <!--readonly es para solo lectura -->
@@ -355,7 +355,7 @@ if($_SESSION["perfil"] == "Vendedor"){
 
             <div class="input-group">
 
-              <span class="input-group-addon"><i class="fa fa-code"></i></span>
+              <span class="input-group-addon"><i class="fa fa-barcode"></i></span>
 
               <input type="text" class="form-control input-lg" name="editarCodigo" id="editarCodigo" readonly>
               <!--readonly es para solo lectura -->

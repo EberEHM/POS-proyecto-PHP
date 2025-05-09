@@ -4,7 +4,9 @@ $item = null;
 $valor = null;
 $orden = "idProducto";
 
-$ventas = ControladorVentas::ctrSumaTotalVentas();
+//lo llamo de esta forma debido al error que me estaba generando sobre las cajas superiores, llamaba el metodo como los demas de abajo pero me genero un error antes no pero ahora si quiza con la actualización de php.
+//$ventas = ControladorVentas::ctrSumaTotalVentas();
+$ventas = (new ControladorVentas)->ctrSumaTotalVentas();
 
 $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 $totalCategorias = count($categorias);
